@@ -12,20 +12,42 @@ internal static class TmpTextTranslationPatch
     {
         try
         {
-            var catalog = Catalog;
-            if (catalog is null || string.IsNullOrEmpty(value) ||
-                !catalog.TryTranslate(value, out var korean) ||
-                !TextReplacementPolicy.ShouldReplace(value, value, korean))
-            {
-                return;
-            }
-
-            KoreanFontProvider.EnsureFallback(__instance);
-            value = korean;
+            Translate(__instance, ref value);
         }
         catch
         {
             // A single malformed TMP component must not affect the game or trainer runtime.
         }
+    }
+
+    internal static void Translate(TMP_Text text, ref string value)
+    {
+        Translate(text, ref value, exactOnly: false);
+    }
+
+    internal static void TranslateExact(TMP_Text text, ref string value)
+    {
+        Translate(text, ref value, exactOnly: true);
+    }
+
+    private static void Translate(TMP_Text text, ref string value, bool exactOnly)
+    {
+        var catalog = Catalog;
+        if (catalog is null || text is null || string.IsNullOrEmpty(value))
+        {
+            return;
+        }
+
+        string korean;
+        var found = exactOnly
+            ? catalog.TryTranslateExact(value, out korean)
+            : catalog.TryTranslate(value, out korean);
+        if (!found || !TextReplacementPolicy.ShouldReplace(value, value, korean))
+        {
+            return;
+        }
+
+        KoreanFontProvider.EnsureFallback(text);
+        value = korean;
     }
 }

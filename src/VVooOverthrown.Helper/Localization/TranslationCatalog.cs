@@ -35,9 +35,12 @@ public sealed class TranslationCatalog
 
     public int Count => _bySource.Count;
 
+    public bool TryTranslateExact(string source, out string korean) =>
+        _bySource.TryGetValue(source, out korean!);
+
     public bool TryTranslate(string source, out string korean)
     {
-        if (_bySource.TryGetValue(source, out korean!))
+        if (TryTranslateExact(source, out korean))
         {
             return true;
         }
