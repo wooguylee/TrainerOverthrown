@@ -44,7 +44,7 @@ metadata 세 SHA-256을 게임 폴더에서 다시 계산한다. 설치 후 게�
 ## 런타임 검증
 
 - BepInEx 첫 부팅에서 interop 생성 및 `MainMenu:Start()` 도달.
-- Helper 로드 기준 runtime 번역 사전: `translations=269`.
+- 현재 생성 catalog 기준 runtime 번역 사전: `translations=361`.
 - 메인 메뉴의 미확인 세션에서 무적·시간 배속 명령이 `OFFLINE_NOT_PROVEN`으로 차단됨.
 - 실제 로컬 월드에서의 허용 변경은 사용자가 플레이 중 확인할 수 있으며, 앱 종료·pipe
   단절·멀티플레이 전환 시 항상 reset한다.

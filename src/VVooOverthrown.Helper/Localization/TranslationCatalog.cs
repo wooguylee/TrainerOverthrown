@@ -1,18 +1,47 @@
 using System.Text.Json;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace VVooOverthrown.Helper.Localization;
 
 public sealed class TranslationCatalog
 {
     private readonly IReadOnlyDictionary<string, string> _bySource;
+    private readonly IReadOnlyList<TemplateTranslation> _templates;
 
-    private TranslationCatalog(IReadOnlyDictionary<string, string> bySource) =>
+    private TranslationCatalog(IReadOnlyDictionary<string, string> bySource)
+    {
         _bySource = bySource;
+        _templates = bySource
+            .Where(entry => entry.Key.Contains('{'))
+            .Select(entry => TemplateTranslation.Create(entry.Key, entry.Value))
+            .Where(template => template is not null)
+            .Cast<TemplateTranslation>()
+            .OrderByDescending(template => template.LiteralCharacterCount)
+            .ThenBy(template => template.PlaceholderCount)
+            .ToArray();
+    }
 
     public int Count => _bySource.Count;
 
-    public bool TryTranslate(string source, out string korean) =>
-        _bySource.TryGetValue(source, out korean!);
+    public bool TryTranslate(string source, out string korean)
+    {
+        if (_bySource.TryGetValue(source, out korean!))
+        {
+            return true;
+        }
+
+        foreach (var template in _templates)
+        {
+            if (template.TryTranslate(source, out korean))
+            {
+                return true;
+            }
+        }
+
+        korean = string.Empty;
+        return false;
+    }
 
     public static bool TryLoad(
         string sourceJson,
@@ -73,5 +102,99 @@ public sealed class TranslationCatalog
         }
 
         return new TranslationCatalog(bySource);
+    }
+
+    private sealed class TemplateTranslation
+    {
+        private static readonly Regex PlaceholderPattern = new(
+            @"\{[^{}]+\}",
+            RegexOptions.CultureInvariant);
+
+        private readonly Regex _sourcePattern;
+        private readonly string _koreanTemplate;
+        private readonly IReadOnlyDictionary<string, string> _groupByToken;
+
+        public int LiteralCharacterCount { get; }
+
+        public int PlaceholderCount { get; }
+
+        private TemplateTranslation(
+            Regex sourcePattern,
+            string koreanTemplate,
+            IReadOnlyDictionary<string, string> groupByToken,
+            int literalCharacterCount,
+            int placeholderCount)
+        {
+            _sourcePattern = sourcePattern;
+            _koreanTemplate = koreanTemplate;
+            _groupByToken = groupByToken;
+            LiteralCharacterCount = literalCharacterCount;
+            PlaceholderCount = placeholderCount;
+        }
+
+        public static TemplateTranslation? Create(string source, string korean)
+        {
+            var matches = PlaceholderPattern.Matches(source);
+            if (matches.Count == 0)
+            {
+                return null;
+            }
+
+            var pattern = new StringBuilder("^");
+            var groupByToken = new Dictionary<string, string>(StringComparer.Ordinal);
+            var cursor = 0;
+            for (var index = 0; index < matches.Count; index++)
+            {
+                var placeholder = matches[index];
+                pattern.Append(Regex.Escape(source[cursor..placeholder.Index]));
+                var groupName = $"value{index}";
+                pattern.Append($"(?<{groupName}>.+?)");
+                groupByToken.TryAdd(placeholder.Value, groupName);
+                cursor = placeholder.Index + placeholder.Length;
+            }
+            pattern.Append(Regex.Escape(source[cursor..]));
+            pattern.Append('$');
+
+            return new TemplateTranslation(
+                new Regex(pattern.ToString(), RegexOptions.CultureInvariant),
+                korean,
+                groupByToken,
+                source.Length - matches.Sum(match => match.Length),
+                matches.Count);
+        }
+
+        public bool TryTranslate(string source, out string korean)
+        {
+            var match = _sourcePattern.Match(source);
+            if (!match.Success)
+            {
+                korean = string.Empty;
+                return false;
+            }
+
+            korean = PlaceholderPattern.Replace(
+                _koreanTemplate,
+                placeholder => _groupByToken.TryGetValue(placeholder.Value, out var groupName)
+                    ? LocalizeCapturedToken(placeholder.Value, match.Groups[groupName].Value)
+                    : placeholder.Value);
+            return true;
+        }
+
+        private static string LocalizeCapturedToken(string token, string capturedValue)
+        {
+            if (token.Contains(":plural:hour|hours", StringComparison.Ordinal))
+            {
+                return "시간";
+            }
+            if (token.Contains(":plural:day|days", StringComparison.Ordinal))
+            {
+                return "일";
+            }
+            if (token.Contains(":plural:second|seconds", StringComparison.Ordinal))
+            {
+                return "초";
+            }
+            return capturedValue;
+        }
     }
 }

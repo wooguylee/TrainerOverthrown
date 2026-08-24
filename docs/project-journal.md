@@ -272,6 +272,27 @@
   메인 메뉴 무적 요청은 `OFFLINE_NOT_PROVEN`으로 차단됐다. 게임 종료 후 최종 WPF 창도
   일반 종료(exit 0)했으며 잔여 `Overthrown`/`VVooOverthrown` 프로세스는 0개다.
 
+## 2026-08-25 목표·퀘스트 한글화 보완
+
+- 플레이 화면 좌측 상단의 `Your Reign Begins`, `Claim the Crown`은 각각
+  `Data/OBJECTIVE_ReignBegins`, `Data/OBJECTIVE_ReignBegins_Crown` 안정 키를 사용하는
+  목표 제목과 수행 항목임을 확인했다.
+- 동일 계열인 `Data/OBJECTIVE_*` 92개 전체를 분석해 통치 시작, 정착지 건설, 연구,
+  주민·식량, 무법자 습격, 왕관 회수, 재정 목표의 제목과 수행 항목을 모두 한국어로
+  추가했다. 목표 계열은 92/92개가 `reviewed` 상태다.
+- 수량과 시간이 들어가는 목표는 화면 표시 시점에 `{0}`, `{1}` 등이 실제 숫자로 바뀌어
+  기존의 완전 일치 사전으로 찾을 수 있었다. Helper에 서식 원문의 placeholder 위치를
+  캡처해 한국어 서식에 다시 넣는 template matching을 추가했고, 시간·일·초 단위의
+  smart plural 토큰도 한국어 단위로 정규화한다.
+- catalog 재생성 결과 검수 419/1,586개, 대기 1,167개, runtime 고유 원문 361개이며
+  placeholder/TMP 검증 오류는 0개다.
+- Helper 코드가 변경되어 해당 프로젝트만 Release 빌드했고 경고 0, 오류 0이었다.
+  배포 payload는 `.artifacts\payload`에 갱신했으며, 사용자 지시에 따라 자동 테스트와
+  ZIP 패키징은 실행하지 않았다.
+- 실행 중인 게임과 트레이너가 없는 상태에서 기존 설치기의 `--install`을 대기 실행해
+  exit code 0을 확인했다. 게임 폴더의 Helper/Core DLL과 번역 JSON 3개는 staged payload와
+  SHA-256이 모두 일치하며, 설치 manifest 233개 파일의 누락·길이/해시 불일치는 0개다.
+
 ## 이후 작업 방식
 
 - 사용자가 별도로 선택하도록 묻지 않고 항상 권장안으로 구현한다.

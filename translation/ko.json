@@ -1574,463 +1574,463 @@
     },
     {
       "id": "Data/OBJECTIVE_BuildSawmill",
-      "korean": "",
-      "status": "pending"
+      "korean": "목재 생산 자동화",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildSawmill_Amount",
-      "korean": "",
-      "status": "pending"
+      "korean": "제재소 건설 ({0}/{1})",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildSawmill_Employment",
-      "korean": "",
-      "status": "pending"
+      "korean": "작업장은 시민을 자동으로 고용합니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildSettlement",
-      "korean": "",
-      "status": "pending"
+      "korean": "정착지 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildSettlement_Bladder",
-      "korean": "",
-      "status": "pending"
+      "korean": "용변을 해결할 변소 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildSettlement_Food",
-      "korean": "",
-      "status": "pending"
+      "korean": "식량을 모을 식료품 저장고 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildSettlement_Hunger",
-      "korean": "",
-      "status": "pending"
+      "korean": "허기를 채울 수프 주방 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildSettlement_Rest",
-      "korean": "",
-      "status": "pending"
+      "korean": "휴식을 회복할 연립주택 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildSettlement_Well",
-      "korean": "",
-      "status": "pending"
+      "korean": "화재를 진압할 우물 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildTownHall",
-      "korean": "",
-      "status": "pending"
+      "korean": "시청 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildTownHall_Housing",
-      "korean": "",
-      "status": "pending"
+      "korean": "빈 주거 공간을 채우도록 새 시민이 꾸준히 유입됩니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildTownHall_RecruitingCitizens",
-      "korean": "",
-      "status": "pending"
+      "korean": "빈 일자리를 채우도록 새 시민이 꾸준히 유입됩니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_DefeatOutlaws",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자 처치",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_DefeatOutlaws_EliminateCamps",
-      "korean": "",
-      "status": "pending"
+      "korean": "모든 야영지 제거 (남은 수: {0})",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_DefeatOutlaws_EliminateOutlaws",
-      "korean": "",
-      "status": "pending"
+      "korean": "모든 무법자 제거 (남은 수: {0})",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_EstablishSettlement",
-      "korean": "",
-      "status": "pending"
+      "korean": "정착지 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_EstablishSettlement_ForagersHut",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집꾼 오두막 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_EstablishSettlement_FruitPress",
-      "korean": "",
-      "status": "pending"
+      "korean": "과일 압착기 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_EstablishSettlement_Sawmills",
-      "korean": "",
-      "status": "pending"
+      "korean": "제재소 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_EstablishSettlement_Townhouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "연립주택 건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ExpandKingdom",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕국 확장",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ExpandKingdom_ProgressResearch",
-      "korean": "",
-      "status": "pending"
+      "korean": "연구 진행",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ExpandKingdom_RecruitCitizens",
-      "korean": "",
-      "status": "pending"
+      "korean": "시민 추가 모집",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ExpandSettlement",
-      "korean": "",
-      "status": "pending"
+      "korean": "정착지 확장",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ExpandSettlement_GatherFood",
-      "korean": "",
-      "status": "pending"
+      "korean": "겨울을 대비해 식량 비축 (현재 인구 유지에 {0}/{1})",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ExpandSettlement_Research",
-      "korean": "",
-      "status": "pending"
+      "korean": "모든 연구 잠금 해제 (남은 수: {0})",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_FeedCitizens",
-      "korean": "",
-      "status": "pending"
+      "korean": "시민에게 식량을 공급하세요!",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_FeedCitizens_Forage",
-      "korean": "",
-      "status": "pending"
+      "korean": "굶주린 시민은 일하는 대신 식량을 채집합니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_FeedCitizens_MultipleStarving",
-      "korean": "",
-      "status": "pending"
+      "korean": "시민 {0}명이 굶주리는 중 (다음 시민은 {1}초 후 굶주림)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_FeedCitizens_OneStarving",
-      "korean": "",
-      "status": "pending"
+      "korean": "시민 1명이 굶주리는 중 ({0}초 후 굶주림)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_FeedCitizens_PlantGrowth",
-      "korean": "",
-      "status": "pending"
+      "korean": "식물은 계절이 바뀔 때 성장합니다 (겨울 제외)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_FeedCitizens_PlantGrowthDaily",
-      "korean": "",
-      "status": "pending"
+      "korean": "식물은 매일 성장합니다 (겨울 제외)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_FindCrown",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관을 찾으세요!",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_FindCrown_BeamOfLight",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관은 빛기둥으로 표시됩니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_FindCrown_Enemies",
-      "korean": "",
-      "status": "pending"
+      "korean": "주변 적들이 왕관으로 몰려듭니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidActive",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자를 물리치세요!",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidActive_DefendCrown",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관 소지자를 방어하세요",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidActive_DefendSettlement",
-      "korean": "",
-      "status": "pending"
+      "korean": "정착지를 방어하세요",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidActive_DefendTownHall",
-      "korean": "",
-      "status": "pending"
+      "korean": "시청을 방어하세요",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidActive_RebuildTownHall",
-      "korean": "",
-      "status": "pending"
+      "korean": "시청 재건",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidActive_RetrieveCrown",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관 되찾기",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidActive_RoutMultipleOutlaws",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자 {0}명을 더 처치하면 나머지가 도망칩니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidActive_RoutOneOutlaw",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자 1명을 더 처치하면 나머지가 도망칩니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidActive_RoutProgress",
-      "korean": "",
-      "status": "pending"
+      "korean": "충분한 무법자를 처치하면 나머지가 도망칩니다 ({0}/{1})",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidSoon",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자들이 무언가 꾸미고 있습니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidSoon_Countdown",
-      "korean": "",
-      "status": "pending"
+      "korean": "해 질 무렵 확인 ({0}{0:plural:hour|hours} 후)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_OutlawRaidSoon_StrikeFirst",
-      "korean": "",
-      "status": "pending"
+      "korean": "먼저 공격해 계획 저지 ({0}/{1}명 제거)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PickUpCrown",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관 줍기",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid",
-      "korean": "",
-      "status": "pending"
+      "korean": "다음 무법자 습격 대비",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Butchering",
-      "korean": "",
-      "status": "pending"
+      "korean": "사체를 활용할 수 있도록 도축 연구",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Construction",
-      "korean": "",
-      "status": "pending"
+      "korean": "성벽 건설을 위한 건설 연구",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Days",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}일 남음",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_DaysAndHours",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}일 {1}시간 남음",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_DaysAndOneHour",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}일 1시간 남음",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Excavation",
-      "korean": "",
-      "status": "pending"
+      "korean": "방어 시설 굴착을 위한 발굴 연구",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Farming",
-      "korean": "",
-      "status": "pending"
+      "korean": "정착지를 성장시키기 위한 농업 연구",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_FoodForWinter",
-      "korean": "",
-      "status": "pending"
+      "korean": "겨울 대비 식량 비축",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Gunpowder",
-      "korean": "",
-      "status": "pending"
+      "korean": "원거리 병사 고용을 위한 화약 연구",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Hours",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}시간 남음",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_LessThanOneHour",
-      "korean": "",
-      "status": "pending"
+      "korean": "1시간 미만 남음",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Metalworking",
-      "korean": "",
-      "status": "pending"
+      "korean": "병사 고용을 위한 금속 가공 연구",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Milling",
-      "korean": "",
-      "status": "pending"
+      "korean": "곡물을 활용할 수 있도록 제분 연구",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_NoOutlaws",
-      "korean": "",
-      "status": "pending"
+      "korean": "현재 무법자 발견되지 않음",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_OneDay",
-      "korean": "",
-      "status": "pending"
+      "korean": "1일 남음",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_OneDayAndHours",
-      "korean": "",
-      "status": "pending"
+      "korean": "1일 {0}시간 남음",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_OneDayAndOneHour",
-      "korean": "",
-      "status": "pending"
+      "korean": "1일 1시간 남음",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_OneHour",
-      "korean": "",
-      "status": "pending"
+      "korean": "1시간 남음",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Orchards",
-      "korean": "",
-      "status": "pending"
+      "korean": "과일을 활용할 수 있도록 과수원 연구",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_PrepareForOutlawRaid_TooFewOutlaws",
-      "korean": "",
-      "status": "pending"
+      "korean": "야생에 무법자가 모이고 있습니다 (야영지를 찾아 파괴하세요)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_Prompt_AdjustTaxSalaries",
-      "korean": "",
-      "status": "pending"
+      "korean": "인구 탭을 열어 세금과 급여 조정 ({0}/분)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_Prompt_AdjustTaxSalariesGamepad",
-      "korean": "",
-      "status": "pending"
+      "korean": "개요를 연 다음 인구 탭으로 전환하여 세금과 급여 조정 ({0}/분)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_Prompt_BuildMode",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설 모드 진입",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_Prompt_Map",
-      "korean": "",
-      "status": "pending"
+      "korean": "지도 열기",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_Prompt_ResearchTab",
-      "korean": "",
-      "status": "pending"
+      "korean": "연구 탭 열기",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_Prompt_ResearchTabGamepad",
-      "korean": "",
-      "status": "pending"
+      "korean": "개요를 연 다음 연구 탭으로 전환",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_RebuildTownHall",
-      "korean": "",
-      "status": "pending"
+      "korean": "시청을 재건하세요!",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_RebuildTownHall_RecruitPaused",
-      "korean": "",
-      "status": "pending"
+      "korean": "시청이 없으면 새 시민을 모집할 수 없습니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ReclaimCrown",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관을 되찾으세요!",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ReclaimCrown_Defect",
-      "korean": "",
-      "status": "pending"
+      "korean": "시민은 스트레스가 가득 차면 이탈합니다 (다음 이탈: {0}%)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ReclaimCrown_MoralePenalty",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관을 되찾을 때까지 사기가 감소합니다 ({0})",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ReclaimCrown_RecuitPaused",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관이 없으면 새 시민을 모집할 수 없습니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ReclaimCrown_Stealer",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관을 빼앗은 {0} 처치",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ReignBegins",
-      "korean": "",
-      "status": "pending"
+      "korean": "통치의 시작",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ReignBegins_Crown",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관 차지",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ResearchBuildings",
-      "korean": "",
-      "status": "pending"
+      "korean": "연구로 새 건물 잠금 해제",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ResearchBuildings_Cost",
-      "korean": "",
-      "status": "pending"
+      "korean": "({0}/{1} 지식)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ResearchBuildings_Knowledge",
-      "korean": "",
-      "status": "pending"
+      "korean": "고용된 시민이 지식을 생산합니다 (현재 {0}/분)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ResearchBuildings_Research",
-      "korean": "",
-      "status": "pending"
+      "korean": "개척 정착지 연구",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_ResearchBuildings_ThrowTreesIntoSawmill",
-      "korean": "",
-      "status": "pending"
+      "korean": "제재소에 나무를 던져 목재를 더 빠르게 수집",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_RestoreFinances",
-      "korean": "",
-      "status": "pending"
+      "korean": "재정을 회복하세요!",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_RestoreFinances_Defect",
-      "korean": "",
-      "status": "pending"
+      "korean": "급여가 지급되지 않으면 병사들의 불만이 극심해집니다 (다음 이탈: {0}%)",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_RestoreFinances_RecruitPaused",
-      "korean": "",
-      "status": "pending"
+      "korean": "주화가 부족하면 새 시민을 모집할 수 없습니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Ability_CivilianTaxation",
