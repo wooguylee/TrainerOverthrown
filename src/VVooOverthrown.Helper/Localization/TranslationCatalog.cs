@@ -194,7 +194,7 @@ public sealed class TranslationCatalog
                 var placeholder = matches[index];
                 pattern.Append(Regex.Escape(source[cursor..placeholder.Index]));
                 var groupName = $"value{index}";
-                pattern.Append($"(?<{groupName}>.+?)");
+                pattern.Append($"(?<{groupName}>{GetCapturePattern(placeholder.Value)})");
                 groupByToken.TryAdd(placeholder.Value, groupName);
                 cursor = placeholder.Index + placeholder.Length;
             }
@@ -224,6 +224,23 @@ public sealed class TranslationCatalog
                     ? LocalizeCapturedToken(placeholder.Value, match.Groups[groupName].Value)
                     : placeholder.Value);
             return true;
+        }
+
+        private static string GetCapturePattern(string token)
+        {
+            if (token.Contains(":plural:hour|hours", StringComparison.Ordinal))
+            {
+                return "(?:hours|hour)";
+            }
+            if (token.Contains(":plural:day|days", StringComparison.Ordinal))
+            {
+                return "(?:days|day)";
+            }
+            if (token.Contains(":plural:second|seconds", StringComparison.Ordinal))
+            {
+                return "(?:seconds|second)";
+            }
+            return ".+?";
         }
 
         private static string LocalizeCapturedToken(string token, string capturedValue)
