@@ -69,18 +69,18 @@ Commit: `git commit -m "feat: validate Korean translation artifacts"`
 ### Task 2: English source extraction and Korean MVP data
 
 **Files:**
-- Create: `tools/VVooOverthrown.LocalizationTool/Extraction/EnglishTableExtractor.cs`
+- Create: `tools/extract_unity_localization.py`
 - Create: `tools/extract-localization.ps1`
 - Create: `translation/source.en.json`
 - Create: `translation/ko.json`
 - Create: `translation/coverage.json`
-- Test: `tests/VVooOverthrown.LocalizationTool.Tests/EnglishTableExtractorTests.cs`
+- Test: `tests/tools/test_localization_extractor.py`
 
 **Interfaces:**
-- Produces: `EnglishTableExtractor.Extract(string englishBundle, string sharedBundle)` returning stable ID/source records.
+- Produces: `extract_unity_localization.py` returning stable ID/source records from pinned UnityPy.
 - Consumes the installed English and shared localization bundles without writing them.
 
-- [ ] **Step 1: Add a failing fixture extraction test**
+- [x] **Step 1: Add a failing fixture extraction test**
 
 ```csharp
 [Fact]
@@ -92,21 +92,21 @@ public void ExtractedEntriesHaveStableUniqueIds()
 }
 ```
 
-- [ ] **Step 2: Run the extraction test and verify RED**
+- [x] **Step 2: Run the extraction test and verify RED**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.LocalizationTool.Tests\VVooOverthrown.LocalizationTool.Tests.csproj --filter EnglishTableExtractorTests`
 
-- [ ] **Step 3: Implement parsing with a pinned asset parser**
+- [x] **Step 3: Implement parsing with a pinned asset parser**
 
 Pin the exact parser version and checksum in `tools/tool-manifest.json`. Extract StringTable key IDs and values; if key names are unavailable, emit stable IDs as `<table-guid>:<key-id>`. Sort ordinally before JSON serialization.
 
-- [ ] **Step 4: Generate source data and curate the MVP**
+- [x] **Step 4: Generate source data and curate the MVP**
 
 Run: `tools\extract-localization.ps1 -GameDir 'W:\Games\Overthrown'`
 
 Translate and review menu, settings, new/load game, difficulty, HUD, inventory, building, research, and common confirmation/error terms. Apply the glossary consistently and keep every token intact.
 
-- [ ] **Step 5: Validate, report coverage, and commit**
+- [x] **Step 5: Validate, report coverage, and commit**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe run --project tools\VVooOverthrown.LocalizationTool -- validate translation\source.en.json translation\ko.json translation\coverage.json`
 

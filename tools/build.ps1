@@ -55,6 +55,18 @@ if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 & $dotnetExe test $solution --no-restore --no-build --configuration $Configuration
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
+& python -m unittest (Join-Path $repoRoot 'tests\tools\test_localization_extractor.py')
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+& $dotnetExe run --project (Join-Path $repoRoot 'tools\VVooOverthrown.LocalizationTool') `
+    --configuration $Configuration `
+    --no-build `
+    -- validate `
+    (Join-Path $repoRoot 'translation\source.en.json') `
+    (Join-Path $repoRoot 'translation\ko.json') `
+    (Join-Path $repoRoot 'translation\coverage.json')
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
 $publishRoot = Assert-PathUnderRepo (Join-Path $repoRoot '.artifacts\publish\app')
 if (Test-Path -LiteralPath $publishRoot) {
     Remove-Item -LiteralPath $publishRoot -Recurse -Force
@@ -75,4 +87,3 @@ if (-not (Test-Path -LiteralPath $publishedExe -PathType Leaf)) {
 }
 
 Write-Output "Published executable: $publishedExe"
-

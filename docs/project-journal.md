@@ -92,3 +92,26 @@
   오류 0. 중간 EXE 창 제목과 정상 종료를 프로세스 수준에서 확인했다.
 - 번역 validator TDD RED/GREEN: placeholder 누락, TMP 태그 변경, 중복 ID를 거부하고
   검수/대기 coverage를 집계하는 4건이 통과했다. 한국어 핵심 용어집을 JSON으로 추가했다.
+
+### 영어 원문 추출 및 한국어 MVP
+
+- AssetRipper `1.3.14`로 Unity 6 IL2CPP 구조와 StringTable 타입을 확인했으나
+  `SerializeReference` 필드 복원 제한으로 실제 문자열 항목이 누락되었다. 도구와 서버는
+  분석 종료 후 PID `4692`를 중지했다.
+- UnityPy `1.25.0`은 동일 번들의 TypeTree에서 `Entities_en` 379개, `UI_en` 535개,
+  `Data_en` 672개를 정상 복원했다. 공유 테이블의 ID/키와 결합해 총 1,586개 원문을
+  `translation/source.en.json`으로 읽기 전용 추출했다.
+- UnityPy Windows CPython 3.14 wheel SHA-256은
+  `163404965B7784F34E1BD944E55A511569B53B6AB4A28C12C3B1DDAFF54396B6`이며,
+  버전·종속 버전과 AssetRipper 체크섬을 `tools/tool-manifest.json`에 고정했다.
+- 원본 영어 번들 SHA-256은
+  `76E739553AE5877EF16E0BF2595CE7FDEBC05C7B5FDF4947508958E43F3487FF`, 공유 번들은
+  `59FCC50BBCFABF2157655F00BF0E9B861EF57B2F30576E15E0CBD2CA6F6656C8`이다.
+- 합성 TableData/SharedData 결합 테스트를 먼저 실패시킨 뒤, 공유 키 결합·ordinal 정렬·
+  중복 안정 ID 차단을 구현해 Python 테스트 2/2를 통과했다.
+- 메뉴, 난이도, 설정, 조작 프롬프트, 공통 HUD, 로딩 문구 중심의 검수 사전을 만들었다.
+  동일 원문이 여러 안정 키에서 쓰이는 경우를 포함해 307/1,586개 항목이 `reviewed`이며,
+  placeholder/TMP 태그 오류 0으로 CLI 검증을 통과했다. 나머지 1,279개는 영어 fallback을
+  유지하는 `pending` 상태다.
+- 번역 CLI TDD RED/GREEN: source/ko 결합, coverage 생성, 검수 번역의 token 오류 시
+  exit code 2를 확인하는 테스트 2/2가 통과했다.

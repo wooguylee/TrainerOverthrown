@@ -1,0 +1,7936 @@
+{
+  "schemaVersion": 1,
+  "targetLocale": "ko",
+  "entries": [
+    {
+      "id": "Data/AMENITY_Bathed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/AMENITY_Bread",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/AMENITY_Outhouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/AMENITY_Pie",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/AMENITY_Roast",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/AMENITY_Socialized",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/AMENITY_Soup",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/AMENITY_WellRested",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EMOTION_Exhausted",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EMOTION_ReallyHasToPee",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EMOTION_Starving",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Cutting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Cutting_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Excavation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Excavation_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Farming",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Farming_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Knockout",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Knockout_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Lantern_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Piercing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Piercing_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Repair",
+      "korean": "수리",
+      "status": "reviewed"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Repair_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Shield",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Shield_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Wrecking",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Category_Wrecking_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Fist",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Greathammer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Greatsword",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Lantern",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_None",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_SeedBag",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Shield",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Shovel",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Spear",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Spear_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Sword",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/EQUIPMENT_Wrench",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenBlinkedOut",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenCollapsed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenDefected",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenDeserted",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenDied",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenDiedCombat",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenFired",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenHired",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenLeft",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenSpawned",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_CitizenStarved",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_ConnectedToInternet",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_ConnectedToInternet_PS5",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_DisconnectedFromInternet",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_DisconnectedFromInternet_PS5",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_PasswordChanged",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_PlayerConnecting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_PlayerJoined",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_PlayerKicked",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_PlayerLeft",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_ScheduleBedtime",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_ScheduleDowntime",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_ScheduleWorktime",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/INFOFEED_UnlockedItem",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_AutoSaveActive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_AutoSaveWarning",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_BuildingDamaged",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_BuildingDestroyed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_Burning",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_CantAffordSoldiers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_CharacterHealed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_CitizenExhausted",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_CitizenFighting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_CitizenInjured",
+      "korean": "부상",
+      "status": "reviewed"
+    },
+    {
+      "id": "Data/ISSUE_CitizenSpawnPaused",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_CitizenStarving",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_CitizenStressed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_CitizenTakingShelter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_CitizenUnemployed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_ConstructionBlocked",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_CrownDropped",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_ExcessProduction",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_InsufficientFertilizerForFarmPlots",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_InsufficientFoodForWinter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_InsufficientFuelForBoats",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_InsufficientGunpowderForCannons",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_InsufficientHousing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_InsufficientManaForAirships",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_InsufficientMeals",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_InsufficientMedicineForHealing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_InsufficientOuthouses",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_JobsExceedHousing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_LowFood",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_NoTownHall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_PlannedConstruction",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_PlannedInfrastructure",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_ResearchAvailable",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_SeasonChanging",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_StationCooldown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_StationMissingInput",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_StationMissingWorker",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_StoreFoodForWinter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_UnderBombardment",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_UnpaidSoldiers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_Withering",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ISSUE_WorldGenActive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Apples",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Ashes",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Bilberries",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Bricks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_BushFodder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Carcasses",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Cauliflower",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_CauliflowerBountiful",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Chanterelle",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Charcoal",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Chard",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Clay",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Cloudberry",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Coin",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Components",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Cowslip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Edelweiss",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_FernFodder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Fertilizer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_FirBushFodder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_FirLogs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Flour",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Fodder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Grain",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Gunpowder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Herbs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Ingots",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Manure",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Mushrooms",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_OakLogs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Ore",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Planks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_PumpkinBountiful",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Pumpkins",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Radish",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Raspberry",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Reed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Rot",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_RottenLog",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Soap",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Sunflower",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_TomatoBountiful",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/ITEM_Type_Tomatoes",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_archipelago",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_archipelago_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_canyon",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_canyon_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_foothills",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_foothills_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_highlandplateau",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_highlandplateau_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_lostisles",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_lostisles_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_rollinghills",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_rollinghills_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_seasidecliffs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/LEVEL_seasidecliffs_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Faction_Kingdom",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Faction_Livestock",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Faction_Outlaws",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Faction_Snappers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Faction_Travelers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Faction_Tuskars",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Faction_Woolies",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_CommandTent",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_Firestarters",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_FirestartersShrine",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_Poachers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_PoachersTent",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_Ringleaders",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_Scrappers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_ScrappersWorkshop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_SnapperNests",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_Snappers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_Tent",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_Thugs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_ThugsTent",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_TuskarNests",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_Tuskars",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_Watchtower",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_WoolieNests",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/MAP_Type_Woolies",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Apothecary",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Baker",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Bandit",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Bard",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Blacksmith",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Bombardier",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Brickmaker",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Builder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Butcher",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Cannoneer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_CharcoalBurner",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Chemist",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_ClayDigger",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Commoner",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Devourer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Dreadnaught",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_ExpeditionaryAirship",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Farmer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Firestarter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Fisher",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_FishingBoat",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Fishmonger",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_FluffyWoolie",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Forager",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_FruitGatherer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_GongFarmer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Gunner",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Halberdier",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Herbalist",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Homesteader",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Hunter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Ironworker",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Launderer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Miller",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Musketeer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_MutantTuskar",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_MutantWoolie",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_PieCook",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Pilot",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Apothecary",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Bombardier",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Builder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Cannoneer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_CharcoalBurner",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Chemist",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Farmer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Forager",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_FruitGatherer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_GongFarmer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Gunner",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Halberdier",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Herbalist",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Homesteader",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Hunter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Miller",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Musketeer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Rancher",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Sawyer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Shearer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Stonecutter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_SulfurGatherer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Plural_Tinkerer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Poacher",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Powdermaker",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Prospector",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Rancher",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Ringleader",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Sawyer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Scrapper",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Settler",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Shearer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Snapper",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Soaper",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_SoupCook",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Stonecutter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_SulfurGatherer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_TamedFluffyWoolie",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_TamedWoolie",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_TavernKeeper",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Thug",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Tinkerer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Traveler",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Tuskar",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Weaver",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Job_Woolie",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_RandomJobSet_Outlaw",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Skill_Artistry",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Skill_Culinary",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Skill_Farming",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Skill_Fighting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Skill_Handiness",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Skill_Medicine",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Skill_Science",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Skill_Survival",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Skill_Trade",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_AttackCombatTarget",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_Build",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_CheckCoastIsClear",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_ClaimJob",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_CollapseFromExhaustion",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_ConsumeAnythingEdible",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_ExecuteMoveCommand",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_Extinguish",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_ExtinguishSelf",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_Extract",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_ExtractNourishment",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_Farm",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_Flee",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_GetUnderUnreachableCombatTarget",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_Heal",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_Hide",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_IdleAtBedTimeAmenity",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_IdleAtDownTimeAmenity",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_IdleAtWorkplace",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_IdleInPlace",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_InvestigateDistraction",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_LookAtDistraction",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_OnDuty",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_PickUpPermittedItem",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_PickUpRecipeInputs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_ReactToUnreachableCombatTarget",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_ReloadRangedWeapon",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_RepairSelf",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_ReserveJob",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_SearchAlertLocation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/NPC_Task_Tame",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildSawmill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildSawmill_Amount",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildSawmill_Employment",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildSettlement",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildSettlement_Bladder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildSettlement_Food",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildSettlement_Hunger",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildSettlement_Rest",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildSettlement_Well",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildTownHall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildTownHall_Housing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_BuildTownHall_RecruitingCitizens",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_DefeatOutlaws",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_DefeatOutlaws_EliminateCamps",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_DefeatOutlaws_EliminateOutlaws",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_EstablishSettlement",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_EstablishSettlement_ForagersHut",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_EstablishSettlement_FruitPress",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_EstablishSettlement_Sawmills",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_EstablishSettlement_Townhouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ExpandKingdom",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ExpandKingdom_ProgressResearch",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ExpandKingdom_RecruitCitizens",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ExpandSettlement",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ExpandSettlement_GatherFood",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ExpandSettlement_Research",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_FeedCitizens",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_FeedCitizens_Forage",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_FeedCitizens_MultipleStarving",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_FeedCitizens_OneStarving",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_FeedCitizens_PlantGrowth",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_FeedCitizens_PlantGrowthDaily",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_FindCrown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_FindCrown_BeamOfLight",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_FindCrown_Enemies",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidActive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidActive_DefendCrown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidActive_DefendSettlement",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidActive_DefendTownHall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidActive_RebuildTownHall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidActive_RetrieveCrown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidActive_RoutMultipleOutlaws",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidActive_RoutOneOutlaw",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidActive_RoutProgress",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidSoon",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidSoon_Countdown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_OutlawRaidSoon_StrikeFirst",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PickUpCrown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Butchering",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Construction",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Days",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_DaysAndHours",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_DaysAndOneHour",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Excavation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Farming",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_FoodForWinter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Gunpowder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Hours",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_LessThanOneHour",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Metalworking",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Milling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_NoOutlaws",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_OneDay",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_OneDayAndHours",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_OneDayAndOneHour",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_OneHour",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_Orchards",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_PrepareForOutlawRaid_TooFewOutlaws",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_Prompt_AdjustTaxSalaries",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_Prompt_AdjustTaxSalariesGamepad",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_Prompt_BuildMode",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_Prompt_Map",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_Prompt_ResearchTab",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_Prompt_ResearchTabGamepad",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_RebuildTownHall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_RebuildTownHall_RecruitPaused",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ReclaimCrown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ReclaimCrown_Defect",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ReclaimCrown_MoralePenalty",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ReclaimCrown_RecuitPaused",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ReclaimCrown_Stealer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ReignBegins",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ReignBegins_Crown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ResearchBuildings",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ResearchBuildings_Cost",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ResearchBuildings_Knowledge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ResearchBuildings_Research",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_ResearchBuildings_ThrowTreesIntoSawmill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_RestoreFinances",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_RestoreFinances_Defect",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/OBJECTIVE_RestoreFinances_RecruitPaused",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Ability_CivilianTaxation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Ability_EmployedCiviliansGenerateCoin",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Ability_IncendiariesForSoldiers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Ability_RevealAllOre",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Ability_SoldierSalaries",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Ability_TameWoolies",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Ability_UndiscoveredLand",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Ability_UndiscoveredOutlaws",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Ability_UndiscoveredWater",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_AnatomicalStudies",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_ArmorPiercingShells",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Baking",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Baking_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Ballistics",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Batteries",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Beastmastery",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_BigGameFishing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_BigGameHunting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_BigGameHunting_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_BreadAndCircuses",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_BreadAndCircuses_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_BreadAndGames",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Brewing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Brewing_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Butchering",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Butchering_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Canning",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Carpentry",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Carpentry_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_CivilService",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_CivilService_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Clothmaking",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Clothmaking_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Composting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Composting_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Construction",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Construction_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Distillation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Enclosures",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Enclosures_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Entertainment",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Entertainment_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Excavation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Excavation_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_ExpeditionaryFleet",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Experimentation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_ExplosiveShells",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_ExplosiveShells_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Farming",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Farming_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Firefighting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Firefighting_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FiringDrills",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FiringDrills_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FishFarming",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Fishing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Fishing_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Flight",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Flight_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Foraging",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Foraging_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_ForeignTrade",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Fortifications",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Fortifications_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FrontierSettlement",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FrontierSettlement_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FutureUpdate_Jan2025",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FutureUpdate_Late2025",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FutureUpdate_LateSummer2025",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FutureUpdate_Q32025",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FutureUpdate_Spring2025",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_FutureUpdate_Summer2025",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Gunnery",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Gunnery_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Gunpowder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Gunpowder_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Herbalism",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Herbalism_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Husbandry",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Husbandry_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Incendiaries",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Incendiaries_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_LevitationEngines",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_LevitationEngines_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_LiquidFire",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Machinery",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Machinery_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Metalworking",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Metalworking_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Milling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Milling_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Mining",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Mining_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_MunitionArmor",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Musketry",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Musketry_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Orchards",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Orchards_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Papermaking",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Papermaking_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Parks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Parks_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_PassengerService",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_PhlogistonCollection",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_PhlogistonCollection_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Potionmaking",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Potionmaking_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_ProfessionalSoldiers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_ProfessionalSoldiers_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Prospecting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Prospecting_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Repair",
+      "korean": "수리",
+      "status": "reviewed"
+    },
+    {
+      "id": "Data/RESEARCH_Repair_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_ReverseEngineering",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_ReverseEngineering_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Shearing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Shearing_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Shipbuilding",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Shipbuilding_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_SkyFleet",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_SlimeRanching",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_SlimeRanching_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Soapmaking",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Soapmaking_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Stonecutting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Stonecutting_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_SulfurExtraction",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_SulfurExtraction_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Taming",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Taming_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Taxation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Taxation_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_Warships",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_WoolieDomestication",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESEARCH_WoolieDomestication_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Agricultural",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Amenities",
+      "korean": "편의 시설",
+      "status": "reviewed"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Construction",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_ConsumerGoods",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Defense",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Farming",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Food",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Industrial",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Ingredients",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Intermediate",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_LuxuryGoods",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Materials",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_OutlawLoot",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Raw",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Strategic",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Category_Terraforming",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Bread",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Bricks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Carcasses",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Clay",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Cloth",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Coin",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Components",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Drink",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Entertainment",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Fashion",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Fertilizer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Fiber",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Flour",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Fodder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Forage",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_FriedFish",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Fruit",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Fuel",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Grain",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Gunpowder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Herbs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_HotBaths",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Ingots",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Jam",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Knowledge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Landfill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Logs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Mana",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Meat",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Medicine",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_MonsterEggs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Ore",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_OrganicWaste",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Planks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_RawFish",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Rocks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Sausages",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Scrap",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Soap",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Stew",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Sulfur",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Vegetables",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_VolcanicPlants",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Wheat",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/RESOURCE_Type_Wood",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/SALARY_Level0",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/SALARY_Level1",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/SALARY_Level2",
+      "korean": "낮음",
+      "status": "reviewed"
+    },
+    {
+      "id": "Data/SALARY_Level3",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/SALARY_Level4",
+      "korean": "높음",
+      "status": "reviewed"
+    },
+    {
+      "id": "Data/SALARY_Level5",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/SPAWN_Scenario_Initial",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/SPAWN_Scenario_SeasonChange",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/SPAWN_Type_Foliage",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/SPAWN_Type_WildLarge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/SPAWN_Type_WildSmall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TAX_Level0",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TAX_Level1",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TAX_Level2",
+      "korean": "낮음",
+      "status": "reviewed"
+    },
+    {
+      "id": "Data/TAX_Level3",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TAX_Level4",
+      "korean": "높음",
+      "status": "reviewed"
+    },
+    {
+      "id": "Data/TAX_Level5",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_AppleOrchard",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_Ash",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_Coast",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_ConstructionSite",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_Crown",
+      "korean": "왕관",
+      "status": "reviewed"
+    },
+    {
+      "id": "Data/TILE_Dirt",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_DirtPath",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_ForestEarth",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_ForestLowlandGrass",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_ForestMontaneGrass",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_ForestStone",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_Frost",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenCoast",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenCrown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenDeposit",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenFarmland",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenGarden",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenOrchard",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenPath",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenRubble",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenSidewalk",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenSite",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_FrozenStreet",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_GrasslandLowlandGrass",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_GrasslandMontaneGrass",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_HighlandGrass",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_HighlandRock",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_Ice",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_OreVein",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_PavedStreet",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_Reef",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_Rock",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_Rubble",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_Sidewalk",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_Snow",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_SteppeCoast",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_SteppeEarth",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_SteppeFrozenCoast",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_SteppeIce",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_SteppeLowlandGrass",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_SteppeMontaneGrass",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_SteppeRock",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_SteppeSnow",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_UnderwaterCrown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_UnderwaterDeposit",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_UnderwaterRubble",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_UnderwaterSite",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_VegetableGarden",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/TILE_WheatField",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/key-7607070181335040",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/key-7607070202306560",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/key-7607136090628096",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Data/key-7607136107405312",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BIOME_DirtPath",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BIOME_DirtPath_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BIOME_Earth",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BIOME_Earth_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BIOME_PavedStreet",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BIOME_PavedStreet_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BIOME_Sidewalk",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BIOME_Sidewalk_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_AirDefenseCannon",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_AirDefenseCannon_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Alehouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Alehouse_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Apothecary",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Apothecary_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_AtmosphericCollector",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_AtmosphericCollector_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Bakery",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Bakery_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Bench",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Bench_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_BlastFurnace",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_BlastFurnace_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Brazier",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Brazier_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Brickworks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Brickworks_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_BuildersPost",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_BuildersPost_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_BuildersWorkshop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_BuildersWorkshop_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Butchery",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Butchery_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_CharcoalKiln",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_CharcoalKiln_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_CommandTent",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_CommandTentLevel1",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_CommandTentLevel1_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_CommandTentLevel2",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_CommandTentLevel2_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_CommandTent_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Composter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Composter_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Deckchair",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Deckchair_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Dreadnaught",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_DreadnaughtHangar",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_DreadnaughtHangar_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Dredger",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Dredger_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_DrinkTable",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_DrinkTable_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_ExpeditionaryAirship",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_ExpeditionaryPlatform",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_ExpeditionaryPlatform_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Farmstead",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Farmstead_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FieldMortar",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FieldMortar_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Firepit",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Firepit_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FirestartersShrine",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FishingBoat",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FishingBoat_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FishingWharf",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FishingWharf_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FishmongersShop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FishmongersShop_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FlowerBucketA",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FlowerBucketA_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FlowerBucketB",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FlowerBucketC",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FlowerBucketD",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FlowerBucketE",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FlowerPot",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FlowerPot_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FoodBarrel",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FoodBarrel_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_ForagersHut",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_ForagersHut_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FrogChair",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FrogChair_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FruitPress",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_FruitPress_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HalberdiersBarracks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HalberdiersBarracks_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HalberdiersPost",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HalberdiersPost_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HayFeeder",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HayFeeder_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HerbalistsDen",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HerbalistsDen_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Homestead",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Homestead_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HuntingLodge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HuntingLodge_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HuntingTower",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_HuntingTower_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_JumpingBoard",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_JumpingBoard_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Lamppost",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Lamppost_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Mine",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Mine_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_MonarchStatue",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_MonarchStatue_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_MortarTower",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_MortarTower_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_MusketeersBarracks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_MusketeersBarracks_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_MusketeersPost",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_MusketeersPost_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Outhouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Outhouse_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_OutlawBanner",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_OutlawBanner_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Pantry",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Pantry_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Parasol",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Parasol2",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Parasol2_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Parasol_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_PieShop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_PieShop_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_PoachersTent",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_PowderKeg",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_PowderKeg_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_PowderMill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_PowderMill_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Ranch",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Ranch_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Sawmill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Sawmill_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Scarecrow1",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Scarecrow1_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Scarecrow2",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Scarecrow2_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_ScrappersWorkshop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_ShearingShed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_ShearingShed_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Smithy",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Smithy_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SnapperNest",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SnapperNest_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SoapersWorkshop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SoapersWorkshop_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SoupKitchen",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SoupKitchen_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_StonecuttersWorkshop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_StonecuttersWorkshop_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Storehouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Storehouse_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SulfurKiln",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SulfurKiln_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SunflowerPot",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SunflowerPot_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SupplyCrateBig",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SupplyCrateBig_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SupplyCrateSmall1",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SupplyCrateSmall1_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SupplyCrateSmall2",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_SupplyCrateSmall2_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Tent",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Tent_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Theatre",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Theatre_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_ThugsTent",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TinkerersWorkshop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TinkerersWorkshop_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TownHall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TownHall_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Townhouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Townhouse_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TreasureChest",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TreasureChest_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TuskarNest",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TuskarNestShelter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TuskarNestShelter_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TuskarNest_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TuskarStatue",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_TuskarStatue_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Washhouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Washhouse_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Watchtower",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Watchtower_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WeavingMill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WeavingMill_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Well",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Well_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Windmill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Windmill_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WoolieBalloon",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WoolieBalloon_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WoolieNest",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WoolieNestShelter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WoolieNestShelter_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WoolieNest_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WoolieStatue",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WoolieStatue_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WooliesBarn",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_WooliesBarn_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Workbench",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/BUILDING_Workbench_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Advanced",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Amenities",
+      "korean": "편의 시설",
+      "status": "reviewed"
+    },
+    {
+      "id": "Entities/CATEGORY_Citizens",
+      "korean": "시민",
+      "status": "reviewed"
+    },
+    {
+      "id": "Entities/CATEGORY_Consumables",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Creatures",
+      "korean": "생물",
+      "status": "reviewed"
+    },
+    {
+      "id": "Entities/CATEGORY_Decoration",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Defense",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Extraction",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Farming",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Forestry",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Gathering",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Government",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Infrastructure",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Military",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_ParkDecorations",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Refinement",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_RuralDecorations",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Subtitle_Foundation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CATEGORY_Subtitle_Population",
+      "korean": "인구",
+      "status": "reviewed"
+    },
+    {
+      "id": "Entities/CATEGORY_Subtitle_Resources",
+      "korean": "자원",
+      "status": "reviewed"
+    },
+    {
+      "id": "Entities/CATEGORY_Support",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_AppleTree",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_AppleTreeSapling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_AppleTreeStump",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_Cauliflower",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_CauliflowerBountiful",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_CauliflowerSown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_Pumpkin",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_PumpkinBountiful",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_PumpkinSown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_Reed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_ReedSown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_Tomato",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_TomatoBountiful",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_TomatoSown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_Wheat",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_WheatBountiful",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/CROP_WheatSown",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_Battlement",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_Battlement_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_CastleArch",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_CastleArch_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_CastleBlock",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_CastleBlock_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_CastleStairs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_CastleStairsTall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_CastleStairsTall_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_CastleStairs_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_Fence",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_Fence_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_Gate",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_Gate_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_StoneFence",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/INFRASTRUCTURE_StoneFence_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/PHYSICALTYPE_Armored",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/PHYSICALTYPE_Fortified",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/PHYSICALTYPE_Metallic",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/PHYSICALTYPE_Normal",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/PHYSICALTYPE_Rock",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/PHYSICALTYPE_Structure",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/PHYSICALTYPE_Wood",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Alehouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_AtmosphericCollector",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Bakery",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_BlastFurnace",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Brickworks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Butchery",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_CharcoalKiln",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Composter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Dredger",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_FishmongersShop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_FruitPress",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_HerbalistsDen",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Homestead",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Mine",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Outhouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_PieShop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_PowderMill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Sawmill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_ShearingShed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Smithy",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_SoapersWorkshop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_SoupKitchen",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_StonecuttersWorkshop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_SulfurKiln",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Theatre",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_TinkerersWorkshop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Townhouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Washhouse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_WeavingMill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_Windmill",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/RECIPE_WooliesBarn",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/SOWABLE_Farmland",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/SOWABLE_Farmland_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/SOWABLE_Garden",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/SOWABLE_Garden_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/SOWABLE_Orchard",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/SOWABLE_Orchard_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/SOWABLE_Vegetable",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/SOWABLE_Vegetable_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/SOWABLE_Wheat",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/SOWABLE_Wheat_Description",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Boulder_Large",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Boulder_Small",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Nest_Snappers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Nest_Tuskar_Shelter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Nest_Tuskars",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Nest_Woolie_Shelter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Nest_Woolies",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_BilberryBush",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_BilberryBushSapling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Cattail",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_CattailGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Chanterelle",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_ChanterelleGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Chard",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_ChardGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_CloudberryBush",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_CloudberryBushSapling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Cowslip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_CowslipGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Edelweiss",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_EdelweissGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_EmberRoot",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_EmberRootGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Fern",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_FernGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_FirBushShort",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_FirBushShortSapling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_FirBushTall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_FirBushTallSapling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_KelpGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_KelpLarge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_KelpMedium",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_KelpSmall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Mugwort",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_MugwortGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Radish",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_RadishGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_RaspberryBush",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_RaspberryBushSapling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Seagrass",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Seaweed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_ShortBush",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_ShortBushSapling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_Sunflower",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_SunflowerGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_TallBush",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_TallBushSapling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_TallGrass",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Plant_TallGrassGrowing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirLarge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirLogLarge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirLogMassive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirLogMedium",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirLogSmall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirMassive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirMedium",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirSapling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirSmall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirStumpLarge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirStumpMassive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirStumpMedium",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_FirStumpSmall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakLarge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakLogLarge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakLogMassive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakLogMedium",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakLogSmall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakMassive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakMedium",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakSapling",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakSmall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakStumpLarge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakStumpMassive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakStumpMedium",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "Entities/WILD_Tree_OakStumpSmall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/BIOME_Forest",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/BIOME_Grassland",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/BIOME_Steppe",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/DATE_Day",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/DATE_Year",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/DIFFICULTY_CanCrownBeStolen",
+      "korean": "왕관 탈취 허용",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_EnemyDamageFactor",
+      "korean": "적 피해량",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_EnemySpawnRateFactor",
+      "korean": "적 생성 빈도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_EnemyVitalsFactor",
+      "korean": "적 체력",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_PlayerStaminaFactor",
+      "korean": "플레이어 기력",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_PlayerVitalsFactor",
+      "korean": "플레이어 체력",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_Preset_Challenging",
+      "korean": "도전적",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_Preset_Challenging_Tooltip",
+      "korean": "적이 많고 위험하며 계절마다 무법자 습격이 발생합니다.",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_Preset_Custom",
+      "korean": "사용자 지정",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_Preset_Peaceful",
+      "korean": "평화로움",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_Preset_Peaceful_Tooltip",
+      "korean": "적은 공격받아도 반격하거나 왕관을 훔치지 않습니다. 플레이어는 더 튼튼하고 기력을 더 빨리 회복합니다.",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_Preset_Relaxing",
+      "korean": "느긋함",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_Preset_Relaxing_Tooltip",
+      "korean": "적은 더 약하고 습격대를 조직하지 않지만, 근처에서는 반격하고 왕관을 훔치려 합니다. 플레이어는 더 튼튼하고 기력을 더 빨리 회복합니다.",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_Title",
+      "korean": "난이도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_WorldHostility",
+      "korean": "월드 적대성",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_WorldHostility_Aggressive",
+      "korean": "공격적",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_WorldHostility_Defensive",
+      "korean": "방어적",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/DIFFICULTY_WorldHostility_Passive",
+      "korean": "수동적",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/ERROR_BDFLoadFailed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_ClientTimeout",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_ConnectFailed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_ConnectFailed_LobbyFull",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_ConnectFailed_LobbyRefuse",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_ConnectFailed_PreviouslyReported",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_ConnectFailed_WrongPassword",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_ConnectFailed_WrongVersion",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_ConnectingToServerFailed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_ForbiddenTerm",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_ForcedGameToStop",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_HostClosedSession",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_InstantiatingPrefabFailed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_InsufficientOnlinePrivilegies",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_InternetDisconnect",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_InvalidLobbyId",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_JoinLobbyFailed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_KickedFromServer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_LoadSaveFailed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_LoadTimeout",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_LoadingLevelFailed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_LobbyCreationFailed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_MustAcceptEULAMultiplayer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_OfflineMode",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_OfflineMode_PS5",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_PreloadFailed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_SaveCorrupt",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_SaveDoesntExist",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_SaveFailed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_UserLoggedOut",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ERROR_WorldNoLongerExists",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/FOODCONSUMPTION_DietPercent",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/FOODCONSUMPTION_FoodVariety",
+      "korean": "식량 다양성",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/FOODCONSUMPTION_LivestockFeed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Amenities",
+      "korean": "편의 시설",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Character",
+      "korean": "캐릭터",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Citizens",
+      "korean": "시민",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Consumption",
+      "korean": "소비",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Creatures",
+      "korean": "생물",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Employs",
+      "korean": "고용 인원",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Equipment",
+      "korean": "장비",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_EquipmentShortcuts",
+      "korean": "장비 단축키",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_FoodVariety",
+      "korean": "식량 다양성",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Forestation",
+      "korean": "산림",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_FromCitizens",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Housing",
+      "korean": "주거",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_IndividualEffects",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Inputs",
+      "korean": "투입",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Job",
+      "korean": "직업",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_LocalPresence",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_LocalResources",
+      "korean": "지역 자원",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_LuxuryGoods",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Name",
+      "korean": "이름",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Needs",
+      "korean": "필요",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Occupants",
+      "korean": "거주자",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_OffHands",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Outfit",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Outputs",
+      "korean": "산출",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Penalties",
+      "korean": "불이익",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Pollution",
+      "korean": "오염",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Population",
+      "korean": "인구",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Production",
+      "korean": "생산",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Recruitment",
+      "korean": "모집",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_RecruitmentLimit",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Research",
+      "korean": "연구",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Resource",
+      "korean": "자원",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Resources",
+      "korean": "자원",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Salaries",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Servicing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_SharedEffects",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Skills",
+      "korean": "기술",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Status",
+      "korean": "상태",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/HEADING_Taxation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Visiting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Wildlife",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/HEADING_Workers",
+      "korean": "노동자",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_BuildingTerrain",
+      "korean": "지형 생성 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_DownloadingLevel",
+      "korean": "레벨 다운로드 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_DownloadingWorldUpdates",
+      "korean": "월드 업데이트 다운로드 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_EnteringWorld",
+      "korean": "월드 입장 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_GeneratingScenario",
+      "korean": "{1} 유형의 시나리오 {0} 생성 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_GrowingPlants",
+      "korean": "식물 성장 처리 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_InitializingSystems",
+      "korean": "시스템 초기화 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_Loading",
+      "korean": "불러오는 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_LoadingLevelData",
+      "korean": "레벨 데이터 불러오는 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_LoadingMainMenu",
+      "korean": "메인 메뉴 불러오는 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_LoadingPrefabs",
+      "korean": "프리팹 불러오는 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_PlacingNpcCamps",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/LOADING_PlacingNpcOutposts",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/LOADING_PlacingPrefabs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/LOADING_PreparingNpcCamps",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/LOADING_ReadingLevelData",
+      "korean": "레벨 데이터 읽는 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_UpdatingLevelData",
+      "korean": "레벨 데이터 업데이트 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/LOADING_UpdatingPathfinding",
+      "korean": "길 찾기 계층 업데이트 중",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_Back",
+      "korean": "뒤로",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_Continue",
+      "korean": "계속",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_EULA_Body",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MENU_ExitGame",
+      "korean": "게임 종료",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_ExitToMain",
+      "korean": "메인 메뉴로 나가기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_InviteFriend",
+      "korean": "친구 초대",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_JoinWorld",
+      "korean": "월드 참가",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_LevelEditor",
+      "korean": "레벨 편집기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_LoadWorld",
+      "korean": "월드 불러오기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_Loading",
+      "korean": "불러오는 중...",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_ManagePlayers",
+      "korean": "플레이어 관리",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_MaxPlayers",
+      "korean": "최대 플레이어 수",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_NewWorld",
+      "korean": "새 월드",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_OfflineMode",
+      "korean": "오프라인 모드",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_PlayerCount",
+      "korean": "플레이어 {0} / {1}명",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_PopUp_Body",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MENU_PopUp_Title",
+      "korean": "게임은 아직 개발 중입니다",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_Popup_Continue",
+      "korean": "계속",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_ReportWorld",
+      "korean": "월드 신고",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_Reset",
+      "korean": "초기화",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_Resume",
+      "korean": "계속하기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_SaveWorld",
+      "korean": "월드 저장",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_Saved",
+      "korean": "월드가 저장되었습니다",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_Saving",
+      "korean": "저장 중...",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_Settings",
+      "korean": "설정",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_Unstuck",
+      "korean": "움직일 수 없어요",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_AllowFriends",
+      "korean": "친구 참가 허용",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Backups",
+      "korean": "백업",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Connect",
+      "korean": "연결",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Create",
+      "korean": "월드 만들기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_CreateNew",
+      "korean": "새 월드 만들기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Delete",
+      "korean": "삭제",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_EnterPassword",
+      "korean": "비밀번호 입력",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_HostName",
+      "korean": "호스트 이름",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_LastPlayed",
+      "korean": "마지막 플레이",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_LevelName",
+      "korean": "레벨",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Name",
+      "korean": "월드 이름",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_NameEmptyWarning",
+      "korean": "이름을 비워 둘 수 없습니다",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_NoFriends",
+      "korean": "온라인 상태인 친구 월드가 없습니다",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Password",
+      "korean": "비밀번호",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Ping",
+      "korean": "핑",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Players",
+      "korean": "플레이어",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Refresh",
+      "korean": "새로 고침",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Rename",
+      "korean": "이름 바꾸기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_SaveSlots",
+      "korean": "월드 슬롯 {0} / {1}",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_ShowBackups",
+      "korean": "저장 백업 표시",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MENU_World_Singleplayer",
+      "korean": "싱글플레이",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MESSAGE_BuildingMaxPerWorld",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MESSAGE_BuildingMaxPerZone",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MESSAGE_Death",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MESSAGE_Hired",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MESSAGE_OutOfBounds",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MESSAGE_RaidWarning",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MESSAGE_Unbuildable",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Accept",
+      "korean": "수락",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_AdjacentZoneExcess",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Blocked",
+      "korean": "차단됨",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_BuildingPollution",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_BurnedTiles",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Cancel",
+      "korean": "취소",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Capacity",
+      "korean": "수용량",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Citizens",
+      "korean": "시민",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_CivilianJobs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Civilians",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Crown_Tooltip",
+      "korean": "왕관",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Crownless",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Crownless_Tooltip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_CurrentResearching",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Day",
+      "korean": "일",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Decline",
+      "korean": "거절",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Dodged",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_DontShowAgain",
+      "korean": "다시 표시하지 않기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_DropCrown_Tooltip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_EarlyShift",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_EmployedCivilians",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_EndUserLicenseAgreement",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Finished",
+      "korean": "완료",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_For",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Free",
+      "korean": "무료",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Grass",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Happiness",
+      "korean": "행복도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Homeless",
+      "korean": "노숙",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Homeless_Tooltip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_InResearchQueue",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Injured",
+      "korean": "부상",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_LateShift",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Load",
+      "korean": "불러오기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Max",
+      "korean": "중지",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_MidShift",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Min",
+      "korean": "계속하기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_MissingWorker",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_No",
+      "korean": "아니요",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Ok",
+      "korean": "확인",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Optional",
+      "korean": "선택 사항",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_PioneerSpirit",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_PioneerSpirit_Tooltip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Producer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_RatePerDay",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Ready",
+      "korean": "준비됨",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_Requires",
+      "korean": "{0} 필요",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_ResearchCompleted",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_ResearchLackingResources",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_ResearchQueue",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_ResearchQueueEmpty",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_ResearchQueueTotal",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_ResearchSpeed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_ResearchSpeed_PopulationBonus_Tooltip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_ResearchSpeed_Rate_Tooltip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_ResearchSpeed_TinkerersWorkshopBonus_Tooltip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Residents",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Respawn",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_RootedTrees",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Save",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_SizeLarge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_SizeMedium",
+      "korean": "중간",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/MISC_SizeSmall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_SoldierJobs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Soldiers",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Source",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_StartNewResearch",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_StartResearch",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Stock",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Stress",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Structures",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Taxation",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_TimeRemaining",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Tip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Total",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Unemployed",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Unemployed_Tooltip",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Unlock",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Upkeep",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Woolies",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_Yes",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/MISC_ZoneSize",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/NEED_Calories",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/NEED_Rest",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_Connecting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_DeleteSave",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_DeleteSaveBackup",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_DeleteWorld",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_EarlyAccessSave",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_KickPlayer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_OpeningLobby",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_QuitGame",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_RebindWaiting",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_ReportBan",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_ReportSent",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_ReportingWorldConfirm",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_ResetWorld",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_RestartLevel",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_SaveBeforeQuit",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_UnstuckPlayer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPTMESSAGE_WorldBanned",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPT_AdjustHeight",
+      "korean": "높이 조절",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_AdjustPitch",
+      "korean": "기울기 조절",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_AdjustRange",
+      "korean": "범위 조절",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Arm",
+      "korean": "무장",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Back",
+      "korean": "뒤로",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Browse",
+      "korean": "찾아보기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_BuildMenu",
+      "korean": "건설 메뉴",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_BuildMode",
+      "korean": "건설 모드",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Cancel",
+      "korean": "취소",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_CancelMoveCommand",
+      "korean": "이동 명령 취소",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Charge",
+      "korean": "충전",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_ChargedThrow",
+      "korean": "충전 투척",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_ClaimCrown",
+      "korean": "왕관 차지",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Construct",
+      "korean": "건설",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Crouch",
+      "korean": "웅크리기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_CycleVariant",
+      "korean": "형태 전환",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Dash",
+      "korean": "돌진",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_DashToRun",
+      "korean": "돌진하여 달리기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Defuse",
+      "korean": "해제",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Demolish",
+      "korean": "철거",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Deselect",
+      "korean": "선택 해제",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_DisableGrid",
+      "korean": "격자 끄기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Dive",
+      "korean": "잠수",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_DolphinSwim",
+      "korean": "돌고래 수영",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Drift",
+      "korean": "드리프트",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Drop",
+      "korean": "버리기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_DropDown",
+      "korean": "아래로 내려가기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_EnableGrid",
+      "korean": "격자 켜기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Enter",
+      "korean": "들어가기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Exit",
+      "korean": "나가기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Harvest",
+      "korean": "수확",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Heal",
+      "korean": "치유",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Hold",
+      "korean": "들기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Inspect",
+      "korean": "살펴보기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Jump",
+      "korean": "점프",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_LetGo",
+      "korean": "놓기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Lift",
+      "korean": "들어 올리기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Map",
+      "korean": "지도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Mirror",
+      "korean": "반전",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_MoveCommand",
+      "korean": "이동 명령",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_NoSaveSlotsEmpty",
+      "korean": "저장할 빈 월드 슬롯이 없습니다! 기존 월드를 삭제한 뒤 다시 시도하세요",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_NotEnoughFreeBlocks",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/PROMPT_Place",
+      "korean": "배치",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Remove",
+      "korean": "제거",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Repair",
+      "korean": "수리",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_ResearchTab",
+      "korean": "연구 탭",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_RestartOperation",
+      "korean": "작업 다시 시작",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_RestartProduction",
+      "korean": "생산 다시 시작",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Rotate",
+      "korean": "회전",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_SeedBag",
+      "korean": "파종",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_SeedBag_AirAlt",
+      "korean": "파종(원형)",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_SeedBag_GroundAlt",
+      "korean": "파종(원뿔형)",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Select",
+      "korean": "선택",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_ShieldBash",
+      "korean": "방패 밀치기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Shoot",
+      "korean": "발사",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Shovel_Air",
+      "korean": "파기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Shovel_AirAlt",
+      "korean": "높이기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Shovel_Ground",
+      "korean": "평탄화",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Shovel_GroundAlt",
+      "korean": "메우기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Sprint",
+      "korean": "전력 질주",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Stand",
+      "korean": "일어서기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_StealCrown",
+      "korean": "왕관 훔치기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Takedown",
+      "korean": "제압",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Tame",
+      "korean": "길들이기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Throw",
+      "korean": "던지기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_ToggleRun",
+      "korean": "달리기 전환",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/PROMPT_Zoom",
+      "korean": "확대/축소",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/RECRUITMENT_Info",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/RECRUITMENT_LimitReached",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/RECRUITMENT_LimitUsesJobs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/RECRUITMENT_LowHappiness",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/RECRUITMENT_MissingTownHall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/RECRUITMENT_NextCitizen",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/RECRUITMENT_NoHousing",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/RECRUITMENT_NoJobs",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/RECRUITMENT_PausedWhileCrownless",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/RECRUITMENT_TimeUntilSpawn",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/RESEARCH_Needs",
+      "korean": "필요",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SAVEINFO_CloudSynced",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SAVEINFO_Created",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SAVEINFO_LastSave",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SAVEINFO_SaveCount",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SEASON_Fall",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SEASON_Spring",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SEASON_Summer",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SEASON_Winter",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Audio_Ambience",
+      "korean": "환경음",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Audio_Category",
+      "korean": "오디오",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Audio_Controller",
+      "korean": "컨트롤러 스피커",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Audio_Effects",
+      "korean": "효과음",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Audio_Master",
+      "korean": "전체 음량",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Audio_Music",
+      "korean": "음악",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_AutoSaveInterval",
+      "korean": "자동 저장 간격",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_ControllerSensitivity",
+      "korean": "컨트롤러 감도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_ControllerSensitivity_PS5",
+      "korean": "컨트롤러 감도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_AdaptiveTriggers",
+      "korean": "적응형 트리거 피드백",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_GyroSensitivity",
+      "korean": "자이로 조준 감도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_GyroSensitivityPS5",
+      "korean": "모션 센서 감도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_InvertX",
+      "korean": "컨트롤러 X축 반전",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_InvertX_PS5",
+      "korean": "컨트롤러 X축 반전",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_InvertY",
+      "korean": "컨트롤러 Y축 반전",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_InvertY_PS5",
+      "korean": "컨트롤러 Y축 반전",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_TouchpadSensitivity",
+      "korean": "터치패드 커서 감도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_UseGyroAiming",
+      "korean": "자이로 조준 사용",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_UseGyroAimingPS5",
+      "korean": "모션 센서 조준 사용",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_Vibration",
+      "korean": "진동 강도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controller_Vibration_Xbox",
+      "korean": "진동 강도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Controls_Category",
+      "korean": "조작",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Credits_Category",
+      "korean": "제작진",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_FocusLostPause",
+      "korean": "포커스를 잃으면 일시 정지",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_General_Category",
+      "korean": "일반",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_AA",
+      "korean": "안티앨리어싱",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_AA_AMDFSR",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_AA_TAA",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_Category",
+      "korean": "그래픽",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_FSR",
+      "korean": "FSR 품질",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_FSR_Balanced",
+      "korean": "균형",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_FSR_NativeAA",
+      "korean": "네이티브 AA",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_FSR_Performance",
+      "korean": "성능",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_FSR_Quality",
+      "korean": "품질",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_FSR_UltraPerformance",
+      "korean": "초고성능",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_FSR_UltraQuality",
+      "korean": "최고 품질",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_Fullscreen",
+      "korean": "전체 화면",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_GrassDistance",
+      "korean": "풀 렌더링 거리",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_MotionBlur",
+      "korean": "모션 블러",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_PostProcessingQuality",
+      "korean": "후처리",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_QualityCustom",
+      "korean": "사용자 지정",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_QualityHigh",
+      "korean": "높음",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_QualityLow",
+      "korean": "낮음",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_QualityMedium",
+      "korean": "중간",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_QualityPreset",
+      "korean": "품질 프리셋",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_QualityUltra",
+      "korean": "울트라",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_Recommended",
+      "korean": "권장",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_Reflections",
+      "korean": "화면 공간 반사",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_Resolution",
+      "korean": "해상도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_ResolutionScale",
+      "korean": "해상도 배율",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_ShadowDistance",
+      "korean": "그림자 거리",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_ShadowQuality",
+      "korean": "그림자 품질",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_TextureQuality",
+      "korean": "텍스처 품질",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Graphics_VSync",
+      "korean": "수직 동기화",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_HardLockOnCycleSensitivity",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BaseActions",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BaseActions_BuildMode",
+      "korean": "건설 모드",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BaseActions_Cancel",
+      "korean": "취소",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BaseActions_Exit",
+      "korean": "나가기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BaseActions_Interact",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BaseActions_Pause",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BaseActions_RotateLeft",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BaseActions_RotateRight",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BaseActions_ShowResources",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BuildMode",
+      "korean": "건설 모드",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BuildMode_CycleVariant",
+      "korean": "형태 전환",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BuildMode_Demolish",
+      "korean": "철거",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BuildMode_OpenMenu",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BuildMode_Place",
+      "korean": "배치",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BuildMode_Scroll_negative",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_BuildMode_Scroll_positive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Camera",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Camera_Look",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Category",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Category_Console",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Category_Xbox",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_CombatBuilding",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_CombatBuilding_Exit",
+      "korean": "나가기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_CombatBuilding_Pitch_negative",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_CombatBuilding_Pitch_positive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_CombatBuilding_Shoot",
+      "korean": "발사",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_CycleHotkeyLeft_negative",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_CycleHotkeyRight_positive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_CycleHotkeys",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_CycleOffHand",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_Inventory",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_SelectOffHandSlot1",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_SelectOffHandSlot2",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot1",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot2",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot3",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot4",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot5",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot6",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot7",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot8",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map",
+      "korean": "지도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_CancelMoveCommand",
+      "korean": "이동 명령 취소",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_DragPan",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_FasterPan",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_Inspect",
+      "korean": "선택",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_MoveCommand",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_Pan_down",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_Pan_left",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_Pan_right",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_Pan_up",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_Zoom_negative",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Map_Zoom_positive",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Menus",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Menus_Character",
+      "korean": "캐릭터",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Menus_CycleLeft",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Menus_CycleRight",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Menus_Map",
+      "korean": "지도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Menus_Population",
+      "korean": "인구",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Menus_Research",
+      "korean": "연구",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_Menus_Resources",
+      "korean": "자원",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_Crouch",
+      "korean": "웅크리기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_CrownCharge",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_Dash",
+      "korean": "돌진",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_Drift",
+      "korean": "드리프트",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_Jump",
+      "korean": "점프",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_Move_down",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_Move_left",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_Move_right",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_Move_up",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_Strafe",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_PlayerMovement_ToggleWalk",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_RadialMenu",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_RadialMenu_Back",
+      "korean": "뒤로",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_RadialMenu_Exit",
+      "korean": "나가기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_RadialMenu_Select",
+      "korean": "선택",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_RegularMode_Attack",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_RegularMode_Block",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_RegularMode_Lift",
+      "korean": "들어 올리기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_RegularMode_Throw",
+      "korean": "던지기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_RegularMode_ToggleHardLockOn",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_RegularMode_UseOffHand",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_ResetAll",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_ResetAll_PS5",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Keybinds_ResetAll_Xbox",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_Language",
+      "korean": "언어",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_MouseSensitivity",
+      "korean": "마우스 감도",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Mouse_InvertX",
+      "korean": "마우스 X축 반전",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Mouse_InvertY",
+      "korean": "마우스 Y축 반전",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_Off",
+      "korean": "끔",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_On",
+      "korean": "켬",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_RenderingMode",
+      "korean": "렌더링 모드",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_RenderingMode_Enhanced",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_RenderingMode_Performance",
+      "korean": "성능",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_RenderingMode_Quality",
+      "korean": "품질",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_ScreenShake",
+      "korean": "화면 흔들림",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_SoftLockOnEnabled",
+      "korean": "소프트 록온",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_UI_Category",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_UI_Scale",
+      "korean": "UI 크기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_UI_VisibilityHotbar",
+      "korean": "아이템 단축바",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_UI_VisibilityLowerPrompts",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_UI_VisibilityLowerPrompts_PS5",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_UI_VisibilityPlayerPrompts",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_UI_VisibilityPlayerPrompts_PS5",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_UI_VisibilityResources",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_UI_VisibilitySidePrompts",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/SETTINGS_UI_Visibility_AlwaysShow",
+      "korean": "항상 표시",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_UI_Visibility_Hide",
+      "korean": "숨기기",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_UI_Visibility_Show",
+      "korean": "표시",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/SETTINGS_UI_Visibility_ShowOnUse",
+      "korean": "사용 시 표시",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/TIME_Min",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/TIME_PerDay",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/TIME_PerMin",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/TIME_Seconds",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/VICTORY_Body",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/VICTORY_Continue",
+      "korean": "계속",
+      "status": "reviewed"
+    },
+    {
+      "id": "UI/VICTORY_Heading",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/VICTORY_WaitingForHost",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ZONE_Development_Settled",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ZONE_Development_Wild",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ZONE_Size_Large",
+      "korean": "",
+      "status": "pending"
+    },
+    {
+      "id": "UI/ZONE_Size_Small",
+      "korean": "",
+      "status": "pending"
+    }
+  ]
+}

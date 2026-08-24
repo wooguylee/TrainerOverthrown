@@ -1,0 +1,14 @@
+{
+  "assetRipper": {
+    "version": "1.3.14",
+    "archive": "AssetRipper_win_x64_1.3.14.zip",
+    "sha256": "808CDDF66DD0357AD6B36B97DE3A2AEF5E3552E63AF3EE0610F9A03A0378101C",
+    "purpose": "Unity 6 IL2CPP structure inspection; not required at runtime"
+  },
+  "unityPy": {
+    "version": "1.25.0",
+    "wheel": "unitypy-1.25.0-cp314-cp314-win_amd64.whl",
+    "sha256": "163404965B7784F34E1BD944E55A511569B53B6AB4A28C12C3B1DDAFF54396B6",
+    "purpose": "Read-only Unity Localization StringTable extraction"
+  }
+}

@@ -18,3 +18,5 @@ work/
 # Logs and local configuration
 *.log
 local.settings.json
+__pycache__/
+*.pyc
