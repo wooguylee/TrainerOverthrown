@@ -58,22 +58,8 @@ if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 & python -m unittest (Join-Path $repoRoot 'tests\tools\test_localization_extractor.py')
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-$toolManifest = Get-Content -LiteralPath (Join-Path $repoRoot 'tools\tool-manifest.json') -Raw |
-    ConvertFrom-Json
-$bepInExRoot = Join-Path $repoRoot '.artifacts\bepinex'
-$bepInExCacheValid = $true
-foreach ($required in $toolManifest.bepInEx.requiredFiles) {
-    $requiredPath = Join-Path $bepInExRoot $required.path
-    if (-not (Test-Path -LiteralPath $requiredPath -PathType Leaf) -or
-        (Get-FileHash -LiteralPath $requiredPath -Algorithm SHA256).Hash -ne $required.sha256) {
-        $bepInExCacheValid = $false
-        break
-    }
-}
-if (-not $bepInExCacheValid) {
-    & (Join-Path $PSScriptRoot 'fetch-bepinex.ps1')
-    if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-}
+& (Join-Path $PSScriptRoot 'fetch-bepinex.ps1')
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
 & (Join-Path $PSScriptRoot 'stage-helper.ps1') -Configuration $Configuration
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

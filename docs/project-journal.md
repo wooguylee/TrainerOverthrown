@@ -232,13 +232,17 @@
 - 재검토에서 파괴된 Unity `Damageable`이 null로 비교될 때 원래 값 latch가 남는 경계를
   추가로 확인했다. 대상 생존 여부와 관계없이 latch를 먼저 소비하고, 살아 있는 동일
   대상에만 원래 값을 쓰도록 고쳐 새 플레이어에 이전 값을 적용하지 않는다.
-- BepInEx cache는 단순 존재 검사가 아니라 고정 manifest에 기록한 핵심 파일 5개의
-  SHA-256을 매 빌드마다 다시 확인한다. 하나라도 없거나 다르면 archive SHA-256 검증부터
-  다시 다운로드·추출하며, 추출된 핵심 파일도 각각 해시를 대조한 뒤에만 staging한다.
-- 최종 리뷰 반영 ZIP SHA-256:
-  `190DB9D328D28F71FDB09FA3AE411B654D40080045BB7F8EEC9A6FB4E901A367`
-- 최종 self-contained EXE SHA-256:
-  `768551575DBD047539A49935151BF4AE62F6F82097026363C49BEB53DBDAAAB7`
+- 검증되지 않은 BepInEx cache의 다른 runtime 파일이 섞일 가능성을 없애기 위해 Release
+  빌드마다 공식 고정 URL에서 archive를 새로 받는다. 전체 archive SHA-256을 확인해 새
+  staging 디렉터리에 추출하고, 핵심 파일 5개의 SHA-256까지 대조한 뒤 기존 cache를
+  교체하고 payload를 만든다.
+- 최종 배포 ZIP SHA-256:
+  `275754C13D7954562C71971694CFE8AE23D93F4F878DED8004AFB24555E5C01B`
+- 최종 배포 EXE SHA-256:
+  `7F4DE27B8817334EE228B14E5A9F8E1B15062F0975181585FF975F98F1D6B1EE`
+- 최종 archive 재검증 빌드 후 ZIP manifest 239개 불일치 0, 설치 payload 233개 불일치
+  0을 확인했다. 게임 PID `20664`에서 Helper가 준비됐고 무적 요청은 불확실 세션으로
+  차단됐으며 BepInEx 오류 0이었다. WPF 정상 종료 후 잔여 프로세스도 0개였다.
 - 최종 ZIP과 인접 `.sha256`이 일치했고, 새 디렉터리에 푼 package manifest 239개 파일의
   길이·해시 불일치는 0개였다. 최종 payload를 재설치한 manifest 233개도 불일치 0개다.
 - 최종 게임 PID `20152` 부팅에서 Helper 준비와 BepInEx 오류 0을 다시 확인했고,
