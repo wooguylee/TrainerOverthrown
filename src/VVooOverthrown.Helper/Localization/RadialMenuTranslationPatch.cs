@@ -3,6 +3,29 @@ using TMPro;
 
 namespace VVooOverthrown.Helper.Localization;
 
+[HarmonyPatch(typeof(RadialMenu), nameof(RadialMenu.AddOption))]
+internal static class RadialMenuOptionTranslationPatch
+{
+    private static void Prefix(ref string name, ref string subtitle, ref string description)
+    {
+        TranslateSafely(ref name);
+        TranslateSafely(ref subtitle);
+        TranslateSafely(ref description);
+    }
+
+    private static void TranslateSafely(ref string value)
+    {
+        try
+        {
+            TmpTextTranslationPatch.TranslateExact(ref value);
+        }
+        catch
+        {
+            // One malformed option value must not prevent the menu from opening.
+        }
+    }
+}
+
 [HarmonyPatch(typeof(RadialMenuDynamicWheel), nameof(RadialMenuDynamicWheel.RefreshInformation))]
 internal static class RadialMenuTranslationPatch
 {
@@ -34,6 +57,7 @@ internal static class RadialMenuTranslationPatch
             return;
         }
 
+        KoreanFontProvider.EnsureFallback(text);
         var original = text.text;
         var translated = original;
         TmpTextTranslationPatch.TranslateExact(text, ref translated);

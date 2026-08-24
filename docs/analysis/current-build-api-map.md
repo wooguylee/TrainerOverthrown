@@ -50,8 +50,12 @@ metadata 세 SHA-256을 게임 폴더에서 다시 계산한다. 설치 후 게�
 - 동적 template matching의 smart plural 토큰은 실제 영어 단위 `hour(s)`, `day(s)`,
   `second(s)`에만 매칭한다. 일반 문구와 개수 조합을 시간 단위로 오인하지 않는다.
 - 건설·연구 선택 휠의 제목과 설명은 `RadialMenuDynamicWheel.title`, `subtitle`에 표시되고
-  `RefreshInformation()`에서 별도로 갱신된다. 일반 `TMP_Text.text` 기록 패치뿐 아니라
-  이 새로고침 직후에도 같은 검수 catalog와 글꼴 fallback을 적용한다.
+  `RefreshInformation()`에서 별도로 갱신된다. 표시 후단 보완만으로 실제 설명이 바뀌지
+  않는 경로가 있어, 공통 `RadialMenu.AddOption()`의 `name`, `subtitle`, `description`을
+  저장 전에 완전 일치 번역하고 새로고침 후에는 글꼴 fallback을 보장한다.
+- 월드 로딩 단계명과 진행률은 `LoadingScreen.SetLoadingMessage(string)` 및
+  `SetProgress(float)` 경로에서 결합된다. `UI/LOADING_*` 단계명은 메시지 입구에서 완전
+  일치 번역하고, 이미 결합된 `0%`~`100%` 접미사는 숫자를 그대로 보존한다.
 - 메인 메뉴의 미확인 세션에서 무적·시간 배속 명령이 `OFFLINE_NOT_PROVEN`으로 차단됨.
 - 실제 로컬 월드에서의 허용 변경은 사용자가 플레이 중 확인할 수 있으며, 앱 종료·pipe
   단절·멀티플레이 전환 시 항상 reset한다.

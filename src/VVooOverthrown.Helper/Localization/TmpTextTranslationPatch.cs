@@ -30,12 +30,27 @@ internal static class TmpTextTranslationPatch
         Translate(text, ref value, exactOnly: true);
     }
 
+    internal static void TranslateExact(ref string value)
+    {
+        TryTranslate(ref value, exactOnly: true);
+    }
+
     private static void Translate(TMP_Text text, ref string value, bool exactOnly)
     {
-        var catalog = Catalog;
-        if (catalog is null || text is null || string.IsNullOrEmpty(value))
+        if (text is null || !TryTranslate(ref value, exactOnly))
         {
             return;
+        }
+
+        KoreanFontProvider.EnsureFallback(text);
+    }
+
+    private static bool TryTranslate(ref string value, bool exactOnly)
+    {
+        var catalog = Catalog;
+        if (catalog is null || string.IsNullOrEmpty(value))
+        {
+            return false;
         }
 
         string korean;
@@ -44,10 +59,10 @@ internal static class TmpTextTranslationPatch
             : catalog.TryTranslate(value, out korean);
         if (!found || !TextReplacementPolicy.ShouldReplace(value, value, korean))
         {
-            return;
+            return false;
         }
 
-        KoreanFontProvider.EnsureFallback(text);
         value = korean;
+        return true;
     }
 }

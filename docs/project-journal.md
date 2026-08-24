@@ -365,6 +365,25 @@
   재설치했다. 두 명령 모두 exit code 0이며 설치 manifest 233개는 누락 0, SHA-256
   불일치 0이다.
 
+## 2026-08-25 선택 휠 설명 재보완 및 로딩 문구 한글화
+
+- 사용자의 재확인 스크린샷에서 시청 제목은 한국어지만 설명은 여전히 영어임을 확인했다.
+  해당 게임 세션 로그에는 Helper `translations=1394`가 정상 로드됐고 Harmony 오류가
+  없으며, 설치 Helper 해시도 최신 빌드와 일치했다. 따라서 설치·catalog 문제가 아니라
+  `RadialMenuDynamicWheel.RefreshInformation()` 표시 후단 보완이 실제 옵션의 영어
+  설명 저장값을 바꾸지 못한 것이 원인이었다.
+- 공통 `RadialMenu.AddOption()` 입구의 `name`, `subtitle`, `description`을 검수 catalog의
+  완전 일치 항목으로 먼저 치환하도록 수정했다. 이후 선택 휠은 저장된 한국어 설명을
+  사용하며, 기존 새로고침 postfix는 TMP 글꼴 fallback과 후단 안전망 역할만 맡는다.
+- 로딩 화면의 `Growing plants 79%`는 `UI/LOADING_GrowingPlants`의 검수 원문
+  `Growing plants` 뒤에 진행률이 결합돼 완전 일치 사전을 벗어난 경우다. 같은
+  `UI/LOADING_*` 18개는 모두 `reviewed` 상태다.
+- `LoadingScreen`과 `PreloadLoadingScreen`의 `SetLoadingMessage(string)` 입구에서 단계명을
+  완전 일치 번역한다. 화면에 이미 결합된 경우도 마지막 토큰이 `0%`~`100%`일 때만
+  단계명 부분을 번역하고 퍼센트는 그대로 유지해 다른 동적 문구에는 영향을 주지 않는다.
+- Helper 컴파일 코드만 변경됐으므로 해당 프로젝트만 Release 빌드한다. 사용자 정책에
+  따라 자동 테스트와 ZIP 패키징은 실행하지 않는다.
+
 ## 이후 작업 방식
 
 - 사용자가 별도로 선택하도록 묻지 않고 항상 권장안으로 구현한다.
