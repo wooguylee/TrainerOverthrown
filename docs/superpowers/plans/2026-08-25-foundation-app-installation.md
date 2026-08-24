@@ -149,7 +149,7 @@ Commit: `git commit -m "feat: validate supported Overthrown build"`
 - Produces: `PayloadInstaller.RemoveAsync(gameRoot, cancellationToken)`.
 - Produces: `SaveBackupService.CreateAsync(sourceRoot, destinationRoot, cancellationToken)` returning file hashes.
 
-- [ ] **Step 1: Write failing rollback and conservative-removal tests**
+- [x] **Step 1: Write failing rollback and conservative-removal tests**
 
 ```csharp
 [Fact]
@@ -163,15 +163,15 @@ public async Task RemovePreservesInstalledFileChangedByUser()
 }
 ```
 
-- [ ] **Step 2: Run focused tests and verify RED**
+- [x] **Step 2: Run focused tests and verify RED**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Core.Tests\VVooOverthrown.Core.Tests.csproj --filter "PayloadInstallerTests|SaveBackupServiceTests"`
 
-- [ ] **Step 3: Implement staging, manifest, rollback, and backup hashes**
+- [x] **Step 3: Implement staging, manifest, rollback, and backup hashes**
 
 Reject rooted manifest paths, `..` segments, symlink/reparse-point escapes, running game processes, and unsupported builds. Manifest entries contain relative path, SHA-256, byte length, and owner `VVooOverthrown`.
 
-- [ ] **Step 4: Run focused tests and commit**
+- [x] **Step 4: Run focused tests and commit**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Core.Tests\VVooOverthrown.Core.Tests.csproj --filter "PayloadInstallerTests|SaveBackupServiceTests"`
 

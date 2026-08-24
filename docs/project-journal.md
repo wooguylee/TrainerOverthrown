@@ -75,3 +75,8 @@
 - 게임 경로 TDD RED/GREEN: 예상 EXE·Data 폴더가 있는 루트만 승인하는 2건 통과.
 - 현재 Core 테스트: 5/5 통과. 실제 게임 세 파일의 해시는 설계 시 읽기 전용으로
   계산한 현재 빌드 profile과 일치한다.
+- installer/backup TDD RED: `Installation`, `Saves` 네임스페이스 부재 실패 확인.
+- installer/backup GREEN: payload/manifest 설치, 중간 실패 롤백, 사용자 변경 파일
+  보존 제거, 실행 중 설치 거부, 백업 파일·SHA-256 검증 5건 통과.
+- installer는 기존 파일/폴더 충돌을 덮어쓰지 않고, manifest 경로를 게임 루트 내부로
+  제한하며, 해시가 달라진 설치 파일은 제거하지 않는다.
