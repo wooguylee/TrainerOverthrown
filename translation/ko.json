@@ -749,73 +749,73 @@
     },
     {
       "id": "Data/LEVEL_archipelago",
-      "korean": "",
-      "status": "pending"
+      "korean": "군도",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_archipelago_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "여러 섬으로 이루어진 해안 지형입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_canyon",
-      "korean": "",
-      "status": "pending"
+      "korean": "협곡",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_canyon_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "중앙의 고원이 협곡으로 나뉜 비교적 평탄한 지형입니다. 초보자에게 권장합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_foothills",
-      "korean": "",
-      "status": "pending"
+      "korean": "산기슭",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_foothills_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "긴 해안선과 많은 언덕이 있는 험준한 지형입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_highlandplateau",
-      "korean": "",
-      "status": "pending"
+      "korean": "고원 지대",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_highlandplateau_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "눈과 드문드문 펼쳐진 고원 초원, 가파른 협곡과 계곡이 있는 고지대입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_lostisles",
-      "korean": "",
-      "status": "pending"
+      "korean": "잊힌 섬들",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_lostisles_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "나무와 기타 자원이 자랄 땅이 제한된 작은 섬 지형입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_rollinghills",
-      "korean": "",
-      "status": "pending"
+      "korean": "완만한 구릉",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_rollinghills_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "길게 이어지는 강과 완만한 언덕이 있는 평탄하고 탁 트인 지형입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_seasidecliffs",
-      "korean": "",
-      "status": "pending"
+      "korean": "해안 절벽",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_seasidecliffs_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "긴 해안선으로 둘러싸여 있으며 곳곳의 가파른 언덕과 절벽으로 나뉜 지형입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Faction_Kingdom",
@@ -6409,8 +6409,8 @@
     },
     {
       "id": "UI/MISC_SizeLarge",
-      "korean": "",
-      "status": "pending"
+      "korean": "대형",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_SizeMedium",
@@ -6419,8 +6419,8 @@
     },
     {
       "id": "UI/MISC_SizeSmall",
-      "korean": "",
-      "status": "pending"
+      "korean": "소형",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_SoldierJobs",
@@ -7924,13 +7924,13 @@
     },
     {
       "id": "UI/ZONE_Size_Large",
-      "korean": "",
-      "status": "pending"
+      "korean": "대형",
+      "status": "reviewed"
     },
     {
       "id": "UI/ZONE_Size_Small",
-      "korean": "",
-      "status": "pending"
+      "korean": "소형",
+      "status": "reviewed"
     }
   ]
 }

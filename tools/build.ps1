@@ -3,7 +3,8 @@ param(
     [string]$GameDir = 'W:\Games\Overthrown',
     [ValidateSet('Debug', 'Release')]
     [string]$Configuration = 'Debug',
-    [switch]$ValidateOnly
+    [switch]$ValidateOnly,
+    [switch]$SkipTests
 )
 
 $ErrorActionPreference = 'Stop'
@@ -52,11 +53,16 @@ $solution = Join-Path $repoRoot 'VVooOverthrown.slnx'
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 & $dotnetExe build $solution --no-restore --configuration $Configuration
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-& $dotnetExe test $solution --no-restore --no-build --configuration $Configuration
-if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+if (-not $SkipTests) {
+    & $dotnetExe test $solution --no-restore --no-build --configuration $Configuration
+    if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-& python -m unittest (Join-Path $repoRoot 'tests\tools\test_localization_extractor.py')
-if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+    & python -m unittest (Join-Path $repoRoot 'tests\tools\test_localization_extractor.py')
+    if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+}
+else {
+    Write-Output 'Automated tests skipped by request.'
+}
 
 & (Join-Path $PSScriptRoot 'fetch-bepinex.ps1')
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

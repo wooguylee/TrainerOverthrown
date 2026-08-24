@@ -236,13 +236,36 @@
   빌드마다 공식 고정 URL에서 archive를 새로 받는다. 전체 archive SHA-256을 확인해 새
   staging 디렉터리에 추출하고, 핵심 파일 5개의 SHA-256까지 대조한 뒤 기존 cache를
   교체하고 payload를 만든다.
-- 최종 배포 ZIP SHA-256:
+- 초기 MVP 배포 ZIP SHA-256:
   `275754C13D7954562C71971694CFE8AE23D93F4F878DED8004AFB24555E5C01B`
-- 최종 배포 EXE SHA-256:
+- 초기 MVP 배포 EXE SHA-256:
   `7F4DE27B8817334EE228B14E5A9F8E1B15062F0975181585FF975F98F1D6B1EE`
 - 최종 archive 재검증 빌드 후 ZIP manifest 239개 불일치 0, 설치 payload 233개 불일치
   0을 확인했다. 게임 PID `20664`에서 Helper가 준비됐고 무적 요청은 불확실 세션으로
   차단됐으며 BepInEx 오류 0이었다. WPF 정상 종료 후 잔여 프로세스도 0개였다.
+
+## 2026-08-25 새 월드 만들기 한글화 보완
+
+- 사용자 스크린샷에서 새 월드 만들기 화면의 프리셋 이름, 크기, 선택 설명이 영어로
+  남아 있는 것을 확인했다. source catalog에는 안정 키가 있었지만 검수 사전에 원문이
+  없어 runtime catalog에서 `pending`으로 유지된 것이 원인이었다.
+- 월드 프리셋 7종 `Archipelago`, `Canyon`, `Foothills`, `Highland Plateau`,
+  `Lost Isles`, `Rolling Hills`, `Seaside Cliffs`와 각 설명 7개를 한국어로 추가했다.
+- 크기 원문 `Small`, `Large`는 각각 `소형`, `대형`으로 추가했다. `Medium`은 그래픽
+  품질 등에서도 공유되는 일반 원문이므로 기존 번역 `중간`을 유지했다.
+- catalog 재생성 결과 검수 327/1,586개, 대기 1,259개, runtime 고유 원문 269개이며
+  placeholder/TMP 검증 오류는 0개다.
+- 사용자 지시에 따라 자동 테스트는 실행하지 않고 Release 컴파일·publish만 수행한다.
+- 보완 Release의 최신 ZIP SHA-256은 산출물 옆
+  `VVooOverthrown-win-x64.zip.sha256`에 기록하며, ZIP 내부 기록에는 자기 참조가 되는
+  현재 ZIP 해시를 넣지 않는다.
+- 새 월드 한글화 보완 Release ZIP SHA-256:
+  `FA2F157F029FF6D357733B4ECB7F9D889E9341BB0ABA659F680175BC052A0E84`
+- 보완 EXE SHA-256:
+  `F03405BB9DC328252AD33B9B546553CA65D4C188CE04B75E57EB25349CE92D86`
+- `-SkipTests`로 테스트를 실행하지 않고 Release build/publish/package를 완료했으며,
+  최종 EXE로 기존 소유 payload를 제거한 뒤 새 payload를 재설치해 exit code 0과
+  `SUCCESS --install`을 확인했다.
 - 최종 ZIP과 인접 `.sha256`이 일치했고, 새 디렉터리에 푼 package manifest 239개 파일의
   길이·해시 불일치는 0개였다. 최종 payload를 재설치한 manifest 233개도 불일치 0개다.
 - 최종 게임 PID `20152` 부팅에서 Helper 준비와 BepInEx 오류 0을 다시 확인했고,

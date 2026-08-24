@@ -1,11 +1,15 @@
 [CmdletBinding()]
 param(
-    [string]$GameDir = 'W:\Games\Overthrown'
+    [string]$GameDir = 'W:\Games\Overthrown',
+    [switch]$SkipTests
 )
 
 $ErrorActionPreference = 'Stop'
 $repoRoot = [System.IO.Path]::GetFullPath((Split-Path -Parent $PSScriptRoot))
-& (Join-Path $PSScriptRoot 'build.ps1') -GameDir $GameDir -Configuration Release
+& (Join-Path $PSScriptRoot 'build.ps1') `
+    -GameDir $GameDir `
+    -Configuration Release `
+    -SkipTests:$SkipTests
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
 $releaseRoot = [System.IO.Path]::GetFullPath((Join-Path $repoRoot '.artifacts\release'))
