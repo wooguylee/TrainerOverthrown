@@ -1,4 +1,19 @@
 {
+  "bepInEx": {
+    "version": "6.0.0-be.785+6abdba4",
+    "build": 785,
+    "archive": "BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785+6abdba4.zip",
+    "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785%2B6abdba4.zip",
+    "sha256": "2A7CBF74D26ABE4765C3E662DB1721B923BAC39849EBFEF2CA5DC7DE7E2D9B7F",
+    "requiredFiles": [
+      { "path": "winhttp.dll", "sha256": "8C6CDBC38836DEE87E3368F5DE1994D7C0CCEBF29E4CE7ABA3C0981F9375412C" },
+      { "path": "doorstop_config.ini", "sha256": "7DAEBB02054747FAEE66C875A778E0E8D54DAD24DD460E1FB69AA31378D9EA8F" },
+      { "path": "BepInEx\\core\\BepInEx.Core.dll", "sha256": "352AACC2D5356489A00891F76DB28B6463C81D25BCB02F90035171A669B7E35B" },
+      { "path": "BepInEx\\core\\BepInEx.Unity.IL2CPP.dll", "sha256": "62C8246A3076BFE459EC80C482381228D0EB1DDE3434FE97AE5255FEF406FE72" },
+      { "path": "BepInEx\\core\\Il2CppInterop.Runtime.dll", "sha256": "65AB051A681C2C1E52DF7596FF738BE401AAE72CFF882FF18241CF54A3EA38A4" }
+    ],
+    "purpose": "Unity 6 IL2CPP loader and interop generation"
+  },
   "assetRipper": {
     "version": "1.3.14",
     "archive": "AssetRipper_win_x64_1.3.14.zip",

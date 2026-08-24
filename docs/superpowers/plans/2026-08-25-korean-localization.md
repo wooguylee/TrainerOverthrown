@@ -129,7 +129,7 @@ Commit: `git commit -m "feat: add Overthrown Korean MVP translations"`
 - Produces: `TextReplacementPolicy.ShouldReplace(source, current, korean)`.
 - Produces: `KoreanLocalizationService.Start()`, `Tick()`, and `Stop()` called only on Unity main thread.
 
-- [ ] **Step 1: Write failing deterministic lookup and idempotence tests**
+- [x] **Step 1: Write failing deterministic lookup and idempotence tests**
 
 ```csharp
 [Fact]
@@ -139,20 +139,22 @@ public void AlreadyTranslatedTextIsNotReprocessed()
 }
 ```
 
-- [ ] **Step 2: Run focused tests and verify RED**
+- [x] **Step 2: Run focused tests and verify RED**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Helper.Tests\VVooOverthrown.Helper.Tests.csproj --filter "TranslationCatalogTests|TextReplacementPolicyTests"`
 
-- [ ] **Step 3: Implement local catalog and TMP main-thread application**
+- [x] **Step 3: Implement local catalog and TMP main-thread application**
 
-Use an ordinal source-to-Korean map, preserve dynamic suffixes only through explicitly tested patterns, scan active TMP text no faster than four times per second, and create a dynamic fallback from `Malgun Gothic`/`맑은 고딕`. Catch per-component failures so one text object cannot stop the loop.
+Use an ordinal source-to-Korean map, preserve dynamic suffixes only through explicitly tested patterns,
+patch `TMP_Text.set_text` with Harmony on the Unity main thread, and create a dynamic fallback from
+`Malgun Gothic`/`맑은 고딕`. Catch per-component failures so one text object cannot stop the runtime.
 
-- [ ] **Step 4: Package and verify runtime initialization**
+- [x] **Step 4: Package and verify runtime initialization**
 
 Run: `tools\build.ps1 -GameDir 'W:\Games\Overthrown'`
 
 Expected: Helper tests pass and the payload contains `translation\ko.json` plus a catalog hash.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 Commit: `git commit -m "feat: apply deterministic Korean localization at runtime"`

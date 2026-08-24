@@ -6509,8 +6509,8 @@
     },
     {
       "id": "UI/MISC_Yes",
-      "korean": "",
-      "status": "pending"
+      "korean": "예",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_ZoneSize",
@@ -6564,8 +6564,8 @@
     },
     {
       "id": "UI/PROMPTMESSAGE_QuitGame",
-      "korean": "",
-      "status": "pending"
+      "korean": "정말 게임을 종료하시겠습니까?",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_RebindWaiting",

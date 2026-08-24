@@ -1,15 +1,15 @@
 # VVooOverthrown
 
-`W:\Games\Overthrown`의 현재 Windows 빌드를 대상으로 하는 한국어 패치 관리자 겸
-싱글플레이 전용 외부 트레이너입니다.
+Overthrown Unity 6 IL2CPP 현재 빌드를 위한 핵심 UI 한글 패치와 싱글플레이 전용
+트레이너를 하나의 Windows 앱으로 제공합니다.
 
-이 프로젝트는 다음 원칙을 따릅니다.
+- 원본 Addressables 번들을 변경하지 않는 런타임 한글화
+- 핵심 UI 검수 309/1,586개 키, 런타임 고유 원문 253개
+- 검증된 트레이너 기능: 로컬 플레이어 무적, 월드 시간 배속
+- 오프라인·호스트·접속 수를 모두 확인하는 fail-closed 안전 가드
+- 설치 전 사용자 데이터 백업, 소유 파일별 SHA-256 manifest 제거
 
-- 원본 `Overthrown.exe`와 `GameAssembly.dll`을 직접 수정하지 않습니다.
-- 지원 빌드의 SHA-256이 다르면 변경 기능을 차단합니다.
-- 멀티플레이 참가자가 감지되면 모든 게임 상태 변경을 중지합니다.
-- 한글화 데이터와 설치 파일은 manifest로 추적하며 안전하게 제거할 수 있게 합니다.
-- 작업 과정과 결정은 `docs/`에 계속 기록합니다.
-
-현재 상태와 실행 방법은 구현이 진행되는 동안 이 문서에 갱신합니다.
-
+Release 산출물은 `.artifacts\release\VVooOverthrown-win-x64.zip`이며, 압축을 푼 뒤
+`VVooOverthrown.exe`를 실행합니다. 자세한 내용은 [사용 가이드](docs/user-guide.md),
+[번역 가이드](docs/translation-guide.md), [현재 빌드 API 근거](docs/analysis/current-build-api-map.md)를
+참조하세요.

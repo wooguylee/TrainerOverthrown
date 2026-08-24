@@ -115,3 +115,132 @@
   유지하는 `pending` 상태다.
 - 번역 CLI TDD RED/GREEN: source/ko 결합, coverage 생성, 검수 번역의 token 오류 시
   exit code 2를 확인하는 테스트 2/2가 통과했다.
+
+### BepInEx 호환성과 Helper 런타임
+
+- 공식 BepInEx bleeding-edge Windows x64 IL2CPP 빌드
+  `6.0.0-be.785+6abdba4`를 사용했다. 다운로드 archive SHA-256은
+  `2A7CBF74D26ABE4765C3E662DB1721B923BAC39849EBFEF2CA5DC7DE7E2D9B7F`이며
+  URL·버전·해시를 `tools/tool-manifest.json`에 고정했다.
+- 호환성 부팅 전에 `%USERPROFILE%\AppData\LocalLow\Brimstone\Overthrown`의 파일 9개를
+  `.artifacts\save-backups\20260825-034329`에 복사하고 SHA-256 manifest를 만들었다.
+- 첫 게임 부팅에서 BepInEx가 IL2CPP interop을 정상 생성했고 `MainMenu:Start()`까지
+  도달했다. 분석용 loader 파일 228개는 해시를 대조해 제거했으며 생성 interop과 로그는
+  이후 정식 Helper 빌드·진단용으로 보존했다.
+- Helper는 별도 `net6.0` Core와 BepInEx plugin으로 분리했다. Unity main thread에서만
+  게임 객체를 읽고 쓰며, 사용자 전용 named pipe `VVooOverthrown.<game-pid>`로 WPF 앱과
+  길이 제한 JSON frame을 교환한다.
+- 세션 가드는 `BNetworkManager.OfflineMode`, `NetworkServer.activeHost`,
+  `NetworkClient.active`, `NetworkServer.connections.Count == 1`을 모두 요구한다.
+  하나라도 확인되지 않으면 `Uncertain`, 원격 참가자가 있으면 `RemoteParticipant`로
+  판정해 변경을 거부하고 적용 중인 상태를 reset한다.
+- 생성 interop에서 안전한 쓰기 경로가 확인된 기능만 공개했다.
+  - `player.godMode`: 로컬 `PlayerHealth`의 `Damageable.isInvulnerable`과 체력을 사용
+  - `world.timeScale`: `GameTime.gameTimeScale`, 허용 범위 `0.25`~`4.0`
+- 이동 속도, 기력, 인벤토리, 왕국 자원은 동기화·서버 권한 또는 안정적 쓰기 경로가
+  확정되지 않아 WPF에서 `지원 준비 중`으로 표시하고 capability로 광고하지 않는다.
+- Helper 종료, pipe 단절, 세션 차단 전환, 앱 reset 명령에서 무적 플래그와 시간 배속을
+  원복하도록 구현했다.
+- 최종 안전 검토에서 정상 앱 disconnect만 reset 명령을 보내고 비정상 pipe 단절은
+  Helper에 전달되지 않는 경로를 발견했다. 연결된 client가 끊길 때 callback이 실행되는
+  회귀 테스트를 먼저 컴파일 실패로 확인한 뒤, 서버 callback이 thread-safe reset flag를
+  세우고 다음 Unity `Update`에서 원복하도록 수정했다. 집중 테스트 1개와 Helper 전체
+  12개가 통과했다.
+
+### 런타임 한글화
+
+- 검수 catalog는 309/1,586개 안정 ID, 대기 1,277개, validation 오류 0이다. 같은 영어
+  원문을 합친 실제 런타임 번역 사전은 253개다.
+- 원본 Addressables를 수정하지 않고 Harmony로 `TMP_Text.set_text`를 후킹해 정확히
+  일치하는 검수 원문만 교체한다. `Malgun Gothic` 동적 TMP fallback을 추가해 한글
+  글리프를 제공한다.
+- 실제 게임 메인 메뉴에서 `새 월드`, `월드 불러오기`, `월드 참가`, `설정`, `게임 종료`와
+  정상 한글 글리프 표시를 육안 확인했다.
+- 종료 확인창에서 발견된 누락 원문 `Yes`와
+  `Are you sure you want to quit the game?`도 각각 `예`,
+  `정말 게임을 종료하시겠습니까?`로 catalog에 추가하고 validator를 다시 통과했다.
+  이 마지막 두 문구는 catalog 검증까지만 수행하고 별도 화면 재확인은 하지 않았다.
+
+### 앱과 실제 설치 스모크
+
+- WPF 앱은 설치·안전 제거·게임 실행·Helper 연결·상태 조회·무적 on/off·시간
+  `0.5x/1x/2x` 조작을 한 화면에서 제공한다.
+- self-contained Windows x64 EXE를 일반 실행해 창 handle과 제목
+  `VVooOverthrown · Overthrown 한글 패치 & 오프라인 트레이너`를 확인하고 정상 종료했다.
+- 동일 EXE의 headless `--install --game 'W:\Games\Overthrown'`를 실행해 exit code 0과
+  `%LOCALAPPDATA%\VVooOverthrown\last-command.txt`의 `SUCCESS` 기록을 확인했다.
+- 정식 설치 manifest는 233개 소유 파일을 기록한다. 설치 후 233개 경로의 존재와
+  SHA-256을 다시 계산한 결과 불일치 0개였다.
+- 정식 payload로 게임 PID `14664`를 실행했을 때 BepInEx 로그에서
+  `Trainer pipe ready`, `helper loaded; translations=253`,
+  `Chainloader startup complete`를 확인했고 `[Error]` 로그는 없었다. Il2CppInterop의
+  일반 경고 `Class::Init signatures have been exhausted, using a substitute!` 한 건만 있었다.
+- 메인 메뉴에서는 월드 세션이 아직 확정되지 않으므로 상태가 `Uncertain`이었다.
+  capability 응답은 `player.godMode,world.timeScale`였고, 무적 요청은 예상대로
+  `OFFLINE_NOT_PROVEN`으로 차단되었으며 reset 응답은 무적 `false`, 시간 `1`이었다.
+- 실제 오프라인 월드 안에서의 허용 변경은 자동 UI 조작을 중단한 뒤에는 수행하지 않았다.
+  허용/온라인/원격/불확실 판정, 활성 변경 원복 판정, 원래 값 latch는 순수 단위 테스트로
+  검증했다. 실제 `Damageable`/`GameTime` 쓰기는 생성 interop 컴파일과 불확실 상태 차단
+  스모크까지만 확인했으며, 허용 상태 쓰기는 첫 실제 플레이 확인 항목으로 명시한다.
+- 스모크 종료 후 `Overthrown`과 `VVooOverthrown` 실행 프로세스가 모두 0개임을 확인했다.
+
+### 자동화 검증과 배포 구성
+
+- Release 빌드는 경고 0, 오류 0이었다.
+- xUnit은 Protocol 3, Core 11, App 8, Helper 20, LocalizationTool 6으로 총 48개가
+  통과했고 Python localization extractor 테스트 2개도 통과했다.
+- 최종 ZIP에는 self-contained EXE, BepInEx 6 IL2CPP payload, Helper DLL,
+  `translation/ko.json`, 설치 profile, 패키지 manifest, README, 프로젝트 기록,
+  사용·번역·현재 빌드 API 가이드를 포함한다.
+- 실제 게임 폴더는 최종 payload가 설치된 상태로 남겼으며 원본 EXE, GameAssembly,
+  Addressables 번들은 직접 수정하지 않았다.
+### 최종 코드 리뷰 보완
+
+- 별도 코드 리뷰에서 unsupported build의 Helper 재검증 부재, 시간 배속 단독 활성 상태의
+  세션 전환 원복 누락을 Critical로 확인했다.
+- Helper가 시작할 때 EXE, GameAssembly, metadata 세 파일의 SHA-256을 직접 다시 계산하고
+  한 파일이라도 다르면 Harmony, pipe, 변경 runtime을 만들지 않는 이중 build guard를
+  추가했다. WPF 연결 서비스와 버튼 조건도 지원 빌드·설치 상태를 다시 요구한다.
+- 무적이 꺼져 있고 시간 배속만 활성화된 경우도 매 Unity `Update`에서 세션 판정을 확인해
+  Allowed가 아니면 모든 변경을 즉시 원복한다.
+- 무적 기능은 실제로 바꾼 `Damageable` 인스턴스와 기존 `isInvulnerable` 값을 latch해
+  reset 시 게임 원래 값을 복원한다.
+- 번역 JSON 누락·손상·충돌은 한글화만 비활성화하고 trainer runtime은 계속 시작한다.
+  개별 TMP component의 fallback 실패도 해당 text 한 건에서 격리한다.
+- `.artifacts\bepinex`가 없는 clean checkout에서는 `build.ps1`이 고정 URL과 SHA-256을
+  사용하는 `fetch-bepinex.ps1`을 자동 호출하도록 패키지 재현 경로를 보완했다.
+- 새 회귀 테스트는 runtime build hash 변경 거부, time-scale-only 세션 원복 판정,
+  원래 무적 값 latch, 잘못된 번역 JSON 격리, pipe 비정상 단절 callback을 포함한다.
+
+### 최종 리뷰 반영 Release 검증
+
+- 최종 ZIP: `.artifacts\release\VVooOverthrown-win-x64.zip`
+- 최종 ZIP SHA-256은 산출물 옆 `VVooOverthrown-win-x64.zip.sha256`에 기록한다.
+- Release 전체 빌드는 경고 0, 오류 0이고 xUnit 48개와 Python 2개가 모두 통과했다.
+  번역 검증은 전체 1,586, 검수 309, 대기 1,277, 오류 0이었다.
+- ZIP을 새 검증 디렉터리에 풀어 package manifest 239개 파일의 길이와 SHA-256을 전부
+  계산했고 불일치 0개였다. build profile `Unity 6000.1.10f1`, EXE, Helper/Core,
+  번역 JSON, README, 프로젝트 기록, 세 가이드가 모두 존재한다.
+- 최종 EXE로 이전 manifest의 233개 소유 파일을 안전 제거(exit 0)하고 새 payload를
+  재설치(exit 0)했다. 새 설치 manifest 233개 파일의 존재·SHA-256 불일치는 0개다.
+- 새 Helper를 실제 게임 PID `4652`에서 부팅해 `translations=253`, pipe 준비,
+  Chainloader 완료, BepInEx 오류 0을 확인했다. 메인 메뉴 `Uncertain` 상태에서 status와
+  reset이 응답했고 무적 요청은 `OFFLINE_NOT_PROVEN`으로 차단됐다. 저장을 만들지 않는
+  headless 스모크라 게임은 확인 후 해당 PID만 종료했다.
+- 최종 WPF EXE를 일반 실행해 창 제목을 확인하고 `CloseMainWindow`로 정상 종료(exit 0)했다.
+  강제 종료는 사용하지 않았고 최종 게임·앱 잔여 프로세스는 0개다.
+- 재검토에서 파괴된 Unity `Damageable`이 null로 비교될 때 원래 값 latch가 남는 경계를
+  추가로 확인했다. 대상 생존 여부와 관계없이 latch를 먼저 소비하고, 살아 있는 동일
+  대상에만 원래 값을 쓰도록 고쳐 새 플레이어에 이전 값을 적용하지 않는다.
+- BepInEx cache는 단순 존재 검사가 아니라 고정 manifest에 기록한 핵심 파일 5개의
+  SHA-256을 매 빌드마다 다시 확인한다. 하나라도 없거나 다르면 archive SHA-256 검증부터
+  다시 다운로드·추출하며, 추출된 핵심 파일도 각각 해시를 대조한 뒤에만 staging한다.
+- 최종 리뷰 반영 ZIP SHA-256:
+  `190DB9D328D28F71FDB09FA3AE411B654D40080045BB7F8EEC9A6FB4E901A367`
+- 최종 self-contained EXE SHA-256:
+  `768551575DBD047539A49935151BF4AE62F6F82097026363C49BEB53DBDAAAB7`
+- 최종 ZIP과 인접 `.sha256`이 일치했고, 새 디렉터리에 푼 package manifest 239개 파일의
+  길이·해시 불일치는 0개였다. 최종 payload를 재설치한 manifest 233개도 불일치 0개다.
+- 최종 게임 PID `20152` 부팅에서 Helper 준비와 BepInEx 오류 0을 다시 확인했고,
+  메인 메뉴 무적 요청은 `OFFLINE_NOT_PROVEN`으로 차단됐다. 게임 종료 후 최종 WPF 창도
+  일반 종료(exit 0)했으며 잔여 `Overthrown`/`VVooOverthrown` 프로세스는 0개다.

@@ -29,6 +29,12 @@ if (Test-Path -LiteralPath $payloadRoot -PathType Container) {
 
 Copy-Item -LiteralPath (Join-Path $repoRoot 'README.md') -Destination $packageRoot
 Copy-Item -LiteralPath (Join-Path $repoRoot 'docs\project-journal.md') -Destination $packageRoot
+$packageDocs = Join-Path $packageRoot 'docs'
+$packageAnalysisDocs = Join-Path $packageDocs 'analysis'
+New-Item -ItemType Directory -Path $packageAnalysisDocs -Force | Out-Null
+Copy-Item -LiteralPath (Join-Path $repoRoot 'docs\user-guide.md') -Destination $packageDocs
+Copy-Item -LiteralPath (Join-Path $repoRoot 'docs\translation-guide.md') -Destination $packageDocs
+Copy-Item -LiteralPath (Join-Path $repoRoot 'docs\analysis\current-build-api-map.md') -Destination $packageAnalysisDocs
 
 $packagePrefix = $packageRoot.TrimEnd('\') + '\'
 $manifestFiles = Get-ChildItem -LiteralPath $packageRoot -File -Recurse | ForEach-Object {

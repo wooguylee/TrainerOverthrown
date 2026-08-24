@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GameRoot Condition="'$(GameRoot)' == ''">W:\Games\Overthrown</GameRoot>
+    <BepInExCoreDir Condition="'$(BepInExCoreDir)' == ''">$(MSBuildProjectDirectory)\..\..\.artifacts\bepinex\BepInEx\core</BepInExCoreDir>
+    <GameInteropDir Condition="'$(GameInteropDir)' == ''">$(GameRoot)\BepInEx\interop</GameInteropDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VVooOverthrown.Helper.Core\VVooOverthrown.Helper.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Safety\**\*.cs" />
+    <Compile Remove="Localization\TranslationCatalog.cs" />
+    <Compile Remove="Localization\TextReplacementPolicy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx.Core" HintPath="$(BepInExCoreDir)\BepInEx.Core.dll" Private="false" />
+    <Reference Include="BepInEx.Unity.IL2CPP" HintPath="$(BepInExCoreDir)\BepInEx.Unity.IL2CPP.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(BepInExCoreDir)\0Harmony.dll" Private="false" />
+    <Reference Include="Il2CppInterop.Runtime" HintPath="$(BepInExCoreDir)\Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(GameInteropDir)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="Unity.TextMeshPro" HintPath="$(GameInteropDir)\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="GameAssembly" HintPath="$(GameInteropDir)\GameAssembly.dll" Private="false" />
+    <Reference Include="Mirror" HintPath="$(GameInteropDir)\Mirror.dll" Private="false" />
+    <Reference Include="Il2Cppmscorlib" HintPath="$(GameInteropDir)\Il2Cppmscorlib.dll" Private="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\translation\source.en.json" Link="translation\source.en.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\translation\ko.json" Link="translation\ko.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

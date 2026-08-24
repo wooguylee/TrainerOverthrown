@@ -8,6 +8,9 @@
         "resolved": "10.0.10",
         "contentHash": "f5VCIE7AJpd5YvzNTeMGVzQIgyE9tX+AreTYwQF+REbu+DZo/2Ae+jNSwhPEYrVz6RRkd7y8ubXjk6Nn6Ka+Cg=="
       },
+      "vvoooverthrown.helper.core": {
+        "type": "Project"
+      },
       "vvoooverthrown.protocol": {
         "type": "Project"
       }

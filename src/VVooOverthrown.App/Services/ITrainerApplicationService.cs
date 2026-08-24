@@ -1,3 +1,5 @@
+using VVooOverthrown.Helper.Transport;
+
 namespace VVooOverthrown.App.Services;
 
 public interface ITrainerApplicationService
@@ -9,6 +11,12 @@ public interface ITrainerApplicationService
     Task RemoveAsync(string gameRoot, CancellationToken cancellationToken);
 
     void LaunchGame(string gameRoot);
+
+    Task<PipeResponse> ConnectHelperAsync(string gameRoot, CancellationToken cancellationToken);
+
+    Task<PipeResponse> SendTrainerCommandAsync(PipeRequest request, CancellationToken cancellationToken);
+
+    Task ResetAndDisconnectAsync(CancellationToken cancellationToken);
 }
 
 public sealed class ApplicationSnapshot
@@ -41,4 +49,3 @@ public sealed class ApplicationSnapshot
 
     public bool HelperConnected { get; }
 }
-

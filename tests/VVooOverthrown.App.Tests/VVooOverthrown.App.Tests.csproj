@@ -16,6 +16,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\VVooOverthrown.App\VVooOverthrown.App.csproj" />
+    <ProjectReference Include="..\..\src\VVooOverthrown.Helper.Core\VVooOverthrown.Helper.Core.csproj" />
   </ItemGroup>
 </Project>
-

@@ -4,6 +4,8 @@ using VVooOverthrown.Core.Build;
 using VVooOverthrown.Core.Discovery;
 using VVooOverthrown.Core.Installation;
 using VVooOverthrown.Core.Saves;
+using VVooOverthrown.Core.Transport;
+using VVooOverthrown.Helper.Transport;
 
 namespace VVooOverthrown.App.Services;
 
@@ -15,6 +17,7 @@ public sealed class TrainerApplicationService : ITrainerApplicationService
     private readonly string _backupRoot;
     private readonly Func<string, bool> _isGameRunning;
     private readonly GameBuildValidator _buildValidator = new();
+    private TrainerPipeClient? _trainerClient;
 
     public TrainerApplicationService()
         : this(
@@ -67,7 +70,7 @@ public sealed class TrainerApplicationService : ITrainerApplicationService
             buildSupported: build.IsSupported,
             installed: File.Exists(PayloadInstaller.GetManifestPath(normalizedRoot)),
             gameRunning: _isGameRunning(normalizedRoot),
-            helperConnected: false);
+            helperConnected: _trainerClient?.IsConnected == true);
     }
 
     public async Task InstallAsync(string gameRoot, CancellationToken cancellationToken)
@@ -108,6 +111,61 @@ public sealed class TrainerApplicationService : ITrainerApplicationService
         });
     }
 
+    public async Task<PipeResponse> ConnectHelperAsync(
+        string gameRoot,
+        CancellationToken cancellationToken)
+    {
+        var build = await _buildValidator.ValidateAsync(gameRoot, _profile, cancellationToken);
+        if (!build.IsSupported)
+        {
+            throw new InvalidOperationException("지원하지 않는 게임 빌드에는 연결할 수 없습니다.");
+        }
+
+        var processId = FindMatchingGameProcessId(gameRoot)
+                        ?? throw new InvalidOperationException("실행 중인 Overthrown을 찾을 수 없습니다.");
+        if (_trainerClient is not null)
+        {
+            await _trainerClient.DisposeAsync();
+        }
+
+        _trainerClient = new TrainerPipeClient();
+        await _trainerClient.ConnectAsync(processId, cancellationToken);
+        return await _trainerClient.SendAsync(
+            new PipeRequest { Command = "status" }, cancellationToken);
+    }
+
+    public Task<PipeResponse> SendTrainerCommandAsync(
+        PipeRequest request,
+        CancellationToken cancellationToken) =>
+        _trainerClient?.SendAsync(request, cancellationToken)
+        ?? throw new InvalidOperationException("Helper에 먼저 연결하세요.");
+
+    public async Task ResetAndDisconnectAsync(CancellationToken cancellationToken)
+    {
+        if (_trainerClient is null)
+        {
+            return;
+        }
+
+        try
+        {
+            if (_trainerClient.IsConnected)
+            {
+                await _trainerClient.SendAsync(
+                    new PipeRequest { Command = "reset" }, cancellationToken);
+            }
+        }
+        catch
+        {
+            // The game may already be closed. Disposal still releases the local pipe.
+        }
+        finally
+        {
+            await _trainerClient.DisposeAsync();
+            _trainerClient = null;
+        }
+    }
+
     private static string GetDefaultUserDataRoot()
     {
         var local = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
@@ -139,5 +197,30 @@ public sealed class TrainerApplicationService : ITrainerApplicationService
         }
 
         return false;
+    }
+
+    private static int? FindMatchingGameProcessId(string gameRoot)
+    {
+        var expectedPath = Path.GetFullPath(Path.Combine(gameRoot, "Overthrown.exe"));
+        foreach (var process in Process.GetProcessesByName("Overthrown"))
+        {
+            using (process)
+            {
+                try
+                {
+                    if (process.MainModule?.FileName is { } path &&
+                        Path.GetFullPath(path).Equals(expectedPath, StringComparison.OrdinalIgnoreCase))
+                    {
+                        return process.Id;
+                    }
+                }
+                catch (Exception exception) when (exception is InvalidOperationException or System.ComponentModel.Win32Exception)
+                {
+                    // Ignore processes whose executable path cannot be verified.
+                }
+            }
+        }
+
+        return null;
     }
 }

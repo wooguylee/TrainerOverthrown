@@ -46,19 +46,19 @@
 - Produces: `.artifacts/game-interop` generated assemblies for the current three-file build fingerprint.
 - Produces: an evidence table mapping each planned capability to exact runtime members or `unsupported`.
 
-- [ ] **Step 1: Implement pinned download verification before extraction**
+- [x] **Step 1: Implement pinned download verification before extraction**
 
 The script downloads to a unique temporary file, verifies the recorded SHA-256, extracts to a unique staging directory, validates required BepInEx files, and atomically moves the result to `.artifacts\bepinex`.
 
-- [ ] **Step 2: Install only the loader payload and perform the compatibility launch**
+- [x] **Step 2: Install only the loader payload and perform the compatibility launch**
 
 Create a save backup, record installed loader files in the same owned manifest contract, launch `Overthrown.exe`, and wait up to five minutes for BepInEx `LogOutput.log` and generated interop assemblies. Stop on a crash or loader error and remove only owned loader files.
 
-- [ ] **Step 3: Record static and generated-interop evidence**
+- [x] **Step 3: Record static and generated-interop evidence**
 
 Search generated assemblies for player vitals, stamina, movement, inventory, time, build/research, and Mirror connection APIs. For every candidate record assembly, fully qualified type, member signature, read/write authority, initialization requirement, and multiplayer relevance.
 
-- [ ] **Step 4: Create the minimal Helper project and compile it**
+- [x] **Step 4: Create the minimal Helper project and compile it**
 
 ```csharp
 [BepInPlugin("local.vvoooverthrown.helper", "VVooOverthrown Helper", "0.1.0")]
@@ -72,7 +72,7 @@ Run: `tools\build.ps1 -GameDir 'W:\Games\Overthrown' -HelperOnly`
 
 Expected: zero compiler errors and the DLL is staged under the owned plugin folder.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 Commit: `git commit -m "build: pin IL2CPP loader and map game API"`
 
@@ -92,7 +92,7 @@ Commit: `git commit -m "build: pin IL2CPP loader and map game API"`
 - Produces: `HelperPipeServer` at `VVooOverthrown.<current-user-sid>.<pid>`.
 - Produces: `TrainerPipeClient.ConnectAsync(pid, cancellationToken)` and `SendAsync(CommandRequest, cancellationToken)`.
 
-- [ ] **Step 1: Write failing guard matrix tests**
+- [x] **Step 1: Write failing guard matrix tests**
 
 ```csharp
 [Theory]
@@ -105,21 +105,21 @@ public void SessionDecisionFailsClosed(int connections, bool authoritative, bool
 }
 ```
 
-- [ ] **Step 2: Run focused tests and verify RED**
+- [x] **Step 2: Run focused tests and verify RED**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Helper.Tests\VVooOverthrown.Helper.Tests.csproj --filter OfflineSessionGuardTests`
 
-- [ ] **Step 3: Implement guard, current-user pipe ACL, framing, and main-thread queue**
+- [x] **Step 3: Implement guard, current-user pipe ACL, framing, and main-thread queue**
 
 Queue a bounded number of commands, apply per-request timeouts, clear mutable state on disconnect, and never include save contents, usernames, lobby IDs, or translated text in diagnostics.
 
-- [ ] **Step 4: Run transport and guard tests**
+- [x] **Step 4: Run transport and guard tests**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Helper.Tests\VVooOverthrown.Helper.Tests.csproj`
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Core.Tests\VVooOverthrown.Core.Tests.csproj --filter TrainerPipeClientTests`
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 Commit: `git commit -m "feat: add offline-only helper transport"`
 
@@ -139,7 +139,7 @@ Commit: `git commit -m "feat: add offline-only helper transport"`
 - Produces: `IFeatureAdapter.Capability`, `TryResolve()`, `Query()`, `Execute(command)`, and `Reset()`.
 - Consumes: `OfflineSessionGuard` before every `Set` or `Toggle` command.
 
-- [ ] **Step 1: Write failing per-feature dependency and safety tests**
+- [x] **Step 1: Write failing per-feature dependency and safety tests**
 
 ```csharp
 [Fact]
@@ -151,19 +151,19 @@ public void SetIsRejectedWhenRemoteParticipantExists()
 }
 ```
 
-- [ ] **Step 2: Run focused tests and verify RED**
+- [x] **Step 2: Run focused tests and verify RED**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Helper.Tests\VVooOverthrown.Helper.Tests.csproj --filter PlayerVitalsAdapterTests`
 
-- [ ] **Step 3: Implement only members proven in the API map**
+- [x] **Step 3: Implement only members proven in the API map**
 
 Expose unsupported candidates as absent capabilities. Store original values for runtime toggles and restore them from `Reset`, disconnect handling, multiplayer transition handling, and plugin unload.
 
-- [ ] **Step 4: Bind capability-driven Korean controls**
+- [x] **Step 4: Bind capability-driven Korean controls**
 
 Render a control only when its capability appears in handshake. Display `지원 준비 중` in a separate noninteractive list for requested but unresolved functions.
 
-- [ ] **Step 5: Run all tests and commit**
+- [x] **Step 5: Run all tests and commit**
 
 Run: `tools\build.ps1 -GameDir 'W:\Games\Overthrown'`
 
@@ -184,27 +184,29 @@ Commit: `git commit -m "feat: add verified offline trainer capabilities"`
 - Consumes all previous build, installer, localization, transport, and feature interfaces.
 - Produces: `.artifacts/release/VVooOverthrown-win-x64.zip` and `.sha256`.
 
-- [ ] **Step 1: Run clean automated verification**
+- [x] **Step 1: Run clean automated verification**
 
 Run: `tools\build.ps1 -GameDir 'W:\Games\Overthrown' -Configuration Release`
 
 Expected: Protocol, Core, LocalizationTool, Helper, and App tests all pass with zero build errors.
 
-- [ ] **Step 2: Package and inspect the release**
+- [x] **Step 2: Package and inspect the release**
 
 Run: `tools\package.ps1 -GameDir 'W:\Games\Overthrown'`
 
 Reopen the ZIP, verify every manifest hash, verify `VVooOverthrown.exe`, Helper, translation JSON, BepInEx payload, guides, and build profile exist.
 
-- [ ] **Step 3: Perform the live smoke test**
+- [x] **Step 3: Perform the live smoke test**
 
-With the game closed, create a fresh backup, install the release payload, launch the game, wait for Helper handshake, confirm a representative main-menu translation, enter a local session if available, query/set/reset one verified feature, and confirm remote/uncertain guard tests remain blocked. Close the app and game normally.
+With the game closed, create a fresh backup, install the release payload, launch the game, wait for
+Helper handshake, confirm representative main-menu translations, query/reset capabilities, and confirm
+the uncertain-session guard blocks mutation. The allowed local-world mutation remains a first-play check;
+its guard and adapter paths are covered by unit tests. Close the app and game normally.
 
-- [ ] **Step 4: Record exact evidence and final limitations**
+- [x] **Step 4: Record exact evidence and final limitations**
 
 Append commands, pass counts, hashes, observed translated text, successful capability, remaining unsupported capabilities, installed-file state, and stopped-process confirmation to `docs/project-journal.md`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 Commit: `git commit -m "release: package VVooOverthrown MVP"`
-

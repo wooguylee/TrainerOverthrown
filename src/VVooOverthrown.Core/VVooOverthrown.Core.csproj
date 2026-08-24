@@ -5,6 +5,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\VVooOverthrown.Protocol\VVooOverthrown.Protocol.csproj" />
+    <ProjectReference Include="..\VVooOverthrown.Helper.Core\VVooOverthrown.Helper.Core.csproj" />
   </ItemGroup>
 </Project>
-

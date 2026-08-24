@@ -91,14 +91,19 @@
         "type": "Project",
         "dependencies": {
           "VVooOverthrown.Core": "[0.1.0, )",
+          "VVooOverthrown.Helper.Core": "[0.1.0, )",
           "VVooOverthrown.Protocol": "[0.1.0, )"
         }
       },
       "vvoooverthrown.core": {
         "type": "Project",
         "dependencies": {
+          "VVooOverthrown.Helper.Core": "[0.1.0, )",
           "VVooOverthrown.Protocol": "[0.1.0, )"
         }
+      },
+      "vvoooverthrown.helper.core": {
+        "type": "Project"
       },
       "vvoooverthrown.protocol": {
         "type": "Project"

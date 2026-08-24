@@ -236,6 +236,8 @@
   "Load": "불러오기",
   "Stop": "중지",
   "No": "아니요",
+  "Yes": "예",
+  "Are you sure you want to quit the game?": "정말 게임을 종료하시겠습니까?",
   "Ok": "확인",
   "Optional": "선택 사항",
   "Ready": "준비됨",
