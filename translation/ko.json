@@ -9,13 +9,13 @@
     },
     {
       "id": "Data/AMENITY_Bread",
-      "korean": "",
-      "status": "pending"
+      "korean": "빵",
+      "status": "reviewed"
     },
     {
       "id": "Data/AMENITY_Outhouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "변소",
+      "status": "reviewed"
     },
     {
       "id": "Data/AMENITY_Pie",
@@ -79,8 +79,8 @@
     },
     {
       "id": "Data/EQUIPMENT_Category_Farming",
-      "korean": "",
-      "status": "pending"
+      "korean": "농업",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Farming_Description",
@@ -534,218 +534,218 @@
     },
     {
       "id": "Data/ITEM_Type_Apples",
-      "korean": "",
-      "status": "pending"
+      "korean": "사과",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Ashes",
-      "korean": "",
-      "status": "pending"
+      "korean": "재",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Bilberries",
-      "korean": "",
-      "status": "pending"
+      "korean": "월귤",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Bricks",
-      "korean": "",
-      "status": "pending"
+      "korean": "벽돌",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_BushFodder",
-      "korean": "",
-      "status": "pending"
+      "korean": "덤불 사료",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Carcasses",
-      "korean": "",
-      "status": "pending"
+      "korean": "사체",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Cauliflower",
-      "korean": "",
-      "status": "pending"
+      "korean": "콜리플라워",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_CauliflowerBountiful",
-      "korean": "",
-      "status": "pending"
+      "korean": "콜리플라워",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Chanterelle",
-      "korean": "",
-      "status": "pending"
+      "korean": "꾀꼬리버섯",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Charcoal",
-      "korean": "",
-      "status": "pending"
+      "korean": "숯",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Chard",
-      "korean": "",
-      "status": "pending"
+      "korean": "근대",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Clay",
-      "korean": "",
-      "status": "pending"
+      "korean": "점토",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Cloudberry",
-      "korean": "",
-      "status": "pending"
+      "korean": "클라우드베리",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Coin",
-      "korean": "",
-      "status": "pending"
+      "korean": "주화",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Components",
-      "korean": "",
-      "status": "pending"
+      "korean": "부품",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Cowslip",
-      "korean": "",
-      "status": "pending"
+      "korean": "카우슬립",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Edelweiss",
-      "korean": "",
-      "status": "pending"
+      "korean": "에델바이스",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_FernFodder",
-      "korean": "",
-      "status": "pending"
+      "korean": "고사리 사료",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Fertilizer",
-      "korean": "",
-      "status": "pending"
+      "korean": "비료",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_FirBushFodder",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 덤불 사료",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_FirLogs",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 통나무",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Flour",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀가루",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Fodder",
-      "korean": "",
-      "status": "pending"
+      "korean": "사료",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Grain",
-      "korean": "",
-      "status": "pending"
+      "korean": "곡물",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Gunpowder",
-      "korean": "",
-      "status": "pending"
+      "korean": "화약",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Herbs",
-      "korean": "",
-      "status": "pending"
+      "korean": "약초",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Ingots",
-      "korean": "",
-      "status": "pending"
+      "korean": "주괴",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Manure",
-      "korean": "",
-      "status": "pending"
+      "korean": "거름",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Mushrooms",
-      "korean": "",
-      "status": "pending"
+      "korean": "버섯",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_OakLogs",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 통나무",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Ore",
-      "korean": "",
-      "status": "pending"
+      "korean": "광석",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Planks",
-      "korean": "",
-      "status": "pending"
+      "korean": "판자",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_PumpkinBountiful",
-      "korean": "",
-      "status": "pending"
+      "korean": "호박",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Pumpkins",
-      "korean": "",
-      "status": "pending"
+      "korean": "호박",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Radish",
-      "korean": "",
-      "status": "pending"
+      "korean": "무",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Raspberry",
-      "korean": "",
-      "status": "pending"
+      "korean": "산딸기",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Reed",
-      "korean": "",
-      "status": "pending"
+      "korean": "갈대",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Rot",
-      "korean": "",
-      "status": "pending"
+      "korean": "부패물",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_RottenLog",
-      "korean": "",
-      "status": "pending"
+      "korean": "썩은 통나무",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Soap",
-      "korean": "",
-      "status": "pending"
+      "korean": "비누",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Sunflower",
-      "korean": "",
-      "status": "pending"
+      "korean": "해바라기",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_TomatoBountiful",
-      "korean": "",
-      "status": "pending"
+      "korean": "토마토",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Tomatoes",
-      "korean": "",
-      "status": "pending"
+      "korean": "토마토",
+      "status": "reviewed"
     },
     {
       "id": "Data/LEVEL_archipelago",
@@ -854,8 +854,8 @@
     },
     {
       "id": "Data/MAP_Type_CommandTent",
-      "korean": "",
-      "status": "pending"
+      "korean": "지휘 천막",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_Firestarters",
@@ -864,8 +864,8 @@
     },
     {
       "id": "Data/MAP_Type_FirestartersShrine",
-      "korean": "",
-      "status": "pending"
+      "korean": "방화자의 성소",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_Poachers",
@@ -874,8 +874,8 @@
     },
     {
       "id": "Data/MAP_Type_PoachersTent",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀렵꾼 천막",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_Ringleaders",
@@ -889,8 +889,8 @@
     },
     {
       "id": "Data/MAP_Type_ScrappersWorkshop",
-      "korean": "",
-      "status": "pending"
+      "korean": "고철업자 작업장",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_SnapperNests",
@@ -904,8 +904,8 @@
     },
     {
       "id": "Data/MAP_Type_Tent",
-      "korean": "",
-      "status": "pending"
+      "korean": "천막",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_Thugs",
@@ -914,8 +914,8 @@
     },
     {
       "id": "Data/MAP_Type_ThugsTent",
-      "korean": "",
-      "status": "pending"
+      "korean": "폭력배 천막",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_TuskarNests",
@@ -929,8 +929,8 @@
     },
     {
       "id": "Data/MAP_Type_Watchtower",
-      "korean": "",
-      "status": "pending"
+      "korean": "감시탑",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_WoolieNests",
@@ -944,8 +944,8 @@
     },
     {
       "id": "Data/NPC_Job_Apothecary",
-      "korean": "",
-      "status": "pending"
+      "korean": "약제상",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Baker",
@@ -1019,13 +1019,13 @@
     },
     {
       "id": "Data/NPC_Job_Dreadnaught",
-      "korean": "",
-      "status": "pending"
+      "korean": "드레드노트",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_ExpeditionaryAirship",
-      "korean": "",
-      "status": "pending"
+      "korean": "원정 비행선",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Farmer",
@@ -1044,8 +1044,8 @@
     },
     {
       "id": "Data/NPC_Job_FishingBoat",
-      "korean": "",
-      "status": "pending"
+      "korean": "어선",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Fishmonger",
@@ -1384,8 +1384,8 @@
     },
     {
       "id": "Data/NPC_Skill_Farming",
-      "korean": "",
-      "status": "pending"
+      "korean": "농업",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Skill_Fighting",
@@ -1399,8 +1399,8 @@
     },
     {
       "id": "Data/NPC_Skill_Medicine",
-      "korean": "",
-      "status": "pending"
+      "korean": "의약",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Skill_Science",
@@ -1464,8 +1464,8 @@
     },
     {
       "id": "Data/NPC_Task_Extract",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_ExtractNourishment",
@@ -1474,8 +1474,8 @@
     },
     {
       "id": "Data/NPC_Task_Farm",
-      "korean": "",
-      "status": "pending"
+      "korean": "농업",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_Flee",
@@ -1534,13 +1534,13 @@
     },
     {
       "id": "Data/NPC_Task_PickUpPermittedItem",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_PickUpRecipeInputs",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_ReactToUnreachableCombatTarget",
@@ -2139,8 +2139,8 @@
     },
     {
       "id": "Data/RESEARCH_BreadAndGames",
-      "korean": "",
-      "status": "pending"
+      "korean": "오락",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Brewing",
@@ -2234,8 +2234,8 @@
     },
     {
       "id": "Data/RESEARCH_Entertainment",
-      "korean": "",
-      "status": "pending"
+      "korean": "오락",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Entertainment_Description",
@@ -2274,8 +2274,8 @@
     },
     {
       "id": "Data/RESEARCH_Farming",
-      "korean": "",
-      "status": "pending"
+      "korean": "농업",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Farming_Description",
@@ -2404,8 +2404,8 @@
     },
     {
       "id": "Data/RESEARCH_Gunpowder",
-      "korean": "",
-      "status": "pending"
+      "korean": "화약",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Gunpowder_Description",
@@ -2729,13 +2729,13 @@
     },
     {
       "id": "Data/RESOURCE_Category_Defense",
-      "korean": "",
-      "status": "pending"
+      "korean": "방어",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Farming",
-      "korean": "",
-      "status": "pending"
+      "korean": "농업",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Food",
@@ -2789,228 +2789,228 @@
     },
     {
       "id": "Data/RESOURCE_Type_Bread",
-      "korean": "",
-      "status": "pending"
+      "korean": "빵",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Bricks",
-      "korean": "",
-      "status": "pending"
+      "korean": "벽돌",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Carcasses",
-      "korean": "",
-      "status": "pending"
+      "korean": "사체",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Clay",
-      "korean": "",
-      "status": "pending"
+      "korean": "점토",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Cloth",
-      "korean": "",
-      "status": "pending"
+      "korean": "직물",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Coin",
-      "korean": "",
-      "status": "pending"
+      "korean": "주화",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Components",
-      "korean": "",
-      "status": "pending"
+      "korean": "부품",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Drink",
-      "korean": "",
-      "status": "pending"
+      "korean": "음료",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Entertainment",
-      "korean": "",
-      "status": "pending"
+      "korean": "오락",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Fashion",
-      "korean": "",
-      "status": "pending"
+      "korean": "의류",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Fertilizer",
-      "korean": "",
-      "status": "pending"
+      "korean": "비료",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Fiber",
-      "korean": "",
-      "status": "pending"
+      "korean": "섬유",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Flour",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀가루",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Fodder",
-      "korean": "",
-      "status": "pending"
+      "korean": "사료",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Forage",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집물",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_FriedFish",
-      "korean": "",
-      "status": "pending"
+      "korean": "생선튀김",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Fruit",
-      "korean": "",
-      "status": "pending"
+      "korean": "과일",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Fuel",
-      "korean": "",
-      "status": "pending"
+      "korean": "연료",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Grain",
-      "korean": "",
-      "status": "pending"
+      "korean": "곡물",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Gunpowder",
-      "korean": "",
-      "status": "pending"
+      "korean": "화약",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Herbs",
-      "korean": "",
-      "status": "pending"
+      "korean": "약초",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_HotBaths",
-      "korean": "",
-      "status": "pending"
+      "korean": "온수 목욕",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Ingots",
-      "korean": "",
-      "status": "pending"
+      "korean": "주괴",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Jam",
-      "korean": "",
-      "status": "pending"
+      "korean": "잼",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Knowledge",
-      "korean": "",
-      "status": "pending"
+      "korean": "지식",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Landfill",
-      "korean": "",
-      "status": "pending"
+      "korean": "매립재",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Logs",
-      "korean": "",
-      "status": "pending"
+      "korean": "통나무",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Mana",
-      "korean": "",
-      "status": "pending"
+      "korean": "마나",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Meat",
-      "korean": "",
-      "status": "pending"
+      "korean": "고기",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Medicine",
-      "korean": "",
-      "status": "pending"
+      "korean": "의약",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_MonsterEggs",
-      "korean": "",
-      "status": "pending"
+      "korean": "괴물 알",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Ore",
-      "korean": "",
-      "status": "pending"
+      "korean": "광석",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_OrganicWaste",
-      "korean": "",
-      "status": "pending"
+      "korean": "유기 폐기물",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Planks",
-      "korean": "",
-      "status": "pending"
+      "korean": "판자",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_RawFish",
-      "korean": "",
-      "status": "pending"
+      "korean": "생선",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Rocks",
-      "korean": "",
-      "status": "pending"
+      "korean": "돌",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Sausages",
-      "korean": "",
-      "status": "pending"
+      "korean": "소시지",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Scrap",
-      "korean": "",
-      "status": "pending"
+      "korean": "고철",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Soap",
-      "korean": "",
-      "status": "pending"
+      "korean": "비누",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Stew",
-      "korean": "",
-      "status": "pending"
+      "korean": "스튜",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Sulfur",
-      "korean": "",
-      "status": "pending"
+      "korean": "유황",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Vegetables",
-      "korean": "",
-      "status": "pending"
+      "korean": "채소",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_VolcanicPlants",
-      "korean": "",
-      "status": "pending"
+      "korean": "화산 식물",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Wheat",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Wood",
-      "korean": "",
-      "status": "pending"
+      "korean": "목재",
+      "status": "reviewed"
     },
     {
       "id": "Data/SALARY_Level0",
@@ -3254,8 +3254,8 @@
     },
     {
       "id": "Data/TILE_Rock",
-      "korean": "",
-      "status": "pending"
+      "korean": "암석",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_Rubble",
@@ -3264,8 +3264,8 @@
     },
     {
       "id": "Data/TILE_Sidewalk",
-      "korean": "",
-      "status": "pending"
+      "korean": "보도",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_Snow",
@@ -3364,233 +3364,233 @@
     },
     {
       "id": "Entities/BIOME_DirtPath",
-      "korean": "",
-      "status": "pending"
+      "korean": "오솔길",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BIOME_DirtPath_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "길을 열린 상태로 유지하고 야생 식물이 뿌리내리지 못하게 하는 장식용 도로입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BIOME_Earth",
-      "korean": "",
-      "status": "pending"
+      "korean": "빈 땅",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BIOME_Earth_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "모든 도로와 농경지 구획을 제거합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BIOME_PavedStreet",
-      "korean": "",
-      "status": "pending"
+      "korean": "포장도로",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BIOME_PavedStreet_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "길을 열린 상태로 유지하고 야생 식물이 뿌리내리지 못하게 하는 장식용 도로입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BIOME_Sidewalk",
-      "korean": "",
-      "status": "pending"
+      "korean": "보도",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BIOME_Sidewalk_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "길을 열린 상태로 유지하고 야생 식물이 뿌리내리지 못하게 하는 장식용 도로입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_AirDefenseCannon",
-      "korean": "",
-      "status": "pending"
+      "korean": "대공포",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_AirDefenseCannon_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "모든 대상에 직사 공격을 합니다.<br>유지용 화약이 필요합니다.<br>모집 시 주화가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Alehouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "선술집",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Alehouse_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "곡물을 음료로 가공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Apothecary",
-      "korean": "",
-      "status": "pending"
+      "korean": "약제상",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Apothecary_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "거리에 상관없이 아군 한 명씩 치료합니다.<br>유지용 약품이 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_AtmosphericCollector",
-      "korean": "",
-      "status": "pending"
+      "korean": "대기 수집기",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_AtmosphericCollector_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "연료를 마나로 변환합니다.<br>고지대에 설치해야 합니다.<br>약간의 오염을 발생시킵니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Bakery",
-      "korean": "",
-      "status": "pending"
+      "korean": "제과점",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Bakery_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "곡물을 빵으로 가공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Bench",
-      "korean": "",
-      "status": "pending"
+      "korean": "벤치",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Bench_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "앉아서 쉬어 보세요.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_BlastFurnace",
-      "korean": "",
-      "status": "pending"
+      "korean": "용광로",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_BlastFurnace_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "광석과 연료를 부품으로 가공합니다.<br>중간 정도의 오염을 발생시킵니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Brazier",
-      "korean": "",
-      "status": "pending"
+      "korean": "화로",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Brazier_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "파괴하면 귀중한 자원이 떨어집니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Brickworks",
-      "korean": "",
-      "status": "pending"
+      "korean": "벽돌 공장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Brickworks_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "점토와 연료를 벽돌로 가공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_BuildersPost",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설가 초소",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_BuildersPost_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "근처 건설가는 근무 중 대기할 때 이곳을 이용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_BuildersWorkshop",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설가 작업장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_BuildersWorkshop_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주변 아군 구조물을 수리하고 재건하는 건설가를 고용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Butchery",
-      "korean": "",
-      "status": "pending"
+      "korean": "도축장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Butchery_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "사체를 소시지로 가공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_CharcoalKiln",
-      "korean": "",
-      "status": "pending"
+      "korean": "숯가마",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_CharcoalKiln_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "통나무를 연료로 가공합니다.<br>주변 나무를 벌목합니다.<br>약간의 오염을 발생시킵니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_CommandTent",
-      "korean": "",
-      "status": "pending"
+      "korean": "지휘 천막",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_CommandTentLevel1",
-      "korean": "",
-      "status": "pending"
+      "korean": "지휘 천막",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_CommandTentLevel1_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "비행선 격납고가 있는 대형 무법자 야영지입니다. 시간이 지나면 더 많은 무법자를 모집합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_CommandTentLevel2",
-      "korean": "",
-      "status": "pending"
+      "korean": "지휘 천막",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_CommandTentLevel2_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "대형 무법자 야영지입니다. 시간이 지나면 더 많은 무법자를 모집합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_CommandTent_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "야영지가 가득 찰 때까지 새 무법자를 생성합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Composter",
-      "korean": "",
-      "status": "pending"
+      "korean": "퇴비장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Composter_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "유기 폐기물을 비료로 가공합니다 (재료가 없어도 작동하지만 더 느립니다).",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Deckchair",
-      "korean": "",
-      "status": "pending"
+      "korean": "갑판 의자",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Deckchair_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "장식용 갑판 의자입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Dreadnaught",
-      "korean": "",
-      "status": "pending"
+      "korean": "드레드노트",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_DreadnaughtHangar",
-      "korean": "",
-      "status": "pending"
+      "korean": "드레드노트 격납고",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_DreadnaughtHangar_Description",
@@ -3599,478 +3599,478 @@
     },
     {
       "id": "Entities/BUILDING_Dredger",
-      "korean": "",
-      "status": "pending"
+      "korean": "준설기",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Dredger_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "벽돌을 생산합니다. 매장지 위에 설치해야 합니다!",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_DrinkTable",
-      "korean": "",
-      "status": "pending"
+      "korean": "음료 탁자",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_DrinkTable_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "음료가 놓인 장식용 탁자입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_ExpeditionaryAirship",
-      "korean": "",
-      "status": "pending"
+      "korean": "원정 비행선",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_ExpeditionaryPlatform",
-      "korean": "",
-      "status": "pending"
+      "korean": "원정 비행선 플랫폼",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_ExpeditionaryPlatform_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "비행선 한 대의 정박 및 수리 시설입니다.<br>유지용 마나가 필요합니다.<br>모집 시 주화가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Farmstead",
-      "korean": "",
-      "status": "pending"
+      "korean": "농장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Farmstead_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주변 농경지에 파종하고 수확하는 농부를 고용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FieldMortar",
-      "korean": "",
-      "status": "pending"
+      "korean": "야전 박격포",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FieldMortar_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "사거리 내 적대 구조물에 곡사 폭발탄을 발사합니다 (생물 둥지 제외). 캐릭터는 공격하지 않습니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Firepit",
-      "korean": "",
-      "status": "pending"
+      "korean": "화덕",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Firepit_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "파괴하면 귀중한 자원이 떨어집니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FirestartersShrine",
-      "korean": "",
-      "status": "pending"
+      "korean": "방화자의 성소",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FishingBoat",
-      "korean": "",
-      "status": "pending"
+      "korean": "어선",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FishingBoat_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "어선",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FishingWharf",
-      "korean": "",
-      "status": "pending"
+      "korean": "어선 선착장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FishingWharf_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "어선 한 척의 정박 및 수리 시설입니다.<br>유지용 연료가 필요합니다.<br>모집 시 주화가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FishmongersShop",
-      "korean": "",
-      "status": "pending"
+      "korean": "생선 가게",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FishmongersShop_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "생선을 생선튀김으로 조리합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FlowerBucketA",
-      "korean": "",
-      "status": "pending"
+      "korean": "꽃 양동이",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FlowerBucketA_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "꽃이 담긴 양동이로 장식합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FlowerBucketB",
-      "korean": "",
-      "status": "pending"
+      "korean": "주황색 꽃 양동이",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FlowerBucketC",
-      "korean": "",
-      "status": "pending"
+      "korean": "파란색 꽃 양동이",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FlowerBucketD",
-      "korean": "",
-      "status": "pending"
+      "korean": "분홍색 꽃 양동이",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FlowerBucketE",
-      "korean": "",
-      "status": "pending"
+      "korean": "남색 꽃 양동이",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FlowerPot",
-      "korean": "",
-      "status": "pending"
+      "korean": "화분",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FlowerPot_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "꽃으로 장식합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FoodBarrel",
-      "korean": "",
-      "status": "pending"
+      "korean": "식량 통",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FoodBarrel_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "파괴하면 귀중한 자원이 떨어집니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_ForagersHut",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집꾼 오두막",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_ForagersHut_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주변 야생 식물을 채집하는 채집꾼을 고용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FrogChair",
-      "korean": "",
-      "status": "pending"
+      "korean": "개구리 의자",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FrogChair_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "세상에서 가장 귀여운 의자입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FruitPress",
-      "korean": "",
-      "status": "pending"
+      "korean": "과일 압착기",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_FruitPress_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "과일을 잼으로 가공합니다.<br>주변 과수원 구획을 관리하고 야생 베리를 수확합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HalberdiersBarracks",
-      "korean": "",
-      "status": "pending"
+      "korean": "미늘창병 병영",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HalberdiersBarracks_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "근접 전투를 하는 미늘창병 두 명을 고용합니다.<br>주변의 주화와 고철을 수집합니다.<br>모집 시 주화가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HalberdiersPost",
-      "korean": "",
-      "status": "pending"
+      "korean": "미늘창병 초소",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HalberdiersPost_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "근처 미늘창병은 근무 중 대기할 때 이곳을 이용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HayFeeder",
-      "korean": "",
-      "status": "pending"
+      "korean": "건초 먹이통",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HayFeeder_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "순수 장식용입니다 (가축은 이것이 없어도 사료를 먹습니다).",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HerbalistsDen",
-      "korean": "",
-      "status": "pending"
+      "korean": "약초상 작업실",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HerbalistsDen_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "약초를 약품으로 가공합니다.<br>주변 약초를 수확합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Homestead",
-      "korean": "",
-      "status": "pending"
+      "korean": "자급 농가",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Homestead_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "채소를 스튜로 조리합니다.<br>주변 채소밭을 관리하고 야생 버섯과 채소를 수확합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HuntingLodge",
-      "korean": "",
-      "status": "pending"
+      "korean": "사냥 산장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HuntingLodge_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주변 육상 생물을 사냥하고 사체를 수집하는 사냥꾼을 고용합니다.<br>모집 시 주화가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HuntingTower",
-      "korean": "",
-      "status": "pending"
+      "korean": "사냥탑",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_HuntingTower_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "멀리서 적을 저격합니다. 조준 시간은 대상의 체력에 비례합니다. 재장전에 화약이 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_JumpingBoard",
-      "korean": "",
-      "status": "pending"
+      "korean": "다이빙대",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_JumpingBoard_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "장식용 다이빙대입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Lamppost",
-      "korean": "",
-      "status": "pending"
+      "korean": "가로등",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Lamppost_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "저녁과 밤에 빛을 제공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Mine",
-      "korean": "",
-      "status": "pending"
+      "korean": "광산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Mine_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "광석을 생산합니다.<br>광맥 타일 위에 설치해야 합니다.<br>매우 심한 오염을 발생시킵니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_MonarchStatue",
-      "korean": "",
-      "status": "pending"
+      "korean": "군주 동상",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_MonarchStatue_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕국을 지켜보는 돌 군주상입니다",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_MortarTower",
-      "korean": "",
-      "status": "pending"
+      "korean": "박격포탑",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_MortarTower_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "지상 대상에 곡사 공격을 합니다.<br>유지용 화약이 필요합니다.<br>모집 시 주화가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_MusketeersBarracks",
-      "korean": "",
-      "status": "pending"
+      "korean": "머스킷병 병영",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_MusketeersBarracks_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "원거리 공격을 하는 머스킷병 두 명을 고용합니다.<br>주변의 주화와 고철을 수집합니다.<br>모집 시 주화가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_MusketeersPost",
-      "korean": "",
-      "status": "pending"
+      "korean": "머스킷병 초소",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_MusketeersPost_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "근처 머스킷병은 근무 중 대기할 때 이곳을 이용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Outhouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "변소",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Outhouse_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "자연의 부름을 해결하는 곳입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_OutlawBanner",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자 깃발",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_OutlawBanner_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "소규모 무법자 전초기지입니다. 시간이 지나면 더 많은 무법자를 모집합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Pantry",
-      "korean": "",
-      "status": "pending"
+      "korean": "식료품 저장고",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Pantry_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주변 농경지를 관리하고 야생에서 채집하는 농부를 고용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Parasol",
-      "korean": "",
-      "status": "pending"
+      "korean": "파라솔",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Parasol2",
-      "korean": "",
-      "status": "pending"
+      "korean": "파라솔",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Parasol2_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "장식용 파라솔입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Parasol_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "장식용 파라솔입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_PieShop",
-      "korean": "",
-      "status": "pending"
+      "korean": "파이 가게",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_PieShop_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "과일을 소비해 주변 시민을 최대 15명까지 먹입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_PoachersTent",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀렵꾼 천막",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_PowderKeg",
-      "korean": "",
-      "status": "pending"
+      "korean": "화약통",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_PowderKeg_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "도화선에 불이 붙은 뒤 잠시 후 폭발합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_PowderMill",
-      "korean": "",
-      "status": "pending"
+      "korean": "화약 공장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_PowderMill_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "비료와 유황을 화약으로 가공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Ranch",
-      "korean": "",
-      "status": "pending"
+      "korean": "목장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Ranch_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주변 야생 울리를 길들이는 목장주를 고용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Sawmill",
-      "korean": "",
-      "status": "pending"
+      "korean": "제재소",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Sawmill_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "통나무를 판자로 가공합니다.<br>주변 나무를 벌목합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Scarecrow1",
-      "korean": "",
-      "status": "pending"
+      "korean": "허수아비",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Scarecrow1_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "까마귀를 쫓아냅니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Scarecrow2",
-      "korean": "",
-      "status": "pending"
+      "korean": "허수아비",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Scarecrow2_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "까마귀를 쫓아냅니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_ScrappersWorkshop",
-      "korean": "",
-      "status": "pending"
+      "korean": "고철업자 작업장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_ShearingShed",
-      "korean": "",
-      "status": "pending"
+      "korean": "털깎이 작업장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_ShearingShed_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "섬유를 직물로 가공합니다.<br>주변의 복슬복슬한 울리 털을 깎고 해안의 부들을 수확합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Smithy",
-      "korean": "",
-      "status": "pending"
+      "korean": "대장간",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Smithy_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주괴를 부품으로 가공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SnapperNest",
-      "korean": "",
-      "status": "pending"
+      "korean": "스내퍼 둥지",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SnapperNest_Description",
@@ -4079,163 +4079,163 @@
     },
     {
       "id": "Entities/BUILDING_SoapersWorkshop",
-      "korean": "",
-      "status": "pending"
+      "korean": "비누 공방",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SoapersWorkshop_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "사체를 비누로 가공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SoupKitchen",
-      "korean": "",
-      "status": "pending"
+      "korean": "수프 주방",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SoupKitchen_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "채소를 소비해 주변 시민을 최대 15명까지 먹입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_StonecuttersWorkshop",
-      "korean": "",
-      "status": "pending"
+      "korean": "석공 작업장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_StonecuttersWorkshop_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "돌을 벽돌로 가공합니다 (재료가 없어도 작동하지만 더 느립니다).<br>주변 바위를 채굴합니다.<br>암석 타일 위에 설치해야 합니다.<br>중간 정도의 오염을 발생시킵니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Storehouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "대형 창고",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Storehouse_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "대형 창고 하나당 모든 자원의 최대 저장량이 300 증가합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SulfurKiln",
-      "korean": "",
-      "status": "pending"
+      "korean": "유황 가마",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SulfurKiln_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "화산 식물을 유황으로 가공합니다.<br>주변 불씨뿌리를 수확합니다.<br>약간의 오염을 발생시킵니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SunflowerPot",
-      "korean": "",
-      "status": "pending"
+      "korean": "해바라기 화분",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SunflowerPot_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "해바라기로 장식합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SupplyCrateBig",
-      "korean": "",
-      "status": "pending"
+      "korean": "보급 상자 (대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SupplyCrateBig_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "파괴하면 귀중한 자원이 떨어집니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SupplyCrateSmall1",
-      "korean": "",
-      "status": "pending"
+      "korean": "보급 상자 (소형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SupplyCrateSmall1_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "파괴하면 귀중한 자원이 떨어집니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SupplyCrateSmall2",
-      "korean": "",
-      "status": "pending"
+      "korean": "보급 상자 (소형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_SupplyCrateSmall2_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "파괴하면 귀중한 자원이 떨어집니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Tent",
-      "korean": "",
-      "status": "pending"
+      "korean": "천막",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Tent_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자 한 명이 거주합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Theatre",
-      "korean": "",
-      "status": "pending"
+      "korean": "극장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Theatre_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주화를 오락으로 전환합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_ThugsTent",
-      "korean": "",
-      "status": "pending"
+      "korean": "폭력배 천막",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_TinkerersWorkshop",
-      "korean": "",
-      "status": "pending"
+      "korean": "땜장이 작업장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_TinkerersWorkshop_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "고철을 소비해 연구 속도를 높입니다 (연구 중이 아니면 부품으로 가공합니다).<br>약간의 오염을 발생시킵니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_TownHall",
-      "korean": "",
-      "status": "pending"
+      "korean": "시청",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_TownHall_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "모든 주거 공간이 찰 때까지 새 시민을 꾸준히 모집합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Townhouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "연립주택",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Townhouse_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "빈 일자리에 배치될 수 있는 무직 평민이 최대 세 명까지 거주합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_TreasureChest",
-      "korean": "",
-      "status": "pending"
+      "korean": "보물 상자",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_TreasureChest_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "파괴하면 귀중한 자원이 떨어집니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_TuskarNest",
-      "korean": "",
-      "status": "pending"
+      "korean": "터스카 둥지",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_TuskarNestShelter",
@@ -4249,33 +4249,33 @@
     },
     {
       "id": "Entities/BUILDING_TuskarNest_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "둥지가 가득 찰 때까지 새 터스카를 생성합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_TuskarStatue",
-      "korean": "",
-      "status": "pending"
+      "korean": "터스카 동상",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_TuskarStatue_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕국을 지켜보는 돌 터스카상입니다",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Washhouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "목욕탕",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Washhouse_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "비누와 연료를 온수 목욕으로 가공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Watchtower",
-      "korean": "",
-      "status": "pending"
+      "korean": "감시탑",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Watchtower_Description",
@@ -4284,48 +4284,48 @@
     },
     {
       "id": "Entities/BUILDING_WeavingMill",
-      "korean": "",
-      "status": "pending"
+      "korean": "직조 공장",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_WeavingMill_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "섬유를 의류로 가공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Well",
-      "korean": "",
-      "status": "pending"
+      "korean": "우물",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Well_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "불이 붙은 캐릭터는 우물과 상호작용해 스스로 불을 끌 수 있습니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Windmill",
-      "korean": "",
-      "status": "pending"
+      "korean": "풍차",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Windmill_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀을 곡물로 가공합니다.<br>주변 밀밭을 관리합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_WoolieBalloon",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리 튜브",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_WoolieBalloon_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "장식용 울리 물놀이 튜브입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_WoolieNest",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리 둥지",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_WoolieNestShelter",
@@ -4339,43 +4339,43 @@
     },
     {
       "id": "Entities/BUILDING_WoolieNest_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "둥지가 가득 찰 때까지 새 울리를 생성합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_WoolieStatue",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리 동상",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_WoolieStatue_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕국을 지켜보는 돌 울리상입니다",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_WooliesBarn",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리 축사",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_WooliesBarn_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집물을 사료로 가공합니다.<br>주변 채집 식물을 수확하는 길들인 울리가 최대 여섯 마리까지 거주합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Workbench",
-      "korean": "",
-      "status": "pending"
+      "korean": "작업대",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BUILDING_Workbench_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "장식용 작업대입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Advanced",
-      "korean": "",
-      "status": "pending"
+      "korean": "고급",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Amenities",
@@ -4389,8 +4389,8 @@
     },
     {
       "id": "Entities/CATEGORY_Consumables",
-      "korean": "",
-      "status": "pending"
+      "korean": "소모품",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Creatures",
@@ -4399,68 +4399,68 @@
     },
     {
       "id": "Entities/CATEGORY_Decoration",
-      "korean": "",
-      "status": "pending"
+      "korean": "장식",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Defense",
-      "korean": "",
-      "status": "pending"
+      "korean": "방어",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Extraction",
-      "korean": "",
-      "status": "pending"
+      "korean": "채취",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Farming",
-      "korean": "",
-      "status": "pending"
+      "korean": "농업",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Forestry",
-      "korean": "",
-      "status": "pending"
+      "korean": "임업",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Gathering",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Government",
-      "korean": "",
-      "status": "pending"
+      "korean": "행정",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Infrastructure",
-      "korean": "",
-      "status": "pending"
+      "korean": "기반 시설",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Military",
-      "korean": "",
-      "status": "pending"
+      "korean": "군사",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_ParkDecorations",
-      "korean": "",
-      "status": "pending"
+      "korean": "공원 장식",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Refinement",
-      "korean": "",
-      "status": "pending"
+      "korean": "가공",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_RuralDecorations",
-      "korean": "",
-      "status": "pending"
+      "korean": "전원 장식",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Subtitle_Foundation",
-      "korean": "",
-      "status": "pending"
+      "korean": "기초",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CATEGORY_Subtitle_Population",
@@ -4474,788 +4474,788 @@
     },
     {
       "id": "Entities/CATEGORY_Support",
-      "korean": "",
-      "status": "pending"
+      "korean": "지원",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_AppleTree",
-      "korean": "",
-      "status": "pending"
+      "korean": "사과나무",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_AppleTreeSapling",
-      "korean": "",
-      "status": "pending"
+      "korean": "사과나무 (묘목)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_AppleTreeStump",
-      "korean": "",
-      "status": "pending"
+      "korean": "사과나무 그루터기",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_Cauliflower",
-      "korean": "",
-      "status": "pending"
+      "korean": "콜리플라워",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_CauliflowerBountiful",
-      "korean": "",
-      "status": "pending"
+      "korean": "콜리플라워",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_CauliflowerSown",
-      "korean": "",
-      "status": "pending"
+      "korean": "콜리플라워 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_Pumpkin",
-      "korean": "",
-      "status": "pending"
+      "korean": "호박",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_PumpkinBountiful",
-      "korean": "",
-      "status": "pending"
+      "korean": "호박",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_PumpkinSown",
-      "korean": "",
-      "status": "pending"
+      "korean": "호박 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_Reed",
-      "korean": "",
-      "status": "pending"
+      "korean": "갈대",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_ReedSown",
-      "korean": "",
-      "status": "pending"
+      "korean": "갈대 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_Tomato",
-      "korean": "",
-      "status": "pending"
+      "korean": "토마토",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_TomatoBountiful",
-      "korean": "",
-      "status": "pending"
+      "korean": "토마토",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_TomatoSown",
-      "korean": "",
-      "status": "pending"
+      "korean": "토마토 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_Wheat",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_WheatBountiful",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀",
+      "status": "reviewed"
     },
     {
       "id": "Entities/CROP_WheatSown",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_Battlement",
-      "korean": "",
-      "status": "pending"
+      "korean": "성벽 흉벽",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_Battlement_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "방어자에게 허리 높이의 엄폐물을 제공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_CastleArch",
-      "korean": "",
-      "status": "pending"
+      "korean": "성 아치",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_CastleArch_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "다리와 성문을 건설할 때 사용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_CastleBlock",
-      "korean": "",
-      "status": "pending"
+      "korean": "성벽 블록",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_CastleBlock_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "성벽 등 여러 구조물을 만드는 블록입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_CastleStairs",
-      "korean": "",
-      "status": "pending"
+      "korean": "성 계단 (완만함)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_CastleStairsTall",
-      "korean": "",
-      "status": "pending"
+      "korean": "성 계단 (가파름)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_CastleStairsTall_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "이 계단을 이용하면 턱을 뛰어오를 필요가 없습니다!",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_CastleStairs_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "이 계단을 이용하면 턱을 뛰어오를 필요가 없습니다!",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_Fence",
-      "korean": "",
-      "status": "pending"
+      "korean": "울타리",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_Fence_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "다른 이들이 작물을 짓밟지 못하게 합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_Gate",
-      "korean": "",
-      "status": "pending"
+      "korean": "울타리 문",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_Gate_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "울타리의 출입구를 막을 때 사용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_StoneFence",
-      "korean": "",
-      "status": "pending"
+      "korean": "돌 울타리",
+      "status": "reviewed"
     },
     {
       "id": "Entities/INFRASTRUCTURE_StoneFence_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "다른 이들이 작물을 짓밟지 못하게 합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/PHYSICALTYPE_Armored",
-      "korean": "",
-      "status": "pending"
+      "korean": "장갑형",
+      "status": "reviewed"
     },
     {
       "id": "Entities/PHYSICALTYPE_Fortified",
-      "korean": "",
-      "status": "pending"
+      "korean": "요새화",
+      "status": "reviewed"
     },
     {
       "id": "Entities/PHYSICALTYPE_Metallic",
-      "korean": "",
-      "status": "pending"
+      "korean": "금속",
+      "status": "reviewed"
     },
     {
       "id": "Entities/PHYSICALTYPE_Normal",
-      "korean": "",
-      "status": "pending"
+      "korean": "일반",
+      "status": "reviewed"
     },
     {
       "id": "Entities/PHYSICALTYPE_Rock",
-      "korean": "",
-      "status": "pending"
+      "korean": "암석",
+      "status": "reviewed"
     },
     {
       "id": "Entities/PHYSICALTYPE_Structure",
-      "korean": "",
-      "status": "pending"
+      "korean": "구조물",
+      "status": "reviewed"
     },
     {
       "id": "Entities/PHYSICALTYPE_Wood",
-      "korean": "",
-      "status": "pending"
+      "korean": "목재",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Alehouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "음료 양조",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_AtmosphericCollector",
-      "korean": "",
-      "status": "pending"
+      "korean": "마나 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Bakery",
-      "korean": "",
-      "status": "pending"
+      "korean": "빵 굽기",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_BlastFurnace",
-      "korean": "",
-      "status": "pending"
+      "korean": "주괴 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Brickworks",
-      "korean": "",
-      "status": "pending"
+      "korean": "벽돌 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Butchery",
-      "korean": "",
-      "status": "pending"
+      "korean": "식사 조리",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_CharcoalKiln",
-      "korean": "",
-      "status": "pending"
+      "korean": "연료 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Composter",
-      "korean": "",
-      "status": "pending"
+      "korean": "비료 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Dredger",
-      "korean": "",
-      "status": "pending"
+      "korean": "점토 채굴",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_FishmongersShop",
-      "korean": "",
-      "status": "pending"
+      "korean": "생선 튀기기",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_FruitPress",
-      "korean": "",
-      "status": "pending"
+      "korean": "잼 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_HerbalistsDen",
-      "korean": "",
-      "status": "pending"
+      "korean": "약품 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Homestead",
-      "korean": "",
-      "status": "pending"
+      "korean": "스튜 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Mine",
-      "korean": "",
-      "status": "pending"
+      "korean": "광석 채굴",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Outhouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "용변 해결",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_PieShop",
-      "korean": "",
-      "status": "pending"
+      "korean": "파이 굽기",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_PowderMill",
-      "korean": "",
-      "status": "pending"
+      "korean": "화약 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Sawmill",
-      "korean": "",
-      "status": "pending"
+      "korean": "목재 절단",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_ShearingShed",
-      "korean": "",
-      "status": "pending"
+      "korean": "직물 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Smithy",
-      "korean": "",
-      "status": "pending"
+      "korean": "부품 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_SoapersWorkshop",
-      "korean": "",
-      "status": "pending"
+      "korean": "비누 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_SoupKitchen",
-      "korean": "",
-      "status": "pending"
+      "korean": "수프 조리",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_StonecuttersWorkshop",
-      "korean": "",
-      "status": "pending"
+      "korean": "벽돌 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_SulfurKiln",
-      "korean": "",
-      "status": "pending"
+      "korean": "유황 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Theatre",
-      "korean": "",
-      "status": "pending"
+      "korean": "오락 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_TinkerersWorkshop",
-      "korean": "",
-      "status": "pending"
+      "korean": "부품 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Townhouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "주택 난방",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Washhouse",
-      "korean": "",
-      "status": "pending"
+      "korean": "위생 회복",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_WeavingMill",
-      "korean": "",
-      "status": "pending"
+      "korean": "의류 제작",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_Windmill",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀가루 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/RECIPE_WooliesBarn",
-      "korean": "",
-      "status": "pending"
+      "korean": "사료 생산",
+      "status": "reviewed"
     },
     {
       "id": "Entities/SOWABLE_Farmland",
-      "korean": "",
-      "status": "pending"
+      "korean": "농경지 구획",
+      "status": "reviewed"
     },
     {
       "id": "Entities/SOWABLE_Farmland_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "곡물을 심고 다음 날 수확할 수 있는 농경지입니다 (겨울 제외). 구획마다 파종할 때 비료가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/SOWABLE_Garden",
-      "korean": "",
-      "status": "pending"
+      "korean": "텃밭 구획",
+      "status": "reviewed"
     },
     {
       "id": "Entities/SOWABLE_Garden_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "채소를 심고 다음 날 수확할 수 있는 농경지입니다 (겨울 제외). 구획마다 파종할 때 비료가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/SOWABLE_Orchard",
-      "korean": "",
-      "status": "pending"
+      "korean": "과수원 구획",
+      "status": "reviewed"
     },
     {
       "id": "Entities/SOWABLE_Orchard_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "여름에 열매를 맺는 사과나무를 심는 구획입니다. 유지용 비료가 없으면 자라지 않습니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/SOWABLE_Vegetable",
-      "korean": "",
-      "status": "pending"
+      "korean": "채소밭 구획",
+      "status": "reviewed"
     },
     {
       "id": "Entities/SOWABLE_Vegetable_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "채소를 심는 구획입니다.<br>유지용 비료가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/SOWABLE_Wheat",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀밭 구획",
+      "status": "reviewed"
     },
     {
       "id": "Entities/SOWABLE_Wheat_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀을 심는 구획입니다.<br>유지용 비료가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Boulder_Large",
-      "korean": "",
-      "status": "pending"
+      "korean": "바위 (대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Boulder_Small",
-      "korean": "",
-      "status": "pending"
+      "korean": "바위 (소형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Nest_Snappers",
-      "korean": "",
-      "status": "pending"
+      "korean": "스내퍼 둥지",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Nest_Tuskar_Shelter",
-      "korean": "",
-      "status": "pending"
+      "korean": "터스카 쉼터",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Nest_Tuskars",
-      "korean": "",
-      "status": "pending"
+      "korean": "터스카 둥지",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Nest_Woolie_Shelter",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리 쉼터",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Nest_Woolies",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리 둥지",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_BilberryBush",
-      "korean": "",
-      "status": "pending"
+      "korean": "월귤 덤불",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_BilberryBushSapling",
-      "korean": "",
-      "status": "pending"
+      "korean": "월귤 덤불 (묘목)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Cattail",
-      "korean": "",
-      "status": "pending"
+      "korean": "부들",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_CattailGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "부들 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Chanterelle",
-      "korean": "",
-      "status": "pending"
+      "korean": "꾀꼬리버섯",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_ChanterelleGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "꾀꼬리버섯 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Chard",
-      "korean": "",
-      "status": "pending"
+      "korean": "근대",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_ChardGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "근대 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_CloudberryBush",
-      "korean": "",
-      "status": "pending"
+      "korean": "클라우드베리 덤불",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_CloudberryBushSapling",
-      "korean": "",
-      "status": "pending"
+      "korean": "클라우드베리 덤불 (묘목)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Cowslip",
-      "korean": "",
-      "status": "pending"
+      "korean": "카우슬립",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_CowslipGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "카우슬립 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Edelweiss",
-      "korean": "",
-      "status": "pending"
+      "korean": "에델바이스",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_EdelweissGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "에델바이스 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_EmberRoot",
-      "korean": "",
-      "status": "pending"
+      "korean": "불씨뿌리",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_EmberRootGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "불씨뿌리 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Fern",
-      "korean": "",
-      "status": "pending"
+      "korean": "고사리",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_FernGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "고사리 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_FirBushShort",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 덤불",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_FirBushShortSapling",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 덤불 (묘목)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_FirBushTall",
-      "korean": "",
-      "status": "pending"
+      "korean": "키 큰 전나무 덤불",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_FirBushTallSapling",
-      "korean": "",
-      "status": "pending"
+      "korean": "키 큰 전나무 덤불 (묘목)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_KelpGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "다시마 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_KelpLarge",
-      "korean": "",
-      "status": "pending"
+      "korean": "다시마 (대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_KelpMedium",
-      "korean": "",
-      "status": "pending"
+      "korean": "다시마 (중형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_KelpSmall",
-      "korean": "",
-      "status": "pending"
+      "korean": "다시마 (소형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Mugwort",
-      "korean": "",
-      "status": "pending"
+      "korean": "쑥",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_MugwortGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "쑥 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Radish",
-      "korean": "",
-      "status": "pending"
+      "korean": "무",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_RadishGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "무 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_RaspberryBush",
-      "korean": "",
-      "status": "pending"
+      "korean": "산딸기 덤불",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_RaspberryBushSapling",
-      "korean": "",
-      "status": "pending"
+      "korean": "산딸기 덤불 (묘목)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Seagrass",
-      "korean": "",
-      "status": "pending"
+      "korean": "해초",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Seaweed",
-      "korean": "",
-      "status": "pending"
+      "korean": "해조류",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_ShortBush",
-      "korean": "",
-      "status": "pending"
+      "korean": "덤불",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_ShortBushSapling",
-      "korean": "",
-      "status": "pending"
+      "korean": "덤불 (묘목)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_Sunflower",
-      "korean": "",
-      "status": "pending"
+      "korean": "해바라기",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_SunflowerGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "해바라기 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_TallBush",
-      "korean": "",
-      "status": "pending"
+      "korean": "키 큰 덤불",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_TallBushSapling",
-      "korean": "",
-      "status": "pending"
+      "korean": "키 큰 덤불 (묘목)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_TallGrass",
-      "korean": "",
-      "status": "pending"
+      "korean": "키 큰 풀",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Plant_TallGrassGrowing",
-      "korean": "",
-      "status": "pending"
+      "korean": "키 큰 풀 (성장 중)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirLarge",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 (대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirLogLarge",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 통나무 (대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirLogMassive",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 통나무 (초대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirLogMedium",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 통나무 (중형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirLogSmall",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 통나무 (소형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirMassive",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 (초대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirMedium",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 (중형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirSapling",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 (묘목)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirSmall",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 (소형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirStumpLarge",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 그루터기 (대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirStumpMassive",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 그루터기 (초대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirStumpMedium",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 그루터기 (중형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_FirStumpSmall",
-      "korean": "",
-      "status": "pending"
+      "korean": "전나무 그루터기 (소형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakLarge",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 (대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakLogLarge",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 통나무 (대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakLogMassive",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 통나무 (초대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakLogMedium",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 통나무 (중형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakLogSmall",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 통나무 (소형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakMassive",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 (초대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakMedium",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 (중형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakSapling",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 (묘목)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakSmall",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 (소형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakStumpLarge",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 그루터기 (대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakStumpMassive",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 그루터기 (초대형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakStumpMedium",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 그루터기 (중형)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/WILD_Tree_OakStumpSmall",
-      "korean": "",
-      "status": "pending"
+      "korean": "참나무 그루터기 (소형)",
+      "status": "reviewed"
     },
     {
       "id": "UI/BIOME_Forest",
@@ -6819,8 +6819,8 @@
     },
     {
       "id": "UI/PROMPT_NotEnoughFreeBlocks",
-      "korean": "",
-      "status": "pending"
+      "korean": "저장 공간이 부족합니다! 저장 공간을 확보한 후 다시 시도하세요",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPT_Place",

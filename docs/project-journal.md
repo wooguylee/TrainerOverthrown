@@ -293,6 +293,28 @@
   exit code 0을 확인했다. 게임 폴더의 Helper/Core DLL과 번역 JSON 3개는 staged payload와
   SHA-256이 모두 일치하며, 설치 manifest 233개 파일의 누락·길이/해시 불일치는 0개다.
 
+## 2026-08-25 중앙 상호작용 HUD 한글화 보완
+
+- 사용자 스크린샷의 `Oak (Medium)`과 `Wood`는 각각
+  `Entities/WILD_Tree_OakMedium`, `Entities/PHYSICALTYPE_Wood` 안정 키이며 검수 사전에
+  원문이 없어 `pending`으로 남아 있음을 확인했다.
+- 같은 화면 계열을 기준으로 `Entities/*` 월드 엔티티 379개 중 실제 문구 372개,
+  `Data/ITEM_Type_*` 43개, `Data/RESOURCE_Type_*` 45개, `UI/PROMPT_*` 67개를 모두
+  `reviewed` 상태로 보완했다. 원문이 `-`뿐인 엔티티 설명 7개는 번역하지 않았다.
+- 원문 기반 runtime 사전을 공유하는 `Apothecary`, `Medicine`은 건물·직업과 자원·기술
+  문맥을 모두 해치지 않도록 각각 중립 용어 `약제상`, `의약`으로 통일했다.
+- `Lift [HOLD]`는 `Lift` 번역이 이미 있었지만 `ContextualPrompt.GetPromptText`가
+  `[HOLD]` 접미사를 합친 뒤 TMP에 전달해 완전 일치 사전을 벗어난 것이 원인이었다.
+  TranslationCatalog가 검수된 프롬프트 원문 뒤의 서식 태그와 `[HOLD]`만 제한적으로
+  인식해 `들어 올리기 [길게 누르기]`처럼 번역하도록 보완했다.
+- catalog 재생성 결과 검수 903/1,586개, 대기 683개, runtime 고유 원문 762개이며
+  placeholder/TMP 검증 오류는 0개다.
+- Helper 코드 변경으로 해당 프로젝트만 Release 빌드했고 경고 0, 오류 0이었다.
+  사용자 지시에 따라 자동 테스트와 ZIP 패키징은 실행하지 않았다.
+- 기존 설치기의 안전 제거·설치를 각각 exit code 0으로 완료했다. 설치 manifest 233개
+  파일은 누락·길이/해시 불일치 0개이며 설치된 Helper와 `ko.json`은 빌드/staged
+  산출물과 SHA-256이 일치한다.
+
 ## 이후 작업 방식
 
 - 사용자가 별도로 선택하도록 묻지 않고 항상 권장안으로 구현한다.

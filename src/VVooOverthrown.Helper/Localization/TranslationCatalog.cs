@@ -6,12 +6,23 @@ namespace VVooOverthrown.Helper.Localization;
 
 public sealed class TranslationCatalog
 {
+    private static readonly Regex HoldMarkerPattern = new(
+        @"\[HOLD\]",
+        RegexOptions.CultureInvariant | RegexOptions.IgnoreCase);
+    private static readonly Regex FormattingGapPattern = new(
+        @"^(?:\s|<[^>]+>)*$",
+        RegexOptions.CultureInvariant);
+
     private readonly IReadOnlyDictionary<string, string> _bySource;
+    private readonly IReadOnlyList<KeyValuePair<string, string>> _sourcesByLength;
     private readonly IReadOnlyList<TemplateTranslation> _templates;
 
     private TranslationCatalog(IReadOnlyDictionary<string, string> bySource)
     {
         _bySource = bySource;
+        _sourcesByLength = bySource
+            .OrderByDescending(entry => entry.Key.Length)
+            .ToArray();
         _templates = bySource
             .Where(entry => entry.Key.Contains('{'))
             .Select(entry => TemplateTranslation.Create(entry.Key, entry.Value))
@@ -37,6 +48,41 @@ public sealed class TranslationCatalog
             {
                 return true;
             }
+        }
+
+        if (TryTranslateHoldPrompt(source, out korean))
+        {
+            return true;
+        }
+
+        korean = string.Empty;
+        return false;
+    }
+
+    private bool TryTranslateHoldPrompt(string source, out string korean)
+    {
+        var marker = HoldMarkerPattern.Match(source);
+        if (!marker.Success)
+        {
+            korean = string.Empty;
+            return false;
+        }
+
+        foreach (var entry in _sourcesByLength)
+        {
+            if (!source.StartsWith(entry.Key, StringComparison.Ordinal) ||
+                marker.Index < entry.Key.Length ||
+                !FormattingGapPattern.IsMatch(source[entry.Key.Length..marker.Index]) ||
+                !FormattingGapPattern.IsMatch(source[(marker.Index + marker.Length)..]))
+            {
+                continue;
+            }
+
+            korean = entry.Value +
+                     source[entry.Key.Length..marker.Index] +
+                     "[길게 누르기]" +
+                     source[(marker.Index + marker.Length)..];
+            return true;
         }
 
         korean = string.Empty;
