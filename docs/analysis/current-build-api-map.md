@@ -49,12 +49,10 @@ metadata 세 SHA-256을 게임 폴더에서 다시 계산한다. 설치 후 게�
   EULA 법적 원문 1개, `[INTENTIONALLY LEFT BLANK]` 5개, 구분자 `-` 7개뿐이다.
 - 동적 template matching의 smart plural 토큰은 실제 영어 단위 `hour(s)`, `day(s)`,
   `second(s)`에만 매칭한다. 일반 문구와 개수 조합을 시간 단위로 오인하지 않는다.
-- 건설·연구 선택 휠의 제목과 설명은 `RadialMenuDynamicWheel.title`, `subtitle`에 표시되고
-  `RefreshInformation()`에서 별도로 갱신된다. 표시 후단 보완만으로 실제 설명이 바뀌지
-  않는 경로가 있어, 실제 호출되는 `RadialMenuDynamicWheel.AddOption()`의 `title`,
-  `subtitle`, `description`을 저장 전에 완전 일치 번역하고 새로고침 후에는 글꼴
-  fallback을 보장한다. 같은 이름의 `RadialMenu.AddOption()`은 현재 빌드에서 호출자가
-  없어 이 화면의 번역 지점으로 사용하지 않는다.
+- TMP 출력은 `text` property setter와 `SetText(string)` 계열이 서로 다른 네이티브
+  메서드다. Helper는 `set_text`뿐 아니라 서식 숫자 인수가 없는 `SetText(string)`과
+  `SetText(string, bool)`에도 같은 검수 catalog와 글꼴 fallback을 적용한다. 숫자 서식
+  오버로드는 건드리지 않는다.
 - 월드 로딩 단계명과 진행률은 `LoadingScreen.SetLoadingMessage(string)` 및
   `SetProgress(float)` 경로에서 결합된다. `UI/LOADING_*` 단계명은 메시지 입구에서 완전
   일치 번역하고, 이미 결합된 `0%`~`100%` 접미사는 숫자를 그대로 보존한다.

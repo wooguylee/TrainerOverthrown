@@ -398,6 +398,20 @@
   교정하고 인수도 실제 시그니처인 `title`, `subtitle`, `description`에 맞춘다. 번역
   catalog, 로딩 화면 패치, 다른 UI 경로는 변경하지 않는다.
 
+## 2026-08-25 TMP 최종 기록 경로 보완
+
+- 세 번째 사용자 확인에서도 시청 설명이 영어로 유지되어 `RadialMenu` 계열 중간
+  메서드를 패치하는 접근을 폐기했다. 최신 세션은 Helper와 최신 DLL을 정상 로드했으므로
+  설치나 catalog 문제가 아니다.
+- `Unity.TextMeshPro` interop을 다시 확인한 결과 `TMP_Text.set_text`는 IL2CPP 네이티브 토큰
+  `100664626`, `SetText(string)`은 `100664832`, `SetText(string, bool)`은 `100664833`인
+  별도 네이티브 메서드다. 기존 Helper는 property setter만 가로채므로 `SetText`로 직접
+  기록되는 설명은 번역기를 완전히 우회했다.
+- 효과가 없던 `RadialMenuTranslationPatch.cs`를 제거하고 기존 TMP 공통 패치에 정적
+  문자열 `SetText` 두 오버로드만 추가한다. 두 경로 모두 기존 검수 catalog와 글꼴
+  fallback을 재사용하며, 숫자 서식용 `SetText(string, float, ...)` 오버로드는 변경하지
+  않아 동적 수치 문구의 범위를 넓히지 않는다.
+
 ## 이후 작업 방식
 
 - 사용자가 별도로 선택하도록 묻지 않고 항상 권장안으로 구현한다.
