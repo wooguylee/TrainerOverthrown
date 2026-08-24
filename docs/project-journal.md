@@ -384,6 +384,20 @@
 - Helper 컴파일 코드만 변경됐으므로 해당 프로젝트만 Release 빌드한다. 사용자 정책에
   따라 자동 테스트와 ZIP 패키징은 실행하지 않는다.
 
+## 2026-08-25 선택 휠 실제 호출 경로 교정
+
+- 재설치 후 사용자 스크린샷에서도 시청 설명이 영어로 남아 있어, 직전의
+  `RadialMenu.AddOption()` 전단 패치가 실제로 실행되지 않았음을 확인했다. 최신 게임
+  세션은 Helper `translations=1394`를 오류 없이 로드했고 설치 DLL 해시도 최신 빌드와
+  일치하므로 catalog·설치 문제는 아니다.
+- interop caller 근거를 다시 대조한 결과 `RadialMenu.AddOption()`은 호출자 0개인 미사용
+  API이고, 실제 선택 항목을 저장하는 `RadialMenuDynamicWheel.AddOption()`은 호출자
+  5개다. 두 메서드의 이름과 인수 구성이 비슷해 잘못된 타입을 대상으로 잡은 것이
+  연속 실패의 원인이었다.
+- 기존 exact-only prefix의 대상만 실제 호출되는 `RadialMenuDynamicWheel.AddOption()`으로
+  교정하고 인수도 실제 시그니처인 `title`, `subtitle`, `description`에 맞춘다. 번역
+  catalog, 로딩 화면 패치, 다른 UI 경로는 변경하지 않는다.
+
 ## 이후 작업 방식
 
 - 사용자가 별도로 선택하도록 묻지 않고 항상 권장안으로 구현한다.

@@ -3,12 +3,12 @@ using TMPro;
 
 namespace VVooOverthrown.Helper.Localization;
 
-[HarmonyPatch(typeof(RadialMenu), nameof(RadialMenu.AddOption))]
+[HarmonyPatch(typeof(RadialMenuDynamicWheel), nameof(RadialMenuDynamicWheel.AddOption))]
 internal static class RadialMenuOptionTranslationPatch
 {
-    private static void Prefix(ref string name, ref string subtitle, ref string description)
+    private static void Prefix(ref string title, ref string subtitle, ref string description)
     {
-        TranslateSafely(ref name);
+        TranslateSafely(ref title);
         TranslateSafely(ref subtitle);
         TranslateSafely(ref description);
     }
