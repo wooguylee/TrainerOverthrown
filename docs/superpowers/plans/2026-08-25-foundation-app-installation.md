@@ -101,7 +101,7 @@ Commit: `git commit -m "feat: add trainer protocol framing"`
 - Produces: `GameBuildValidator.ValidateAsync(string gameRoot, SupportedBuildProfile profile, CancellationToken)` returning `BuildValidationResult`.
 - Produces: `GameLocator.ValidateRoot(string path)` returning the normalized root or a Korean validation error.
 
-- [ ] **Step 1: Write failing exact-hash and mismatch tests**
+- [x] **Step 1: Write failing exact-hash and mismatch tests**
 
 ```csharp
 [Fact]
@@ -113,17 +113,17 @@ public async Task RejectsChangedGameAssembly()
 }
 ```
 
-- [ ] **Step 2: Run Core tests and verify RED**
+- [x] **Step 2: Run Core tests and verify RED**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Core.Tests\VVooOverthrown.Core.Tests.csproj --filter GameBuildValidatorTests`
 
 Expected: compile failure for missing validator types.
 
-- [ ] **Step 3: Implement streaming SHA-256 validation and safe path normalization**
+- [x] **Step 3: Implement streaming SHA-256 validation and safe path normalization**
 
 Use the exact three hashes from `docs/project-journal.md`. Reject missing files, directories masquerading as files, and paths whose final executable is not `Overthrown.exe`.
 
-- [ ] **Step 4: Run tests against fixtures and the real game read-only**
+- [x] **Step 4: Run tests against fixtures and the real game read-only**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Core.Tests\VVooOverthrown.Core.Tests.csproj --filter GameBuildValidatorTests`
 
@@ -131,7 +131,7 @@ Run: `tools\build.ps1 -GameDir 'W:\Games\Overthrown' -ValidateOnly`
 
 Expected: tests pass and the real build reports `Supported`.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 Commit: `git commit -m "feat: validate supported Overthrown build"`
 

@@ -1,8 +1,10 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/VVooOverthrown.Core/VVooOverthrown.Core.csproj" />
     <Project Path="src/VVooOverthrown.Protocol/VVooOverthrown.Protocol.csproj" />
   </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests/VVooOverthrown.Core.Tests/VVooOverthrown.Core.Tests.csproj" />
     <Project Path="tests/VVooOverthrown.Protocol.Tests/VVooOverthrown.Protocol.Tests.csproj" />
   </Folder>
 </Solution>

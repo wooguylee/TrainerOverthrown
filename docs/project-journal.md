@@ -70,3 +70,8 @@
 - 프로토콜 GREEN: UTF-8 한글 payload 왕복과 최대 frame 길이 차단 2건 통과.
 - 메시지 TDD RED/GREEN: `Envelope` 부재 실패 후 JSON 한글 payload 왕복 통과.
 - 현재 프로토콜 테스트: 3/3 통과.
+- 빌드 검증 TDD RED: `GameBuildValidator` 부재로 컴파일 실패 확인.
+- 빌드 검증 GREEN: 정확한 세 파일 승인, 변경 DLL 거부, 누락 메타데이터 거부 3건 통과.
+- 게임 경로 TDD RED/GREEN: 예상 EXE·Data 폴더가 있는 루트만 승인하는 2건 통과.
+- 현재 Core 테스트: 5/5 통과. 실제 게임 세 파일의 해시는 설계 시 읽기 전용으로
+  계산한 현재 빌드 profile과 일치한다.
