@@ -193,7 +193,7 @@ Commit: `git commit -m "feat: add safe payload installation and backup"`
 - Consumes: `GameBuildValidator`, `PayloadInstaller`, `SaveBackupService`.
 - Produces: `MainViewModel.RefreshAsync`, `InstallAsync`, `RemoveAsync`, `LaunchGameAsync`.
 
-- [ ] **Step 1: Write failing state-transition tests**
+- [x] **Step 1: Write failing state-transition tests**
 
 ```csharp
 [Theory]
@@ -206,15 +206,15 @@ public void StatusMessageMatchesBuildState(bool pathValid, bool buildSupported, 
 }
 ```
 
-- [ ] **Step 2: Run App tests and verify RED**
+- [x] **Step 2: Run App tests and verify RED**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.App.Tests\VVooOverthrown.App.Tests.csproj`
 
-- [ ] **Step 3: Implement accessible Korean UI and commands**
+- [x] **Step 3: Implement accessible Korean UI and commands**
 
 The initial window contains game path, build status, installation status, `설치`, `제거`, `게임 실행`, `연결`, `전체 초기화`, and a read-only event log. Destructive buttons remain disabled unless Core returns an eligible state.
 
-- [ ] **Step 4: Test, publish, and smoke launch**
+- [x] **Step 4: Test, publish, and smoke launch**
 
 Run: `tools\build.ps1 -GameDir 'W:\Games\Overthrown'`
 
@@ -222,6 +222,6 @@ Run: `tools\package.ps1 -GameDir 'W:\Games\Overthrown'`
 
 Expected: `.artifacts\release\VVooOverthrown.exe` exists, launches, recognizes the supported game, and exits normally.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 Commit: `git commit -m "feat: add Korean trainer application shell"`

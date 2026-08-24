@@ -80,3 +80,13 @@
   보존 제거, 실행 중 설치 거부, 백업 파일·SHA-256 검증 5건 통과.
 - installer는 기존 파일/폴더 충돌을 덮어쓰지 않고, manifest 경로를 게임 루트 내부로
   제한하며, 해시가 달라진 설치 파일은 제거하지 않는다.
+- WPF 상태/UI TDD RED/GREEN: 빌드·설치·실행·연결 상태 전이와 지원 빌드 설치 서비스
+  테스트를 추가해 App 테스트 6건을 통과했다.
+- 첫 self-contained EXE 스모크에서 읽기 전용 `EventLog`를 TextBox 기본 TwoWay로
+  바인딩해 시작 직후 예외가 발생했다. STA WPF 창 스모크 테스트로 같은 예외를 재현하고
+  `Mode=OneWay`로 고쳐 App 테스트 7/7과 실제 창 생성·정상 종료(exit 0)를 확인했다.
+- Release 패키징에서 Windows PowerShell 5.1에 없는 `Path.GetRelativePath` 사용이
+  드러났다. 패키지 루트 prefix 검증과 substring 방식으로 교체하고 회귀 스크립트 통과,
+  중간 ZIP 생성까지 확인했다. 이 ZIP은 아직 Helper/번역 payload 전의 기반 산출물이다.
+- 기반 전체 결과: Protocol 3, Core 10, App 7로 총 20개 테스트 통과, 빌드 경고 0,
+  오류 0. 중간 EXE 창 제목과 정상 종료를 프로세스 수준에서 확인했다.
