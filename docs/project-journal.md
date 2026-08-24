@@ -56,3 +56,17 @@
 - BepInEx 템플릿: https://github.com/BepInEx/BepInEx.Templates
 - XUnity AutoTranslator IL2CPP 제한: https://github.com/bbepis/XUnity.AutoTranslator/blob/master/README.md
 
+## 2026-08-25 구현 기록
+
+### 기반 계획과 개발 환경
+
+- 설계를 안전한 앱·설치, 한글화, 오프라인 런타임의 세 구현 계획으로 분리했다.
+- 저장소는 사용자의 현재 프로젝트 직접 진행 지시에 따라 `master`에서 초기화했다.
+- 시스템 .NET 설치를 변경하지 않고 프로젝트 `.tools\dotnet-sdk`에 SDK `10.0.302`를 설치했다.
+- 최초 부트스트랩에서 설치 스크립트 내부의 stale `$LASTEXITCODE` 때문에 성공한 설치를
+  실패로 판정하는 문제가 재현되었다. PowerShell 호출 성공 상태 `$?`를 즉시 저장하도록
+  수정하고 회귀 스크립트를 추가해 재설치 성공을 확인했다.
+- 프로토콜 TDD RED: `LengthPrefix` 네임스페이스 부재로 컴파일 실패 확인.
+- 프로토콜 GREEN: UTF-8 한글 payload 왕복과 최대 frame 길이 차단 2건 통과.
+- 메시지 TDD RED/GREEN: `Envelope` 부재 실패 후 JSON 한글 payload 왕복 통과.
+- 현재 프로토콜 테스트: 3/3 통과.

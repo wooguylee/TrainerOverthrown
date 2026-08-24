@@ -48,7 +48,7 @@
 - Produces: `Envelope(string Type, string RequestId, JsonElement Payload)`.
 - Produces: `LengthPrefix.WriteAsync(Stream, ReadOnlyMemory<byte>, CancellationToken)` and `ReadAsync(Stream, int, CancellationToken)`.
 
-- [ ] **Step 1: Add a failing framing test**
+- [x] **Step 1: Add a failing framing test**
 
 ```csharp
 [Fact]
@@ -62,7 +62,7 @@ public async Task RoundTripPreservesUtf8Payload()
 }
 ```
 
-- [ ] **Step 2: Bootstrap SDK and prove RED**
+- [x] **Step 2: Bootstrap SDK and prove RED**
 
 Run: `powershell -NoProfile -File tools/bootstrap-dotnet.ps1`
 
@@ -70,7 +70,7 @@ Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Protocol.Tests\VV
 
 Expected: compile failure because `LengthPrefix` does not exist.
 
-- [ ] **Step 3: Implement four-byte little-endian framing with a 1 MiB hard limit**
+- [x] **Step 3: Implement four-byte little-endian framing with a 1 MiB hard limit**
 
 ```csharp
 public static class LengthPrefix
@@ -81,7 +81,7 @@ public static class LengthPrefix
 }
 ```
 
-- [ ] **Step 4: Run protocol tests and commit**
+- [x] **Step 4: Run protocol tests and commit**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.Protocol.Tests\VVooOverthrown.Protocol.Tests.csproj`
 
@@ -225,4 +225,3 @@ Expected: `.artifacts\release\VVooOverthrown.exe` exists, launches, recognizes t
 - [ ] **Step 5: Commit**
 
 Commit: `git commit -m "feat: add Korean trainer application shell"`
-

@@ -4,6 +4,7 @@ obj/
 .artifacts/
 .dotnet/
 .packages/
+.tools/
 
 # IDE and user files
 .vs/
@@ -17,4 +18,3 @@ work/
 # Logs and local configuration
 *.log
 local.settings.json
-
