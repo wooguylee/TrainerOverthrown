@@ -90,3 +90,5 @@
   중간 ZIP 생성까지 확인했다. 이 ZIP은 아직 Helper/번역 payload 전의 기반 산출물이다.
 - 기반 전체 결과: Protocol 3, Core 10, App 7로 총 20개 테스트 통과, 빌드 경고 0,
   오류 0. 중간 EXE 창 제목과 정상 종료를 프로세스 수준에서 확인했다.
+- 번역 validator TDD RED/GREEN: placeholder 누락, TMP 태그 변경, 중복 ID를 거부하고
+  검수/대기 coverage를 집계하는 4건이 통과했다. 한국어 핵심 용어집을 JSON으로 추가했다.

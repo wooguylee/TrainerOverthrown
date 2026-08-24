@@ -7,6 +7,10 @@
   <Folder Name="/tests/">
     <Project Path="tests/VVooOverthrown.App.Tests/VVooOverthrown.App.Tests.csproj" />
     <Project Path="tests/VVooOverthrown.Core.Tests/VVooOverthrown.Core.Tests.csproj" />
+    <Project Path="tests/VVooOverthrown.LocalizationTool.Tests/VVooOverthrown.LocalizationTool.Tests.csproj" />
     <Project Path="tests/VVooOverthrown.Protocol.Tests/VVooOverthrown.Protocol.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/VVooOverthrown.LocalizationTool/VVooOverthrown.LocalizationTool.csproj" />
   </Folder>
 </Solution>

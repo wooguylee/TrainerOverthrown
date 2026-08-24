@@ -41,7 +41,7 @@
 - Produces: `TranslationEntry(string Id, string Source, string Korean, string Status)`.
 - Produces: `TranslationValidator.Validate(IReadOnlyList<TranslationEntry>)` returning errors and coverage.
 
-- [ ] **Step 1: Write failing placeholder and TMP-tag tests**
+- [x] **Step 1: Write failing placeholder and TMP-tag tests**
 
 ```csharp
 [Fact]
@@ -52,15 +52,15 @@ public void RejectsDroppedFormatPlaceholder()
 }
 ```
 
-- [ ] **Step 2: Run tests and verify RED**
+- [x] **Step 2: Run tests and verify RED**
 
 Run: `.\.tools\dotnet-sdk\dotnet.exe test tests\VVooOverthrown.LocalizationTool.Tests\VVooOverthrown.LocalizationTool.Tests.csproj`
 
-- [ ] **Step 3: Implement exact multiset comparison for placeholders and tags**
+- [x] **Step 3: Implement exact multiset comparison for placeholders and tags**
 
 Validate unique IDs, non-empty sources, reviewed Korean values, `{name}`/`{0}` placeholder multisets, `<tag>` balance, and accidental source-equals-target values.
 
-- [ ] **Step 4: Run tests and commit**
+- [x] **Step 4: Run tests and commit**
 
 Expected: all validation tests pass.
 
@@ -156,4 +156,3 @@ Expected: Helper tests pass and the payload contains `translation\ko.json` plus 
 - [ ] **Step 5: Commit**
 
 Commit: `git commit -m "feat: apply deterministic Korean localization at runtime"`
-
