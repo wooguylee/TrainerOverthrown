@@ -1,0 +1,20 @@
+# Build outputs
+bin/
+obj/
+.artifacts/
+.dotnet/
+.packages/
+
+# IDE and user files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Generated game-analysis output
+work/
+
+# Logs and local configuration
+*.log
+local.settings.json
+
