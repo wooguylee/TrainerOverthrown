@@ -4,8 +4,8 @@
   "entries": [
     {
       "id": "Data/AMENITY_Bathed",
-      "korean": "",
-      "status": "pending"
+      "korean": "목욕",
+      "status": "reviewed"
     },
     {
       "id": "Data/AMENITY_Bread",
@@ -19,63 +19,63 @@
     },
     {
       "id": "Data/AMENITY_Pie",
-      "korean": "",
-      "status": "pending"
+      "korean": "파이",
+      "status": "reviewed"
     },
     {
       "id": "Data/AMENITY_Roast",
-      "korean": "",
-      "status": "pending"
+      "korean": "구이",
+      "status": "reviewed"
     },
     {
       "id": "Data/AMENITY_Socialized",
-      "korean": "",
-      "status": "pending"
+      "korean": "사교 활동",
+      "status": "reviewed"
     },
     {
       "id": "Data/AMENITY_Soup",
-      "korean": "",
-      "status": "pending"
+      "korean": "수프",
+      "status": "reviewed"
     },
     {
       "id": "Data/AMENITY_WellRested",
-      "korean": "",
-      "status": "pending"
+      "korean": "충분한 휴식",
+      "status": "reviewed"
     },
     {
       "id": "Data/EMOTION_Exhausted",
-      "korean": "",
-      "status": "pending"
+      "korean": "탈진",
+      "status": "reviewed"
     },
     {
       "id": "Data/EMOTION_ReallyHasToPee",
-      "korean": "",
-      "status": "pending"
+      "korean": "소변이 매우 급함",
+      "status": "reviewed"
     },
     {
       "id": "Data/EMOTION_Starving",
-      "korean": "",
-      "status": "pending"
+      "korean": "굶주림",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Cutting",
-      "korean": "",
-      "status": "pending"
+      "korean": "베기",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Cutting_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "베기 피해를 줍니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Excavation",
-      "korean": "",
-      "status": "pending"
+      "korean": "굴착",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Excavation_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "지형을 낮춰 벽돌을 얻고, 지형을 높일 때 벽돌을 사용합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Farming",
@@ -84,33 +84,33 @@
     },
     {
       "id": "Data/EQUIPMENT_Category_Farming_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "농경지 구획에 작물을 파종합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Knockout",
-      "korean": "",
-      "status": "pending"
+      "korean": "기절",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Knockout_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "기절 피해를 줍니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Lantern_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "화상 피해를 줍니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Piercing",
-      "korean": "",
-      "status": "pending"
+      "korean": "관통",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Piercing_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "관통 피해를 줍니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Repair",
@@ -119,253 +119,253 @@
     },
     {
       "id": "Data/EQUIPMENT_Category_Repair_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "적중 시 아군 구조물을 수리하고, 그 외 대상에는 파괴 피해를 줍니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Shield",
-      "korean": "",
-      "status": "pending"
+      "korean": "방패",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Shield_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "기력을 소모해 전방에서 들어오는 피해를 막습니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Wrecking",
-      "korean": "",
-      "status": "pending"
+      "korean": "파괴",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Category_Wrecking_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "파괴 피해를 줍니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Fist",
-      "korean": "",
-      "status": "pending"
+      "korean": "맨주먹",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Greathammer",
-      "korean": "",
-      "status": "pending"
+      "korean": "대형 망치",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Greatsword",
-      "korean": "",
-      "status": "pending"
+      "korean": "대검",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Lantern",
-      "korean": "",
-      "status": "pending"
+      "korean": "랜턴",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_None",
-      "korean": "",
-      "status": "pending"
+      "korean": "없음",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_SeedBag",
-      "korean": "",
-      "status": "pending"
+      "korean": "씨앗 자루",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Shield",
-      "korean": "",
-      "status": "pending"
+      "korean": "방패",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Shovel",
-      "korean": "",
-      "status": "pending"
+      "korean": "삽",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Spear",
-      "korean": "",
-      "status": "pending"
+      "korean": "창",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Spear_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "베기 피해를 줍니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Sword",
-      "korean": "",
-      "status": "pending"
+      "korean": "검",
+      "status": "reviewed"
     },
     {
       "id": "Data/EQUIPMENT_Wrench",
-      "korean": "",
-      "status": "pending"
+      "korean": "렌치",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenBlinkedOut",
-      "korean": "",
-      "status": "pending"
+      "korean": "[{1}] {0}: 산 너머 멀리 떠남",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenCollapsed",
-      "korean": "",
-      "status": "pending"
+      "korean": "[{1}] {0}: 탈진하여 쓰러짐",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenDefected",
-      "korean": "",
-      "status": "pending"
+      "korean": "[{1}] {0}: 무법자 편으로 전향함",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenDeserted",
-      "korean": "",
-      "status": "pending"
+      "korean": "[{1}] {0}: 높은 스트레스로 도망침",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenDied",
-      "korean": "",
-      "status": "pending"
+      "korean": "[{1}] {0}: 사고로 사망함",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenDiedCombat",
-      "korean": "",
-      "status": "pending"
+      "korean": "[{1}] {0}: 전투 중 사망함",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenFired",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}: {1} 직책을 잃음",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenHired",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}: {1} 직책으로 고용됨",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenLeft",
-      "korean": "",
-      "status": "pending"
+      "korean": "[{1}] {0}: 왕국을 떠남",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenSpawned",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}: 새 시민으로 모집됨",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_CitizenStarved",
-      "korean": "",
-      "status": "pending"
+      "korean": "[{1}] {0}: 굶주림으로 사망함",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_ConnectedToInternet",
-      "korean": "",
-      "status": "pending"
+      "korean": "인터넷에 연결됨",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_ConnectedToInternet_PS5",
-      "korean": "",
-      "status": "pending"
+      "korean": "PlayStation™Network에 연결됨",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_DisconnectedFromInternet",
-      "korean": "",
-      "status": "pending"
+      "korean": "인터넷 연결이 끊김",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_DisconnectedFromInternet_PS5",
-      "korean": "",
-      "status": "pending"
+      "korean": "PlayStation™Network 연결이 끊김",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_PasswordChanged",
-      "korean": "",
-      "status": "pending"
+      "korean": "새 서버 비밀번호가 설정됨",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_PlayerConnecting",
-      "korean": "",
-      "status": "pending"
+      "korean": "새 플레이어 연결 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_PlayerJoined",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}: 참가함",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_PlayerKicked",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}: 추방됨",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_PlayerLeft",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}: 나감",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_ScheduleBedtime",
-      "korean": "",
-      "status": "pending"
+      "korean": "취침 시간 시작! ({0})",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_ScheduleDowntime",
-      "korean": "",
-      "status": "pending"
+      "korean": "휴식 시간 시작! ({0})",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_ScheduleWorktime",
-      "korean": "",
-      "status": "pending"
+      "korean": "근무 시간 시작! ({0})",
+      "status": "reviewed"
     },
     {
       "id": "Data/INFOFEED_UnlockedItem",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0} 잠금 해제",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_AutoSaveActive",
-      "korean": "",
-      "status": "pending"
+      "korean": "게임 저장 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_AutoSaveWarning",
-      "korean": "",
-      "status": "pending"
+      "korean": "자동 저장 예정",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_BuildingDamaged",
-      "korean": "",
-      "status": "pending"
+      "korean": "수리 필요",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_BuildingDestroyed",
-      "korean": "",
-      "status": "pending"
+      "korean": "재건 필요",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_Burning",
-      "korean": "",
-      "status": "pending"
+      "korean": "화재 발생",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_CantAffordSoldiers",
-      "korean": "",
-      "status": "pending"
+      "korean": "병사 고용에 필요한 주화 부족",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_CharacterHealed",
-      "korean": "",
-      "status": "pending"
+      "korean": "치료 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_CitizenExhausted",
-      "korean": "",
-      "status": "pending"
+      "korean": "탈진",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_CitizenFighting",
-      "korean": "",
-      "status": "pending"
+      "korean": "전투",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_CitizenInjured",
@@ -374,163 +374,163 @@
     },
     {
       "id": "Data/ISSUE_CitizenSpawnPaused",
-      "korean": "",
-      "status": "pending"
+      "korean": "시민 모집 일시 중지 (주화 없음)",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_CitizenStarving",
-      "korean": "",
-      "status": "pending"
+      "korean": "굶주림",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_CitizenStressed",
-      "korean": "",
-      "status": "pending"
+      "korean": "높은 스트레스",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_CitizenTakingShelter",
-      "korean": "",
-      "status": "pending"
+      "korean": "대피 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_CitizenUnemployed",
-      "korean": "",
-      "status": "pending"
+      "korean": "실업자",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_ConstructionBlocked",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설 불가",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_CrownDropped",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관을 되찾으세요!",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_ExcessProduction",
-      "korean": "",
-      "status": "pending"
+      "korean": "건물 일시 중지 (생산 중지 한도 도달)",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_InsufficientFertilizerForFarmPlots",
-      "korean": "",
-      "status": "pending"
+      "korean": "농업용 비료 없음",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_InsufficientFoodForWinter",
-      "korean": "",
-      "status": "pending"
+      "korean": "겨울을 날 식량 부족",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_InsufficientFuelForBoats",
-      "korean": "",
-      "status": "pending"
+      "korean": "선박용 연료 없음",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_InsufficientGunpowderForCannons",
-      "korean": "",
-      "status": "pending"
+      "korean": "총포용 화약 없음",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_InsufficientHousing",
-      "korean": "",
-      "status": "pending"
+      "korean": "주거 공간 부족",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_InsufficientManaForAirships",
-      "korean": "",
-      "status": "pending"
+      "korean": "비행선용 마나 없음",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_InsufficientMeals",
-      "korean": "",
-      "status": "pending"
+      "korean": "배식된 식사 부족",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_InsufficientMedicineForHealing",
-      "korean": "",
-      "status": "pending"
+      "korean": "치료용 약품 없음",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_InsufficientOuthouses",
-      "korean": "",
-      "status": "pending"
+      "korean": "변소 부족",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_JobsExceedHousing",
-      "korean": "",
-      "status": "pending"
+      "korean": "일자리 수가 주거 수용량을 초과함",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_LowFood",
-      "korean": "",
-      "status": "pending"
+      "korean": "식량 부족",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_NoTownHall",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설된 시청 없음",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_PlannedConstruction",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설 예정",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_PlannedInfrastructure",
-      "korean": "",
-      "status": "pending"
+      "korean": "기반 시설 건설 예정",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_ResearchAvailable",
-      "korean": "",
-      "status": "pending"
+      "korean": "연구 가능",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_SeasonChanging",
-      "korean": "",
-      "status": "pending"
+      "korean": "계절 변경 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_StationCooldown",
-      "korean": "",
-      "status": "pending"
+      "korean": "건물 재사용 대기 중 (자원 고갈)",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_StationMissingInput",
-      "korean": "",
-      "status": "pending"
+      "korean": "건물 자원 부족",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_StationMissingWorker",
-      "korean": "",
-      "status": "pending"
+      "korean": "건물 작업자 부족",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_StoreFoodForWinter",
-      "korean": "",
-      "status": "pending"
+      "korean": "겨울용 식량 비축 필요",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_UnderBombardment",
-      "korean": "",
-      "status": "pending"
+      "korean": "포격받는 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_UnpaidSoldiers",
-      "korean": "",
-      "status": "pending"
+      "korean": "급여 미지급 병사",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_Withering",
-      "korean": "",
-      "status": "pending"
+      "korean": "식물이 시들고 있음",
+      "status": "reviewed"
     },
     {
       "id": "Data/ISSUE_WorldGenActive",
-      "korean": "",
-      "status": "pending"
+      "korean": "월드 생성 진행 중…",
+      "status": "reviewed"
     },
     {
       "id": "Data/ITEM_Type_Apples",
@@ -819,38 +819,38 @@
     },
     {
       "id": "Data/MAP_Faction_Kingdom",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕국",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Faction_Livestock",
-      "korean": "",
-      "status": "pending"
+      "korean": "가축",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Faction_Outlaws",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Faction_Snappers",
-      "korean": "",
-      "status": "pending"
+      "korean": "스내퍼",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Faction_Travelers",
-      "korean": "",
-      "status": "pending"
+      "korean": "여행자",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Faction_Tuskars",
-      "korean": "",
-      "status": "pending"
+      "korean": "터스카",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Faction_Woolies",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_CommandTent",
@@ -859,8 +859,8 @@
     },
     {
       "id": "Data/MAP_Type_Firestarters",
-      "korean": "",
-      "status": "pending"
+      "korean": "방화범",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_FirestartersShrine",
@@ -869,8 +869,8 @@
     },
     {
       "id": "Data/MAP_Type_Poachers",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀렵꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_PoachersTent",
@@ -879,13 +879,13 @@
     },
     {
       "id": "Data/MAP_Type_Ringleaders",
-      "korean": "",
-      "status": "pending"
+      "korean": "두목",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_Scrappers",
-      "korean": "",
-      "status": "pending"
+      "korean": "고철업자",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_ScrappersWorkshop",
@@ -894,13 +894,13 @@
     },
     {
       "id": "Data/MAP_Type_SnapperNests",
-      "korean": "",
-      "status": "pending"
+      "korean": "스내퍼 둥지",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_Snappers",
-      "korean": "",
-      "status": "pending"
+      "korean": "스내퍼",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_Tent",
@@ -909,8 +909,8 @@
     },
     {
       "id": "Data/MAP_Type_Thugs",
-      "korean": "",
-      "status": "pending"
+      "korean": "폭력배",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_ThugsTent",
@@ -919,13 +919,13 @@
     },
     {
       "id": "Data/MAP_Type_TuskarNests",
-      "korean": "",
-      "status": "pending"
+      "korean": "터스카 둥지",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_Tuskars",
-      "korean": "",
-      "status": "pending"
+      "korean": "터스카",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_Watchtower",
@@ -934,13 +934,13 @@
     },
     {
       "id": "Data/MAP_Type_WoolieNests",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리 둥지",
+      "status": "reviewed"
     },
     {
       "id": "Data/MAP_Type_Woolies",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Apothecary",
@@ -949,73 +949,73 @@
     },
     {
       "id": "Data/NPC_Job_Baker",
-      "korean": "",
-      "status": "pending"
+      "korean": "제빵사",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Bandit",
-      "korean": "",
-      "status": "pending"
+      "korean": "도적",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Bard",
-      "korean": "",
-      "status": "pending"
+      "korean": "음유시인",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Blacksmith",
-      "korean": "",
-      "status": "pending"
+      "korean": "대장장이",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Bombardier",
-      "korean": "",
-      "status": "pending"
+      "korean": "폭격수",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Brickmaker",
-      "korean": "",
-      "status": "pending"
+      "korean": "벽돌공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Builder",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설가",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Butcher",
-      "korean": "",
-      "status": "pending"
+      "korean": "도축업자",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Cannoneer",
-      "korean": "",
-      "status": "pending"
+      "korean": "포병",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_CharcoalBurner",
-      "korean": "",
-      "status": "pending"
+      "korean": "숯장이",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Chemist",
-      "korean": "",
-      "status": "pending"
+      "korean": "화학자",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_ClayDigger",
-      "korean": "",
-      "status": "pending"
+      "korean": "채굴꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Commoner",
-      "korean": "",
-      "status": "pending"
+      "korean": "평민",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Devourer",
-      "korean": "",
-      "status": "pending"
+      "korean": "포식자",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Dreadnaught",
@@ -1029,18 +1029,18 @@
     },
     {
       "id": "Data/NPC_Job_Farmer",
-      "korean": "",
-      "status": "pending"
+      "korean": "농부",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Firestarter",
-      "korean": "",
-      "status": "pending"
+      "korean": "방화범",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Fisher",
-      "korean": "",
-      "status": "pending"
+      "korean": "어부",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_FishingBoat",
@@ -1049,338 +1049,338 @@
     },
     {
       "id": "Data/NPC_Job_Fishmonger",
-      "korean": "",
-      "status": "pending"
+      "korean": "생선 장수",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_FluffyWoolie",
-      "korean": "",
-      "status": "pending"
+      "korean": "복슬복슬한 울리",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Forager",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_FruitGatherer",
-      "korean": "",
-      "status": "pending"
+      "korean": "과일 채집꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_GongFarmer",
-      "korean": "",
-      "status": "pending"
+      "korean": "분뇨 수거꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Gunner",
-      "korean": "",
-      "status": "pending"
+      "korean": "사수",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Halberdier",
-      "korean": "",
-      "status": "pending"
+      "korean": "미늘창병",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Herbalist",
-      "korean": "",
-      "status": "pending"
+      "korean": "약초상",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Homesteader",
-      "korean": "",
-      "status": "pending"
+      "korean": "자급농",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Hunter",
-      "korean": "",
-      "status": "pending"
+      "korean": "사냥꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Ironworker",
-      "korean": "",
-      "status": "pending"
+      "korean": "철공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Launderer",
-      "korean": "",
-      "status": "pending"
+      "korean": "세탁부",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Miller",
-      "korean": "",
-      "status": "pending"
+      "korean": "제분공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Musketeer",
-      "korean": "",
-      "status": "pending"
+      "korean": "머스킷병",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_MutantTuskar",
-      "korean": "",
-      "status": "pending"
+      "korean": "변이 터스카",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_MutantWoolie",
-      "korean": "",
-      "status": "pending"
+      "korean": "변이 울리",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_PieCook",
-      "korean": "",
-      "status": "pending"
+      "korean": "파이 요리사",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Pilot",
-      "korean": "",
-      "status": "pending"
+      "korean": "조종사",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Apothecary",
-      "korean": "",
-      "status": "pending"
+      "korean": "약제상",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Bombardier",
-      "korean": "",
-      "status": "pending"
+      "korean": "폭격수",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Builder",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설가",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Cannoneer",
-      "korean": "",
-      "status": "pending"
+      "korean": "포병",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_CharcoalBurner",
-      "korean": "",
-      "status": "pending"
+      "korean": "숯장이",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Chemist",
-      "korean": "",
-      "status": "pending"
+      "korean": "화학자",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Farmer",
-      "korean": "",
-      "status": "pending"
+      "korean": "농부",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Forager",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_FruitGatherer",
-      "korean": "",
-      "status": "pending"
+      "korean": "과일 채집꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_GongFarmer",
-      "korean": "",
-      "status": "pending"
+      "korean": "분뇨 수거꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Gunner",
-      "korean": "",
-      "status": "pending"
+      "korean": "사수",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Halberdier",
-      "korean": "",
-      "status": "pending"
+      "korean": "미늘창병",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Herbalist",
-      "korean": "",
-      "status": "pending"
+      "korean": "약초상",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Homesteader",
-      "korean": "",
-      "status": "pending"
+      "korean": "자급농",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Hunter",
-      "korean": "",
-      "status": "pending"
+      "korean": "사냥꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Miller",
-      "korean": "",
-      "status": "pending"
+      "korean": "제분공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Musketeer",
-      "korean": "",
-      "status": "pending"
+      "korean": "머스킷병",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Rancher",
-      "korean": "",
-      "status": "pending"
+      "korean": "목장주",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Sawyer",
-      "korean": "",
-      "status": "pending"
+      "korean": "제재공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Shearer",
-      "korean": "",
-      "status": "pending"
+      "korean": "털깎이",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Stonecutter",
-      "korean": "",
-      "status": "pending"
+      "korean": "석공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_SulfurGatherer",
-      "korean": "",
-      "status": "pending"
+      "korean": "유황 채집꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Plural_Tinkerer",
-      "korean": "",
-      "status": "pending"
+      "korean": "땜장이",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Poacher",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀렵꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Powdermaker",
-      "korean": "",
-      "status": "pending"
+      "korean": "화약 제조공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Prospector",
-      "korean": "",
-      "status": "pending"
+      "korean": "광물 탐사꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Rancher",
-      "korean": "",
-      "status": "pending"
+      "korean": "목장주",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Ringleader",
-      "korean": "",
-      "status": "pending"
+      "korean": "두목",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Sawyer",
-      "korean": "",
-      "status": "pending"
+      "korean": "제재공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Scrapper",
-      "korean": "",
-      "status": "pending"
+      "korean": "고철업자",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Settler",
-      "korean": "",
-      "status": "pending"
+      "korean": "농부",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Shearer",
-      "korean": "",
-      "status": "pending"
+      "korean": "털깎이",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Snapper",
-      "korean": "",
-      "status": "pending"
+      "korean": "스내퍼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Soaper",
-      "korean": "",
-      "status": "pending"
+      "korean": "비누 제조공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_SoupCook",
-      "korean": "",
-      "status": "pending"
+      "korean": "수프 요리사",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Stonecutter",
-      "korean": "",
-      "status": "pending"
+      "korean": "석공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_SulfurGatherer",
-      "korean": "",
-      "status": "pending"
+      "korean": "유황 채집꾼",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_TamedFluffyWoolie",
-      "korean": "",
-      "status": "pending"
+      "korean": "길들인 복슬복슬한 울리",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_TamedWoolie",
-      "korean": "",
-      "status": "pending"
+      "korean": "길들인 울리",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_TavernKeeper",
-      "korean": "",
-      "status": "pending"
+      "korean": "선술집 주인",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Thug",
-      "korean": "",
-      "status": "pending"
+      "korean": "폭력배",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Tinkerer",
-      "korean": "",
-      "status": "pending"
+      "korean": "땜장이",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Traveler",
-      "korean": "",
-      "status": "pending"
+      "korean": "여행자",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Tuskar",
-      "korean": "",
-      "status": "pending"
+      "korean": "터스카",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Weaver",
-      "korean": "",
-      "status": "pending"
+      "korean": "직조공",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Job_Woolie",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_RandomJobSet_Outlaw",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Skill_Artistry",
-      "korean": "",
-      "status": "pending"
+      "korean": "예술",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Skill_Culinary",
-      "korean": "",
-      "status": "pending"
+      "korean": "요리",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Skill_Farming",
@@ -1389,13 +1389,13 @@
     },
     {
       "id": "Data/NPC_Skill_Fighting",
-      "korean": "",
-      "status": "pending"
+      "korean": "전투",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Skill_Handiness",
-      "korean": "",
-      "status": "pending"
+      "korean": "손재주",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Skill_Medicine",
@@ -1404,63 +1404,63 @@
     },
     {
       "id": "Data/NPC_Skill_Science",
-      "korean": "",
-      "status": "pending"
+      "korean": "과학",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Skill_Survival",
-      "korean": "",
-      "status": "pending"
+      "korean": "생존",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Skill_Trade",
-      "korean": "",
-      "status": "pending"
+      "korean": "거래",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_AttackCombatTarget",
-      "korean": "",
-      "status": "pending"
+      "korean": "전투",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_Build",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_CheckCoastIsClear",
-      "korean": "",
-      "status": "pending"
+      "korean": "은신 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_ClaimJob",
-      "korean": "",
-      "status": "pending"
+      "korean": "구직 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_CollapseFromExhaustion",
-      "korean": "",
-      "status": "pending"
+      "korean": "쓰러짐",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_ConsumeAnythingEdible",
-      "korean": "",
-      "status": "pending"
+      "korean": "굶주림",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_ExecuteMoveCommand",
-      "korean": "",
-      "status": "pending"
+      "korean": "이동 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_Extinguish",
-      "korean": "",
-      "status": "pending"
+      "korean": "진화 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_ExtinguishSelf",
-      "korean": "",
-      "status": "pending"
+      "korean": "자신의 불을 끄는 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_Extract",
@@ -1469,8 +1469,8 @@
     },
     {
       "id": "Data/NPC_Task_ExtractNourishment",
-      "korean": "",
-      "status": "pending"
+      "korean": "굶주림",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_Farm",
@@ -1479,58 +1479,58 @@
     },
     {
       "id": "Data/NPC_Task_Flee",
-      "korean": "",
-      "status": "pending"
+      "korean": "도주 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_GetUnderUnreachableCombatTarget",
-      "korean": "",
-      "status": "pending"
+      "korean": "전투",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_Heal",
-      "korean": "",
-      "status": "pending"
+      "korean": "수리 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_Hide",
-      "korean": "",
-      "status": "pending"
+      "korean": "은신 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_IdleAtBedTimeAmenity",
-      "korean": "",
-      "status": "pending"
+      "korean": "취침 시간",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_IdleAtDownTimeAmenity",
-      "korean": "",
-      "status": "pending"
+      "korean": "휴식 시간",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_IdleAtWorkplace",
-      "korean": "",
-      "status": "pending"
+      "korean": "생산 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_IdleInPlace",
-      "korean": "",
-      "status": "pending"
+      "korean": "대기 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_InvestigateDistraction",
-      "korean": "",
-      "status": "pending"
+      "korean": "조사 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_LookAtDistraction",
-      "korean": "",
-      "status": "pending"
+      "korean": "조사 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_OnDuty",
-      "korean": "",
-      "status": "pending"
+      "korean": "근무 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_PickUpPermittedItem",
@@ -1544,33 +1544,33 @@
     },
     {
       "id": "Data/NPC_Task_ReactToUnreachableCombatTarget",
-      "korean": "",
-      "status": "pending"
+      "korean": "전투",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_ReloadRangedWeapon",
-      "korean": "",
-      "status": "pending"
+      "korean": "재장전 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_RepairSelf",
-      "korean": "",
-      "status": "pending"
+      "korean": "수리받으러 가는 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_ReserveJob",
-      "korean": "",
-      "status": "pending"
+      "korean": "구직 중",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_SearchAlertLocation",
-      "korean": "",
-      "status": "pending"
+      "korean": "전투",
+      "status": "reviewed"
     },
     {
       "id": "Data/NPC_Task_Tame",
-      "korean": "",
-      "status": "pending"
+      "korean": "길들이기",
+      "status": "reviewed"
     },
     {
       "id": "Data/OBJECTIVE_BuildSawmill",
@@ -2034,108 +2034,108 @@
     },
     {
       "id": "Data/RESEARCH_Ability_CivilianTaxation",
-      "korean": "",
-      "status": "pending"
+      "korean": "민간인 과세",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Ability_EmployedCiviliansGenerateCoin",
-      "korean": "",
-      "status": "pending"
+      "korean": "고용된 민간인이 주화를 생산합니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Ability_IncendiariesForSoldiers",
-      "korean": "",
-      "status": "pending"
+      "korean": "미늘창병과 머스킷병에게 구조물 공격용 화염 폭탄을 장비시킵니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Ability_RevealAllOre",
-      "korean": "",
-      "status": "pending"
+      "korean": "지도에 모든 광석 매장지를 표시합니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Ability_SoldierSalaries",
-      "korean": "",
-      "status": "pending"
+      "korean": "병사 급여",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Ability_TameWoolies",
-      "korean": "",
-      "status": "pending"
+      "korean": "돌연변이가 아닌 야생 울리를 길들일 수 있습니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Ability_UndiscoveredLand",
-      "korean": "",
-      "status": "pending"
+      "korean": "지도에 미발견 육상 생물 둥지가 표시됩니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Ability_UndiscoveredOutlaws",
-      "korean": "",
-      "status": "pending"
+      "korean": "지도에 미발견 무법자 야영지가 표시됩니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Ability_UndiscoveredWater",
-      "korean": "",
-      "status": "pending"
+      "korean": "지도에 미발견 수생 생물 둥지가 표시됩니다",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_AnatomicalStudies",
-      "korean": "",
-      "status": "pending"
+      "korean": "해부학 연구",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_ArmorPiercingShells",
-      "korean": "",
-      "status": "pending"
+      "korean": "철갑탄",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Baking",
-      "korean": "",
-      "status": "pending"
+      "korean": "제빵",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Baking_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "곡물을 빵으로 가공해 식량의 다양성을 높입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Ballistics",
-      "korean": "",
-      "status": "pending"
+      "korean": "탄도학",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Batteries",
-      "korean": "",
-      "status": "pending"
+      "korean": "포대",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Beastmastery",
-      "korean": "",
-      "status": "pending"
+      "korean": "야수 조련술",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_BigGameFishing",
-      "korean": "",
-      "status": "pending"
+      "korean": "대형 어종 낚시",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_BigGameHunting",
-      "korean": "",
-      "status": "pending"
+      "korean": "대형 사냥감 사냥",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_BigGameHunting_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "육상 생물을 사냥해 사체를 확보하는 사냥꾼을 모집합니다. 한 번에 여러 적과 싸울 때 유용한 대검을 획득합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_BreadAndCircuses",
-      "korean": "",
-      "status": "pending"
+      "korean": "빵과 서커스",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_BreadAndCircuses_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주화를 오락으로 전환해 행복도를 높입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_BreadAndGames",
@@ -2144,93 +2144,93 @@
     },
     {
       "id": "Data/RESEARCH_Brewing",
-      "korean": "",
-      "status": "pending"
+      "korean": "양조",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Brewing_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "곡물을 음료로 가공해 행복도를 높입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Butchering",
-      "korean": "",
-      "status": "pending"
+      "korean": "도축",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Butchering_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "사체를 소시지로 가공해 식량의 다양성을 높입니다. 지도에 미발견 육상 생물 둥지를 표시합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Canning",
-      "korean": "",
-      "status": "pending"
+      "korean": "통조림 제조",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Carpentry",
-      "korean": "",
-      "status": "pending"
+      "korean": "목공",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Carpentry_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "새로운 시작입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_CivilService",
-      "korean": "",
-      "status": "pending"
+      "korean": "행정 제도",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_CivilService_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "민간인 인구에 세금을 부과합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Clothmaking",
-      "korean": "",
-      "status": "pending"
+      "korean": "직물 제작",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Clothmaking_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "직물을 의류로 가공해 행복도를 높입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Composting",
-      "korean": "",
-      "status": "pending"
+      "korean": "퇴비화",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Composting_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "재, 부패물, 해조류, 다시마, 거름을 유기 폐기물로 모아 농업과 화약 제조에 사용할 비료를 만듭니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Construction",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Construction_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "벽돌을 생산해 도로, 성벽, 계단, 다리 등 기반 시설을 건설합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Distillation",
-      "korean": "",
-      "status": "pending"
+      "korean": "증류",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Enclosures",
-      "korean": "",
-      "status": "pending"
+      "korean": "울타리",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Enclosures_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "길들인 울리를 한곳에 둘 수 있도록 울타리를 건설합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Entertainment",
@@ -2239,38 +2239,38 @@
     },
     {
       "id": "Data/RESEARCH_Entertainment_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주화를 오락으로 전환해 사기를 높입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Excavation",
-      "korean": "",
-      "status": "pending"
+      "korean": "굴착",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Excavation_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "삽을 사용해 매립재를 소모하며 지형을 변경합니다. 지형을 낮추면 매립재를 얻고, 높이면 소모합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_ExpeditionaryFleet",
-      "korean": "",
-      "status": "pending"
+      "korean": "원정 함대",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Experimentation",
-      "korean": "",
-      "status": "pending"
+      "korean": "실험",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_ExplosiveShells",
-      "korean": "",
-      "status": "pending"
+      "korean": "고폭탄",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_ExplosiveShells_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "육상 목표를 멀리서 곡사 포격하는 박격포탑을 건설합니다. 유지용 화약이 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Farming",
@@ -2279,23 +2279,23 @@
     },
     {
       "id": "Data/RESEARCH_Farming_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "다음 날 수확할 수 있는 채소를 재배합니다 (겨울 제외). 유지용 비료가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Firefighting",
-      "korean": "",
-      "status": "pending"
+      "korean": "소방",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Firefighting_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "불붙은 캐릭터가 불을 끌 수 있는 우물을 건설합니다 (건물은 렌치로 수리하면 진화됩니다). 야영지와 둥지에 불을 지를 때 유용한 랜턴을 획득합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_FiringDrills",
-      "korean": "",
-      "status": "pending"
+      "korean": "사격 훈련",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_FiringDrills_Description",
@@ -2304,103 +2304,103 @@
     },
     {
       "id": "Data/RESEARCH_FishFarming",
-      "korean": "",
-      "status": "pending"
+      "korean": "양어",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Fishing",
-      "korean": "",
-      "status": "pending"
+      "korean": "어업",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Fishing_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "생선을 생선튀김으로 조리해 식량의 다양성을 높입니다. 수중 전투에 유용한 창을 획득합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Flight",
-      "korean": "",
-      "status": "pending"
+      "korean": "비행",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Flight_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "상공에서 적과 싸우는 비행선을 건조합니다. 유지용 마나가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Foraging",
-      "korean": "",
-      "status": "pending"
+      "korean": "채집",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Foraging_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "채소를 스튜로 조리해 식량의 다양성을 높입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_ForeignTrade",
-      "korean": "",
-      "status": "pending"
+      "korean": "대외 무역",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Fortifications",
-      "korean": "",
-      "status": "pending"
+      "korean": "요새화",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Fortifications_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "성벽, 계단, 다리 등 기반 시설을 건설합니다. 바위와 적 야영지를 파괴할 때 유용한 대형 망치를 획득합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_FrontierSettlement",
-      "korean": "",
-      "status": "pending"
+      "korean": "개척 정착지",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_FrontierSettlement_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "시민의 장기 생존에 필요한 기본 요소를 잠금 해제합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_FutureUpdate_Jan2025",
-      "korean": "",
-      "status": "pending"
+      "korean": "2025년 1월 예정",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_FutureUpdate_Late2025",
-      "korean": "",
-      "status": "pending"
+      "korean": "2025년 말 예정",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_FutureUpdate_LateSummer2025",
-      "korean": "",
-      "status": "pending"
+      "korean": "2025년 늦여름 예정",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_FutureUpdate_Q32025",
-      "korean": "",
-      "status": "pending"
+      "korean": "2025년 3분기 예정",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_FutureUpdate_Spring2025",
-      "korean": "",
-      "status": "pending"
+      "korean": "2025년 봄 예정",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_FutureUpdate_Summer2025",
-      "korean": "",
-      "status": "pending"
+      "korean": "2025년 여름 예정",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Gunnery",
-      "korean": "",
-      "status": "pending"
+      "korean": "포술",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Gunnery_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "비행선을 포함해 다가오는 목표를 직사 공격하는 대공포를 건설합니다. 유지용 화약이 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Gunpowder",
@@ -2409,43 +2409,43 @@
     },
     {
       "id": "Data/RESEARCH_Gunpowder_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "비료와 유황을 화약으로 가공합니다. 한 번만 사용할 수 있으며 던져서 적 근처에서 폭발시키는 화약통을 제작합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Herbalism",
-      "korean": "",
-      "status": "pending"
+      "korean": "약초학",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Herbalism_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "숲과 고지대에서 약품으로 사용할 약초를 채집합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Husbandry",
-      "korean": "",
-      "status": "pending"
+      "korean": "목축",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Husbandry_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "야생 둥지에서 괴물 알을 찾아 울리를 기릅니다. 울리는 의류로 가공할 섬유를 제공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Incendiaries",
-      "korean": "",
-      "status": "pending"
+      "korean": "소이탄",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Incendiaries_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "화염 폭탄으로 적 정착지를 불태웁니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_LevitationEngines",
-      "korean": "",
-      "status": "pending"
+      "korean": "부양 엔진",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_LevitationEngines_Description",
@@ -2454,13 +2454,13 @@
     },
     {
       "id": "Data/RESEARCH_LiquidFire",
-      "korean": "",
-      "status": "pending"
+      "korean": "액체 화염",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Machinery",
-      "korean": "",
-      "status": "pending"
+      "korean": "기계 공학",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Machinery_Description",
@@ -2469,63 +2469,63 @@
     },
     {
       "id": "Data/RESEARCH_Metalworking",
-      "korean": "",
-      "status": "pending"
+      "korean": "금속 가공",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Metalworking_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "통나무를 연료로 가공하고, 연료와 광석을 사용해 군사 구조물과 차량용 부품을 만듭니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Milling",
-      "korean": "",
-      "status": "pending"
+      "korean": "제분",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Milling_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "다음 날 수확할 수 있는 밀을 재배합니다 (겨울 제외). 유지용 비료가 필요합니다. 밀을 곡물로 가공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Mining",
-      "korean": "",
-      "status": "pending"
+      "korean": "채굴",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Mining_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "매장지에 광산을 건설해 광석을 생산합니다. 광석은 도로를 건설하고 삽으로 지형을 변경하는 데 사용할 수 있습니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_MunitionArmor",
-      "korean": "",
-      "status": "pending"
+      "korean": "군수용 갑옷",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Musketry",
-      "korean": "",
-      "status": "pending"
+      "korean": "머스킷 사격술",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Musketry_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "강력한 머스킷으로 멀리서 적을 쏘는 머스킷병을 모집합니다. 재장전 중에는 취약합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Orchards",
-      "korean": "",
-      "status": "pending"
+      "korean": "과수원",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Orchards_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "여름에 매일 열매를 맺는 사과나무를 재배합니다. 유지용 비료가 필요합니다. 각 나무가 자랄 충분한 공간을 확보해야 합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Papermaking",
-      "korean": "",
-      "status": "pending"
+      "korean": "제지",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Papermaking_Description",
@@ -2534,58 +2534,58 @@
     },
     {
       "id": "Data/RESEARCH_Parks",
-      "korean": "",
-      "status": "pending"
+      "korean": "공원",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Parks_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "정착지를 장식합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_PassengerService",
-      "korean": "",
-      "status": "pending"
+      "korean": "여객 운송",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_PhlogistonCollection",
-      "korean": "",
-      "status": "pending"
+      "korean": "플로지스톤 수집",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_PhlogistonCollection_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "고지대에 설치한 대기 수집기로 연료를 마나로 변환해 비행선에 동력을 공급합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Potionmaking",
-      "korean": "",
-      "status": "pending"
+      "korean": "물약 제조",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Potionmaking_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "거리에 상관없이 아군 캐릭터를 치료하는 약제상을 건설합니다. 유지용 약품이 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_ProfessionalSoldiers",
-      "korean": "",
-      "status": "pending"
+      "korean": "직업 군인",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_ProfessionalSoldiers_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "튼튼한 장갑을 갖추고 근접 전투를 하는 미늘창병을 모집합니다. 들어오는 공격을 막을 때 유용한 방패를 획득합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Prospecting",
-      "korean": "",
-      "status": "pending"
+      "korean": "탐광",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Prospecting_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "광석을 얻기 위해 매장지에 광산을 건설합니다. 지역 오염을 피하려면 한 구역에 너무 많이 건설하지 마세요. 지도에 광맥을 표시합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Repair",
@@ -2594,48 +2594,48 @@
     },
     {
       "id": "Data/RESEARCH_Repair_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "주변 구조물을 수리하고 재건하는 건설가를 모집합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_ReverseEngineering",
-      "korean": "",
-      "status": "pending"
+      "korean": "역공학",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_ReverseEngineering_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자 구조물을 파괴해 연구 속도를 높이거나 부품으로 가공할 고철을 얻습니다. 지도에 미발견 무법자 야영지를 표시합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Shearing",
-      "korean": "",
-      "status": "pending"
+      "korean": "털깎기",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Shearing_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "해안의 부들에서 섬유를 채집하거나 복슬복슬한 울리의 털을 깎아 직물을 만듭니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Shipbuilding",
-      "korean": "",
-      "status": "pending"
+      "korean": "조선",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Shipbuilding_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "수생 생물을 사냥하는 어선을 건조합니다. 유지용 연료가 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_SkyFleet",
-      "korean": "",
-      "status": "pending"
+      "korean": "공중 함대",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_SlimeRanching",
-      "korean": "",
-      "status": "pending"
+      "korean": "슬라임 사육",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_SlimeRanching_Description",
@@ -2644,73 +2644,73 @@
     },
     {
       "id": "Data/RESEARCH_Soapmaking",
-      "korean": "",
-      "status": "pending"
+      "korean": "비누 제조",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Soapmaking_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "사체와 연료를 비누로 가공해 행복도를 높입니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Stonecutting",
-      "korean": "",
-      "status": "pending"
+      "korean": "석재 가공",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Stonecutting_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "돌을 도로 건설용 벽돌로 가공합니다. 지형을 변경할 때 유용한 삽을 획득합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_SulfurExtraction",
-      "korean": "",
-      "status": "pending"
+      "korean": "유황 추출",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_SulfurExtraction_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "암석 타일에서 자라는 화산 식물을 채집해 화약에 사용할 유황을 얻습니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Taming",
-      "korean": "",
-      "status": "pending"
+      "korean": "길들이기",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Taming_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "야생 울리를 길들여 울리 축사에 들입니다. 울리는 채집물(덤불, 고사리, 키 큰 풀, 해바라기, 해초)을 수확해 먹습니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Taxation",
-      "korean": "",
-      "status": "pending"
+      "korean": "과세",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Taxation_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "고용된 모든 민간인에게서 주화를 자동으로 징수합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_Warships",
-      "korean": "",
-      "status": "pending"
+      "korean": "군함",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_WoolieDomestication",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리 가축화",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESEARCH_WoolieDomestication_Description",
-      "korean": "",
-      "status": "pending"
+      "korean": "야생 둥지에서 괴물 알을 찾아 울리를 기릅니다. 울리는 의류로 가공할 섬유를 제공합니다.",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Agricultural",
-      "korean": "",
-      "status": "pending"
+      "korean": "농업",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Amenities",
@@ -2719,13 +2719,13 @@
     },
     {
       "id": "Data/RESOURCE_Category_Construction",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_ConsumerGoods",
-      "korean": "",
-      "status": "pending"
+      "korean": "소비재",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Defense",
@@ -2739,53 +2739,53 @@
     },
     {
       "id": "Data/RESOURCE_Category_Food",
-      "korean": "",
-      "status": "pending"
+      "korean": "식량",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Industrial",
-      "korean": "",
-      "status": "pending"
+      "korean": "산업",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Ingredients",
-      "korean": "",
-      "status": "pending"
+      "korean": "재료",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Intermediate",
-      "korean": "",
-      "status": "pending"
+      "korean": "중간재",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_LuxuryGoods",
-      "korean": "",
-      "status": "pending"
+      "korean": "사치품",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Materials",
-      "korean": "",
-      "status": "pending"
+      "korean": "자재",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_OutlawLoot",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자 전리품",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Raw",
-      "korean": "",
-      "status": "pending"
+      "korean": "원자재",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Strategic",
-      "korean": "",
-      "status": "pending"
+      "korean": "전략 자원",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Category_Terraforming",
-      "korean": "",
-      "status": "pending"
+      "korean": "지형 변경",
+      "status": "reviewed"
     },
     {
       "id": "Data/RESOURCE_Type_Bread",
@@ -3014,13 +3014,13 @@
     },
     {
       "id": "Data/SALARY_Level0",
-      "korean": "",
-      "status": "pending"
+      "korean": "무급",
+      "status": "reviewed"
     },
     {
       "id": "Data/SALARY_Level1",
-      "korean": "",
-      "status": "pending"
+      "korean": "매우 낮음",
+      "status": "reviewed"
     },
     {
       "id": "Data/SALARY_Level2",
@@ -3029,8 +3029,8 @@
     },
     {
       "id": "Data/SALARY_Level3",
-      "korean": "",
-      "status": "pending"
+      "korean": "보통",
+      "status": "reviewed"
     },
     {
       "id": "Data/SALARY_Level4",
@@ -3039,43 +3039,43 @@
     },
     {
       "id": "Data/SALARY_Level5",
-      "korean": "",
-      "status": "pending"
+      "korean": "매우 높음",
+      "status": "reviewed"
     },
     {
       "id": "Data/SPAWN_Scenario_Initial",
-      "korean": "",
-      "status": "pending"
+      "korean": "초기",
+      "status": "reviewed"
     },
     {
       "id": "Data/SPAWN_Scenario_SeasonChange",
-      "korean": "",
-      "status": "pending"
+      "korean": "계절 변경",
+      "status": "reviewed"
     },
     {
       "id": "Data/SPAWN_Type_Foliage",
-      "korean": "",
-      "status": "pending"
+      "korean": "초목",
+      "status": "reviewed"
     },
     {
       "id": "Data/SPAWN_Type_WildLarge",
-      "korean": "",
-      "status": "pending"
+      "korean": "대형 야생물",
+      "status": "reviewed"
     },
     {
       "id": "Data/SPAWN_Type_WildSmall",
-      "korean": "",
-      "status": "pending"
+      "korean": "소형 야생물",
+      "status": "reviewed"
     },
     {
       "id": "Data/TAX_Level0",
-      "korean": "",
-      "status": "pending"
+      "korean": "면제",
+      "status": "reviewed"
     },
     {
       "id": "Data/TAX_Level1",
-      "korean": "",
-      "status": "pending"
+      "korean": "매우 낮음",
+      "status": "reviewed"
     },
     {
       "id": "Data/TAX_Level2",
@@ -3084,8 +3084,8 @@
     },
     {
       "id": "Data/TAX_Level3",
-      "korean": "",
-      "status": "pending"
+      "korean": "보통",
+      "status": "reviewed"
     },
     {
       "id": "Data/TAX_Level4",
@@ -3094,28 +3094,28 @@
     },
     {
       "id": "Data/TAX_Level5",
-      "korean": "",
-      "status": "pending"
+      "korean": "매우 높음",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_AppleOrchard",
-      "korean": "",
-      "status": "pending"
+      "korean": "사과 과수원",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_Ash",
-      "korean": "",
-      "status": "pending"
+      "korean": "재",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_Coast",
-      "korean": "",
-      "status": "pending"
+      "korean": "해안",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_ConstructionSite",
-      "korean": "",
-      "status": "pending"
+      "korean": "건설 현장",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_Crown",
@@ -3124,133 +3124,133 @@
     },
     {
       "id": "Data/TILE_Dirt",
-      "korean": "",
-      "status": "pending"
+      "korean": "흙",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_DirtPath",
-      "korean": "",
-      "status": "pending"
+      "korean": "흙길",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_ForestEarth",
-      "korean": "",
-      "status": "pending"
+      "korean": "숲 토양",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_ForestLowlandGrass",
-      "korean": "",
-      "status": "pending"
+      "korean": "숲 풀밭",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_ForestMontaneGrass",
-      "korean": "",
-      "status": "pending"
+      "korean": "숲 산지 풀밭",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_ForestStone",
-      "korean": "",
-      "status": "pending"
+      "korean": "숲 바위",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_Frost",
-      "korean": "",
-      "status": "pending"
+      "korean": "서리",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenCoast",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 해안",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenCrown",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 왕관 지형",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenDeposit",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 매장지",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenFarmland",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 농경지",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenGarden",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 텃밭",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenOrchard",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 과수원",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenPath",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 길",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenRubble",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 잔해",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenSidewalk",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 보도",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenSite",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 현장",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_FrozenStreet",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 포장도로",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_GrasslandLowlandGrass",
-      "korean": "",
-      "status": "pending"
+      "korean": "풀",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_GrasslandMontaneGrass",
-      "korean": "",
-      "status": "pending"
+      "korean": "산지 풀밭",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_HighlandGrass",
-      "korean": "",
-      "status": "pending"
+      "korean": "고지대 풀밭",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_HighlandRock",
-      "korean": "",
-      "status": "pending"
+      "korean": "고지대 바위",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_Ice",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼음",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_OreVein",
-      "korean": "",
-      "status": "pending"
+      "korean": "광맥",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_PavedStreet",
-      "korean": "",
-      "status": "pending"
+      "korean": "포장도로",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_Reef",
-      "korean": "",
-      "status": "pending"
+      "korean": "암초",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_Rock",
@@ -3259,8 +3259,8 @@
     },
     {
       "id": "Data/TILE_Rubble",
-      "korean": "",
-      "status": "pending"
+      "korean": "잔해",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_Sidewalk",
@@ -3269,98 +3269,98 @@
     },
     {
       "id": "Data/TILE_Snow",
-      "korean": "",
-      "status": "pending"
+      "korean": "눈",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_SteppeCoast",
-      "korean": "",
-      "status": "pending"
+      "korean": "스텝 해안",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_SteppeEarth",
-      "korean": "",
-      "status": "pending"
+      "korean": "스텝 토양",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_SteppeFrozenCoast",
-      "korean": "",
-      "status": "pending"
+      "korean": "얼어붙은 스텝 해안",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_SteppeIce",
-      "korean": "",
-      "status": "pending"
+      "korean": "스텝 얼음",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_SteppeLowlandGrass",
-      "korean": "",
-      "status": "pending"
+      "korean": "스텝 풀밭",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_SteppeMontaneGrass",
-      "korean": "",
-      "status": "pending"
+      "korean": "스텝 산지 풀밭",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_SteppeRock",
-      "korean": "",
-      "status": "pending"
+      "korean": "스텝 바위",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_SteppeSnow",
-      "korean": "",
-      "status": "pending"
+      "korean": "스텝 눈밭",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_UnderwaterCrown",
-      "korean": "",
-      "status": "pending"
+      "korean": "수중 왕관 지형",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_UnderwaterDeposit",
-      "korean": "",
-      "status": "pending"
+      "korean": "수중 매장지",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_UnderwaterRubble",
-      "korean": "",
-      "status": "pending"
+      "korean": "수중 잔해",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_UnderwaterSite",
-      "korean": "",
-      "status": "pending"
+      "korean": "수중 현장",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_VegetableGarden",
-      "korean": "",
-      "status": "pending"
+      "korean": "채소밭",
+      "status": "reviewed"
     },
     {
       "id": "Data/TILE_WheatField",
-      "korean": "",
-      "status": "pending"
+      "korean": "밀밭",
+      "status": "reviewed"
     },
     {
       "id": "Data/key-7607070181335040",
-      "korean": "",
-      "status": "pending"
+      "korean": "개척 정착지 연구 ({0}/{1} 지식)",
+      "status": "reviewed"
     },
     {
       "id": "Data/key-7607070202306560",
-      "korean": "",
-      "status": "pending"
+      "korean": "고용된 시민이 지식을 생산합니다 ({0}/분)",
+      "status": "reviewed"
     },
     {
       "id": "Data/key-7607136090628096",
-      "korean": "",
-      "status": "pending"
+      "korean": "개척 정착지 연구 ({0}/{1} 지식)",
+      "status": "reviewed"
     },
     {
       "id": "Data/key-7607136107405312",
-      "korean": "",
-      "status": "pending"
+      "korean": "고용된 시민이 지식을 생산합니다 ({0}/분)",
+      "status": "reviewed"
     },
     {
       "id": "Entities/BIOME_DirtPath",
@@ -5259,28 +5259,28 @@
     },
     {
       "id": "UI/BIOME_Forest",
-      "korean": "",
-      "status": "pending"
+      "korean": "숲",
+      "status": "reviewed"
     },
     {
       "id": "UI/BIOME_Grassland",
-      "korean": "",
-      "status": "pending"
+      "korean": "초원",
+      "status": "reviewed"
     },
     {
       "id": "UI/BIOME_Steppe",
-      "korean": "",
-      "status": "pending"
+      "korean": "스텝 지대",
+      "status": "reviewed"
     },
     {
       "id": "UI/DATE_Day",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}일차",
+      "status": "reviewed"
     },
     {
       "id": "UI/DATE_Year",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}년",
+      "status": "reviewed"
     },
     {
       "id": "UI/DIFFICULTY_CanCrownBeStolen",
@@ -5374,163 +5374,163 @@
     },
     {
       "id": "UI/ERROR_BDFLoadFailed",
-      "korean": "",
-      "status": "pending"
+      "korean": "BDF를 불러오는 중 오류가 발생했습니다!",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_ClientTimeout",
-      "korean": "",
-      "status": "pending"
+      "korean": "호스트 연결 시간이 초과되었습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_ConnectFailed",
-      "korean": "",
-      "status": "pending"
+      "korean": "연결 실패",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_ConnectFailed_LobbyFull",
-      "korean": "",
-      "status": "pending"
+      "korean": "게임 세션이 가득 찼습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_ConnectFailed_LobbyRefuse",
-      "korean": "",
-      "status": "pending"
+      "korean": "참가할 수 없는 게임 세션입니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_ConnectFailed_PreviouslyReported",
-      "korean": "",
-      "status": "pending"
+      "korean": "이전에 신고한 월드와의 연결이 끊어졌습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_ConnectFailed_WrongPassword",
-      "korean": "",
-      "status": "pending"
+      "korean": "비밀번호가 틀렸습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_ConnectFailed_WrongVersion",
-      "korean": "",
-      "status": "pending"
+      "korean": "게임 버전이 일치하지 않습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_ConnectingToServerFailed",
-      "korean": "",
-      "status": "pending"
+      "korean": "서버에 연결하는 중 오류가 발생했습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_ForbiddenTerm",
-      "korean": "",
-      "status": "pending"
+      "korean": "부적절한 용어가 차단되었습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_ForcedGameToStop",
-      "korean": "",
-      "status": "pending"
+      "korean": "오류로 인해 게임이 중지되었습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_HostClosedSession",
-      "korean": "",
-      "status": "pending"
+      "korean": "호스트가 게임 세션을 종료했습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_InstantiatingPrefabFailed",
-      "korean": "",
-      "status": "pending"
+      "korean": "프리팹을 생성하는 중 오류가 발생했습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_InsufficientOnlinePrivilegies",
-      "korean": "",
-      "status": "pending"
+      "korean": "이 사용자는 필요한 권한이 없습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_InternetDisconnect",
-      "korean": "",
-      "status": "pending"
+      "korean": "게임 서버 연결이 끊어졌습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_InvalidLobbyId",
-      "korean": "",
-      "status": "pending"
+      "korean": "잘못된 로비 ID",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_JoinLobbyFailed",
-      "korean": "",
-      "status": "pending"
+      "korean": "로비 참가 실패",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_KickedFromServer",
-      "korean": "",
-      "status": "pending"
+      "korean": "호스트에 의해 서버에서 추방되었습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_LoadSaveFailed",
-      "korean": "",
-      "status": "pending"
+      "korean": "저장 파일을 불러오는 중 오류가 발생했습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_LoadTimeout",
-      "korean": "",
-      "status": "pending"
+      "korean": "로딩 진행 시간이 초과되었습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_LoadingLevelFailed",
-      "korean": "",
-      "status": "pending"
+      "korean": "레벨을 불러오는 중 오류가 발생했습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_LobbyCreationFailed",
-      "korean": "",
-      "status": "pending"
+      "korean": "로비 생성 실패",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_MustAcceptEULAMultiplayer",
-      "korean": "",
-      "status": "pending"
+      "korean": "온라인 플레이 전에 EULA에 동의해야 합니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_OfflineMode",
-      "korean": "",
-      "status": "pending"
+      "korean": "인터넷에 연결되어 있지 않습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_OfflineMode_PS5",
-      "korean": "",
-      "status": "pending"
+      "korean": "PlayStation™Network에 연결되어 있지 않습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_PreloadFailed",
-      "korean": "",
-      "status": "pending"
+      "korean": "사전 로드 중 오류가 발생했습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_SaveCorrupt",
-      "korean": "",
-      "status": "pending"
+      "korean": "저장 파일이 손상되었습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_SaveDoesntExist",
-      "korean": "",
-      "status": "pending"
+      "korean": "저장 파일이 없습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_SaveFailed",
-      "korean": "",
-      "status": "pending"
+      "korean": "게임을 저장하는 중 오류가 발생했습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_UserLoggedOut",
-      "korean": "",
-      "status": "pending"
+      "korean": "사용자가 로그아웃되었습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/ERROR_WorldNoLongerExists",
-      "korean": "",
-      "status": "pending"
+      "korean": "이 월드는 더 이상 존재하지 않습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/FOODCONSUMPTION_DietPercent",
-      "korean": "",
-      "status": "pending"
+      "korean": "식단 비율(%)",
+      "status": "reviewed"
     },
     {
       "id": "UI/FOODCONSUMPTION_FoodVariety",
@@ -5539,8 +5539,8 @@
     },
     {
       "id": "UI/FOODCONSUMPTION_LivestockFeed",
-      "korean": "",
-      "status": "pending"
+      "korean": "가축 사료",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Amenities",
@@ -5594,8 +5594,8 @@
     },
     {
       "id": "UI/HEADING_FromCitizens",
-      "korean": "",
-      "status": "pending"
+      "korean": "시민으로부터",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Housing",
@@ -5604,8 +5604,8 @@
     },
     {
       "id": "UI/HEADING_IndividualEffects",
-      "korean": "",
-      "status": "pending"
+      "korean": "개별 효과",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Inputs",
@@ -5619,8 +5619,8 @@
     },
     {
       "id": "UI/HEADING_LocalPresence",
-      "korean": "",
-      "status": "pending"
+      "korean": "지역 내 현황",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_LocalResources",
@@ -5629,8 +5629,8 @@
     },
     {
       "id": "UI/HEADING_LuxuryGoods",
-      "korean": "",
-      "status": "pending"
+      "korean": "사치품",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Name",
@@ -5649,13 +5649,13 @@
     },
     {
       "id": "UI/HEADING_OffHands",
-      "korean": "",
-      "status": "pending"
+      "korean": "보조 장비",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Outfit",
-      "korean": "",
-      "status": "pending"
+      "korean": "의상",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Outputs",
@@ -5689,8 +5689,8 @@
     },
     {
       "id": "UI/HEADING_RecruitmentLimit",
-      "korean": "",
-      "status": "pending"
+      "korean": "모집 제한",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Research",
@@ -5709,18 +5709,18 @@
     },
     {
       "id": "UI/HEADING_Salaries",
-      "korean": "",
-      "status": "pending"
+      "korean": "병사 급여",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Servicing",
-      "korean": "",
-      "status": "pending"
+      "korean": "정비 중",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_SharedEffects",
-      "korean": "",
-      "status": "pending"
+      "korean": "공유 효과",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Skills",
@@ -5734,18 +5734,18 @@
     },
     {
       "id": "UI/HEADING_Taxation",
-      "korean": "",
-      "status": "pending"
+      "korean": "민간인 과세",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Visiting",
-      "korean": "",
-      "status": "pending"
+      "korean": "방문 중",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Wildlife",
-      "korean": "",
-      "status": "pending"
+      "korean": "야생동물",
+      "status": "reviewed"
     },
     {
       "id": "UI/HEADING_Workers",
@@ -5809,23 +5809,23 @@
     },
     {
       "id": "UI/LOADING_PlacingNpcCamps",
-      "korean": "",
-      "status": "pending"
+      "korean": "야영지 배치 중",
+      "status": "reviewed"
     },
     {
       "id": "UI/LOADING_PlacingNpcOutposts",
-      "korean": "",
-      "status": "pending"
+      "korean": "전초기지 배치 중",
+      "status": "reviewed"
     },
     {
       "id": "UI/LOADING_PlacingPrefabs",
-      "korean": "",
-      "status": "pending"
+      "korean": "프리팹 배치 중",
+      "status": "reviewed"
     },
     {
       "id": "UI/LOADING_PreparingNpcCamps",
-      "korean": "",
-      "status": "pending"
+      "korean": "야영지 준비 중",
+      "status": "reviewed"
     },
     {
       "id": "UI/LOADING_ReadingLevelData",
@@ -5919,8 +5919,8 @@
     },
     {
       "id": "UI/MENU_PopUp_Body",
-      "korean": "",
-      "status": "pending"
+      "korean": "Overthrown은 아직 완성까지 조금 더 다듬을 시간이 필요한 사전 출시 상태입니다.<br><br>게임이 충돌하거나 일부 기능이 올바르게 작동하지 않을 수 있으며, 1.0 출시 전까지 추가할 콘텐츠가 아직 많이 남아 있습니다. 여러분의 피드백은 함께 게임을 만들어 가는 데 큰 도움이 됩니다.<br><br>아이디어, 피드백 또는 문제점이 있다면 활발히 운영 중인 Discord 서버에 남겨 주세요! 지원 문의는 support@brimstone.games로 보내실 수도 있습니다.<br><br>이해해 주셔서 감사드리며, 개발 기간 동안 보내 주신 모든 성원에 커뮤니티 여러분께 감사드립니다!<br><br>Brimstone",
+      "status": "reviewed"
     },
     {
       "id": "UI/MENU_PopUp_Title",
@@ -6079,38 +6079,38 @@
     },
     {
       "id": "UI/MESSAGE_BuildingMaxPerWorld",
-      "korean": "",
-      "status": "pending"
+      "korean": "월드당 배치 한도: {0} 1개",
+      "status": "reviewed"
     },
     {
       "id": "UI/MESSAGE_BuildingMaxPerZone",
-      "korean": "",
-      "status": "pending"
+      "korean": "구역당 배치 한도: {0} 1개",
+      "status": "reviewed"
     },
     {
       "id": "UI/MESSAGE_Death",
-      "korean": "",
-      "status": "pending"
+      "korean": "여왕 폐하 만세",
+      "status": "reviewed"
     },
     {
       "id": "UI/MESSAGE_Hired",
-      "korean": "",
-      "status": "pending"
+      "korean": "고용 직종: {0}",
+      "status": "reviewed"
     },
     {
       "id": "UI/MESSAGE_OutOfBounds",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕국을 벗어났습니다!<br>{0}초 후 돌아갑니다...",
+      "status": "reviewed"
     },
     {
       "id": "UI/MESSAGE_RaidWarning",
-      "korean": "",
-      "status": "pending"
+      "korean": "저들이 왕관을 노리고 옵니다...",
+      "status": "reviewed"
     },
     {
       "id": "UI/MESSAGE_Unbuildable",
-      "korean": "",
-      "status": "pending"
+      "korean": "이 지역에는 건설할 수 없습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Accept",
@@ -6119,8 +6119,8 @@
     },
     {
       "id": "UI/MISC_AdjacentZoneExcess",
-      "korean": "",
-      "status": "pending"
+      "korean": "인접 구역의 잉여분",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Blocked",
@@ -6129,13 +6129,13 @@
     },
     {
       "id": "UI/MISC_BuildingPollution",
-      "korean": "",
-      "status": "pending"
+      "korean": "중공업",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_BurnedTiles",
-      "korean": "",
-      "status": "pending"
+      "korean": "불탄 타일",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Cancel",
@@ -6154,13 +6154,13 @@
     },
     {
       "id": "UI/MISC_CivilianJobs",
-      "korean": "",
-      "status": "pending"
+      "korean": "민간인 일자리",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Civilians",
-      "korean": "",
-      "status": "pending"
+      "korean": "민간인",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Crown_Tooltip",
@@ -6169,18 +6169,18 @@
     },
     {
       "id": "UI/MISC_Crownless",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관 없음",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Crownless_Tooltip",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관을 빼앗긴 지 {0}{0:plural:day|days}이 지났습니다. 왕관을 되찾을 때까지 행복도가 계속 감소합니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_CurrentResearching",
-      "korean": "",
-      "status": "pending"
+      "korean": "현재 연구 중",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Day",
@@ -6194,8 +6194,8 @@
     },
     {
       "id": "UI/MISC_Dodged",
-      "korean": "",
-      "status": "pending"
+      "korean": "회피함",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_DontShowAgain",
@@ -6204,23 +6204,23 @@
     },
     {
       "id": "UI/MISC_DropCrown_Tooltip",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관 내려놓기",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_EarlyShift",
-      "korean": "",
-      "status": "pending"
+      "korean": "이른 근무조",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_EmployedCivilians",
-      "korean": "",
-      "status": "pending"
+      "korean": "고용된 민간인",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_EndUserLicenseAgreement",
-      "korean": "",
-      "status": "pending"
+      "korean": "최종 사용자 사용권 계약",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Finished",
@@ -6229,8 +6229,8 @@
     },
     {
       "id": "UI/MISC_For",
-      "korean": "",
-      "status": "pending"
+      "korean": "기간",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Free",
@@ -6239,8 +6239,8 @@
     },
     {
       "id": "UI/MISC_Grass",
-      "korean": "",
-      "status": "pending"
+      "korean": "풀",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Happiness",
@@ -6254,13 +6254,13 @@
     },
     {
       "id": "UI/MISC_Homeless_Tooltip",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}{0:plural:day|days} 동안 주거가 없었습니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_InResearchQueue",
-      "korean": "",
-      "status": "pending"
+      "korean": "연구 대기열에 있음",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Injured",
@@ -6269,8 +6269,8 @@
     },
     {
       "id": "UI/MISC_LateShift",
-      "korean": "",
-      "status": "pending"
+      "korean": "늦은 근무조",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Load",
@@ -6284,8 +6284,8 @@
     },
     {
       "id": "UI/MISC_MidShift",
-      "korean": "",
-      "status": "pending"
+      "korean": "중간 근무조",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Min",
@@ -6294,8 +6294,8 @@
     },
     {
       "id": "UI/MISC_MissingWorker",
-      "korean": "",
-      "status": "pending"
+      "korean": "작업자 없음",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_No",
@@ -6314,23 +6314,23 @@
     },
     {
       "id": "UI/MISC_PioneerSpirit",
-      "korean": "",
-      "status": "pending"
+      "korean": "개척자 정신",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_PioneerSpirit_Tooltip",
-      "korean": "",
-      "status": "pending"
+      "korean": "소규모 공동체는 신뢰를 더 쉽게 쌓습니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Producer",
-      "korean": "",
-      "status": "pending"
+      "korean": "생산자",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_RatePerDay",
-      "korean": "",
-      "status": "pending"
+      "korean": "일일",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Ready",
@@ -6344,68 +6344,68 @@
     },
     {
       "id": "UI/MISC_ResearchCompleted",
-      "korean": "",
-      "status": "pending"
+      "korean": "연구 완료",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_ResearchLackingResources",
-      "korean": "",
-      "status": "pending"
+      "korean": "자원 부족",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_ResearchQueue",
-      "korean": "",
-      "status": "pending"
+      "korean": "연구 대기열",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_ResearchQueueEmpty",
-      "korean": "",
-      "status": "pending"
+      "korean": "연구 대기열 비어 있음",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_ResearchQueueTotal",
-      "korean": "",
-      "status": "pending"
+      "korean": "전체 대기열",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_ResearchSpeed",
-      "korean": "",
-      "status": "pending"
+      "korean": "연구 속도",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_ResearchSpeed_PopulationBonus_Tooltip",
-      "korean": "",
-      "status": "pending"
+      "korean": "인구 보너스: +{0}% (고용된 시민 {1}명으로부터)",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_ResearchSpeed_Rate_Tooltip",
-      "korean": "",
-      "status": "pending"
+      "korean": "기본 비율: {0}%",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_ResearchSpeed_TinkerersWorkshopBonus_Tooltip",
-      "korean": "",
-      "status": "pending"
+      "korean": "기타: +{0}% ({1}개의 땜장이 작업장에서 적용)\n",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Residents",
-      "korean": "",
-      "status": "pending"
+      "korean": "주민",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Respawn",
-      "korean": "",
-      "status": "pending"
+      "korean": "부활",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_RootedTrees",
-      "korean": "",
-      "status": "pending"
+      "korean": "뿌리내린 나무",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Save",
-      "korean": "",
-      "status": "pending"
+      "korean": "저장",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_SizeLarge",
@@ -6424,88 +6424,88 @@
     },
     {
       "id": "UI/MISC_SoldierJobs",
-      "korean": "",
-      "status": "pending"
+      "korean": "병사 일자리",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Soldiers",
-      "korean": "",
-      "status": "pending"
+      "korean": "병사",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Source",
-      "korean": "",
-      "status": "pending"
+      "korean": "출처",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_StartNewResearch",
-      "korean": "",
-      "status": "pending"
+      "korean": "새 연구 시작",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_StartResearch",
-      "korean": "",
-      "status": "pending"
+      "korean": "연구 시작",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Stock",
-      "korean": "",
-      "status": "pending"
+      "korean": "재고",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Stress",
-      "korean": "",
-      "status": "pending"
+      "korean": "스트레스",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Structures",
-      "korean": "",
-      "status": "pending"
+      "korean": "구조물",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Taxation",
-      "korean": "",
-      "status": "pending"
+      "korean": "과세",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_TimeRemaining",
-      "korean": "",
-      "status": "pending"
+      "korean": "남은 시간",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Tip",
-      "korean": "",
-      "status": "pending"
+      "korean": "팁: {0}",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Total",
-      "korean": "",
-      "status": "pending"
+      "korean": "합계",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Unemployed",
-      "korean": "",
-      "status": "pending"
+      "korean": "실업자",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Unemployed_Tooltip",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}{0:plural:day|days} 동안 실업 상태였습니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Unlock",
-      "korean": "",
-      "status": "pending"
+      "korean": "잠금 해제",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Upkeep",
-      "korean": "",
-      "status": "pending"
+      "korean": "유지비",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Woolies",
-      "korean": "",
-      "status": "pending"
+      "korean": "울리",
+      "status": "reviewed"
     },
     {
       "id": "UI/MISC_Yes",
@@ -6514,53 +6514,53 @@
     },
     {
       "id": "UI/MISC_ZoneSize",
-      "korean": "",
-      "status": "pending"
+      "korean": "구역 크기",
+      "status": "reviewed"
     },
     {
       "id": "UI/NEED_Calories",
-      "korean": "",
-      "status": "pending"
+      "korean": "칼로리",
+      "status": "reviewed"
     },
     {
       "id": "UI/NEED_Rest",
-      "korean": "",
-      "status": "pending"
+      "korean": "휴식",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_Connecting",
-      "korean": "",
-      "status": "pending"
+      "korean": "서버에 연결 중...",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_DeleteSave",
-      "korean": "",
-      "status": "pending"
+      "korean": "이 저장 데이터를 삭제하시겠습니까?",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_DeleteSaveBackup",
-      "korean": "",
-      "status": "pending"
+      "korean": "이 백업을 삭제하시겠습니까?",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_DeleteWorld",
-      "korean": "",
-      "status": "pending"
+      "korean": "이 월드를 삭제하시겠습니까?<br>(모든 백업도 함께 삭제됩니다)",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_EarlyAccessSave",
-      "korean": "",
-      "status": "pending"
+      "korean": "이 저장 데이터는 이전 게임 버전에서 생성되었습니다. 계속 플레이할 수 있지만 문제가 발생하거나 데이터가 손실될 수 있습니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_KickPlayer",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0} 님을 게임에서 추방하시겠습니까?",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_OpeningLobby",
-      "korean": "",
-      "status": "pending"
+      "korean": "로비 여는 중...",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_QuitGame",
@@ -6569,48 +6569,48 @@
     },
     {
       "id": "UI/PROMPTMESSAGE_RebindWaiting",
-      "korean": "",
-      "status": "pending"
+      "korean": "입력 대기 중...",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_ReportBan",
-      "korean": "",
-      "status": "pending"
+      "korean": "월드의 온라인 플레이가 차단되었습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_ReportSent",
-      "korean": "",
-      "status": "pending"
+      "korean": "신고가 전송되었습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_ReportingWorldConfirm",
-      "korean": "",
-      "status": "pending"
+      "korean": "현재 월드를 부적절한 콘텐츠로 신고합니다. 이 월드에는 다시 입장할 수 없습니다. 신고하시겠습니까?",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_ResetWorld",
-      "korean": "",
-      "status": "pending"
+      "korean": "월드를 초기화하시겠습니까?",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_RestartLevel",
-      "korean": "",
-      "status": "pending"
+      "korean": "레벨을 다시 시작합니다. 저장하지 않은 진행 상황은 모두 사라집니다!",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_SaveBeforeQuit",
-      "korean": "",
-      "status": "pending"
+      "korean": "종료하기 전에 저장하시겠습니까?",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_UnstuckPlayer",
-      "korean": "",
-      "status": "pending"
+      "korean": "시작 지점으로 돌아가시겠습니까?",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPTMESSAGE_WorldBanned",
-      "korean": "",
-      "status": "pending"
+      "korean": "이 월드는 부적절한 행위로 인해 온라인에서 플레이할 수 없습니다",
+      "status": "reviewed"
     },
     {
       "id": "UI/PROMPT_AdjustHeight",
@@ -6949,53 +6949,53 @@
     },
     {
       "id": "UI/RECRUITMENT_Info",
-      "korean": "",
-      "status": "pending"
+      "korean": "충분한 행복도가 쌓이고 빈 주거 공간이 있으면 시청에서 새 시민이 등장합니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/RECRUITMENT_LimitReached",
-      "korean": "",
-      "status": "pending"
+      "korean": "모집 제한에 도달했습니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/RECRUITMENT_LimitUsesJobs",
-      "korean": "",
-      "status": "pending"
+      "korean": "모집 인원이 일자리 수를 초과하지 않도록 합니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/RECRUITMENT_LowHappiness",
-      "korean": "",
-      "status": "pending"
+      "korean": "행복도가 더 필요합니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/RECRUITMENT_MissingTownHall",
-      "korean": "",
-      "status": "pending"
+      "korean": "시청 없음",
+      "status": "reviewed"
     },
     {
       "id": "UI/RECRUITMENT_NextCitizen",
-      "korean": "",
-      "status": "pending"
+      "korean": "다음 시민",
+      "status": "reviewed"
     },
     {
       "id": "UI/RECRUITMENT_NoHousing",
-      "korean": "",
-      "status": "pending"
+      "korean": "빈 주거 공간이 없습니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/RECRUITMENT_NoJobs",
-      "korean": "",
-      "status": "pending"
+      "korean": "빈 일자리가 없습니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/RECRUITMENT_PausedWhileCrownless",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관이 없으면 모집할 수 없습니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/RECRUITMENT_TimeUntilSpawn",
-      "korean": "",
-      "status": "pending"
+      "korean": "새 시민이 {0}{0:plural:second|seconds} 후 등장합니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/RESEARCH_Needs",
@@ -7004,43 +7004,43 @@
     },
     {
       "id": "UI/SAVEINFO_CloudSynced",
-      "korean": "",
-      "status": "pending"
+      "korean": "클라우드 동기화됨",
+      "status": "reviewed"
     },
     {
       "id": "UI/SAVEINFO_Created",
-      "korean": "",
-      "status": "pending"
+      "korean": "생성일",
+      "status": "reviewed"
     },
     {
       "id": "UI/SAVEINFO_LastSave",
-      "korean": "",
-      "status": "pending"
+      "korean": "마지막 저장",
+      "status": "reviewed"
     },
     {
       "id": "UI/SAVEINFO_SaveCount",
-      "korean": "",
-      "status": "pending"
+      "korean": "저장 횟수",
+      "status": "reviewed"
     },
     {
       "id": "UI/SEASON_Fall",
-      "korean": "",
-      "status": "pending"
+      "korean": "가을",
+      "status": "reviewed"
     },
     {
       "id": "UI/SEASON_Spring",
-      "korean": "",
-      "status": "pending"
+      "korean": "봄",
+      "status": "reviewed"
     },
     {
       "id": "UI/SEASON_Summer",
-      "korean": "",
-      "status": "pending"
+      "korean": "여름",
+      "status": "reviewed"
     },
     {
       "id": "UI/SEASON_Winter",
-      "korean": "",
-      "status": "pending"
+      "korean": "겨울",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Audio_Ambience",
@@ -7174,13 +7174,13 @@
     },
     {
       "id": "UI/SETTINGS_Graphics_AA_AMDFSR",
-      "korean": "",
-      "status": "pending"
+      "korean": "AMD FSR 업스케일링",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Graphics_AA_TAA",
-      "korean": "",
-      "status": "pending"
+      "korean": "TAA 시간적 안티앨리어싱",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Graphics_Category",
@@ -7314,13 +7314,13 @@
     },
     {
       "id": "UI/SETTINGS_HardLockOnCycleSensitivity",
-      "korean": "",
-      "status": "pending"
+      "korean": "강한 타겟 고정 순환 감도",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_BaseActions",
-      "korean": "",
-      "status": "pending"
+      "korean": "기본 동작",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_BaseActions_BuildMode",
@@ -7339,28 +7339,28 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_BaseActions_Interact",
-      "korean": "",
-      "status": "pending"
+      "korean": "상호작용",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_BaseActions_Pause",
-      "korean": "",
-      "status": "pending"
+      "korean": "일시 정지",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_BaseActions_RotateLeft",
-      "korean": "",
-      "status": "pending"
+      "korean": "왼쪽으로 회전",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_BaseActions_RotateRight",
-      "korean": "",
-      "status": "pending"
+      "korean": "오른쪽으로 회전",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_BaseActions_ShowResources",
-      "korean": "",
-      "status": "pending"
+      "korean": "자원 표시",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_BuildMode",
@@ -7379,8 +7379,8 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_BuildMode_OpenMenu",
-      "korean": "",
-      "status": "pending"
+      "korean": "메뉴 열기",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_BuildMode_Place",
@@ -7389,43 +7389,43 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_BuildMode_Scroll_negative",
-      "korean": "",
-      "status": "pending"
+      "korean": "아래로 스크롤",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_BuildMode_Scroll_positive",
-      "korean": "",
-      "status": "pending"
+      "korean": "위로 스크롤",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Camera",
-      "korean": "",
-      "status": "pending"
+      "korean": "카메라",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Camera_Look",
-      "korean": "",
-      "status": "pending"
+      "korean": "시점 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Category",
-      "korean": "",
-      "status": "pending"
+      "korean": "키 설정",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Category_Console",
-      "korean": "",
-      "status": "pending"
+      "korean": "컨트롤러 키 설정",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Category_Xbox",
-      "korean": "",
-      "status": "pending"
+      "korean": "컨트롤러 키 설정",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_CombatBuilding",
-      "korean": "",
-      "status": "pending"
+      "korean": "전투 건물",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_CombatBuilding_Exit",
@@ -7434,13 +7434,13 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_CombatBuilding_Pitch_negative",
-      "korean": "",
-      "status": "pending"
+      "korean": "위로 조준",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_CombatBuilding_Pitch_positive",
-      "korean": "",
-      "status": "pending"
+      "korean": "아래로 조준",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_CombatBuilding_Shoot",
@@ -7449,83 +7449,83 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory",
-      "korean": "",
-      "status": "pending"
+      "korean": "인벤토리",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_CycleHotkeyLeft_negative",
-      "korean": "",
-      "status": "pending"
+      "korean": "단축키 왼쪽 순환",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_CycleHotkeyRight_positive",
-      "korean": "",
-      "status": "pending"
+      "korean": "단축키 오른쪽 순환",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_CycleHotkeys",
-      "korean": "",
-      "status": "pending"
+      "korean": "단축키 순환",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_CycleOffHand",
-      "korean": "",
-      "status": "pending"
+      "korean": "보조 장비 순환",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_Inventory",
-      "korean": "",
-      "status": "pending"
+      "korean": "인벤토리",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_SelectOffHandSlot1",
-      "korean": "",
-      "status": "pending"
+      "korean": "보조 장비 슬롯 1 선택",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_SelectOffHandSlot2",
-      "korean": "",
-      "status": "pending"
+      "korean": "보조 장비 슬롯 2 선택",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot1",
-      "korean": "",
-      "status": "pending"
+      "korean": "슬롯 1 선택",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot2",
-      "korean": "",
-      "status": "pending"
+      "korean": "슬롯 2 선택",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot3",
-      "korean": "",
-      "status": "pending"
+      "korean": "슬롯 3 선택",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot4",
-      "korean": "",
-      "status": "pending"
+      "korean": "슬롯 4 선택",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot5",
-      "korean": "",
-      "status": "pending"
+      "korean": "슬롯 5 선택",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot6",
-      "korean": "",
-      "status": "pending"
+      "korean": "슬롯 6 선택",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot7",
-      "korean": "",
-      "status": "pending"
+      "korean": "슬롯 7 선택",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Inventory_SelectSlot8",
-      "korean": "",
-      "status": "pending"
+      "korean": "슬롯 8 선택",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map",
@@ -7539,13 +7539,13 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map_DragPan",
-      "korean": "",
-      "status": "pending"
+      "korean": "드래그 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map_FasterPan",
-      "korean": "",
-      "status": "pending"
+      "korean": "빠른 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map_Inspect",
@@ -7554,43 +7554,43 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map_MoveCommand",
-      "korean": "",
-      "status": "pending"
+      "korean": "이동 명령 내리기",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map_Pan_down",
-      "korean": "",
-      "status": "pending"
+      "korean": "아래로 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map_Pan_left",
-      "korean": "",
-      "status": "pending"
+      "korean": "왼쪽으로 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map_Pan_right",
-      "korean": "",
-      "status": "pending"
+      "korean": "오른쪽으로 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map_Pan_up",
-      "korean": "",
-      "status": "pending"
+      "korean": "위로 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map_Zoom_negative",
-      "korean": "",
-      "status": "pending"
+      "korean": "축소",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Map_Zoom_positive",
-      "korean": "",
-      "status": "pending"
+      "korean": "확대",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Menus",
-      "korean": "",
-      "status": "pending"
+      "korean": "메뉴",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Menus_Character",
@@ -7599,13 +7599,13 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_Menus_CycleLeft",
-      "korean": "",
-      "status": "pending"
+      "korean": "왼쪽으로 순환",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Menus_CycleRight",
-      "korean": "",
-      "status": "pending"
+      "korean": "오른쪽으로 순환",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_Menus_Map",
@@ -7634,8 +7634,8 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_PlayerMovement_CrownCharge",
-      "korean": "",
-      "status": "pending"
+      "korean": "왕관 충전",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_PlayerMovement_Dash",
@@ -7654,38 +7654,38 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_PlayerMovement_Move_down",
-      "korean": "",
-      "status": "pending"
+      "korean": "뒤로 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_PlayerMovement_Move_left",
-      "korean": "",
-      "status": "pending"
+      "korean": "왼쪽으로 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_PlayerMovement_Move_right",
-      "korean": "",
-      "status": "pending"
+      "korean": "오른쪽으로 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_PlayerMovement_Move_up",
-      "korean": "",
-      "status": "pending"
+      "korean": "앞으로 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_PlayerMovement_Strafe",
-      "korean": "",
-      "status": "pending"
+      "korean": "좌우 이동",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_PlayerMovement_ToggleWalk",
-      "korean": "",
-      "status": "pending"
+      "korean": "걷기 전환",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_RadialMenu",
-      "korean": "",
-      "status": "pending"
+      "korean": "원형 메뉴",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_RadialMenu_Back",
@@ -7704,13 +7704,13 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_RegularMode_Attack",
-      "korean": "",
-      "status": "pending"
+      "korean": "공격",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_RegularMode_Block",
-      "korean": "",
-      "status": "pending"
+      "korean": "막기",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_RegularMode_Lift",
@@ -7724,28 +7724,28 @@
     },
     {
       "id": "UI/SETTINGS_Keybinds_RegularMode_ToggleHardLockOn",
-      "korean": "",
-      "status": "pending"
+      "korean": "강한 타겟 고정 전환",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_RegularMode_UseOffHand",
-      "korean": "",
-      "status": "pending"
+      "korean": "보조 장비 사용",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_ResetAll",
-      "korean": "",
-      "status": "pending"
+      "korean": "모든 키 설정 초기화",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_ResetAll_PS5",
-      "korean": "",
-      "status": "pending"
+      "korean": "모든 키 설정 초기화",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Keybinds_ResetAll_Xbox",
-      "korean": "",
-      "status": "pending"
+      "korean": "모든 키 설정 초기화",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_Language",
@@ -7784,8 +7784,8 @@
     },
     {
       "id": "UI/SETTINGS_RenderingMode_Enhanced",
-      "korean": "",
-      "status": "pending"
+      "korean": "Pro 8K 모드",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_RenderingMode_Performance",
@@ -7809,8 +7809,8 @@
     },
     {
       "id": "UI/SETTINGS_UI_Category",
-      "korean": "",
-      "status": "pending"
+      "korean": "사용자 인터페이스",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_UI_Scale",
@@ -7824,33 +7824,33 @@
     },
     {
       "id": "UI/SETTINGS_UI_VisibilityLowerPrompts",
-      "korean": "",
-      "status": "pending"
+      "korean": "메뉴 버튼 안내",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_UI_VisibilityLowerPrompts_PS5",
-      "korean": "",
-      "status": "pending"
+      "korean": "메뉴 버튼 안내",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_UI_VisibilityPlayerPrompts",
-      "korean": "",
-      "status": "pending"
+      "korean": "중앙 버튼 안내",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_UI_VisibilityPlayerPrompts_PS5",
-      "korean": "",
-      "status": "pending"
+      "korean": "중앙 버튼 안내",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_UI_VisibilityResources",
-      "korean": "",
-      "status": "pending"
+      "korean": "세로형 자원 열",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_UI_VisibilitySidePrompts",
-      "korean": "",
-      "status": "pending"
+      "korean": "추가 버튼 안내",
+      "status": "reviewed"
     },
     {
       "id": "UI/SETTINGS_UI_Visibility_AlwaysShow",
@@ -7874,28 +7874,28 @@
     },
     {
       "id": "UI/TIME_Min",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}분",
+      "status": "reviewed"
     },
     {
       "id": "UI/TIME_PerDay",
-      "korean": "",
-      "status": "pending"
+      "korean": "/일",
+      "status": "reviewed"
     },
     {
       "id": "UI/TIME_PerMin",
-      "korean": "",
-      "status": "pending"
+      "korean": "/분",
+      "status": "reviewed"
     },
     {
       "id": "UI/TIME_Seconds",
-      "korean": "",
-      "status": "pending"
+      "korean": "{0}{0:plural:second|seconds}",
+      "status": "reviewed"
     },
     {
       "id": "UI/VICTORY_Body",
-      "korean": "",
-      "status": "pending"
+      "korean": "무법자들은 일단 물리쳤지만 다시 돌아올 것입니다.",
+      "status": "reviewed"
     },
     {
       "id": "UI/VICTORY_Continue",
@@ -7904,23 +7904,23 @@
     },
     {
       "id": "UI/VICTORY_Heading",
-      "korean": "",
-      "status": "pending"
+      "korean": "승리!",
+      "status": "reviewed"
     },
     {
       "id": "UI/VICTORY_WaitingForHost",
-      "korean": "",
-      "status": "pending"
+      "korean": "호스트 대기 중",
+      "status": "reviewed"
     },
     {
       "id": "UI/ZONE_Development_Settled",
-      "korean": "",
-      "status": "pending"
+      "korean": "정착됨",
+      "status": "reviewed"
     },
     {
       "id": "UI/ZONE_Development_Wild",
-      "korean": "",
-      "status": "pending"
+      "korean": "야생",
+      "status": "reviewed"
     },
     {
       "id": "UI/ZONE_Size_Large",

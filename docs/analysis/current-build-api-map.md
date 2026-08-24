@@ -44,7 +44,9 @@ metadata 세 SHA-256을 게임 폴더에서 다시 계산한다. 설치 후 게�
 ## 런타임 검증
 
 - BepInEx 첫 부팅에서 interop 생성 및 `MainMenu:Start()` 도달.
-- 현재 생성 catalog 기준 runtime 번역 사전: `translations=762`.
+- 현재 생성 catalog 기준 runtime 번역 사전: `translations=1394`.
+- 안정 키 1,586개 중 사용자 노출 번역 가능 항목 1,573개를 검수했다. 대기 13개는
+  EULA 법적 원문 1개, `[INTENTIONALLY LEFT BLANK]` 5개, 구분자 `-` 7개뿐이다.
 - 메인 메뉴의 미확인 세션에서 무적·시간 배속 명령이 `OFFLINE_NOT_PROVEN`으로 차단됨.
 - 실제 로컬 월드에서의 허용 변경은 사용자가 플레이 중 확인할 수 있으며, 앱 종료·pipe
   단절·멀티플레이 전환 시 항상 reset한다.
