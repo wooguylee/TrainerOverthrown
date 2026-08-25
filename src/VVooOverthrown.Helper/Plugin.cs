@@ -46,9 +46,11 @@ public sealed class Plugin : BasePlugin
         _harmony = new Harmony(PluginGuid);
         _harmony.PatchAll(typeof(Plugin).Assembly);
         _runtimeHost = AddComponent<RuntimeHost>();
-        _runtimeHost.Initialize(Log);
+        _runtimeHost.Initialize(Log, TmpTextTranslationPatch.Catalog);
         Log.LogInfo(
-            $"VVooOverthrown helper loaded; translations={TmpTextTranslationPatch.Catalog?.Count ?? 0}");
+            $"VVooOverthrown helper loaded; " +
+            $"translations={TmpTextTranslationPatch.Catalog?.Count ?? 0}, " +
+            $"tableEntries={TmpTextTranslationPatch.Catalog?.TableTranslationCount ?? 0}");
     }
 
     public override bool Unload()

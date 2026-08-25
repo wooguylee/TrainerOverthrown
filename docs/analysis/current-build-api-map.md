@@ -49,11 +49,14 @@ metadata 세 SHA-256을 게임 폴더에서 다시 계산한다. 설치 후 게�
   EULA 법적 원문 1개, `[INTENTIONALLY LEFT BLANK]` 5개, 구분자 `-` 7개뿐이다.
 - 동적 template matching의 smart plural 토큰은 실제 영어 단위 `hour(s)`, `day(s)`,
   `second(s)`에만 매칭한다. 일반 문구와 개수 조합을 시간 단위로 오인하지 않는다.
-- 동적 원형 메뉴의 제목·부제·설명은 `RadialMenuDynamicOption`의 문자열 필드에 저장되고
-  `RadialMenuDynamicWheel`의 `title`, `subtitle` TMP에 표시된다. 이 복사는 IL2CPP 네이티브
-  내부에서 일어나 managed Harmony 진입점 패치가 호출되지 않으므로, `RuntimeHost`가
-  0.2초 간격으로 `RadialMenu.currentActive`의 열린 메뉴만 확인해 옵션 필드와 현재 표시
-  필드를 검수 catalog로 보정한다. 씬/전역 TMP 탐색이나 숫자 서식 경로는 건드리지 않는다.
+- 정적 현지화 문구는 `LocalizationSettings.StringDatabase.GetAllTables()`로 현재 locale의
+  `Data`, `Entities`, `UI` 세 `StringTable`을 한 번 불러온 뒤, 검수된 안정 키 1,573개의
+  `StringTableEntry.Value`만 key ID 기준으로 교체한다. 원형 메뉴 설명도
+  `BuildMenu.Category.Item.localizedDescription`에서 같은 table entry를 읽으므로 별도의
+  UI 탐색이나 반복 감시가 필요 없다. 초기 적용이 끝나면 상태 객체 참조를 해제한다.
+- `TMP_Text.set_text` Harmony patch는 문자열 테이블을 사용하지 않는 하드코딩 문구와
+  숫자가 결합된 동적 문구의 보조 경로로만 유지한다. 완전 일치 사전을 먼저 확인하고,
+  이미 한글이 포함됐거나 영문자가 없는 값은 67개 동적 template 정규식 검사를 생략한다.
 - 월드 로딩 단계명과 진행률은 `LoadingScreen.SetLoadingMessage(string)` 및
   `SetProgress(float)` 경로에서 결합된다. `UI/LOADING_*` 단계명은 메시지 입구에서 완전
   일치 번역하고, 이미 결합된 `0%`~`100%` 접미사는 숫자를 그대로 보존한다.

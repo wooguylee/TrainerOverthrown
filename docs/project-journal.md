@@ -450,3 +450,30 @@
 - ZIP/배포 패키징은 사용자가 명시적으로 요청한 경우에만 실행한다.
 - 구현 작업은 사용자의 별도 지시가 없으면 자동 테스트를 실행하지 않고 커밋·push로
   마무리한다.
+
+## 2026-08-25 문자열 테이블 일회성 한글화 전환
+
+- 시청 설명 한글화는 UI/TMP 후단을 대상으로 다섯 번 보완했지만 계속 실패했다. 최신
+  세션에서는 `Radial menu localization applied; replacements=2` 로그까지 남았는데도 실제
+  설명은 영어였다. 이는 설치나 catalog 문제가 아니라 해당 보정 대상이 최종 데이터
+  원본이 아니었음을 보여준다.
+- 현재 IL2CPP interop을 다시 역추적해 건설 메뉴 항목이 문자열 설명이 아닌
+  `BuildMenu.Category.Item.localizedDescription`을 보관하고, Unity Localization의
+  `StringTableEntry`를 최종 원본으로 사용함을 확인했다. 현재 빌드에는
+  `LocalizationSettings.StringDatabase.GetAllTables()`, `StringTable.GetEntry(long)`,
+  `StringTableEntry.Value` 공개 setter가 모두 존재한다.
+- 정적 문구는 게임 로딩 뒤 현재 locale의 `Data`, `Entities`, `UI` 세 table을 한 번만
+  불러와 검수된 안정 키 1,573개를 key ID로 직접 교체한다. 원본 Addressables 파일은
+  수정하지 않으며, 적용이 완료되거나 실패하면 시작 상태 객체를 해제해 이후 프레임에는
+  추가 작업을 하지 않는다.
+- 실패한 `RadialMenuLocalizationMonitor`와 0.2초 반복 감시를 제거했다. 공통 TMP 후킹은
+  문자열 테이블 밖의 하드코딩 문구와 동적 조합 문구를 위한 보조 경로로 유지하되,
+  이미 한글이 포함됐거나 영문자가 없는 값은 동적 정규식 67개를 검사하지 않도록 빠른
+  종료 조건을 추가했다.
+- Helper와 Helper.Core만 Release 빌드했으며 최종 빌드는 경고 0, 오류 0이다. 사용자의
+  지시에 따라 자동 테스트와 ZIP 패키징은 실행하지 않았다.
+- staged payload와 기존 앱 payload를 갱신하고, 게임이 종료된 상태에서 기존 소유
+  payload를 제거한 뒤 재설치했다. 제거·설치 exit code는 모두 0이며 설치 manifest
+  233개 파일의 누락, 길이 불일치, SHA-256 불일치는 모두 0개다. 빌드·staged·설치
+  Helper SHA-256은
+  `940A5BEC8B4D15ACBD8A2E93C13F2B4C4A9CF4D00A9AA096948EB1F97A2841CD`로 일치한다.

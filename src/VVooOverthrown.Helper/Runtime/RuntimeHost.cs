@@ -23,8 +23,7 @@ public sealed class RuntimeHost : MonoBehaviour
     private int _disconnectResetRequested;
     private Damageable _godModeTarget;
     private readonly OriginalValueLatch<bool> _originalInvulnerability = new();
-    private float _nextRadialMenuTranslationTime;
-    private bool _radialMenuTranslationLogged;
+    private StringTableLocalizationBootstrap _stringTableLocalization;
     private float _nextGodModeTargetLookupTime;
 
     public RuntimeHost(IntPtr pointer) : base(pointer)
@@ -32,9 +31,13 @@ public sealed class RuntimeHost : MonoBehaviour
     }
 
     [HideFromIl2Cpp]
-    public void Initialize(ManualLogSource log)
+    public void Initialize(ManualLogSource log, TranslationCatalog catalog)
     {
         _log = log;
+        if (catalog is not null)
+        {
+            _stringTableLocalization = new StringTableLocalizationBootstrap(catalog);
+        }
         var pipeName = "VVooOverthrown." + Process.GetCurrentProcess().Id;
         _server = new HelperPipeServer(pipeName, EnqueueAsync, RequestDisconnectResetAsync);
         _server.Start();
@@ -83,50 +86,32 @@ public sealed class RuntimeHost : MonoBehaviour
             }
         }
 
-        MaintainRadialMenuLocalization();
+        ApplyStringTableLocalization();
         MaintainGodMode();
     }
 
     [HideFromIl2Cpp]
-    private void MaintainRadialMenuLocalization()
+    private void ApplyStringTableLocalization()
     {
-        var now = Time.unscaledTime;
-        if (now < _nextRadialMenuTranslationTime)
+        var localization = _stringTableLocalization;
+        if (localization is null || !localization.TryAdvance(out var result))
         {
             return;
         }
-        _nextRadialMenuTranslationTime = now + 0.2f;
 
-        try
+        _stringTableLocalization = null;
+        if (result.Success)
         {
-            var activeMenus = RadialMenu.currentActive;
-            if (activeMenus is null || activeMenus.Count == 0)
-            {
-                return;
-            }
-
-            var replacements = 0;
-            foreach (var menu in activeMenus)
-            {
-                try
-                {
-                    replacements += RadialMenuLocalizationMonitor.Translate(menu?.dynamicWheel);
-                }
-                catch
-                {
-                    // One closing menu must not block another active radial menu.
-                }
-            }
-
-            if (replacements > 0 && !_radialMenuTranslationLogged)
-            {
-                _radialMenuTranslationLogged = true;
-                _log.LogInfo($"Radial menu localization applied; replacements={replacements}");
-            }
+            _log.LogInfo(
+                "String table localization applied once; " +
+                $"replacements={result.Replacements}, " +
+                $"alreadyLocalized={result.AlreadyLocalized}, " +
+                $"missing={result.Missing}, " +
+                $"tables={result.MatchedTables}");
         }
-        catch
+        else
         {
-            // A menu can close while the native active set is being enumerated.
+            _log.LogWarning("String table localization unavailable: " + result.Failure);
         }
     }
 

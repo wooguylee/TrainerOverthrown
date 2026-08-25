@@ -14,12 +14,21 @@ public sealed class TranslationCatalog
         RegexOptions.CultureInvariant);
 
     private readonly IReadOnlyDictionary<string, string> _bySource;
+    private readonly IReadOnlyDictionary<string, IReadOnlyList<TableTranslation>> _byTable;
     private readonly IReadOnlyList<KeyValuePair<string, string>> _sourcesByLength;
     private readonly IReadOnlyList<TemplateTranslation> _templates;
 
-    private TranslationCatalog(IReadOnlyDictionary<string, string> bySource)
+    private TranslationCatalog(
+        IReadOnlyDictionary<string, string> bySource,
+        IReadOnlyList<TableTranslation> tableTranslations)
     {
         _bySource = bySource;
+        _byTable = tableTranslations
+            .GroupBy(entry => entry.Table, StringComparer.Ordinal)
+            .ToDictionary(
+                group => group.Key,
+                group => (IReadOnlyList<TableTranslation>)group.ToArray(),
+                StringComparer.Ordinal);
         _sourcesByLength = bySource
             .OrderByDescending(entry => entry.Key.Length)
             .ToArray();
@@ -35,14 +44,38 @@ public sealed class TranslationCatalog
 
     public int Count => _bySource.Count;
 
+    public int TableTranslationCount => _byTable.Values.Sum(entries => entries.Count);
+
     public bool TryTranslateExact(string source, out string korean) =>
         _bySource.TryGetValue(source, out korean!);
+
+    public bool TryGetTableTranslations(
+        string table,
+        out IReadOnlyList<TableTranslation> translations)
+    {
+        if (_byTable.TryGetValue(table, out var found))
+        {
+            translations = found;
+            return true;
+        }
+
+        translations = Array.Empty<TableTranslation>();
+        return false;
+    }
 
     public bool TryTranslate(string source, out string korean)
     {
         if (TryTranslateExact(source, out korean))
         {
             return true;
+        }
+
+        // Once reviewed StringTables are localized at startup, most TMP writes already contain
+        // Korean. Avoid running every dynamic regex against those values or numeric-only labels.
+        if (!CouldContainRuntimeSource(source))
+        {
+            korean = string.Empty;
+            return false;
         }
 
         foreach (var template in _templates)
@@ -60,6 +93,26 @@ public sealed class TranslationCatalog
 
         korean = string.Empty;
         return false;
+    }
+
+    private static bool CouldContainRuntimeSource(string source)
+    {
+        var containsAsciiLetter = false;
+        foreach (var character in source)
+        {
+            if (character is >= '\u1100' and <= '\u11FF' or
+                >= '\u3130' and <= '\u318F' or
+                >= '\uA960' and <= '\uA97F' or
+                >= '\uAC00' and <= '\uD7AF' or
+                >= '\uD7B0' and <= '\uD7FF')
+            {
+                return false;
+            }
+
+            containsAsciiLetter |= character is >= 'A' and <= 'Z' or >= 'a' and <= 'z';
+        }
+
+        return containsAsciiLetter;
     }
 
     private bool TryTranslateHoldPrompt(string source, out string korean)
@@ -118,10 +171,18 @@ public sealed class TranslationCatalog
             .EnumerateArray()
             .ToDictionary(
                 entry => entry.GetProperty("id").GetString() ?? string.Empty,
-                entry => entry.GetProperty("source").GetString() ?? string.Empty,
+                entry => new SourceEntry(
+                    entry.GetProperty("source").GetString() ?? string.Empty,
+                    entry.TryGetProperty("table", out var table)
+                        ? table.GetString() ?? string.Empty
+                        : string.Empty,
+                    entry.TryGetProperty("keyId", out var keyId) && keyId.TryGetInt64(out var parsedKeyId)
+                        ? parsedKeyId
+                        : null),
                 StringComparer.Ordinal);
 
         var bySource = new Dictionary<string, string>(StringComparer.Ordinal);
+        var tableTranslations = new List<TableTranslation>();
         foreach (var target in koreanDocument.RootElement.GetProperty("entries").EnumerateArray())
         {
             if (!string.Equals(
@@ -134,24 +195,34 @@ public sealed class TranslationCatalog
 
             var id = target.GetProperty("id").GetString() ?? string.Empty;
             var korean = target.GetProperty("korean").GetString() ?? string.Empty;
-            if (!sourceById.TryGetValue(id, out var source) ||
-                string.IsNullOrEmpty(source) ||
+            if (!sourceById.TryGetValue(id, out var sourceEntry) ||
+                string.IsNullOrEmpty(sourceEntry.Source) ||
                 string.IsNullOrEmpty(korean))
             {
                 continue;
             }
 
-            if (bySource.TryGetValue(source, out var previous) &&
+            if (bySource.TryGetValue(sourceEntry.Source, out var previous) &&
                 !previous.Equals(korean, StringComparison.Ordinal))
             {
-                throw new InvalidDataException($"동일 원문에 충돌하는 번역이 있습니다: {source}");
+                throw new InvalidDataException($"동일 원문에 충돌하는 번역이 있습니다: {sourceEntry.Source}");
             }
 
-            bySource[source] = korean;
+            bySource[sourceEntry.Source] = korean;
+            if (!string.IsNullOrEmpty(sourceEntry.Table) && sourceEntry.KeyId.HasValue)
+            {
+                tableTranslations.Add(new TableTranslation(
+                    sourceEntry.Table,
+                    sourceEntry.KeyId.Value,
+                    sourceEntry.Source,
+                    korean));
+            }
         }
 
-        return new TranslationCatalog(bySource);
+        return new TranslationCatalog(bySource, tableTranslations);
     }
+
+    private sealed record SourceEntry(string Source, string Table, long? KeyId);
 
     private sealed class TemplateTranslation
     {
@@ -264,3 +335,5 @@ public sealed class TranslationCatalog
         }
     }
 }
+
+public sealed record TableTranslation(string Table, long KeyId, string Source, string Korean);

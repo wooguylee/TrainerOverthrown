@@ -23,10 +23,11 @@
     <Reference Include="Il2CppInterop.Runtime" HintPath="$(BepInExCoreDir)\Il2CppInterop.Runtime.dll" Private="false" />
     <Reference Include="UnityEngine.CoreModule" HintPath="$(GameInteropDir)\UnityEngine.CoreModule.dll" Private="false" />
     <Reference Include="Unity.TextMeshPro" HintPath="$(GameInteropDir)\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="Unity.Localization" HintPath="$(GameInteropDir)\Unity.Localization.dll" Private="false" />
+    <Reference Include="Unity.ResourceManager" HintPath="$(GameInteropDir)\Unity.ResourceManager.dll" Private="false" />
     <Reference Include="GameAssembly" HintPath="$(GameInteropDir)\GameAssembly.dll" Private="false" />
     <Reference Include="Mirror" HintPath="$(GameInteropDir)\Mirror.dll" Private="false" />
     <Reference Include="Il2Cppmscorlib" HintPath="$(GameInteropDir)\Il2Cppmscorlib.dll" Private="false" />
-    <Reference Include="Il2CppSystem.Core" HintPath="$(GameInteropDir)\Il2CppSystem.Core.dll" Private="false" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\translation\source.en.json" Link="translation\source.en.json" CopyToOutputDirectory="PreserveNewest" />
