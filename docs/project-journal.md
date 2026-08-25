@@ -475,5 +475,5 @@
 - staged payload와 기존 앱 payload를 갱신하고, 게임이 종료된 상태에서 기존 소유
   payload를 제거한 뒤 재설치했다. 제거·설치 exit code는 모두 0이며 설치 manifest
   233개 파일의 누락, 길이 불일치, SHA-256 불일치는 모두 0개다. 빌드·staged·설치
-  Helper SHA-256은
-  `940A5BEC8B4D15ACBD8A2E93C13F2B4C4A9CF4D00A9AA096948EB1F97A2841CD`로 일치한다.
+  Helper SHA-256도 서로 일치함을 확인했다. DLL에는 Git 커밋 식별자가 포함되므로 문서에
+  산출물 해시를 고정값으로 남기지 않는다.
