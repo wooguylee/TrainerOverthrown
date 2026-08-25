@@ -57,10 +57,13 @@ public sealed class TrainerRequestValidatorTests
     [InlineData(TrainerCommands.RegularJumpMultiplier, 0f, true)]
     [InlineData(TrainerCommands.RegularJumpMultiplier, 1.25f, true)]
     [InlineData(TrainerCommands.RegularJumpMultiplier, 1000f, true)]
+    [InlineData(TrainerCommands.RegularJumpMultiplier, 1000.01f, false)]
     [InlineData(TrainerCommands.SpecialMovementMultiplier, 0f, true)]
     [InlineData(TrainerCommands.SpecialMovementMultiplier, 1000f, true)]
+    [InlineData(TrainerCommands.SpecialMovementMultiplier, -0.01f, false)]
     [InlineData(TrainerCommands.GravityMultiplier, 0f, true)]
     [InlineData(TrainerCommands.GravityMultiplier, 1000f, true)]
+    [InlineData(TrainerCommands.GravityMultiplier, 1000.01f, false)]
     public void ValidatesNumericCommandRanges(string command, float value, bool expected)
     {
         var result = TrainerRequestValidator.Validate(new PipeRequest

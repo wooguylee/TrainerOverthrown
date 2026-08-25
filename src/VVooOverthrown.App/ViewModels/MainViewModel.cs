@@ -25,6 +25,9 @@ public sealed class MainViewModel : INotifyPropertyChanged
     private string _timeScaleMessage = "1.0x";
     private string _staminaFactorMessage = "1.0x";
     private string _movementSpeedMessage = "1.0x";
+    private string _regularJumpMultiplierMessage = "1.0x";
+    private string _specialMovementMultiplierMessage = "1.0x";
+    private string _gravityMultiplierMessage = "1.0x";
     private string _inventoryResultMessage = "조회 전";
     private string _kingdomResultMessage = "조회 전";
     private string _diagnosticMessage = "Helper 연결 후 런타임 상태가 표시됩니다.";
@@ -46,6 +49,18 @@ public sealed class MainViewModel : INotifyPropertyChanged
     public event PropertyChangedEventHandler? PropertyChanged;
 
     public IReadOnlyList<TrainerResourceOption> ResourceOptions => TrainerResourceOptions.All;
+
+    public MultiplierInputViewModel StaminaFactorInput { get; } = new("1");
+
+    public MultiplierInputViewModel MovementSpeedInput { get; } = new("1");
+
+    public MultiplierInputViewModel TimeScaleInput { get; } = new("1");
+
+    public MultiplierInputViewModel RegularJumpInput { get; } = new("1");
+
+    public MultiplierInputViewModel SpecialMovementInput { get; } = new("1");
+
+    public MultiplierInputViewModel GravityInput { get; } = new("1");
 
     public string GamePath
     {
@@ -98,6 +113,7 @@ public sealed class MainViewModel : INotifyPropertyChanged
             {
                 OnPropertyChanged(nameof(CanMutateInventoryResource));
                 OnPropertyChanged(nameof(CanMutateKingdomResource));
+                SetMultiplierInputsEnabled(value);
             }
         }
     }
@@ -136,6 +152,24 @@ public sealed class MainViewModel : INotifyPropertyChanged
     {
         get => _movementSpeedMessage;
         private set => SetProperty(ref _movementSpeedMessage, value);
+    }
+
+    public string RegularJumpMultiplierMessage
+    {
+        get => _regularJumpMultiplierMessage;
+        private set => SetProperty(ref _regularJumpMultiplierMessage, value);
+    }
+
+    public string SpecialMovementMultiplierMessage
+    {
+        get => _specialMovementMultiplierMessage;
+        private set => SetProperty(ref _specialMovementMultiplierMessage, value);
+    }
+
+    public string GravityMultiplierMessage
+    {
+        get => _gravityMultiplierMessage;
+        private set => SetProperty(ref _gravityMultiplierMessage, value);
     }
 
     public string InventoryResultMessage
@@ -326,6 +360,13 @@ public sealed class MainViewModel : INotifyPropertyChanged
             cancellationToken);
     }
 
+    public Task ApplyStaminaFactorAsync(CancellationToken cancellationToken = default) =>
+        ApplyMultiplierAsync(
+            StaminaFactorInput,
+            TrainerCommands.StaminaFactor,
+            "기력 회복 배율",
+            cancellationToken);
+
     public async Task SetInfiniteCtrlMovementAsync(bool enabled, CancellationToken cancellationToken = default)
     {
         await RunTrainerOperationAsync(
@@ -344,6 +385,13 @@ public sealed class MainViewModel : INotifyPropertyChanged
             cancellationToken);
     }
 
+    public Task ApplyMovementSpeedAsync(CancellationToken cancellationToken = default) =>
+        ApplyMultiplierAsync(
+            MovementSpeedInput,
+            TrainerCommands.MovementSpeed,
+            "이동 속도 배율",
+            cancellationToken);
+
     public async Task SetTimeScaleAsync(float value, CancellationToken cancellationToken = default)
     {
         await RunTrainerOperationAsync(
@@ -352,6 +400,34 @@ public sealed class MainViewModel : INotifyPropertyChanged
             $"시간 배속을 {value:0.##}x로 설정했습니다.",
             cancellationToken);
     }
+
+    public Task ApplyTimeScaleAsync(CancellationToken cancellationToken = default) =>
+        ApplyMultiplierAsync(
+            TimeScaleInput,
+            TrainerCommands.TimeScale,
+            "시간 배속",
+            cancellationToken);
+
+    public Task ApplyRegularJumpMultiplierAsync(CancellationToken cancellationToken = default) =>
+        ApplyMultiplierAsync(
+            RegularJumpInput,
+            TrainerCommands.RegularJumpMultiplier,
+            "일반 점프 배율",
+            cancellationToken);
+
+    public Task ApplySpecialMovementMultiplierAsync(CancellationToken cancellationToken = default) =>
+        ApplyMultiplierAsync(
+            SpecialMovementInput,
+            TrainerCommands.SpecialMovementMultiplier,
+            "특수 이동 배율",
+            cancellationToken);
+
+    public Task ApplyGravityMultiplierAsync(CancellationToken cancellationToken = default) =>
+        ApplyMultiplierAsync(
+            GravityInput,
+            TrainerCommands.GravityMultiplier,
+            "중력 배율",
+            cancellationToken);
 
     public Task QueryInventoryResourceAsync(CancellationToken cancellationToken = default) =>
         SendInventoryCommandAsync(TrainerCommands.InventoryQuery, 0, "인벤토리 자원을 조회했습니다.", cancellationToken);
@@ -394,7 +470,7 @@ public sealed class MainViewModel : INotifyPropertyChanged
         await RunTrainerOperationAsync(
             token => _service.SendTrainerCommandAsync(
                 new PipeRequest { Command = TrainerCommands.Reset }, token),
-            "무적·기력·Ctrl 신속 이동·이동 속도·시간 배속을 원래 값으로 복원했습니다.",
+            "무적·기력·Ctrl 신속 이동·이동 속도·점프·특수 이동·중력·시간 배속을 원래 값으로 복원했습니다.",
             cancellationToken);
     }
 
@@ -421,6 +497,25 @@ public sealed class MainViewModel : INotifyPropertyChanged
         {
             InventoryResultMessage = $"{selected.Label} 실제값: {response.InventoryAmount:N0}";
         }
+    }
+
+    private async Task ApplyMultiplierAsync(
+        MultiplierInputViewModel input,
+        string command,
+        string label,
+        CancellationToken cancellationToken)
+    {
+        if (!input.TryGetValue(out var value))
+        {
+            AppendLog($"실패: {label} 입력을 확인하세요.");
+            return;
+        }
+
+        await RunTrainerOperationAsync(
+            token => _service.SendTrainerCommandAsync(
+                new PipeRequest { Command = command, Value = value }, token),
+            $"{label}을 {value:0.##}x로 설정했습니다.",
+            cancellationToken);
     }
 
     private async Task SendKingdomCommandAsync(
@@ -488,6 +583,9 @@ public sealed class MainViewModel : INotifyPropertyChanged
         TimeScaleMessage = $"{response.TimeScale:0.##}x";
         StaminaFactorMessage = $"{response.StaminaFactor:0.##}x";
         MovementSpeedMessage = $"{response.MovementSpeedMultiplier:0.##}x";
+        RegularJumpMultiplierMessage = $"{response.RegularJumpMultiplier:0.##}x";
+        SpecialMovementMultiplierMessage = $"{response.SpecialMovementMultiplier:0.##}x";
+        GravityMultiplierMessage = $"{response.GravityMultiplier:0.##}x";
         CapabilitiesMessage = response.Capabilities.Length == 0
             ? "보고된 기능 없음"
             : string.Join(Environment.NewLine, response.Capabilities);
@@ -498,6 +596,9 @@ public sealed class MainViewModel : INotifyPropertyChanged
             $"Connections: {response.ConnectionCount}{Environment.NewLine}" +
             $"RemoteParticipant: {response.RemoteParticipant}{Environment.NewLine}" +
             $"Ctrl 신속 이동 무한: {(response.InfiniteCtrlMovementEnabled ? "활성" : "비활성")}{Environment.NewLine}" +
+            $"일반 점프: {response.RegularJumpMultiplier:0.##}x · " +
+            $"특수 이동: {response.SpecialMovementMultiplier:0.##}x · " +
+            $"중력: {response.GravityMultiplier:0.##}x{Environment.NewLine}" +
             $"플레이어: {ReadyText(response.PlayerReady)} · " +
             $"인벤토리: {ReadyText(response.InventoryReady)} · " +
             $"왕국 저장소: {ReadyText(response.KingdomStorageReady)}";
@@ -531,6 +632,16 @@ public sealed class MainViewModel : INotifyPropertyChanged
     }
 
     private static string ReadyText(bool ready) => ready ? "준비됨" : "미로드";
+
+    private void SetMultiplierInputsEnabled(bool enabled)
+    {
+        StaminaFactorInput.SetTrainerEnabled(enabled);
+        MovementSpeedInput.SetTrainerEnabled(enabled);
+        TimeScaleInput.SetTrainerEnabled(enabled);
+        RegularJumpInput.SetTrainerEnabled(enabled);
+        SpecialMovementInput.SetTrainerEnabled(enabled);
+        GravityInput.SetTrainerEnabled(enabled);
+    }
 
     private void ValidateInventoryAmount()
     {

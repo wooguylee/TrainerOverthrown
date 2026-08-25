@@ -37,26 +37,8 @@ public partial class MainWindow : Window
     private async void Heal_Click(object sender, RoutedEventArgs e) =>
         await _viewModel.HealAsync();
 
-    private async void StaminaZero_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetStaminaFactorAsync(0f);
-
-    private async void StaminaQuarter_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetStaminaFactorAsync(0.25f);
-
-    private async void StaminaHalf_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetStaminaFactorAsync(0.5f);
-
-    private async void StaminaNormal_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetStaminaFactorAsync(1f);
-
-    private async void StaminaDouble_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetStaminaFactorAsync(2f);
-
-    private async void StaminaTen_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetStaminaFactorAsync(10f);
-
-    private async void StaminaHundred_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetStaminaFactorAsync(100f);
+    private async void ApplyStaminaFactor_Click(object sender, RoutedEventArgs e) =>
+        await _viewModel.ApplyStaminaFactorAsync();
 
     private async void InfiniteCtrlMovementOn_Click(object sender, RoutedEventArgs e) =>
         await _viewModel.SetInfiniteCtrlMovementAsync(true);
@@ -64,44 +46,20 @@ public partial class MainWindow : Window
     private async void InfiniteCtrlMovementOff_Click(object sender, RoutedEventArgs e) =>
         await _viewModel.SetInfiniteCtrlMovementAsync(false);
 
-    private async void MovementTenth_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetMovementSpeedAsync(0.1f);
+    private async void ApplyMovementSpeed_Click(object sender, RoutedEventArgs e) =>
+        await _viewModel.ApplyMovementSpeedAsync();
 
-    private async void MovementHalf_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetMovementSpeedAsync(0.5f);
+    private async void ApplyTimeScale_Click(object sender, RoutedEventArgs e) =>
+        await _viewModel.ApplyTimeScaleAsync();
 
-    private async void MovementNormal_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetMovementSpeedAsync(1f);
+    private async void ApplyRegularJumpMultiplier_Click(object sender, RoutedEventArgs e) =>
+        await _viewModel.ApplyRegularJumpMultiplierAsync();
 
-    private async void MovementDouble_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetMovementSpeedAsync(2f);
+    private async void ApplySpecialMovementMultiplier_Click(object sender, RoutedEventArgs e) =>
+        await _viewModel.ApplySpecialMovementMultiplierAsync();
 
-    private async void MovementQuad_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetMovementSpeedAsync(4f);
-
-    private async void MovementEight_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetMovementSpeedAsync(8f);
-
-    private async void MovementTwenty_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetMovementSpeedAsync(20f);
-
-    private async void TimePause_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetTimeScaleAsync(0f);
-
-    private async void TimeHalf_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetTimeScaleAsync(0.5f);
-
-    private async void TimeNormal_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetTimeScaleAsync(1f);
-
-    private async void TimeDouble_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetTimeScaleAsync(2f);
-
-    private async void TimeQuad_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetTimeScaleAsync(4f);
-
-    private async void TimeTen_Click(object sender, RoutedEventArgs e) =>
-        await _viewModel.SetTimeScaleAsync(10f);
+    private async void ApplyGravityMultiplier_Click(object sender, RoutedEventArgs e) =>
+        await _viewModel.ApplyGravityMultiplierAsync();
 
     private async void InventoryQuery_Click(object sender, RoutedEventArgs e) =>
         await _viewModel.QueryInventoryResourceAsync();

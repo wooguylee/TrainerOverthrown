@@ -174,6 +174,45 @@ public sealed class MainViewModelTests
         Assert.True(viewModel.InfiniteCtrlMovementEnabled);
     }
 
+    [Fact]
+    public async Task NumericMultiplierInputSendsCommandAndUsesHelperResponse()
+    {
+        var service = new FakeApplicationService(new ApplicationSnapshot(
+            @"W:\Games\Overthrown", true, true, true, true, true))
+        {
+            ConnectResponse = new PipeResponse
+            {
+                Ok = true,
+                TestModeEnabled = true,
+                RegularJumpMultiplier = 2.5f,
+            },
+        };
+        var viewModel = new MainViewModel(service);
+        await viewModel.ConnectHelperAsync();
+        viewModel.RegularJumpInput.Text = "2.5";
+
+        await viewModel.ApplyRegularJumpMultiplierAsync();
+
+        Assert.NotNull(service.LastRequest);
+        Assert.Equal(TrainerCommands.RegularJumpMultiplier, service.LastRequest!.Command);
+        Assert.Equal(2.5f, service.LastRequest.Value);
+        Assert.Equal("2.5x", viewModel.RegularJumpMultiplierMessage);
+    }
+
+    [Fact]
+    public async Task InvalidMultiplierInputDoesNotSendCommand()
+    {
+        var service = new FakeApplicationService(new ApplicationSnapshot(
+            @"W:\Games\Overthrown", true, true, true, true, true));
+        var viewModel = new MainViewModel(service);
+        viewModel.GravityInput.Text = "1000.01";
+
+        await viewModel.ApplyGravityMultiplierAsync();
+
+        Assert.Null(service.LastRequest);
+        Assert.Contains("입력 오류", viewModel.GravityInput.Message);
+    }
+
     private sealed class FakeApplicationService : ITrainerApplicationService
     {
         private readonly ApplicationSnapshot _snapshot;

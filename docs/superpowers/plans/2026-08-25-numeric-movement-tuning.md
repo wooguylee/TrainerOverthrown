@@ -233,7 +233,7 @@ git commit -m "feat: tune local jump and gravity multipliers"
 - Consumes: Task 1 commands/response and Task 2 runtime values.
 - Produces: reusable `MultiplierInputViewModel`, six input properties, and six apply methods on `MainViewModel`.
 
-- [ ] **Step 1: Write failing input and command tests**
+- [x] **Step 1: Write failing input and command tests**
 
 ```csharp
 [Theory]
@@ -256,7 +256,7 @@ public void ParsesOnlySupportedFiniteMultiplierValues(string text, bool valid, f
 
 Add a `MainViewModelTests` case that sets `RegularJumpInput.Text = "2.5"`, enables the trainer through the fake response, calls `ApplyRegularJumpMultiplierAsync()`, and verifies command/value plus the Helper-reported current message.
 
-- [ ] **Step 2: Run focused App tests and verify RED**
+- [x] **Step 2: Run focused App tests and verify RED**
 
 Run:
 
@@ -266,19 +266,19 @@ Run:
 
 Expected: compilation fails because the input ViewModel and apply methods do not exist.
 
-- [ ] **Step 3: Implement reusable input state and MainViewModel commands**
+- [x] **Step 3: Implement reusable input state and MainViewModel commands**
 
 `MultiplierInputViewModel` implements `INotifyPropertyChanged`, parses using current culture then invariant culture, validates `float.IsFinite(value) && value is >= 0f and <= 1000f`, and exposes `Text`, `IsValid`, `Message`, `CanApply`, `TryGetValue(out float)`, and `SetTrainerEnabled(bool)`.
 
 `MainViewModel` exposes initialized properties `StaminaFactorInput`, `MovementSpeedInput`, `TimeScaleInput`, `RegularJumpInput`, `SpecialMovementInput`, and `GravityInput`. Its `CanUseTrainer` setter forwards the enabled state to all inputs. Add apply methods that send the matching command only after `TryGetValue`; add three current-value messages and populate them from every `PipeResponse`.
 
-- [ ] **Step 4: Replace preset buttons and add the three movement cards**
+- [x] **Step 4: Replace preset buttons and add the three movement cards**
 
 Replace each stamina/movement/time `WrapPanel` of preset buttons with a numeric `TextBox`, `적용` button, input-validation message, and Helper-reported current value. Add matching cards for regular jump, special movement, and gravity. Remove obsolete click handlers from `MainWindow.xaml.cs` and add six apply handlers.
 
 Update reset/help copy and both docs with the `0..1000x` inputs, jump grouping, gravity behavior, and reset semantics.
 
-- [ ] **Step 5: Run minimal focused verification**
+- [x] **Step 5: Run minimal focused verification**
 
 Run:
 

@@ -149,16 +149,14 @@
                                 <Border Style="{StaticResource FeatureCard}">
                                     <StackPanel>
                                         <TextBlock Text="기력 회복 배율" Style="{StaticResource SectionTitle}" />
-                                        <TextBlock Text="0x는 회복 중지, 1x는 원래 값, 100x는 거의 즉시 회복입니다." Style="{StaticResource MutedText}" Margin="0,0,0,10" />
+                                        <TextBlock Text="0~1000x를 직접 입력합니다. 0x는 회복 중지, 1x는 원래 값입니다." Style="{StaticResource MutedText}" Margin="0,0,0,10" />
                                         <WrapPanel>
-                                            <Button Content="0x" Click="StaminaZero_Click" IsEnabled="{Binding CanUseTrainer}" Background="#475569" />
-                                            <Button Content="0.25x" Click="StaminaQuarter_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="0.5x" Click="StaminaHalf_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="1x" Click="StaminaNormal_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="2x" Click="StaminaDouble_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="10x" Click="StaminaTen_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="100x" Click="StaminaHundred_Click" IsEnabled="{Binding CanUseTrainer}" Background="#7C3AED" />
-                                            <TextBlock Text="{Binding StaminaFactorMessage}" VerticalAlignment="Center" Foreground="#94A3B8" />
+                                            <TextBox Width="120" Margin="0,0,8,0" Text="{Binding StaminaFactorInput.Text, UpdateSourceTrigger=PropertyChanged}" />
+                                            <Button Content="적용" Click="ApplyStaminaFactor_Click" IsEnabled="{Binding StaminaFactorInput.CanApply}" Background="#059669" />
+                                            <TextBlock Text="{Binding StaminaFactorInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
+                                            <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
+                                                <Run Text="현재: " /><Run Text="{Binding StaminaFactorMessage}" />
+                                            </TextBlock>
                                         </WrapPanel>
                                     </StackPanel>
                                 </Border>
@@ -186,30 +184,71 @@
                                 <Border Style="{StaticResource FeatureCard}">
                                     <StackPanel>
                                         <TextBlock Text="플레이어 이동 속도" Style="{StaticResource SectionTitle}" />
+                                        <TextBlock Text="로컬 플레이어의 기본 이동 속도를 0~1000x 범위로 조절합니다." Style="{StaticResource MutedText}" Margin="0,0,0,10" />
                                         <WrapPanel>
-                                            <Button Content="0.1x" Click="MovementTenth_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="0.5x" Click="MovementHalf_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="1x" Click="MovementNormal_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="2x" Click="MovementDouble_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="4x" Click="MovementQuad_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="8x" Click="MovementEight_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="20x" Click="MovementTwenty_Click" IsEnabled="{Binding CanUseTrainer}" Background="#7C3AED" />
-                                            <TextBlock Text="{Binding MovementSpeedMessage}" VerticalAlignment="Center" Foreground="#94A3B8" />
+                                            <TextBox Width="120" Margin="0,0,8,0" Text="{Binding MovementSpeedInput.Text, UpdateSourceTrigger=PropertyChanged}" />
+                                            <Button Content="적용" Click="ApplyMovementSpeed_Click" IsEnabled="{Binding MovementSpeedInput.CanApply}" Background="#059669" />
+                                            <TextBlock Text="{Binding MovementSpeedInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
+                                            <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
+                                                <Run Text="현재: " /><Run Text="{Binding MovementSpeedMessage}" />
+                                            </TextBlock>
                                         </WrapPanel>
                                     </StackPanel>
                                 </Border>
                                 <Border Style="{StaticResource FeatureCard}">
                                     <StackPanel>
                                         <TextBlock Text="월드 시간 배속" Style="{StaticResource SectionTitle}" />
-                                        <StackPanel Orientation="Horizontal">
-                                            <Button Content="일시정지" Click="TimePause_Click" IsEnabled="{Binding CanUseTrainer}" Background="#DC2626" />
-                                            <Button Content="0.5x" Click="TimeHalf_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="1x" Click="TimeNormal_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="2x" Click="TimeDouble_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="4x" Click="TimeQuad_Click" IsEnabled="{Binding CanUseTrainer}" />
-                                            <Button Content="10x" Click="TimeTen_Click" IsEnabled="{Binding CanUseTrainer}" Background="#7C3AED" />
-                                            <TextBlock Text="{Binding TimeScaleMessage}" VerticalAlignment="Center" Foreground="#94A3B8" />
-                                        </StackPanel>
+                                        <TextBlock Text="게임 전체 시간 흐름을 0~1000x 범위로 조절합니다. 0x는 일시정지입니다." Style="{StaticResource MutedText}" Margin="0,0,0,10" />
+                                        <WrapPanel>
+                                            <TextBox Width="120" Margin="0,0,8,0" Text="{Binding TimeScaleInput.Text, UpdateSourceTrigger=PropertyChanged}" />
+                                            <Button Content="적용" Click="ApplyTimeScale_Click" IsEnabled="{Binding TimeScaleInput.CanApply}" Background="#059669" />
+                                            <TextBlock Text="{Binding TimeScaleInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
+                                            <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
+                                                <Run Text="현재: " /><Run Text="{Binding TimeScaleMessage}" />
+                                            </TextBlock>
+                                        </WrapPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border Style="{StaticResource FeatureCard}">
+                                    <StackPanel>
+                                        <TextBlock Text="일반 점프" Style="{StaticResource SectionTitle}" />
+                                        <TextBlock Text="제자리·전방·측면 등 일반 점프의 상승 속도를 0~1000x 범위로 조절합니다." Style="{StaticResource MutedText}" Margin="0,0,0,10" />
+                                        <WrapPanel>
+                                            <TextBox Width="120" Margin="0,0,8,0" Text="{Binding RegularJumpInput.Text, UpdateSourceTrigger=PropertyChanged}" />
+                                            <Button Content="적용" Click="ApplyRegularJumpMultiplier_Click" IsEnabled="{Binding RegularJumpInput.CanApply}" Background="#059669" />
+                                            <TextBlock Text="{Binding RegularJumpInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
+                                            <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
+                                                <Run Text="현재: " /><Run Text="{Binding RegularJumpMultiplierMessage}" />
+                                            </TextBlock>
+                                        </WrapPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border Style="{StaticResource FeatureCard}">
+                                    <StackPanel>
+                                        <TextBlock Text="특수 이동" Style="{StaticResource SectionTitle}" />
+                                        <TextBlock Text="벽·난간·수영·삽·자동 스텝·볼트·회전 점프 등 특수 이동의 상승 속도를 0~1000x 범위로 조절합니다." Style="{StaticResource MutedText}" Margin="0,0,0,10" />
+                                        <WrapPanel>
+                                            <TextBox Width="120" Margin="0,0,8,0" Text="{Binding SpecialMovementInput.Text, UpdateSourceTrigger=PropertyChanged}" />
+                                            <Button Content="적용" Click="ApplySpecialMovementMultiplier_Click" IsEnabled="{Binding SpecialMovementInput.CanApply}" Background="#059669" />
+                                            <TextBlock Text="{Binding SpecialMovementInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
+                                            <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
+                                                <Run Text="현재: " /><Run Text="{Binding SpecialMovementMultiplierMessage}" />
+                                            </TextBlock>
+                                        </WrapPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border Style="{StaticResource FeatureCard}">
+                                    <StackPanel>
+                                        <TextBlock Text="중력" Style="{StaticResource SectionTitle}" />
+                                        <TextBlock Text="기본 중력 가속도를 0~1000x 범위로 조절합니다. 0x는 기본 중력 가속도를 제거합니다." Style="{StaticResource MutedText}" Margin="0,0,0,10" />
+                                        <WrapPanel>
+                                            <TextBox Width="120" Margin="0,0,8,0" Text="{Binding GravityInput.Text, UpdateSourceTrigger=PropertyChanged}" />
+                                            <Button Content="적용" Click="ApplyGravityMultiplier_Click" IsEnabled="{Binding GravityInput.CanApply}" Background="#059669" />
+                                            <TextBlock Text="{Binding GravityInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
+                                            <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
+                                                <Run Text="현재: " /><Run Text="{Binding GravityMultiplierMessage}" />
+                                            </TextBlock>
+                                        </WrapPanel>
                                     </StackPanel>
                                 </Border>
                             </StackPanel>
@@ -311,7 +350,7 @@
                                 </Border>
                                 <Button Content="일시 변경값 전체 복원" Click="ResetTrainer_Click"
                                         IsEnabled="{Binding CanUseTrainer}" Background="#DC2626" HorizontalAlignment="Left" />
-                                <TextBlock Margin="0,10,0,0" Text="무적·기력·Ctrl 신속 이동·이동 속도·시간 배속만 복원합니다. 인벤토리와 왕국 자원 변경은 되돌리지 않습니다."
+                                <TextBlock Margin="0,10,0,0" Text="무적·기력·Ctrl 신속 이동·이동 속도·시간 배속·일반 점프·특수 이동·중력을 복원합니다. 인벤토리와 왕국 자원 변경은 되돌리지 않습니다."
                                            Foreground="#FBBF24" TextWrapping="Wrap" />
                             </StackPanel>
                         </ScrollViewer>

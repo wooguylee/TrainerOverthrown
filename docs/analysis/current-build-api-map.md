@@ -33,10 +33,13 @@ metadata 세 SHA-256을 게임 폴더에서 다시 계산한다. 설치 후 게�
 | --- | --- | --- | --- |
 | `player.godMode` | `PlayerHealth.asDamageable`, `Damageable.isInvulnerable`, `Damageable.currentHealth`, `Damageable.effectiveMaxHealth` | 로컬 플레이어만 무적 처리하고 체력을 최대치로 유지 | 무적 플래그 해제 |
 | `player.health` | 같은 `Damageable` 체력 멤버 | 최대 체력으로 1회 회복 | 해당 없음 |
-| `player.staminaFactor` | `DifficultyManager.Instance.NetworkplayerStaminaFactor` | 기력 회복 배율 `0`~`100` 적용 | 최초 값 복원 |
+| `player.staminaFactor` | `DifficultyManager.Instance.NetworkplayerStaminaFactor` | 기력 회복 배율 `0`~`1000` 적용 | 최초 값 복원 |
 | `movement.infiniteCtrl` | `PlayerMovement.UpdateTimers`, `timeSinceDash`, `dashCooldown`, `isLocalPlayer` | 로컬 플레이어 신속 이동 쿨다운 준비 상태 유지와 기력 회복 `100x` 적용 | 활성화 직전 기력 회복 배율 복원 |
-| `movement.speedMultiplier` | `PlayerMovement.UpdateSpeedFactor`, `speedFactor` | 원래 계산 직후 로컬 플레이어에 `0.1`~`20` 배율 적용 | `1x`로 복원 |
-| `world.timeScale` | `GameTime.gameTimeScale` | `0`~`10` 범위 배속 적용 | 최초 값 복원 |
+| `movement.speedMultiplier` | `PlayerMovement.UpdateSpeedFactor`, `speedFactor` | 원래 계산 직후 로컬 플레이어에 `0`~`1000` 배율 적용 | `1x`로 복원 |
+| `world.timeScale` | `GameTime.gameTimeScale` | `0`~`1000` 범위 배속 적용 | 최초 값 복원 |
+| `movement.regularJumpMultiplier` | `PlayerMovement.TriggerJumpInternal`, `TriggerVariableHeightJump`, `jumpType`, `isLocalPlayer` | 제자리·전방·측면 등 일반 점프의 상승 속도에 `0`~`1000` 배율 적용 | `1x`로 복원 |
+| `movement.specialMovementMultiplier` | 같은 점프 진입점과 일반 점프 이외 `JumpType` | 벽·난간·수영·삽·자동 스텝·볼트·회전 점프 등 특수 이동의 상승 속도에 `0`~`1000` 배율 적용 | `1x`로 복원 |
+| `movement.gravityMultiplier` | `PlayerMovement.GetBaseGravitySpeedDelta`, `isLocalPlayer` | 로컬 플레이어의 기본 중력 가속도에 `0`~`1000` 배율 적용 | `1x`로 복원 |
 | `inventory.resource` | `PlayerInventory`, `Inventory.GetStoredAmount`, `DepositInternal`, `RemoveAmountFromStacks` | 선택 자원 조회·설정·증감 | 저장 상태이므로 자동 원복 안 함 |
 | `kingdom.resource` | `GlobalResourceStorage.GetStoredAmount`, `Deposit`, `Withdraw` | 선택 왕국 자원 조회·설정·증감 | 저장 상태이므로 자동 원복 안 함 |
 | `diagnostics.session` | 오프라인·호스트·접속 수와 객체 준비 상태 | 앱 진단 탭에 표시 | 해당 없음 |
@@ -68,5 +71,5 @@ metadata 세 SHA-256을 게임 폴더에서 다시 계산한다. 설치 후 게�
   `SetProgress(float)` 경로에서 결합된다. `UI/LOADING_*` 단계명은 메시지 입구에서 완전
   일치 번역하고, 이미 결합된 `0%`~`100%` 접미사는 숫자를 그대로 보존한다.
 - 테스트 모드 상태는 세션 판정과 분리되며 미확인 세션에서도 기능 버튼이 활성화된다.
-- 앱 종료·pipe 단절 시 무적·기력·Ctrl 신속 이동·이동 속도·시간 배속을 reset한다. 자원 변경은 저장
+- 앱 종료·pipe 단절 시 무적·기력·Ctrl 신속 이동·이동 속도·시간 배속·일반 점프·특수 이동·중력을 reset한다. 자원 변경은 저장
   상태이므로 진단 및 자동 검증에서는 조회만 수행한다.
