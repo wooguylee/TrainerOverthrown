@@ -4,6 +4,7 @@ using BepInEx.Logging;
 using Il2CppInterop.Runtime.Attributes;
 using Mirror;
 using UnityEngine;
+using VVooOverthrown.Helper.Features;
 using VVooOverthrown.Helper.Localization;
 using VVooOverthrown.Helper.Safety;
 using VVooOverthrown.Helper.Transport;
@@ -12,9 +13,22 @@ namespace VVooOverthrown.Helper.Runtime;
 
 public sealed class RuntimeHost : MonoBehaviour
 {
-    private static readonly string[] Capabilities = { "player.godMode", "world.timeScale" };
+    private static readonly string[] Capabilities =
+    {
+        "player.godMode",
+        "player.health",
+        "player.staminaFactor",
+        "movement.speedMultiplier",
+        "world.timeScale",
+        "inventory.resource",
+        "kingdom.resource",
+        "diagnostics.session",
+    };
+
     private readonly ConcurrentQueue<PendingCommand> _commands = new();
     private readonly OfflineSessionGuard _guard = new();
+    private readonly OriginalValueLatch<bool> _originalInvulnerability = new();
+    private readonly TargetValueLatch<DifficultyManager, float> _staminaFactorLatch = new();
     private HelperPipeServer _server;
     private ManualLogSource _log;
     private bool _godModeEnabled;
@@ -22,7 +36,6 @@ public sealed class RuntimeHost : MonoBehaviour
     private float _originalTimeScale = 1f;
     private int _disconnectResetRequested;
     private Damageable _godModeTarget;
-    private readonly OriginalValueLatch<bool> _originalInvulnerability = new();
     private StringTableLocalizationBootstrap _stringTableLocalization;
     private float _nextGodModeTargetLookupTime;
 
@@ -38,6 +51,7 @@ public sealed class RuntimeHost : MonoBehaviour
         {
             _stringTableLocalization = new StringTableLocalizationBootstrap(catalog);
         }
+
         var pipeName = "VVooOverthrown." + Process.GetCurrentProcess().Id;
         _server = new HelperPipeServer(pipeName, EnqueueAsync, RequestDisconnectResetAsync);
         _server.Start();
@@ -49,7 +63,7 @@ public sealed class RuntimeHost : MonoBehaviour
     {
         if (_commands.Count >= 64)
         {
-            return Task.FromResult(Error("QUEUE_FULL", "명령 대기열이 가득 찼습니다."));
+            return Task.FromResult(SimpleError("QUEUE_FULL", "명령 대기열이 가득 찼습니다."));
         }
 
         var completion = new TaskCompletionSource<PipeResponse>(
@@ -62,15 +76,7 @@ public sealed class RuntimeHost : MonoBehaviour
     {
         if (Interlocked.Exchange(ref _disconnectResetRequested, 0) != 0)
         {
-            ResetChanges();
-        }
-
-        if (ActiveChangeSafety.ShouldReset(
-                _godModeEnabled,
-                _timeScaleChanged,
-                EvaluateSession()))
-        {
-            ResetChanges();
+            ResetTransientChanges();
         }
 
         for (var processed = 0; processed < 16 && _commands.TryDequeue(out var command); processed++)
@@ -82,7 +88,7 @@ public sealed class RuntimeHost : MonoBehaviour
             catch (Exception exception)
             {
                 _log.LogError("Trainer command failed: " + exception.GetType().Name);
-                command.Completion.TrySetResult(Error("COMMAND_FAILED", "명령을 적용하지 못했습니다."));
+                command.Completion.TrySetResult(SimpleError("COMMAND_FAILED", "명령을 적용하지 못했습니다."));
             }
         }
 
@@ -125,66 +131,225 @@ public sealed class RuntimeHost : MonoBehaviour
     [HideFromIl2Cpp]
     private PipeResponse Execute(PipeRequest request)
     {
-        var decision = EvaluateSession();
-        if (request.Command.Equals("status", StringComparison.OrdinalIgnoreCase))
+        var snapshot = CaptureSessionSnapshot();
+        var validation = TrainerRequestValidator.Validate(request);
+        if (!validation.IsValid)
         {
-            return Status(decision);
+            return Error(validation.ErrorCode, validation.Message, snapshot);
         }
 
-        if (request.Command.Equals("reset", StringComparison.OrdinalIgnoreCase))
+        if (Is(request.Command, TrainerCommands.Status))
         {
-            ResetChanges();
-            return Status(decision);
+            return Status(snapshot);
         }
 
-        if (decision != SessionDecision.Allowed)
+        if (Is(request.Command, TrainerCommands.Reset))
         {
-            ResetChanges();
-            return Error(
-                decision == SessionDecision.RemoteParticipant ? "MULTIPLAYER_BLOCKED" : "OFFLINE_NOT_PROVEN",
-                "검증된 로컬 싱글플레이 세션에서만 사용할 수 있습니다.",
-                decision);
+            ResetTransientChanges();
+            return Status(snapshot);
         }
 
-        if (request.Command.Equals("godMode", StringComparison.OrdinalIgnoreCase))
+        if (Is(request.Command, TrainerCommands.GodMode))
         {
+            if (request.Enabled && !TryEnableGodMode())
+            {
+                return FeatureUnavailable("로컬 플레이어 체력이 아직 준비되지 않았습니다.", snapshot);
+            }
+
             _godModeEnabled = request.Enabled;
             if (!_godModeEnabled)
             {
                 RestoreInvulnerability();
             }
-            return Status(decision);
+            return Status(snapshot);
         }
 
-        if (request.Command.Equals("timeScale", StringComparison.OrdinalIgnoreCase))
+        if (Is(request.Command, TrainerCommands.Heal))
         {
-            if (request.Value < 0.25f || request.Value > 4f)
+            var health = FindLocalPlayerHealth();
+            if (health?.asDamageable == null)
             {
-                return Error("OUT_OF_RANGE", "시간 배속은 0.25~4.0 범위여야 합니다.", decision);
+                return FeatureUnavailable("로컬 플레이어 체력이 아직 준비되지 않았습니다.", snapshot);
+            }
+            health.asDamageable.currentHealth = health.asDamageable.effectiveMaxHealth;
+            return Status(snapshot);
+        }
+
+        if (Is(request.Command, TrainerCommands.StaminaFactor))
+        {
+            if (!DifficultyManager.HasInstance || DifficultyManager.Instance == null)
+            {
+                return FeatureUnavailable("난이도/기력 관리자가 아직 준비되지 않았습니다.", snapshot);
             }
 
+            var target = DifficultyManager.Instance;
+            _staminaFactorLatch.Capture(target, target.NetworkplayerStaminaFactor);
+            target.NetworkplayerStaminaFactor = request.Value;
+            return Status(snapshot);
+        }
+
+        if (Is(request.Command, TrainerCommands.MovementSpeed))
+        {
+            var movement = FindLocalPlayerMovement();
+            if (movement == null)
+            {
+                return FeatureUnavailable("로컬 플레이어 이동 객체가 아직 준비되지 않았습니다.", snapshot);
+            }
+
+            MovementSpeedPatch.Multiplier = request.Value;
+            movement.UpdateSpeedFactor();
+            return Status(snapshot);
+        }
+
+        if (Is(request.Command, TrainerCommands.TimeScale))
+        {
             if (!_timeScaleChanged)
             {
                 _originalTimeScale = GameTime.gameTimeScale;
                 _timeScaleChanged = true;
             }
             GameTime.gameTimeScale = request.Value;
-            return Status(decision);
+            return Status(snapshot);
         }
 
-        return Error("UNKNOWN_COMMAND", "지원하지 않는 명령입니다.", decision);
+        if (request.Command.StartsWith("inventory", StringComparison.OrdinalIgnoreCase))
+        {
+            return ExecuteInventory(request, snapshot);
+        }
+
+        if (request.Command.StartsWith("kingdom", StringComparison.OrdinalIgnoreCase))
+        {
+            return ExecuteKingdom(request, snapshot);
+        }
+
+        return Error("UNKNOWN_COMMAND", "지원하지 않는 명령입니다.", snapshot);
     }
 
     [HideFromIl2Cpp]
-    private SessionDecision EvaluateSession()
+    private PipeResponse ExecuteInventory(PipeRequest request, SessionSnapshot snapshot)
+    {
+        var inventory = FindLocalPlayerInventory();
+        if (inventory == null)
+        {
+            return FeatureUnavailable("로컬 플레이어 인벤토리가 아직 준비되지 않았습니다.", snapshot);
+        }
+
+        var resource = (ResourceType)request.ResourceType;
+        inventory.GetStoredAmount(resource, out var currentAmount);
+        if (!Is(request.Command, TrainerCommands.InventoryQuery))
+        {
+            var targetAmount = request.Amount;
+            if (Is(request.Command, TrainerCommands.InventoryAdd) &&
+                !TryAddAmount(currentAmount, request.Amount, out targetAmount))
+            {
+                return Error("OUT_OF_RANGE", "변경 후 인벤토리 수량이 지원 범위를 벗어납니다.", snapshot);
+            }
+
+            if (targetAmount > currentAmount)
+            {
+                var resourceData = GlobalResourceStorage.GetResourceData(resource);
+                if (resourceData == null || (int)resourceData.DefaultItem == 0)
+                {
+                    return Error("RESOURCE_ITEM_UNAVAILABLE", "선택한 자원은 인벤토리 기본 아이템이 없습니다.", snapshot);
+                }
+                inventory.DepositInternal(resourceData.DefaultItem, targetAmount - currentAmount);
+            }
+            else if (targetAmount < currentAmount)
+            {
+                inventory.RemoveAmountFromStacks(resource, currentAmount - targetAmount);
+            }
+
+            inventory.GetStoredAmount(resource, out currentAmount);
+            var verification = ResourceMutationVerifier.Verify(targetAmount, currentAmount);
+            if (!verification.IsExact)
+            {
+                var error = Error(verification.ErrorCode, verification.Message, snapshot);
+                error.SelectedResourceType = request.ResourceType;
+                error.InventoryAmount = currentAmount;
+                return error;
+            }
+        }
+
+        var response = Status(snapshot);
+        response.SelectedResourceType = request.ResourceType;
+        response.InventoryAmount = currentAmount;
+        return response;
+    }
+
+    [HideFromIl2Cpp]
+    private PipeResponse ExecuteKingdom(PipeRequest request, SessionSnapshot snapshot)
+    {
+        if (!GlobalResourceStorage.HasInstance || GlobalResourceStorage.Instance == null)
+        {
+            return FeatureUnavailable("왕국 자원 저장소가 아직 준비되지 않았습니다.", snapshot);
+        }
+
+        var resource = (ResourceType)request.ResourceType;
+        var currentAmount = GlobalResourceStorage.GetStoredAmount(resource);
+        if (!Is(request.Command, TrainerCommands.KingdomQuery))
+        {
+            var targetAmount = request.Amount;
+            if (Is(request.Command, TrainerCommands.KingdomAdd) &&
+                !TryAddAmount(currentAmount, request.Amount, out targetAmount))
+            {
+                return Error("OUT_OF_RANGE", "변경 후 왕국 자원 수량이 지원 범위를 벗어납니다.", snapshot);
+            }
+
+            if (targetAmount > currentAmount)
+            {
+                GlobalResourceStorage.Deposit(resource, targetAmount - currentAmount);
+            }
+            else if (targetAmount < currentAmount)
+            {
+                GlobalResourceStorage.Withdraw(resource, currentAmount - targetAmount);
+            }
+            currentAmount = GlobalResourceStorage.GetStoredAmount(resource);
+            var verification = ResourceMutationVerifier.Verify(targetAmount, currentAmount);
+            if (!verification.IsExact)
+            {
+                var error = Error(verification.ErrorCode, verification.Message, snapshot);
+                error.SelectedResourceType = request.ResourceType;
+                error.KingdomAmount = currentAmount;
+                return error;
+            }
+        }
+
+        var response = Status(snapshot);
+        response.SelectedResourceType = request.ResourceType;
+        response.KingdomAmount = currentAmount;
+        return response;
+    }
+
+    [HideFromIl2Cpp]
+    private SessionSnapshot CaptureSessionSnapshot()
     {
         var count = NetworkServer.connections == null ? -1 : NetworkServer.connections.Count;
-        var snapshot = new SessionSnapshot(
+        return new SessionSnapshot(
             BNetworkManager.OfflineMode,
             NetworkServer.activeHost && NetworkClient.active,
             count,
             count > 1);
-        return _guard.Evaluate(snapshot);
+    }
+
+    [HideFromIl2Cpp]
+    private bool TryEnableGodMode()
+    {
+        if (_godModeTarget != null)
+        {
+            return true;
+        }
+
+        var health = FindLocalPlayerHealth();
+        if (health?.asDamageable == null)
+        {
+            return false;
+        }
+
+        _godModeTarget = health.asDamageable;
+        _originalInvulnerability.Capture(_godModeTarget.isInvulnerable);
+        _godModeTarget.isInvulnerable = true;
+        _godModeTarget.currentHealth = _godModeTarget.effectiveMaxHealth;
+        return true;
     }
 
     [HideFromIl2Cpp]
@@ -192,12 +357,6 @@ public sealed class RuntimeHost : MonoBehaviour
     {
         if (!_godModeEnabled)
         {
-            return;
-        }
-
-        if (EvaluateSession() != SessionDecision.Allowed)
-        {
-            ResetChanges();
             return;
         }
 
@@ -210,15 +369,8 @@ public sealed class RuntimeHost : MonoBehaviour
                 return;
             }
             _nextGodModeTargetLookupTime = now + 1f;
-
-            var health = FindLocalPlayerHealth();
-            if (health == null || health.asDamageable == null)
-            {
-                return;
-            }
-
-            _godModeTarget = health.asDamageable;
-            _originalInvulnerability.Capture(_godModeTarget.isInvulnerable);
+            TryEnableGodMode();
+            return;
         }
 
         _godModeTarget.isInvulnerable = true;
@@ -237,7 +389,36 @@ public sealed class RuntimeHost : MonoBehaviour
                 return player;
             }
         }
+        return null;
+    }
 
+    [HideFromIl2Cpp]
+    private static PlayerMovement FindLocalPlayerMovement()
+    {
+        var players = UnityEngine.Object.FindObjectsOfType<PlayerMovement>();
+        for (var index = 0; index < players.Length; index++)
+        {
+            var player = players[index];
+            if (player != null && player.isLocalPlayer)
+            {
+                return player;
+            }
+        }
+        return null;
+    }
+
+    [HideFromIl2Cpp]
+    private static PlayerInventory FindLocalPlayerInventory()
+    {
+        var inventories = UnityEngine.Object.FindObjectsOfType<PlayerInventory>();
+        for (var index = 0; index < inventories.Length; index++)
+        {
+            var inventory = inventories[index];
+            if (inventory != null && inventory.isLocalPlayer)
+            {
+                return inventory;
+            }
+        }
         return null;
     }
 
@@ -254,10 +435,24 @@ public sealed class RuntimeHost : MonoBehaviour
     }
 
     [HideFromIl2Cpp]
-    private void ResetChanges()
+    private void ResetTransientChanges()
     {
         _godModeEnabled = false;
         RestoreInvulnerability();
+
+        if (_staminaFactorLatch.TryTake(out var staminaTarget, out var staminaFactor) &&
+            staminaTarget != null)
+        {
+            staminaTarget.NetworkplayerStaminaFactor = staminaFactor;
+        }
+
+        MovementSpeedPatch.Multiplier = 1f;
+        var movement = FindLocalPlayerMovement();
+        if (movement != null)
+        {
+            movement.UpdateSpeedFactor();
+        }
+
         if (_timeScaleChanged)
         {
             GameTime.gameTimeScale = _originalTimeScale;
@@ -266,31 +461,82 @@ public sealed class RuntimeHost : MonoBehaviour
     }
 
     [HideFromIl2Cpp]
-    private PipeResponse Status(SessionDecision decision) => new()
+    private PipeResponse Status(SessionSnapshot snapshot)
     {
-        Ok = true,
-        SessionDecision = decision.ToString(),
+        var health = FindLocalPlayerHealth();
+        var inventory = FindLocalPlayerInventory();
+        return new PipeResponse
+        {
+            Ok = true,
+            TestModeEnabled = true,
+            SessionDecision = _guard.Evaluate(snapshot).ToString(),
+            OfflineMode = snapshot.OfflineMode,
+            AuthoritativeHost = snapshot.AuthoritativeHost,
+            ConnectionCount = snapshot.ConnectionCount,
+            RemoteParticipant = snapshot.RemoteParticipantDetected,
+            Capabilities = Capabilities,
+            PlayerReady = health?.asDamageable != null,
+            InventoryReady = inventory != null,
+            KingdomStorageReady = GlobalResourceStorage.HasInstance,
+            GodModeEnabled = _godModeEnabled,
+            TimeScale = GameTime.gameTimeScale,
+            StaminaFactor = ReadStaminaFactor(),
+            MovementSpeedMultiplier = MovementSpeedPatch.Multiplier,
+        };
+    }
+
+    [HideFromIl2Cpp]
+    private static float ReadStaminaFactor()
+    {
+        return DifficultyManager.HasInstance && DifficultyManager.Instance != null
+            ? DifficultyManager.Instance.NetworkplayerStaminaFactor
+            : 1f;
+    }
+
+    [HideFromIl2Cpp]
+    private PipeResponse FeatureUnavailable(string message, SessionSnapshot snapshot) =>
+        Error("FEATURE_UNAVAILABLE", message, snapshot);
+
+    [HideFromIl2Cpp]
+    private PipeResponse Error(string code, string message, SessionSnapshot snapshot)
+    {
+        var response = Status(snapshot);
+        response.Ok = false;
+        response.ErrorCode = code;
+        response.Message = message;
+        return response;
+    }
+
+    [HideFromIl2Cpp]
+    private static PipeResponse SimpleError(string code, string message) => new()
+    {
+        Ok = false,
+        TestModeEnabled = true,
+        ErrorCode = code,
+        Message = message,
         Capabilities = Capabilities,
-        GodModeEnabled = _godModeEnabled,
-        TimeScale = GameTime.gameTimeScale,
     };
 
     [HideFromIl2Cpp]
-    private static PipeResponse Error(
-        string code,
-        string message,
-        SessionDecision decision = SessionDecision.Uncertain) => new()
+    private static bool TryAddAmount(int current, int delta, out int result)
     {
-        Ok = false,
-        ErrorCode = code,
-        Message = message,
-        SessionDecision = decision.ToString(),
-        Capabilities = Capabilities,
-    };
+        var candidate = (long)current + delta;
+        if (candidate is < 0 or > 1_000_000_000)
+        {
+            result = current;
+            return false;
+        }
+        result = (int)candidate;
+        return true;
+    }
+
+    [HideFromIl2Cpp]
+    private static bool Is(string actual, string expected) =>
+        actual.Equals(expected, StringComparison.OrdinalIgnoreCase);
 
     public void OnDestroy()
     {
-        ResetChanges();
+        ResetTransientChanges();
         _server?.Dispose();
     }
 }

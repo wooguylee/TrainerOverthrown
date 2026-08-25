@@ -26,6 +26,7 @@
     <Reference Include="Unity.Localization" HintPath="$(GameInteropDir)\Unity.Localization.dll" Private="false" />
     <Reference Include="Unity.ResourceManager" HintPath="$(GameInteropDir)\Unity.ResourceManager.dll" Private="false" />
     <Reference Include="GameAssembly" HintPath="$(GameInteropDir)\GameAssembly.dll" Private="false" />
+    <Reference Include="SharedAssembly" HintPath="$(GameInteropDir)\SharedAssembly.dll" Private="false" />
     <Reference Include="Mirror" HintPath="$(GameInteropDir)\Mirror.dll" Private="false" />
     <Reference Include="Il2Cppmscorlib" HintPath="$(GameInteropDir)\Il2Cppmscorlib.dll" Private="false" />
   </ItemGroup>
