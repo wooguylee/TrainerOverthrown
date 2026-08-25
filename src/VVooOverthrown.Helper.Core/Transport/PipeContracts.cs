@@ -47,6 +47,8 @@ public sealed class PipeResponse
 
     public float StaminaFactor { get; set; } = 1f;
 
+    public bool InfiniteCtrlMovementEnabled { get; set; }
+
     public float MovementSpeedMultiplier { get; set; } = 1f;
 
     public int SelectedResourceType { get; set; }

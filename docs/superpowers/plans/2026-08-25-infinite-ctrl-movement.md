@@ -35,7 +35,7 @@
 - Produces: `InfiniteCtrlMovementState.Enable(float currentFactor) -> float`, `TryDisable(out float restoreFactor) -> bool`, and `ReadyDashTimer(float current, float cooldown) -> float`.
 - Produces: `TrainerCommands.InfiniteCtrlMovement` and `PipeResponse.InfiniteCtrlMovementEnabled`.
 
-- [ ] **Step 1: Write failing state and protocol tests**
+- [x] **Step 1: Write failing state and protocol tests**
 
 ```csharp
 [Fact]
@@ -69,13 +69,13 @@ public void RepeatedEnablePreservesFirstRestoreFactor()
 
 Add `TrainerCommands.InfiniteCtrlMovement` to the mutation-classification theory and validate a request using its `Enabled` field.
 
-- [ ] **Step 2: Run the focused tests and verify RED**
+- [x] **Step 2: Run the focused tests and verify RED**
 
 Run: `dotnet test tests/VVooOverthrown.Helper.Tests/VVooOverthrown.Helper.Tests.csproj --filter "InfiniteCtrlMovementStateTests|TrainerRequestValidatorTests"`
 
 Expected: compilation/test failure because the state, command, and response field do not exist.
 
-- [ ] **Step 3: Implement the minimum state and protocol**
+- [x] **Step 3: Implement the minimum state and protocol**
 
 ```csharp
 public sealed class InfiniteCtrlMovementState
@@ -106,11 +106,11 @@ public sealed class InfiniteCtrlMovementState
 
 Register the toggle command as a supported mutation and add the boolean response property.
 
-- [ ] **Step 4: Run the focused tests and verify GREEN**
+- [x] **Step 4: Run the focused tests and verify GREEN**
 
 Run the Step 2 command. Expected: all selected tests pass with zero warnings/errors.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```powershell
 git add src/VVooOverthrown.Helper.Core tests/VVooOverthrown.Helper.Tests

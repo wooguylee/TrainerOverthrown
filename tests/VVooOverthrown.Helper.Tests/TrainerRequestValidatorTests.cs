@@ -14,6 +14,7 @@ public sealed class TrainerRequestValidatorTests
     [InlineData(TrainerCommands.GodMode, true)]
     [InlineData(TrainerCommands.Heal, true)]
     [InlineData(TrainerCommands.StaminaFactor, true)]
+    [InlineData(TrainerCommands.InfiniteCtrlMovement, true)]
     [InlineData(TrainerCommands.MovementSpeed, true)]
     [InlineData(TrainerCommands.TimeScale, true)]
     [InlineData(TrainerCommands.InventorySet, true)]
@@ -23,6 +24,20 @@ public sealed class TrainerRequestValidatorTests
     public void ClassifiesMutationCommands(string command, bool expected)
     {
         Assert.Equal(expected, TrainerRequestValidator.IsMutation(command));
+    }
+
+    [Theory]
+    [InlineData(true)]
+    [InlineData(false)]
+    public void AcceptsInfiniteCtrlMovementToggle(bool enabled)
+    {
+        var result = TrainerRequestValidator.Validate(new PipeRequest
+        {
+            Command = TrainerCommands.InfiniteCtrlMovement,
+            Enabled = enabled,
+        });
+
+        Assert.True(result.IsValid);
     }
 
     [Theory]

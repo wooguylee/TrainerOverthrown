@@ -7,6 +7,7 @@ public static class TrainerCommands
     public const string GodMode = "godMode";
     public const string Heal = "heal";
     public const string StaminaFactor = "staminaFactor";
+    public const string InfiniteCtrlMovement = "infiniteCtrlMovement";
     public const string MovementSpeed = "movementSpeed";
     public const string TimeScale = "timeScale";
     public const string InventoryQuery = "inventoryQuery";

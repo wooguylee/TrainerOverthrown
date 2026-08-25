@@ -13,6 +13,7 @@ public static class TrainerRequestValidator
         TrainerCommands.GodMode,
         TrainerCommands.Heal,
         TrainerCommands.StaminaFactor,
+        TrainerCommands.InfiniteCtrlMovement,
         TrainerCommands.MovementSpeed,
         TrainerCommands.TimeScale,
         TrainerCommands.InventoryQuery,
@@ -54,7 +55,7 @@ public static class TrainerRequestValidator
         {
             return InRange(request.Value, 0f, 100f)
                 ? TrainerValidationResult.Valid
-                : TrainerValidationResult.Invalid("OUT_OF_RANGE", "기력 소모 배율은 0~100 범위여야 합니다.");
+                : TrainerValidationResult.Invalid("OUT_OF_RANGE", "기력 회복 배율은 0~100 범위여야 합니다.");
         }
 
         if (command.Equals(TrainerCommands.MovementSpeed, StringComparison.OrdinalIgnoreCase))
