@@ -290,7 +290,7 @@ Run:
 
 Expected: selected tests pass and both changed deliverables compile with zero errors. Do not run the full solution suite, live game, installer, or packaging.
 
-- [ ] **Step 6: Commit, merge, and push**
+- [x] **Step 6: Commit, merge, and push**
 
 ```powershell
 git add src\VVooOverthrown.App tests\VVooOverthrown.App.Tests docs
