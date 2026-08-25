@@ -49,10 +49,11 @@ metadata 세 SHA-256을 게임 폴더에서 다시 계산한다. 설치 후 게�
   EULA 법적 원문 1개, `[INTENTIONALLY LEFT BLANK]` 5개, 구분자 `-` 7개뿐이다.
 - 동적 template matching의 smart plural 토큰은 실제 영어 단위 `hour(s)`, `day(s)`,
   `second(s)`에만 매칭한다. 일반 문구와 개수 조합을 시간 단위로 오인하지 않는다.
-- TMP 출력은 `text` property setter와 `SetText(string)` 계열이 서로 다른 네이티브
-  메서드다. Helper는 `set_text`뿐 아니라 서식 숫자 인수가 없는 `SetText(string)`과
-  `SetText(string, bool)`에도 같은 검수 catalog와 글꼴 fallback을 적용한다. 숫자 서식
-  오버로드는 건드리지 않는다.
+- 동적 원형 메뉴의 제목·부제·설명은 `RadialMenuDynamicOption`의 문자열 필드에 저장되고
+  `RadialMenuDynamicWheel`의 `title`, `subtitle` TMP에 표시된다. 이 복사는 IL2CPP 네이티브
+  내부에서 일어나 managed Harmony 진입점 패치가 호출되지 않으므로, `RuntimeHost`가
+  0.2초 간격으로 해당 메뉴 하나만 찾아 옵션 필드와 현재 표시 필드를 검수 catalog로
+  보정한다. 전역 TMP 탐색이나 숫자 서식 경로는 건드리지 않는다.
 - 월드 로딩 단계명과 진행률은 `LoadingScreen.SetLoadingMessage(string)` 및
   `SetProgress(float)` 경로에서 결합된다. `UI/LOADING_*` 단계명은 메시지 입구에서 완전
   일치 번역하고, 이미 결합된 `0%`~`100%` 접미사는 숫자를 그대로 보존한다.

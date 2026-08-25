@@ -412,6 +412,21 @@
   fallback을 재사용하며, 숫자 서식용 `SetText(string, float, ...)` 오버로드는 변경하지
   않아 동적 수치 문구의 범위를 넓히지 않는다.
 
+## 2026-08-25 동적 원형 메뉴 실제 상태 보정
+
+- 네 번째 사용자 확인에서 `시민`/`인구`는 이전부터 게임이 현지화한 값이고, `시청`
+  설명만 계속 영어라는 사실을 분리해 확인했다. 최신 로그에서 새 Helper와 catalog는
+  정상 로드됐지만 시청 설명은 바뀌지 않아 TMP 공통 기록 경로 가정도 폐기했다.
+- `RadialMenuDynamicOption`은 `title`, `subtitle`, `description`을 네이티브 필드로
+  보관하고, 선택 정보를 `RadialMenuDynamicWheel.title`, `subtitle`에 IL2CPP 네이티브
+  내부에서 복사한다. 이 내부 호출은 managed interop 진입점에 건 Harmony prefix를
+  지나지 않으므로 앞선 `AddOption`, `RefreshInformation`, `TMP_Text.SetText` 패치가
+  실제 화면을 바꾸지 못했다.
+- 항상 실행되는 `RuntimeHost.Update()`에서 0.2초 간격으로 동적 원형 메뉴 하나만
+  확인하고, 옵션의 세 문자열 필드와 현재 표시 중인 두 TMP 필드를 직접 번역한다.
+  효과가 없던 `SetText` 두 패치는 제거하며 전역 TMP 탐색, 숫자 서식, 다른 UI는
+  변경하지 않는다.
+
 ## 이후 작업 방식
 
 - 사용자가 별도로 선택하도록 묻지 않고 항상 권장안으로 구현한다.

@@ -66,35 +66,3 @@ internal static class TmpTextTranslationPatch
         return true;
     }
 }
-
-[HarmonyPatch(typeof(TMP_Text), "SetText", new Type[] { typeof(string) })]
-internal static class TmpSetTextTranslationPatch
-{
-    private static void Prefix(TMP_Text __instance, ref string sourceText)
-    {
-        try
-        {
-            TmpTextTranslationPatch.Translate(__instance, ref sourceText);
-        }
-        catch
-        {
-            // A single malformed TMP component must not affect the game runtime.
-        }
-    }
-}
-
-[HarmonyPatch(typeof(TMP_Text), "SetText", new Type[] { typeof(string), typeof(bool) })]
-internal static class TmpSetTextAndSyncTranslationPatch
-{
-    private static void Prefix(TMP_Text __instance, ref string sourceText)
-    {
-        try
-        {
-            TmpTextTranslationPatch.Translate(__instance, ref sourceText);
-        }
-        catch
-        {
-            // A single malformed TMP component must not affect the game runtime.
-        }
-    }
-}

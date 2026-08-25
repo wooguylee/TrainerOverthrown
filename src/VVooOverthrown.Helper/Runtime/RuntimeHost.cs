@@ -4,6 +4,7 @@ using BepInEx.Logging;
 using Il2CppInterop.Runtime.Attributes;
 using Mirror;
 using UnityEngine;
+using VVooOverthrown.Helper.Localization;
 using VVooOverthrown.Helper.Safety;
 using VVooOverthrown.Helper.Transport;
 
@@ -22,6 +23,9 @@ public sealed class RuntimeHost : MonoBehaviour
     private int _disconnectResetRequested;
     private Damageable _godModeTarget;
     private readonly OriginalValueLatch<bool> _originalInvulnerability = new();
+    private RadialMenuDynamicWheel _radialMenuWheel;
+    private float _nextRadialMenuTranslationTime;
+    private bool _radialMenuTranslationLogged;
 
     public RuntimeHost(IntPtr pointer) : base(pointer)
     {
@@ -79,7 +83,38 @@ public sealed class RuntimeHost : MonoBehaviour
             }
         }
 
+        MaintainRadialMenuLocalization();
         MaintainGodMode();
+    }
+
+    [HideFromIl2Cpp]
+    private void MaintainRadialMenuLocalization()
+    {
+        var now = Time.unscaledTime;
+        if (now < _nextRadialMenuTranslationTime)
+        {
+            return;
+        }
+        _nextRadialMenuTranslationTime = now + 0.2f;
+
+        try
+        {
+            if (_radialMenuWheel == null)
+            {
+                _radialMenuWheel = UnityEngine.Object.FindObjectOfType<RadialMenuDynamicWheel>();
+            }
+
+            var replacements = RadialMenuLocalizationMonitor.Translate(_radialMenuWheel);
+            if (replacements > 0 && !_radialMenuTranslationLogged)
+            {
+                _radialMenuTranslationLogged = true;
+                _log.LogInfo($"Radial menu localization applied; replacements={replacements}");
+            }
+        }
+        catch
+        {
+            _radialMenuWheel = null;
+        }
     }
 
     [HideFromIl2Cpp]
