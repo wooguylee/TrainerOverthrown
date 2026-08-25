@@ -155,7 +155,7 @@
                                             <Button Content="적용" Click="ApplyStaminaFactor_Click" IsEnabled="{Binding StaminaFactorInput.CanApply}" Background="#059669" />
                                             <TextBlock Text="{Binding StaminaFactorInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
                                             <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
-                                                <Run Text="현재: " /><Run Text="{Binding StaminaFactorMessage}" />
+                                                <Run Text="현재: " /><Run Text="{Binding StaminaFactorMessage, Mode=OneWay}" />
                                             </TextBlock>
                                         </WrapPanel>
                                     </StackPanel>
@@ -190,7 +190,7 @@
                                             <Button Content="적용" Click="ApplyMovementSpeed_Click" IsEnabled="{Binding MovementSpeedInput.CanApply}" Background="#059669" />
                                             <TextBlock Text="{Binding MovementSpeedInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
                                             <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
-                                                <Run Text="현재: " /><Run Text="{Binding MovementSpeedMessage}" />
+                                                <Run Text="현재: " /><Run Text="{Binding MovementSpeedMessage, Mode=OneWay}" />
                                             </TextBlock>
                                         </WrapPanel>
                                     </StackPanel>
@@ -204,7 +204,7 @@
                                             <Button Content="적용" Click="ApplyTimeScale_Click" IsEnabled="{Binding TimeScaleInput.CanApply}" Background="#059669" />
                                             <TextBlock Text="{Binding TimeScaleInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
                                             <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
-                                                <Run Text="현재: " /><Run Text="{Binding TimeScaleMessage}" />
+                                                <Run Text="현재: " /><Run Text="{Binding TimeScaleMessage, Mode=OneWay}" />
                                             </TextBlock>
                                         </WrapPanel>
                                     </StackPanel>
@@ -218,7 +218,7 @@
                                             <Button Content="적용" Click="ApplyRegularJumpMultiplier_Click" IsEnabled="{Binding RegularJumpInput.CanApply}" Background="#059669" />
                                             <TextBlock Text="{Binding RegularJumpInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
                                             <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
-                                                <Run Text="현재: " /><Run Text="{Binding RegularJumpMultiplierMessage}" />
+                                                <Run Text="현재: " /><Run Text="{Binding RegularJumpMultiplierMessage, Mode=OneWay}" />
                                             </TextBlock>
                                         </WrapPanel>
                                     </StackPanel>
@@ -232,7 +232,7 @@
                                             <Button Content="적용" Click="ApplySpecialMovementMultiplier_Click" IsEnabled="{Binding SpecialMovementInput.CanApply}" Background="#059669" />
                                             <TextBlock Text="{Binding SpecialMovementInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
                                             <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
-                                                <Run Text="현재: " /><Run Text="{Binding SpecialMovementMultiplierMessage}" />
+                                                <Run Text="현재: " /><Run Text="{Binding SpecialMovementMultiplierMessage, Mode=OneWay}" />
                                             </TextBlock>
                                         </WrapPanel>
                                     </StackPanel>
@@ -246,7 +246,7 @@
                                             <Button Content="적용" Click="ApplyGravityMultiplier_Click" IsEnabled="{Binding GravityInput.CanApply}" Background="#059669" />
                                             <TextBlock Text="{Binding GravityInput.Message}" VerticalAlignment="Center" Foreground="#FBBF24" Margin="0,0,14,0" />
                                             <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
-                                                <Run Text="현재: " /><Run Text="{Binding GravityMultiplierMessage}" />
+                                                <Run Text="현재: " /><Run Text="{Binding GravityMultiplierMessage, Mode=OneWay}" />
                                             </TextBlock>
                                         </WrapPanel>
                                     </StackPanel>
