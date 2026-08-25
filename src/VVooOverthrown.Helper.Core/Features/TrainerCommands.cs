@@ -10,6 +10,9 @@ public static class TrainerCommands
     public const string InfiniteCtrlMovement = "infiniteCtrlMovement";
     public const string MovementSpeed = "movementSpeed";
     public const string TimeScale = "timeScale";
+    public const string RegularJumpMultiplier = "regularJumpMultiplier";
+    public const string SpecialMovementMultiplier = "specialMovementMultiplier";
+    public const string GravityMultiplier = "gravityMultiplier";
     public const string InventoryQuery = "inventoryQuery";
     public const string InventorySet = "inventorySet";
     public const string InventoryAdd = "inventoryAdd";

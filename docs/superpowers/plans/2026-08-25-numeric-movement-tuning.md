@@ -37,7 +37,7 @@
 - Produces: `MovementTuningState.SetRegularJumpMultiplier(float)`, `SetSpecialMovementMultiplier(float)`, `SetGravityMultiplier(float)`, `ScaleJumpVelocity(float,int,bool)`, `ScaleGravityDelta(float,bool)`, and `Reset()`.
 - Produces: commands `RegularJumpMultiplier`, `SpecialMovementMultiplier`, `GravityMultiplier` and matching `PipeResponse` properties.
 
-- [ ] **Step 1: Write failing state and validation tests**
+- [x] **Step 1: Write failing state and validation tests**
 
 ```csharp
 [Fact]
@@ -70,7 +70,7 @@ public void GravityAndResetAreIndependent()
 
 Add validator theories proving all six numeric commands accept `0`, decimal values, and `1000`, while rejecting negative values, `1000.01`, `NaN`, and infinities.
 
-- [ ] **Step 2: Run focused tests and verify RED**
+- [x] **Step 2: Run focused tests and verify RED**
 
 Run:
 
@@ -80,7 +80,7 @@ Run:
 
 Expected: compilation fails because the new state and commands do not exist.
 
-- [ ] **Step 3: Implement the pure state and contract**
+- [x] **Step 3: Implement the pure state and contract**
 
 ```csharp
 public sealed class MovementTuningState
@@ -114,11 +114,11 @@ public sealed class MovementTuningState
 
 Register the three commands as mutations, expand stamina/movement/time validation to `0..1000`, enforce finite values, and add response fields defaulting to `1f`.
 
-- [ ] **Step 4: Run the focused tests and verify GREEN**
+- [x] **Step 4: Run the focused tests and verify GREEN**
 
 Run the Step 2 command. Expected: all selected tests pass.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```powershell
 git add src\VVooOverthrown.Helper.Core tests\VVooOverthrown.Helper.Tests

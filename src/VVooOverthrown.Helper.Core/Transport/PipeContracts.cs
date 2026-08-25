@@ -51,6 +51,12 @@ public sealed class PipeResponse
 
     public float MovementSpeedMultiplier { get; set; } = 1f;
 
+    public float RegularJumpMultiplier { get; set; } = 1f;
+
+    public float SpecialMovementMultiplier { get; set; } = 1f;
+
+    public float GravityMultiplier { get; set; } = 1f;
+
     public int SelectedResourceType { get; set; }
 
     public int InventoryAmount { get; set; }

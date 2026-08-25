@@ -17,6 +17,9 @@ public sealed class TrainerRequestValidatorTests
     [InlineData(TrainerCommands.InfiniteCtrlMovement, true)]
     [InlineData(TrainerCommands.MovementSpeed, true)]
     [InlineData(TrainerCommands.TimeScale, true)]
+    [InlineData(TrainerCommands.RegularJumpMultiplier, true)]
+    [InlineData(TrainerCommands.SpecialMovementMultiplier, true)]
+    [InlineData(TrainerCommands.GravityMultiplier, true)]
     [InlineData(TrainerCommands.InventorySet, true)]
     [InlineData(TrainerCommands.InventoryAdd, true)]
     [InlineData(TrainerCommands.KingdomSet, true)]
@@ -43,14 +46,21 @@ public sealed class TrainerRequestValidatorTests
     [Theory]
     [InlineData(TrainerCommands.TimeScale, -0.01f, false)]
     [InlineData(TrainerCommands.TimeScale, 0f, true)]
-    [InlineData(TrainerCommands.TimeScale, 10f, true)]
-    [InlineData(TrainerCommands.TimeScale, 10.01f, false)]
+    [InlineData(TrainerCommands.TimeScale, 1000f, true)]
+    [InlineData(TrainerCommands.TimeScale, 1000.01f, false)]
     [InlineData(TrainerCommands.StaminaFactor, -0.01f, false)]
     [InlineData(TrainerCommands.StaminaFactor, 0f, true)]
-    [InlineData(TrainerCommands.StaminaFactor, 100f, true)]
-    [InlineData(TrainerCommands.MovementSpeed, 0.09f, false)]
-    [InlineData(TrainerCommands.MovementSpeed, 0.1f, true)]
-    [InlineData(TrainerCommands.MovementSpeed, 20f, true)]
+    [InlineData(TrainerCommands.StaminaFactor, 1000f, true)]
+    [InlineData(TrainerCommands.MovementSpeed, -0.01f, false)]
+    [InlineData(TrainerCommands.MovementSpeed, 0f, true)]
+    [InlineData(TrainerCommands.MovementSpeed, 1000f, true)]
+    [InlineData(TrainerCommands.RegularJumpMultiplier, 0f, true)]
+    [InlineData(TrainerCommands.RegularJumpMultiplier, 1.25f, true)]
+    [InlineData(TrainerCommands.RegularJumpMultiplier, 1000f, true)]
+    [InlineData(TrainerCommands.SpecialMovementMultiplier, 0f, true)]
+    [InlineData(TrainerCommands.SpecialMovementMultiplier, 1000f, true)]
+    [InlineData(TrainerCommands.GravityMultiplier, 0f, true)]
+    [InlineData(TrainerCommands.GravityMultiplier, 1000f, true)]
     public void ValidatesNumericCommandRanges(string command, float value, bool expected)
     {
         var result = TrainerRequestValidator.Validate(new PipeRequest
@@ -105,7 +115,8 @@ public sealed class TrainerRequestValidatorTests
     [Theory]
     [InlineData(float.NaN)]
     [InlineData(float.PositiveInfinity)]
-    [InlineData(20.01f)]
+    [InlineData(float.NegativeInfinity)]
+    [InlineData(1000.01f)]
     public void RejectsInvalidMovementValues(float value)
     {
         var result = TrainerRequestValidator.Validate(new PipeRequest

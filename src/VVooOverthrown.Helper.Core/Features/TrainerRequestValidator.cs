@@ -5,6 +5,7 @@ namespace VVooOverthrown.Helper.Features;
 public static class TrainerRequestValidator
 {
     private const int MaxResourceAmount = 1_000_000_000;
+    private const float MaxMultiplier = 1000f;
 
     private static readonly HashSet<string> KnownCommands = new(StringComparer.OrdinalIgnoreCase)
     {
@@ -16,6 +17,9 @@ public static class TrainerRequestValidator
         TrainerCommands.InfiniteCtrlMovement,
         TrainerCommands.MovementSpeed,
         TrainerCommands.TimeScale,
+        TrainerCommands.RegularJumpMultiplier,
+        TrainerCommands.SpecialMovementMultiplier,
+        TrainerCommands.GravityMultiplier,
         TrainerCommands.InventoryQuery,
         TrainerCommands.InventorySet,
         TrainerCommands.InventoryAdd,
@@ -44,25 +48,11 @@ public static class TrainerRequestValidator
         }
 
         var command = request.Command ?? string.Empty;
-        if (command.Equals(TrainerCommands.TimeScale, StringComparison.OrdinalIgnoreCase))
+        if (IsMultiplierCommand(command))
         {
-            return InRange(request.Value, 0f, 10f)
+            return InRange(request.Value, 0f, MaxMultiplier)
                 ? TrainerValidationResult.Valid
-                : TrainerValidationResult.Invalid("OUT_OF_RANGE", "시간 배속은 0~10 범위여야 합니다.");
-        }
-
-        if (command.Equals(TrainerCommands.StaminaFactor, StringComparison.OrdinalIgnoreCase))
-        {
-            return InRange(request.Value, 0f, 100f)
-                ? TrainerValidationResult.Valid
-                : TrainerValidationResult.Invalid("OUT_OF_RANGE", "기력 회복 배율은 0~100 범위여야 합니다.");
-        }
-
-        if (command.Equals(TrainerCommands.MovementSpeed, StringComparison.OrdinalIgnoreCase))
-        {
-            return InRange(request.Value, 0.1f, 20f)
-                ? TrainerValidationResult.Valid
-                : TrainerValidationResult.Invalid("OUT_OF_RANGE", "이동 속도 배율은 0.1~20 범위여야 합니다.");
+                : TrainerValidationResult.Invalid("OUT_OF_RANGE", "배율은 0~1000 범위의 유한한 숫자여야 합니다.");
         }
 
         if (IsResourceCommand(command))
@@ -89,6 +79,14 @@ public static class TrainerRequestValidator
 
     private static bool InRange(float value, float minimum, float maximum) =>
         !float.IsNaN(value) && !float.IsInfinity(value) && value >= minimum && value <= maximum;
+
+    private static bool IsMultiplierCommand(string command) =>
+        command.Equals(TrainerCommands.TimeScale, StringComparison.OrdinalIgnoreCase) ||
+        command.Equals(TrainerCommands.StaminaFactor, StringComparison.OrdinalIgnoreCase) ||
+        command.Equals(TrainerCommands.MovementSpeed, StringComparison.OrdinalIgnoreCase) ||
+        command.Equals(TrainerCommands.RegularJumpMultiplier, StringComparison.OrdinalIgnoreCase) ||
+        command.Equals(TrainerCommands.SpecialMovementMultiplier, StringComparison.OrdinalIgnoreCase) ||
+        command.Equals(TrainerCommands.GravityMultiplier, StringComparison.OrdinalIgnoreCase);
 
     private static bool IsResourceCommand(string command) =>
         command.StartsWith("inventory", StringComparison.OrdinalIgnoreCase) ||
