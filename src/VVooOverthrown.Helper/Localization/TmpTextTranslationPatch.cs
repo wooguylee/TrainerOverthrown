@@ -37,12 +37,16 @@ internal static class TmpTextTranslationPatch
 
     private static void Translate(TMP_Text text, ref string value, bool exactOnly)
     {
-        if (text is null || !TryTranslate(ref value, exactOnly))
+        if (text is null)
         {
             return;
         }
 
-        KoreanFontProvider.EnsureFallback(text);
+        var translated = TryTranslate(ref value, exactOnly);
+        if (translated || KoreanFontProvider.ContainsKorean(value))
+        {
+            KoreanFontProvider.EnsureFallback(text);
+        }
     }
 
     private static bool TryTranslate(ref string value, bool exactOnly)
