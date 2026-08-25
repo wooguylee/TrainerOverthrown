@@ -5,6 +5,7 @@ obj/
 .dotnet/
 .packages/
 .tools/
+.worktrees/
 
 # IDE and user files
 .vs/
