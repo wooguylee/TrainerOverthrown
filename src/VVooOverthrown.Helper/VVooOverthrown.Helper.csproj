@@ -26,6 +26,7 @@
     <Reference Include="GameAssembly" HintPath="$(GameInteropDir)\GameAssembly.dll" Private="false" />
     <Reference Include="Mirror" HintPath="$(GameInteropDir)\Mirror.dll" Private="false" />
     <Reference Include="Il2Cppmscorlib" HintPath="$(GameInteropDir)\Il2Cppmscorlib.dll" Private="false" />
+    <Reference Include="Il2CppSystem.Core" HintPath="$(GameInteropDir)\Il2CppSystem.Core.dll" Private="false" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\translation\source.en.json" Link="translation\source.en.json" CopyToOutputDirectory="PreserveNewest" />

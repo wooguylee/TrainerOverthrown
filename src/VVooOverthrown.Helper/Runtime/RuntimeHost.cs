@@ -23,9 +23,9 @@ public sealed class RuntimeHost : MonoBehaviour
     private int _disconnectResetRequested;
     private Damageable _godModeTarget;
     private readonly OriginalValueLatch<bool> _originalInvulnerability = new();
-    private RadialMenuDynamicWheel _radialMenuWheel;
     private float _nextRadialMenuTranslationTime;
     private bool _radialMenuTranslationLogged;
+    private float _nextGodModeTargetLookupTime;
 
     public RuntimeHost(IntPtr pointer) : base(pointer)
     {
@@ -99,12 +99,25 @@ public sealed class RuntimeHost : MonoBehaviour
 
         try
         {
-            if (_radialMenuWheel == null)
+            var activeMenus = RadialMenu.currentActive;
+            if (activeMenus is null || activeMenus.Count == 0)
             {
-                _radialMenuWheel = UnityEngine.Object.FindObjectOfType<RadialMenuDynamicWheel>();
+                return;
             }
 
-            var replacements = RadialMenuLocalizationMonitor.Translate(_radialMenuWheel);
+            var replacements = 0;
+            foreach (var menu in activeMenus)
+            {
+                try
+                {
+                    replacements += RadialMenuLocalizationMonitor.Translate(menu?.dynamicWheel);
+                }
+                catch
+                {
+                    // One closing menu must not block another active radial menu.
+                }
+            }
+
             if (replacements > 0 && !_radialMenuTranslationLogged)
             {
                 _radialMenuTranslationLogged = true;
@@ -113,7 +126,7 @@ public sealed class RuntimeHost : MonoBehaviour
         }
         catch
         {
-            _radialMenuWheel = null;
+            // A menu can close while the native active set is being enumerated.
         }
     }
 
@@ -203,24 +216,28 @@ public sealed class RuntimeHost : MonoBehaviour
             return;
         }
 
-        var health = FindLocalPlayerHealth();
-        if (health == null || health.asDamageable == null)
-        {
-            return;
-        }
-
-        var damageable = health.asDamageable;
-        if (_godModeTarget != null && _godModeTarget != damageable)
-        {
-            RestoreInvulnerability();
-        }
         if (_godModeTarget == null)
         {
-            _godModeTarget = damageable;
-            _originalInvulnerability.Capture(damageable.isInvulnerable);
+            _originalInvulnerability.TryTake(out _);
+            var now = Time.unscaledTime;
+            if (now < _nextGodModeTargetLookupTime)
+            {
+                return;
+            }
+            _nextGodModeTargetLookupTime = now + 1f;
+
+            var health = FindLocalPlayerHealth();
+            if (health == null || health.asDamageable == null)
+            {
+                return;
+            }
+
+            _godModeTarget = health.asDamageable;
+            _originalInvulnerability.Capture(_godModeTarget.isInvulnerable);
         }
-        damageable.isInvulnerable = true;
-        damageable.currentHealth = damageable.effectiveMaxHealth;
+
+        _godModeTarget.isInvulnerable = true;
+        _godModeTarget.currentHealth = _godModeTarget.effectiveMaxHealth;
     }
 
     [HideFromIl2Cpp]
@@ -248,6 +265,7 @@ public sealed class RuntimeHost : MonoBehaviour
             _godModeTarget.isInvulnerable = original;
         }
         _godModeTarget = null;
+        _nextGodModeTargetLookupTime = 0f;
     }
 
     [HideFromIl2Cpp]
