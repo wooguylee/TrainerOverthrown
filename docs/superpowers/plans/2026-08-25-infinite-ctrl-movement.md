@@ -224,7 +224,7 @@ Expected: compilation failure because the ViewModel property/method do not exist
 
 Add the ViewModel method/property, response assignment, XAML on/off buttons and status indicator, and click handlers. Change copy to `기력 회복 배율`, explain `0x`, `1x`, and `100x`, and include Ctrl movement in reset/help text and user documentation.
 
-- [ ] **Step 4: Run App tests and full verification**
+- [x] **Step 4: Run App tests and full verification**
 
 Run: `dotnet test tests/VVooOverthrown.App.Tests/VVooOverthrown.App.Tests.csproj`
 
@@ -234,13 +234,13 @@ Run: `powershell -ExecutionPolicy Bypass -File tools/build.ps1`
 
 Expected: all tests pass, compiled app/Helper artifacts build, and no release ZIP is created.
 
-- [ ] **Step 5: Install and inspect the live Helper**
+- [x] **Step 5: Install and inspect the live Helper**
 
 Run: `& .\.artifacts\publish\app\VVooOverthrown.exe --install --game 'W:\Games\Overthrown'`
 
 Launch the app and supported game if they are not running, connect the app, and inspect `W:\Games\Overthrown\BepInEx\LogOutput.log` for one loaded Helper and no error entries. Leave actual in-world Ctrl behavior for the user's save-world test if no player is loaded.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```powershell
 git add src/VVooOverthrown.App tests/VVooOverthrown.App.Tests docs
