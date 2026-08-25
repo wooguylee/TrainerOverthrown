@@ -19,6 +19,7 @@ public sealed class RuntimeHost : MonoBehaviour
         "player.health",
         "player.staminaFactor",
         "movement.speedMultiplier",
+        "movement.infiniteCtrl",
         "world.timeScale",
         "inventory.resource",
         "kingdom.resource",
@@ -183,8 +184,37 @@ public sealed class RuntimeHost : MonoBehaviour
             }
 
             var target = DifficultyManager.Instance;
+            DisableInfiniteCtrlMovement(target);
             _staminaFactorLatch.Capture(target, target.NetworkplayerStaminaFactor);
             target.NetworkplayerStaminaFactor = request.Value;
+            return Status(snapshot);
+        }
+
+        if (Is(request.Command, TrainerCommands.InfiniteCtrlMovement))
+        {
+            if (request.Enabled)
+            {
+                var movement = FindLocalPlayerMovement();
+                if (movement == null)
+                {
+                    return FeatureUnavailable("로컬 플레이어 이동 객체가 아직 준비되지 않았습니다.", snapshot);
+                }
+
+                if (!DifficultyManager.HasInstance || DifficultyManager.Instance == null)
+                {
+                    return FeatureUnavailable("난이도/기력 관리자가 아직 준비되지 않았습니다.", snapshot);
+                }
+
+                var target = DifficultyManager.Instance;
+                target.NetworkplayerStaminaFactor =
+                    InfiniteCtrlMovementPatch.State.Enable(target.NetworkplayerStaminaFactor);
+                InfiniteCtrlMovementPatch.Apply(movement);
+            }
+            else
+            {
+                DisableInfiniteCtrlMovement();
+            }
+
             return Status(snapshot);
         }
 
@@ -440,6 +470,8 @@ public sealed class RuntimeHost : MonoBehaviour
         _godModeEnabled = false;
         RestoreInvulnerability();
 
+        DisableInfiniteCtrlMovement();
+
         if (_staminaFactorLatch.TryTake(out var staminaTarget, out var staminaFactor) &&
             staminaTarget != null)
         {
@@ -481,6 +513,7 @@ public sealed class RuntimeHost : MonoBehaviour
             GodModeEnabled = _godModeEnabled,
             TimeScale = GameTime.gameTimeScale,
             StaminaFactor = ReadStaminaFactor(),
+            InfiniteCtrlMovementEnabled = InfiniteCtrlMovementPatch.State.Enabled,
             MovementSpeedMultiplier = MovementSpeedPatch.Multiplier,
         };
     }
@@ -491,6 +524,21 @@ public sealed class RuntimeHost : MonoBehaviour
         return DifficultyManager.HasInstance && DifficultyManager.Instance != null
             ? DifficultyManager.Instance.NetworkplayerStaminaFactor
             : 1f;
+    }
+
+    [HideFromIl2Cpp]
+    private static void DisableInfiniteCtrlMovement(DifficultyManager target = null)
+    {
+        if (!InfiniteCtrlMovementPatch.State.TryDisable(out var restoreFactor))
+        {
+            return;
+        }
+
+        target ??= DifficultyManager.HasInstance ? DifficultyManager.Instance : null;
+        if (target != null)
+        {
+            target.NetworkplayerStaminaFactor = restoreFactor;
+        }
     }
 
     [HideFromIl2Cpp]

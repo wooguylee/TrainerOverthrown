@@ -128,7 +128,7 @@ git commit -m "feat: add infinite ctrl movement protocol"
 - Consumes: Task 1 `InfiniteCtrlMovementState` and protocol symbols.
 - Produces: capability `movement.infiniteCtrl`; RuntimeHost enable/disable/reset behavior; Harmony postfix for `PlayerMovement.UpdateTimers`.
 
-- [ ] **Step 1: Add a failing remote-player isolation test**
+- [x] **Step 1: Add a failing remote-player isolation test**
 
 ```csharp
 [Fact]
@@ -140,13 +140,13 @@ public void RemotePlayerDashTimerIsNeverChanged()
 }
 ```
 
-- [ ] **Step 2: Run the state tests and verify RED**
+- [x] **Step 2: Run the state tests and verify RED**
 
 Run: `dotnet test tests/VVooOverthrown.Helper.Tests/VVooOverthrown.Helper.Tests.csproj --filter InfiniteCtrlMovementStateTests`
 
 Expected: compilation fails because the local-player-aware overload does not exist.
 
-- [ ] **Step 3: Implement RuntimeHost and Harmony wiring**
+- [x] **Step 3: Implement RuntimeHost and Harmony wiring**
 
 Extend `ReadyDashTimer` with `bool isLocalPlayer` and return the current timer for remote players. Create a postfix for `PlayerMovement.UpdateTimers` that assigns:
 
@@ -159,15 +159,15 @@ __instance.timeSinceDash = State.ReadyDashTimer(
 
 In `RuntimeHost`, require loaded movement and difficulty objects before enabling; set `NetworkplayerStaminaFactor` from `state.Enable(current)`, apply the timer once immediately, report status, and restore through `TryDisable` during explicit off/manual stamina/reset/destruction.
 
-- [ ] **Step 4: Build the Helper and run focused tests**
+- [x] **Step 4: Build the Helper and run focused tests**
 
 Run: `dotnet test tests/VVooOverthrown.Helper.Tests/VVooOverthrown.Helper.Tests.csproj --filter InfiniteCtrlMovementStateTests`
 
-Run: `dotnet build src/VVooOverthrown.Helper/VVooOverthrown.Helper.csproj --no-restore`
+Run: `dotnet build src/VVooOverthrown.Helper/VVooOverthrown.Helper.csproj --no-restore /p:BepInExCoreDir=Z:\Work\WorkAI\VVooOverthrown\.artifacts\bepinex\BepInEx\core`
 
 Expected: selected tests pass and Helper builds with zero errors.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```powershell
 git add src/VVooOverthrown.Helper tests/VVooOverthrown.Helper.Tests

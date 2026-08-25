@@ -40,4 +40,15 @@ public sealed class InfiniteCtrlMovementStateTests
 
         Assert.Equal(2f, restoredFactor);
     }
+
+    [Fact]
+    public void RemotePlayerDashTimerIsNeverChanged()
+    {
+        var state = new InfiniteCtrlMovementState();
+        state.Enable(1f);
+
+        var timer = state.ReadyDashTimer(0.2f, 0.8f, isLocalPlayer: false);
+
+        Assert.Equal(0.2f, timer);
+    }
 }

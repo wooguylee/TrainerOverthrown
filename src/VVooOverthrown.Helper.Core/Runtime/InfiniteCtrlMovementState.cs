@@ -33,4 +33,7 @@ public sealed class InfiniteCtrlMovementState
 
     public float ReadyDashTimer(float current, float cooldown) =>
         Enabled ? Math.Max(current, cooldown) : current;
+
+    public float ReadyDashTimer(float current, float cooldown, bool isLocalPlayer) =>
+        isLocalPlayer ? ReadyDashTimer(current, cooldown) : current;
 }
