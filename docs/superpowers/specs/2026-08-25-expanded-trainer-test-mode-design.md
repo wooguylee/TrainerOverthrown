@@ -16,8 +16,8 @@ ambiguous.
 - Require the concrete target object for each command. Return a specific
   `FEATURE_UNAVAILABLE` error while a player, inventory, or global resource store
   is not loaded.
-- Restore transient changes (invulnerability, stamina factor, movement multiplier,
-  and time scale) when reset/disconnect/unload runs.
+- Restore transient changes (invulnerability, stamina factor, infinite Ctrl movement,
+  movement multiplier, and time scale) when reset/disconnect/unload runs.
 - Resource edits intentionally change gameplay state. They are never performed by
   status refresh or live verification, and the UI labels them as persistent.
 
@@ -27,11 +27,14 @@ ambiguous.
 
 - God mode: maintain local player's invulnerability and refill health.
 - Heal: refill the local player's current health once.
-- Stamina factor: set `DifficultyManager.NetworkplayerStaminaFactor` from zero
-  (no stamina consumption) through 100 and latch the original value for reset.
+- Stamina recovery factor: set `DifficultyManager.NetworkplayerStaminaFactor` from
+  zero (recovery disabled) through 100 and latch the original value for reset.
 
 ### Movement and time
 
+- Infinite Ctrl movement: set stamina recovery to 100x and Harmony-postfix
+  `PlayerMovement.UpdateTimers` so the local player's dash cooldown is always
+  ready. Preserve air-dash count and the game's normal action restrictions.
 - Movement multiplier: Harmony-postfix `PlayerMovement.UpdateSpeedFactor` and
   multiply the freshly calculated local-player speed factor.
 - World time scale: set `GameTime.gameTimeScale`, preserving its original value.
@@ -59,7 +62,7 @@ ambiguous.
 
 `PipeRequest` keeps the existing command fields and adds `ResourceType` and
 `Amount`. Commands are `status`, `reset`, `godMode`, `heal`, `staminaFactor`,
-`movementSpeed`, `timeScale`, `inventoryQuery`, `inventorySet`, `inventoryAdd`,
+`infiniteCtrlMovement`, `movementSpeed`, `timeScale`, `inventoryQuery`, `inventorySet`, `inventoryAdd`,
 `kingdomQuery`, `kingdomSet`, and `kingdomAdd`.
 
 `PipeResponse` reports all current transient values plus raw diagnostics and the

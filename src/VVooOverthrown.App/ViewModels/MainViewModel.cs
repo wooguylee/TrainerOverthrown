@@ -20,6 +20,7 @@ public sealed class MainViewModel : INotifyPropertyChanged
     private bool _canConnectHelper;
     private bool _canUseTrainer;
     private bool _godModeEnabled;
+    private bool _infiniteCtrlMovementEnabled;
     private string _sessionMessage = "Helper 연결 전";
     private string _timeScaleMessage = "1.0x";
     private string _staminaFactorMessage = "1.0x";
@@ -105,6 +106,12 @@ public sealed class MainViewModel : INotifyPropertyChanged
     {
         get => _godModeEnabled;
         private set => SetProperty(ref _godModeEnabled, value);
+    }
+
+    public bool InfiniteCtrlMovementEnabled
+    {
+        get => _infiniteCtrlMovementEnabled;
+        private set => SetProperty(ref _infiniteCtrlMovementEnabled, value);
     }
 
     public string SessionMessage
@@ -315,7 +322,16 @@ public sealed class MainViewModel : INotifyPropertyChanged
         await RunTrainerOperationAsync(
             token => _service.SendTrainerCommandAsync(
                 new PipeRequest { Command = TrainerCommands.StaminaFactor, Value = value }, token),
-            $"기력 소모 배율을 {value:0.##}x로 설정했습니다.",
+            $"기력 회복 배율을 {value:0.##}x로 설정했습니다.",
+            cancellationToken);
+    }
+
+    public async Task SetInfiniteCtrlMovementAsync(bool enabled, CancellationToken cancellationToken = default)
+    {
+        await RunTrainerOperationAsync(
+            token => _service.SendTrainerCommandAsync(
+                new PipeRequest { Command = TrainerCommands.InfiniteCtrlMovement, Enabled = enabled }, token),
+            enabled ? "Ctrl 신속 이동 무한을 켰습니다." : "Ctrl 신속 이동 무한을 껐습니다.",
             cancellationToken);
     }
 
@@ -378,7 +394,7 @@ public sealed class MainViewModel : INotifyPropertyChanged
         await RunTrainerOperationAsync(
             token => _service.SendTrainerCommandAsync(
                 new PipeRequest { Command = TrainerCommands.Reset }, token),
-            "무적·기력·이동 속도·시간 배속을 원래 값으로 복원했습니다.",
+            "무적·기력·Ctrl 신속 이동·이동 속도·시간 배속을 원래 값으로 복원했습니다.",
             cancellationToken);
     }
 
@@ -468,6 +484,7 @@ public sealed class MainViewModel : INotifyPropertyChanged
             };
 
         GodModeEnabled = response.GodModeEnabled;
+        InfiniteCtrlMovementEnabled = response.InfiniteCtrlMovementEnabled;
         TimeScaleMessage = $"{response.TimeScale:0.##}x";
         StaminaFactorMessage = $"{response.StaminaFactor:0.##}x";
         MovementSpeedMessage = $"{response.MovementSpeedMultiplier:0.##}x";
@@ -480,6 +497,7 @@ public sealed class MainViewModel : INotifyPropertyChanged
             $"AuthoritativeHost: {response.AuthoritativeHost}{Environment.NewLine}" +
             $"Connections: {response.ConnectionCount}{Environment.NewLine}" +
             $"RemoteParticipant: {response.RemoteParticipant}{Environment.NewLine}" +
+            $"Ctrl 신속 이동 무한: {(response.InfiniteCtrlMovementEnabled ? "활성" : "비활성")}{Environment.NewLine}" +
             $"플레이어: {ReadyText(response.PlayerReady)} · " +
             $"인벤토리: {ReadyText(response.InventoryReady)} · " +
             $"왕국 저장소: {ReadyText(response.KingdomStorageReady)}";

@@ -188,7 +188,7 @@ git commit -m "feat: remove local ctrl movement cooldown"
 - Consumes: Task 1 response flag/command and Task 2 authoritative Helper behavior.
 - Produces: `MainViewModel.InfiniteCtrlMovementEnabled` and `SetInfiniteCtrlMovementAsync(bool enabled)`.
 
-- [ ] **Step 1: Write the failing ViewModel command/response test**
+- [x] **Step 1: Write the failing ViewModel command/response test**
 
 ```csharp
 [Fact]
@@ -214,13 +214,13 @@ public async Task InfiniteCtrlMovementSendsToggleAndUsesHelperResponse()
 
 Use the existing complete fake service shape rather than mocking ViewModel behavior.
 
-- [ ] **Step 2: Run the focused App test and verify RED**
+- [x] **Step 2: Run the focused App test and verify RED**
 
 Run: `dotnet test tests/VVooOverthrown.App.Tests/VVooOverthrown.App.Tests.csproj --filter InfiniteCtrlMovementSendsToggleAndUsesHelperResponse`
 
 Expected: compilation failure because the ViewModel property/method do not exist.
 
-- [ ] **Step 3: Implement WPF UI and copy corrections**
+- [x] **Step 3: Implement WPF UI and copy corrections**
 
 Add the ViewModel method/property, response assignment, XAML on/off buttons and status indicator, and click handlers. Change copy to `기력 회복 배율`, explain `0x`, `1x`, and `100x`, and include Ctrl movement in reset/help text and user documentation.
 

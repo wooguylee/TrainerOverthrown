@@ -148,10 +148,10 @@
                                 </Border>
                                 <Border Style="{StaticResource FeatureCard}">
                                     <StackPanel>
-                                        <TextBlock Text="기력 소모 배율" Style="{StaticResource SectionTitle}" />
-                                        <TextBlock Text="0x는 기력 소모 없음, 1x는 원래 값입니다." Style="{StaticResource MutedText}" Margin="0,0,0,10" />
+                                        <TextBlock Text="기력 회복 배율" Style="{StaticResource SectionTitle}" />
+                                        <TextBlock Text="0x는 회복 중지, 1x는 원래 값, 100x는 거의 즉시 회복입니다." Style="{StaticResource MutedText}" Margin="0,0,0,10" />
                                         <WrapPanel>
-                                            <Button Content="0x" Click="StaminaZero_Click" IsEnabled="{Binding CanUseTrainer}" Background="#059669" />
+                                            <Button Content="0x" Click="StaminaZero_Click" IsEnabled="{Binding CanUseTrainer}" Background="#475569" />
                                             <Button Content="0.25x" Click="StaminaQuarter_Click" IsEnabled="{Binding CanUseTrainer}" />
                                             <Button Content="0.5x" Click="StaminaHalf_Click" IsEnabled="{Binding CanUseTrainer}" />
                                             <Button Content="1x" Click="StaminaNormal_Click" IsEnabled="{Binding CanUseTrainer}" />
@@ -169,6 +169,20 @@
                     <TabItem Header="이동·시간">
                         <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,14,0,0">
                             <StackPanel>
+                                <Border Style="{StaticResource FeatureCard}">
+                                    <StackPanel>
+                                        <TextBlock Text="Ctrl 신속 이동 무한" Style="{StaticResource SectionTitle}" />
+                                        <TextBlock Text="기력 회복을 100x로 올리고 로컬 플레이어의 신속 이동 쿨다운을 제거합니다. 공중 돌진 횟수와 행동 제한은 유지됩니다."
+                                                   Style="{StaticResource MutedText}" Margin="0,0,0,10" TextWrapping="Wrap" />
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button Content="무한 켜기" Click="InfiniteCtrlMovementOn_Click" IsEnabled="{Binding CanUseTrainer}" Background="#059669" />
+                                            <Button Content="무한 끄기" Click="InfiniteCtrlMovementOff_Click" IsEnabled="{Binding CanUseTrainer}" Background="#475569" />
+                                            <TextBlock VerticalAlignment="Center" Foreground="#94A3B8">
+                                                <Run Text="활성: " /><Run Text="{Binding InfiniteCtrlMovementEnabled, Mode=OneWay}" />
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
                                 <Border Style="{StaticResource FeatureCard}">
                                     <StackPanel>
                                         <TextBlock Text="플레이어 이동 속도" Style="{StaticResource SectionTitle}" />
@@ -297,7 +311,7 @@
                                 </Border>
                                 <Button Content="일시 변경값 전체 복원" Click="ResetTrainer_Click"
                                         IsEnabled="{Binding CanUseTrainer}" Background="#DC2626" HorizontalAlignment="Left" />
-                                <TextBlock Margin="0,10,0,0" Text="무적·기력·이동 속도·시간 배속만 복원합니다. 인벤토리와 왕국 자원 변경은 되돌리지 않습니다."
+                                <TextBlock Margin="0,10,0,0" Text="무적·기력·Ctrl 신속 이동·이동 속도·시간 배속만 복원합니다. 인벤토리와 왕국 자원 변경은 되돌리지 않습니다."
                                            Foreground="#FBBF24" TextWrapping="Wrap" />
                             </StackPanel>
                         </ScrollViewer>

@@ -146,6 +146,34 @@ public sealed class MainViewModelTests
         Assert.Contains("입력 오류", viewModel.InventoryInputMessage);
     }
 
+    [Fact]
+    public async Task InfiniteCtrlMovementSendsToggleAndUsesHelperResponse()
+    {
+        var service = new FakeApplicationService(new ApplicationSnapshot(
+            @"W:\Games\Overthrown",
+            pathValid: true,
+            buildSupported: true,
+            installed: true,
+            gameRunning: true,
+            helperConnected: true))
+        {
+            ConnectResponse = new PipeResponse
+            {
+                Ok = true,
+                TestModeEnabled = true,
+                InfiniteCtrlMovementEnabled = true,
+            },
+        };
+        var viewModel = new MainViewModel(service);
+
+        await viewModel.SetInfiniteCtrlMovementAsync(true);
+
+        Assert.NotNull(service.LastRequest);
+        Assert.Equal(TrainerCommands.InfiniteCtrlMovement, service.LastRequest!.Command);
+        Assert.True(service.LastRequest.Enabled);
+        Assert.True(viewModel.InfiniteCtrlMovementEnabled);
+    }
+
     private sealed class FakeApplicationService : ITrainerApplicationService
     {
         private readonly ApplicationSnapshot _snapshot;

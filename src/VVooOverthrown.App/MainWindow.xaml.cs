@@ -58,6 +58,12 @@ public partial class MainWindow : Window
     private async void StaminaHundred_Click(object sender, RoutedEventArgs e) =>
         await _viewModel.SetStaminaFactorAsync(100f);
 
+    private async void InfiniteCtrlMovementOn_Click(object sender, RoutedEventArgs e) =>
+        await _viewModel.SetInfiniteCtrlMovementAsync(true);
+
+    private async void InfiniteCtrlMovementOff_Click(object sender, RoutedEventArgs e) =>
+        await _viewModel.SetInfiniteCtrlMovementAsync(false);
+
     private async void MovementTenth_Click(object sender, RoutedEventArgs e) =>
         await _viewModel.SetMovementSpeedAsync(0.1f);
 
