@@ -32,6 +32,9 @@ public sealed class MovementTuningState
     public float ScaleGravityDelta(float value, bool isLocalPlayer) =>
         isLocalPlayer ? value * GravityMultiplier : value;
 
+    public float ScaleVariableHeightBonus(float value, int jumpType, bool isLocalPlayer) =>
+        ScaleJumpVelocity(value, jumpType, isLocalPlayer);
+
     public void Reset()
     {
         RegularJumpMultiplier = DefaultMultiplier;

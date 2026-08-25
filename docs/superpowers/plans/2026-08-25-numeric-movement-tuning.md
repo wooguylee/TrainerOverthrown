@@ -136,7 +136,7 @@ git commit -m "feat: add numeric movement tuning contract"
 - Consumes: Task 1 `MovementTuningState` and new protocol symbols.
 - Produces: `MovementTuningState.ScaleVariableHeightBonus(float,int,bool)`, `MovementTuningRuntime.State`, Harmony prefixes/postfix, and RuntimeHost command/status/reset wiring.
 
-- [ ] **Step 1: Add a failing variable-bonus isolation test**
+- [x] **Step 1: Add a failing variable-bonus isolation test**
 
 ```csharp
 [Fact]
@@ -152,7 +152,7 @@ public void VariableHeightBonusUsesCurrentJumpGroupAndIgnoresRemotePlayers()
 }
 ```
 
-- [ ] **Step 2: Run the state tests and verify RED**
+- [x] **Step 2: Run the state tests and verify RED**
 
 Run:
 
@@ -162,7 +162,7 @@ Run:
 
 Expected: compilation fails because `ScaleVariableHeightBonus` does not exist.
 
-- [ ] **Step 3: Implement Harmony and RuntimeHost wiring**
+- [x] **Step 3: Implement Harmony and RuntimeHost wiring**
 
 Add `ScaleVariableHeightBonus` as a direct call to `ScaleJumpVelocity`, then create one runtime file containing:
 
@@ -199,7 +199,7 @@ internal static class GravityMultiplierPatch
 
 Guard null instances in every patch. In `RuntimeHost`, add the three capabilities, require a loaded local movement object before accepting each command, set the requested state value, report all three response values, and call `MovementTuningRuntime.State.Reset()` from `ResetTransientChanges()`.
 
-- [ ] **Step 4: Build the Helper and run focused tests**
+- [x] **Step 4: Build the Helper and run focused tests**
 
 Run:
 
@@ -210,7 +210,7 @@ Run:
 
 Expected: focused tests pass and Helper compiles with zero errors.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```powershell
 git add src\VVooOverthrown.Helper tests\VVooOverthrown.Helper.Tests

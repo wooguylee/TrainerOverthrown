@@ -20,6 +20,9 @@ public sealed class RuntimeHost : MonoBehaviour
         "player.staminaFactor",
         "movement.speedMultiplier",
         "movement.infiniteCtrl",
+        "movement.regularJumpMultiplier",
+        "movement.specialMovementMultiplier",
+        "movement.gravityMultiplier",
         "world.timeScale",
         "inventory.resource",
         "kingdom.resource",
@@ -239,6 +242,39 @@ public sealed class RuntimeHost : MonoBehaviour
                 _timeScaleChanged = true;
             }
             GameTime.gameTimeScale = request.Value;
+            return Status(snapshot);
+        }
+
+        if (Is(request.Command, TrainerCommands.RegularJumpMultiplier))
+        {
+            if (FindLocalPlayerMovement() == null)
+            {
+                return FeatureUnavailable("로컬 플레이어 이동 객체가 아직 준비되지 않았습니다.", snapshot);
+            }
+
+            MovementTuningRuntime.State.SetRegularJumpMultiplier(request.Value);
+            return Status(snapshot);
+        }
+
+        if (Is(request.Command, TrainerCommands.SpecialMovementMultiplier))
+        {
+            if (FindLocalPlayerMovement() == null)
+            {
+                return FeatureUnavailable("로컬 플레이어 이동 객체가 아직 준비되지 않았습니다.", snapshot);
+            }
+
+            MovementTuningRuntime.State.SetSpecialMovementMultiplier(request.Value);
+            return Status(snapshot);
+        }
+
+        if (Is(request.Command, TrainerCommands.GravityMultiplier))
+        {
+            if (FindLocalPlayerMovement() == null)
+            {
+                return FeatureUnavailable("로컬 플레이어 이동 객체가 아직 준비되지 않았습니다.", snapshot);
+            }
+
+            MovementTuningRuntime.State.SetGravityMultiplier(request.Value);
             return Status(snapshot);
         }
 
@@ -479,6 +515,7 @@ public sealed class RuntimeHost : MonoBehaviour
         }
 
         MovementSpeedPatch.Multiplier = 1f;
+        MovementTuningRuntime.State.Reset();
         var movement = FindLocalPlayerMovement();
         if (movement != null)
         {
@@ -515,6 +552,9 @@ public sealed class RuntimeHost : MonoBehaviour
             StaminaFactor = ReadStaminaFactor(),
             InfiniteCtrlMovementEnabled = InfiniteCtrlMovementPatch.State.Enabled,
             MovementSpeedMultiplier = MovementSpeedPatch.Multiplier,
+            RegularJumpMultiplier = MovementTuningRuntime.State.RegularJumpMultiplier,
+            SpecialMovementMultiplier = MovementTuningRuntime.State.SpecialMovementMultiplier,
+            GravityMultiplier = MovementTuningRuntime.State.GravityMultiplier,
         };
     }
 

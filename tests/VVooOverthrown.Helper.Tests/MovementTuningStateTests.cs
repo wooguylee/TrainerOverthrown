@@ -35,4 +35,16 @@ public sealed class MovementTuningStateTests
         Assert.Equal(1f, state.SpecialMovementMultiplier);
         Assert.Equal(1f, state.GravityMultiplier);
     }
+
+    [Fact]
+    public void VariableHeightBonusUsesCurrentJumpGroupAndIgnoresRemotePlayers()
+    {
+        var state = new MovementTuningState();
+        state.SetRegularJumpMultiplier(2f);
+        state.SetSpecialMovementMultiplier(3f);
+
+        Assert.Equal(8f, state.ScaleVariableHeightBonus(4f, jumpType: 0, isLocalPlayer: true));
+        Assert.Equal(12f, state.ScaleVariableHeightBonus(4f, jumpType: 5, isLocalPlayer: true));
+        Assert.Equal(4f, state.ScaleVariableHeightBonus(4f, jumpType: 5, isLocalPlayer: false));
+    }
 }
